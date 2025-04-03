@@ -25,10 +25,9 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 // Route for about page
-Route::get('/about', [HomeController::class, 'about'])->name('about');
+Route::get('/about', [HomeController::class, 'about'])->name('about-us');
 
 
-Route::get('/general-repair', [HomeController::class, 'repair'])->name('repair');
 Route::get('/body-shop', [HomeController::class, 'shop'])->name('shop');
 
 
@@ -39,7 +38,8 @@ Route::get('/body-shop', [HomeController::class, 'shop'])->name('shop');
 Route::get('/contract', [HomeController::class, 'contract'])->name('contract');
 Route::get('/promotions', [HomeController::class, 'promotions'])->name('promotions');
 Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
-Route::get('/service/request', [HomeController::class, 'contact'])->name('service-request');
+Route::post('/submit_enquiry', [HomeController::class, 'submit_enquiry'])->name('submit_enquiry');
+Route::post('/submit_contact', [HomeController::class, 'submit_contact'])->name('submit_contact');
 
 // Route for services page
 Route::get('/services', [HomeController::class, 'services'])->name('services');
@@ -60,5 +60,3 @@ Route::get('/inspection', [HomeController::class, 'inspection'])->name('inspecti
 Route::get('/job', [HomeController::class, 'job'])->name('job');
 Route::get('/delivery', [HomeController::class, 'delivery'])->name('delivery');
 Route::get('/services', [HomeController::class, 'services'])->name('services');
-Route::post('/submit_enquiry', [HomeController::class, 'submit_enquiry'])->name('submit_enquiry');
-Route::post('/submit_contact', [HomeController::class, 'submit_contact'])->name('submit_contact');

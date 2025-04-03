@@ -1,4 +1,4 @@
-<form action="{{ route('user.service-request') }}" method="POST" class="form-wrap form-validate" id="serviceRequestForm">
+<form action="{{ route('user.submit_enquiry') }}" method="POST" class="form-wrap form-validate" id="serviceRequestForm">
     <div class="form-bg from-wrapper radius-33 bg-img-cover img-img-no-repeat w-100 position-center">
         <div class="mb-3 form-group ">
             <i class="fa-solid fa-user icon"></i>

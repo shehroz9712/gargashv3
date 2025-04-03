@@ -15,9 +15,9 @@
         @media (max-width:786px) {
             .logo-item {
                 /* opacity: 0.5;
-                                            transition: opacity 0.3s ease-in-out;
-                                            height: 3rem;
-                                            width: 60%; */
+                                                    transition: opacity 0.3s ease-in-out;
+                                                    height: 3rem;
+                                                    width: 60%; */
                 opacity: 0.5;
                 transition: opacity 0.3s ease-in-out;
                 height: auto;
@@ -109,8 +109,9 @@
                     <div class="col-lg-6 ps-md-5">
                         <div class="px-3 row row-cols-2 row-cols-md-3">
                             <div class="card bg-transparent index-hero-right-services-box-animation ">
-                                <a href="{{ route('user.servicesDetail', ['slug' => 'mechanical-repair']) }}" class="text-black w-100 h-100">
-                                    <div>
+                                <a href="{{ route('user.servicesDetail', ['slug' => 'mechanical-repair']) }}"
+                                    class="text-black w-100 h-100">
+                                    <div
                                         class="align-items-center d-flex flex-column py-3 rounded-4 shadow text-center index-hero-right-services-box-shadow-animation index-hero-right-services-box-height-responsive">
                                         <div class=" index-service-img-width-height-responsive">
                                             <span
@@ -124,7 +125,8 @@
                                 </a>
                             </div>
                             <div class="card bg-transparent index-hero-right-services-box-animation ">
-                                <a href="{{ route('user.servicesDetail', ['slug' => 'electric-repair']) }}" class="text-black w-100 h-100">
+                                <a href="{{ route('user.servicesDetail', ['slug' => 'electric-repair']) }}"
+                                    class="text-black w-100 h-100">
                                     <div
                                         class="align-items-center d-flex flex-column py-3 rounded-4 shadow text-center index-hero-right-services-box-shadow-animation index-hero-right-services-box-height-responsive">
                                         <div class=" index-service-img-width-height-responsive">
@@ -154,7 +156,8 @@
                                 </a>
                             </div>
                             <div class="card bg-transparent index-hero-right-services-box-animation py-4">
-                                <a href="{{ route('user.servicesDetail', ['slug' => 'major-minor-service']) }}" class="text-black w-100 h-100">
+                                <a href="{{ route('user.servicesDetail', ['slug' => 'major-minor-service']) }}"
+                                    class="text-black w-100 h-100">
                                     <div
                                         class="align-items-center d-flex flex-column py-3 rounded-4 shadow text-center index-hero-right-services-box-shadow-animation index-hero-right-services-box-height-responsive">
                                         <div class=" index-service-img-width-height-responsive">
@@ -169,7 +172,8 @@
                                 </a>
                             </div>
                             <div class="card bg-transparent index-hero-right-services-box-animation py-4">
-                                <a href="{{ route('user.servicesDetail', ['slug' => 'european-cars']) }}" class="text-black w-100 h-100">
+                                <a href="{{ route('user.servicesDetail', ['slug' => 'european-cars']) }}"
+                                    class="text-black w-100 h-100">
                                     <div
                                         class="align-items-center d-flex flex-column py-3 rounded-4 shadow text-center index-hero-right-services-box-shadow-animation index-hero-right-services-box-height-responsive">
                                         <div class=" index-service-img-width-height-responsive">
@@ -185,7 +189,8 @@
                             </div>
 
                             <div class="card bg-transparent index-hero-right-services-box-animation py-4">
-                                <a href="{{ route('user.servicesDetail', ['slug' => 'german-cars']) }}" class="text-black w-100 h-100">
+                                <a href="{{ route('user.servicesDetail', ['slug' => 'german-cars']) }}"
+                                    class="text-black w-100 h-100">
                                     <div
                                         class="align-items-center d-flex flex-column py-3 rounded-4 shadow text-center index-hero-right-services-box-shadow-animation index-hero-right-services-box-height-responsive">
                                         <div class=" index-service-img-width-height-responsive">
@@ -200,7 +205,8 @@
                                 </a>
                             </div>
                             <div class="card bg-transparent index-hero-right-services-box-animation ">
-                                <a href="{{ route('user.servicesDetail', ['slug' => 'contract']) }}" class="text-black w-100 h-100">
+                                <a href="{{ route('user.servicesDetail', ['slug' => 'contract']) }}"
+                                    class="text-black w-100 h-100">
                                     <div
                                         class="align-items-center d-flex flex-column py-3 rounded-4 shadow text-center index-hero-right-services-box-shadow-animation index-hero-right-services-box-height-responsive">
                                         <div class=" index-service-img-width-height-responsive">
@@ -215,7 +221,8 @@
                                 </a>
                             </div>
                             <div class="card bg-transparent index-hero-right-services-box-animation ">
-                                <a href="./{{ route('user.servicesDetail', ['slug' => 'road-side-assistance']) }}" class="text-black w-100 h-100">
+                                <a href="./{{ route('user.servicesDetail', ['slug' => 'road-side-assistance']) }}"
+                                    class="text-black w-100 h-100">
                                     <div
                                         class="align-items-center d-flex flex-column py-3 rounded-4 shadow text-center index-hero-right-services-box-shadow-animation index-hero-right-services-box-height-responsive">
                                         <div class=" index-service-img-width-height-responsive">
@@ -230,7 +237,8 @@
                                 </a>
                             </div>
                             <div class="card bg-transparent index-hero-right-services-box-animation ">
-                                <a href="{{ route('user.servicesDetail', ['slug' => 'general-repair']) }}" class="text-black w-100 h-100">
+                                <a href="{{ route('user.servicesDetail', ['slug' => 'general-repair']) }}"
+                                    class="text-black w-100 h-100">
                                     <div
                                         class="align-items-center d-flex flex-column py-3 rounded-4 shadow text-center index-hero-right-services-box-shadow-animation index-hero-right-services-box-height-responsive">
                                         <div class=" index-service-img-width-height-responsive">

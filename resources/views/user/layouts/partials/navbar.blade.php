@@ -117,7 +117,7 @@
                     </div>
                 </div>
                 <figure class="header-logo">
-                    <a href="{{ route('user.index') }}" class="d-block">
+                    <a href="{{ route('user.home') }}" class="d-block">
                         <img src="{{ asset('assets/user/img/logo.png') }}" class="logo-here w-100 object-cover"
                             alt="" />
                     </a>
@@ -149,7 +149,7 @@
                 <div class="header-nav col-xxl-10 col-lg-12">
                     <ul class="header-menus d-flex align-items-center list-unstyled w-100 justify-content-between m-0">
                         <li class="list-item">
-                            <a href="{{ route('user.index') }}"
+                            <a href="{{ route('user.home') }}"
                                 class="header-link text-decoration-none level-8 primary-semibold-font dark-color link-here">Home</a>
                         </li>
                         <li class="list-item">
@@ -525,7 +525,7 @@
 
     <ul class="mobile-header list-unstyled d-flex flex-lg-row flex-column gap-4 ps-lg-0 mb-0 pe-lg-5 z-index-1"
         style="z-index: 15;">
-        <li class="list-item align-self-baseline"><a href="{{ route('user.index') }}"
+        <li class="list-item align-self-baseline"><a href="{{ route('user.home') }}"
                 class="header-link text-decoration-none level-8 primary-semibold-font dark-color link-here">Home</a>
         </li>
         <li class="list-item align-self-baseline"><a

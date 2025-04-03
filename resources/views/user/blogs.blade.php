@@ -83,7 +83,7 @@
             <a href="./blog-4.php" class="text-black w-100 h-100">
                 <div class="col d-flex flex-column gap-5 justify-content-center rounded-5 shadow bg-white py-4 h-100">
                     <div class="img">
-                        <img src="{{ asset('assets/user/img/blog-img/blog-4-hero-bg.jpg" alt="">
+                        <img src="{{ asset('assets/user/img/blog-img/blog-4-hero-bg.jpg')}}"" alt="">
                     </div>
                     <div class="d-flex flex-column gap-3 px-3 px-md-5 text-start">
                         <h5 class="m-0 fs-4 fw-bold text-capitalize">Your Handbook for Common Car Problems and Expert Solutions</h5>

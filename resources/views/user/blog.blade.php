@@ -107,7 +107,7 @@
         <div>
             <h3>Using Inspection Reports to Make Smart Choices</h3>
             <p>The inspection report becomes your trustworthy guide, helping you make informed decisions. Armed with these detailed findings, buyers confidently navigate negotiations, ensuring they deeply understand their chosen car's condition before buying. It's not just a report; it's a pathway to a secure and satisfying car purchasing experience.</p>
-            <p>In summary, pre-purchase car inspections at <a href="./{{ route('user.index') }}">Gargash Aut</a>o go beyond being a service – we embody a commitment to excellence. As you step into the exciting journey of owning a luxury car, our inspections guide you towards a purchase that aligns seamlessly with your expectations.</p>
+            <p>In summary, pre-purchase car inspections at <a href="./{{ route('user.home') }}">Gargash Aut</a>o go beyond being a service – we embody a commitment to excellence. As you step into the exciting journey of owning a luxury car, our inspections guide you towards a purchase that aligns seamlessly with your expectations.</p>
             <p>
                 Let us assist with your car inspection before buying, so you can confidently drive away knowing your car is the perfect match for your needs.
             </p>
@@ -140,7 +140,7 @@
             <a href="./blog-4.php" class="text-black w-100 h-100">
                 <div class="col d-flex flex-column gap-5 justify-content-center rounded-5 shadow bg-white py-4 h-100">
                     <div class="img">
-                        <img src="{{ asset('assets/user/img/blog-img/blog-4-hero-bg.jpg" alt="">
+                        <img src="{{ asset('assets/user/img/blog-img/blog-4-hero-bg.jpg')}}" alt="">
                     </div>
                     <div class="d-flex flex-column gap-3 px-3 px-md-5 text-start">
                         <h5 class="m-0 fs-4 fw-bold text-capitalize">Your Handbook for Common Car Problems and Expert Solutions</h5>
