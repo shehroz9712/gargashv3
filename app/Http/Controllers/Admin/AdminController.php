@@ -14,7 +14,7 @@ class AdminController extends Controller
     public function index()
     {
         $admins = Admin::all();
-        return view('admin.admins.index', compact('admins'));
+        return view('admin.users.index', compact('admins'));
     }
 
     /**
@@ -22,7 +22,7 @@ class AdminController extends Controller
      */
     public function create()
     {
-        return view('admin.admins.create');
+        return view('admin.users.create');
     }
 
     /**
@@ -42,7 +42,7 @@ class AdminController extends Controller
             'password' => Hash::make($request->password),
         ]);
 
-        return redirect()->route('admin.admins.index')->with('success', 'Admin created successfully.');
+        return redirect()->route('admin.users.index')->with('success', 'Admin created successfully.');
     }
 
     /**
@@ -50,7 +50,8 @@ class AdminController extends Controller
      */
     public function edit(Admin $admin)
     {
-        return view('admin.admins.edit', compact('admin'));
+        $admin = $admin->first();
+        return view('admin.users.edit', compact('admin'));
     }
 
     /**
@@ -68,7 +69,7 @@ class AdminController extends Controller
             'email' => $request->email,
         ]);
 
-        return redirect()->route('admin.admins.index')->with('success', 'Admin updated successfully.');
+        return redirect()->route('admin.users.index')->with('success', 'Admin updated successfully.');
     }
 
     /**
@@ -77,6 +78,6 @@ class AdminController extends Controller
     public function destroy(Admin $admin)
     {
         $admin->delete();
-        return redirect()->route('admin.admins.index')->with('success', 'Admin deleted successfully.');
+        return redirect()->route('admin.users.index')->with('success', 'Admin deleted successfully.');
     }
 }

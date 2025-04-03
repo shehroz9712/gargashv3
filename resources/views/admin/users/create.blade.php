@@ -7,7 +7,7 @@
             <div class="row">
                 <div class="col-sm-6">
                     <h3>{{ $pageTitle }}</h3>
-                    {{ Breadcrumbs::render('admin.admins.index') }}
+                    {{ Breadcrumbs::render('admin.users.index') }}
                 </div>
 
             </div>
@@ -19,13 +19,13 @@
             <div class="col-sm-12">
                 <div class="card">
 
-                    <form action="{{ route('admin.admins.store') }}" method="POST" class="form theme-form">
+                    <form action="{{ route('admin.users.store') }}" method="POST" class="form theme-form">
                         @csrf
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="mb-3">
-                                        <label class="form-label">Admin Name</label>
+                                        <label class="form-label">User Name</label>
                                         <input type="text" name="name" class="form-control"
                                             value="{{ old('name') }}" placeholder="Enter admin name">
                                         @error('name')
@@ -59,8 +59,7 @@
                         </div>
 
                         <div class="card-footer text-end">
-                            <button type="submit" class="btn btn-primary">Create Admin</button>
-                            <a href="{{ route('admin.admins.index') }}" class="btn btn-light">Cancel</a>
+                            <button type="submit" class="btn btn-primary">Create User</button>
                         </div>
                     </form>
                 </div>

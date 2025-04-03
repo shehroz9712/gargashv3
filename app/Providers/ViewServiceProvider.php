@@ -78,17 +78,17 @@ class ViewServiceProvider extends ServiceProvider
         /*
          * admin
          */
-        view()->composer('admin.admins.index', function ($view) {
-            $view->with(['pageTitle' => ' admins List']);
+        view()->composer('admin.users.index', function ($view) {
+            $view->with(['pageTitle' => ' Users List']);
         });
-        view()->composer('admin.admins.create', function ($view) {
-            $view->with(['pageTitle' => 'Add  admin']);
+        view()->composer('admin.users.create', function ($view) {
+            $view->with(['pageTitle' => 'Add  User']);
         });
-        view()->composer('admin.admins.show', function ($view) {
-            $view->with(['pageTitle' => 'Show  admin']);
+        view()->composer('admin.users.show', function ($view) {
+            $view->with(['pageTitle' => 'Show  User']);
         });
-        view()->composer('admin.admins.edit', function ($view) {
-            $view->with(['pageTitle' => 'Edit  admin']);
+        view()->composer('admin.users.edit', function ($view) {
+            $view->with(['pageTitle' => 'Edit  User']);
         });
 
 

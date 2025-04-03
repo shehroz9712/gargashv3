@@ -7,7 +7,7 @@
             <div class="row">
                 <div class="col-sm-6">
                     <h3>{{ $pageTitle }}</h3>
-                    {{ Breadcrumbs::render('admin.admins.show', $admin) }}
+                    {{ Breadcrumbs::render('admin.users.show', $admin) }}
                 </div>
 
             </div>

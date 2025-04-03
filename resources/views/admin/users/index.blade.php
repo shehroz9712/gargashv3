@@ -7,7 +7,7 @@
             <div class="row">
                 <div class="col-sm-6">
                     <h3>{{ $pageTitle }}</h3>
-                    {{ Breadcrumbs::render('admin.admins.index') }}
+                    {{ Breadcrumbs::render('admin.users.index') }}
                 </div>
 
             </div>
@@ -19,7 +19,7 @@
             <div class="col-sm-12">
                 <div class="card">
                     <div class="card-header">
-                        <a href="{{ route('admin.admins.create') }}" class="btn btn-primary">Add admin</a>
+                        <a href="{{ route('admin.users.create') }}" class="btn btn-primary">Add User</a>
                     </div>
 
                     <div class="card-body">
@@ -41,10 +41,10 @@
                                             <td>{{ $admin->email }}</td>
                                             <td>
                                                 @if ($admin->id != 1)
-                                                    <a href="{{ route('admin.admins.edit', $admin->id) }}"
+                                                    <a href="{{ route('admin.users.edit', $admin->id) }}"
                                                         class="action-btn"><i class="fa fa-pencil-square-o"></i></a>
                                                     <form id="delete-form-{{ $admin->id }}"
-                                                        action="{{ route('admin.admins.destroy', $admin->id) }}"
+                                                        action="{{ route('admin.users.destroy', $admin->id) }}"
                                                         method="POST" style="display: none;">
                                                         @csrf
                                                         @method('DELETE')

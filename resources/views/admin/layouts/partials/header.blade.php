@@ -16,22 +16,25 @@
                     </li>
 
                     <li class="dropdown">
-                        <a class=" active nav-link menu-title {{ request()->routeIs('admin.admins.*') ? 'active' : '' }}"
-                            href="{{ route('admin.admins.index') }}">
-                            <i data-feather="users"></i><span>Admins</span>
+                        <a class=" active nav-link menu-title {{ request()->routeIs('admin.users.*') ? 'active' : '' }}"
+                            href="{{ route('admin.users.index') }}">
+                            <i data-feather="users"></i><span>Users</span>
                         </a>
                     </li>
-
                     <li class="dropdown">
                         <a class="active nav-link menu-title {{ request()->routeIs('admin.blogs.*') ? 'active' : '' }}"
                             href="{{ route('admin.blogs.index') }}">
                             <i data-feather="user-check"></i><span>Blogs</span>
                         </a>
                     </li>
-
+                    <li class="dropdown">
+                        <a class="active nav-link menu-title {{ request()->routeIs('admin.blogs.*') ? 'active' : '' }}"
+                            href="{{ route('admin.service-requests.index') }}">
+                            <i data-feather="user-check"></i><span>Service Requests</span>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 </header>
-    

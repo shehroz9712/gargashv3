@@ -7,7 +7,7 @@
             <div class="row">
                 <div class="col-sm-6">
                     <h3>{{ $pageTitle }}</h3>
-                    {{ Breadcrumbs::render('admin.admins.edit', $admin) }}
+                    {{ Breadcrumbs::render('admin.users.edit', $admin) }}
                 </div>
 
             </div>
@@ -18,7 +18,7 @@
         <div class="row starter-main">
             <div class="col-sm-12">
                 <div class="card">
-                    <form action="{{ route('admin.admins.update', $admin->id) }}" method="POST" class="form theme-form">
+                    <form action="{{ route('admin.users.update', $admin->id) }}" method="POST" class="form theme-form">
                         @csrf
                         @method('PUT')
 
@@ -61,7 +61,7 @@
 
                         <div class="card-footer text-end">
                             <button type="submit" class="btn btn-primary">Update Admin</button>
-                            <a href="{{ route('admin.admins.index') }}" class="btn btn-light">Cancel</a>
+                            <a href="{{ route('admin.users.index') }}" class="btn btn-light">Cancel</a>
                         </div>
                     </form>
                 </div>

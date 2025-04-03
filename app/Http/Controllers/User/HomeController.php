@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\User;
 
 use App\Models\Blog;
+use App\Models\ServiceRequest;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -115,8 +116,8 @@ class HomeController extends Controller
             'ceramic' => 'user.service.ceramic',
             'auto-spa' => 'user.service.auto_spa',
             'mechanical-repair' => 'user.service.mechanical_repair',
-            'european-cars' => 'user.service.european_cars',
-            'german-cars' => 'user.service.german_cars',
+            'european-cars' => 'user.service.european_car',
+            'german-cars' => 'user.service.german-cars',
             'contract' => 'user.service.contract',
         ];
 
@@ -125,5 +126,23 @@ class HomeController extends Controller
         }
 
         abort(404);
+    }
+
+
+    public function submit_enquiry(Request $request)
+    {
+        $request->validate([
+            'user_name' => 'required|string|min:3|max:50',
+            'user_phone_number' => 'required|digits_between:10,15',
+            'email' => 'nullable|email',
+            'make' => 'nullable|string|max:30',
+            'model' => 'nullable|string|max:30',
+            'plate_no' => 'nullable|string|max:15',
+            'service' => 'required|string',
+            'location' => 'nullable|string|max:100',
+        ]);
+
+        ServiceRequest::create($request->all());
+        return redirect()->back()->with('success', 'Request submitted successfully.');
     }
 }
