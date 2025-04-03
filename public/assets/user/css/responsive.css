@@ -1,0 +1,782 @@
+body {
+  overflow-x: hidden;
+}
+
+/* auto spa Styling Start */
+
+.auto-spa-bg {
+  background: url(../img/auto-spa-service-hero-bg.png) no-repeat center
+    center/cover;
+}
+
+.warrenty-form-bg {
+  background: url(../img/warrenty-form-bg.png) no-repeat center center/cover;
+}
+.warrenty-hero-bg {
+  background: url(../img/warrenty-hero-bg.png) no-repeat center center/cover;
+}
+
+.auto-spa-full-container-bg {
+  background: url(../img/atuo-spa-specialists.png) no-repeat center center/cover;
+}
+.car-insp-bg {
+  background: url(../img/car-insp-bg.png) no-repeat center center/cover;
+}
+.car-insp-form-section-bg {
+  background: url(../img/body-shop-form-section-bg.png) no-repeat center
+    center/cover;
+}
+.cearmic-bg {
+  background: url(../img/cearmic.png) no-repeat center center/cover;
+}
+.ceramic-form-section-bg {
+  background: url(../img/cearmic-form-bg.png) no-repeat center center/cover;
+}
+.chinese-car-hero-bg {
+  background: url(../img/Chinese-Car-hero-bg.png) no-repeat center center/cover;
+}
+.electric-car-bg {
+  background: url(../img/banner-bg.png) no-repeat center center/cover;
+}
+.general-repair-form-bg {
+  background: url(../img/Chinese-Car-form-bg.png) no-repeat center center/cover;
+}
+.Assistance-form-section-bg {
+  background: url(../img/Assistance-form-section-bg.png) no-repeat center
+    center/cover;
+}
+.auto-text-bg {
+  position: relative;
+  overflow: hidden;
+}
+
+.auto-text-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 85%;
+  background: url(../img/3rd-sec-bg.png) no-repeat center center/cover;
+  z-index: -1;
+  opacity: 0.3;
+}
+.major-minor-form-bg {
+  background: url(../img/Major-And-Minor-form-bg.png) no-repeat center
+    center/cover;
+}
+.major-minor-form-left-side-car::before {
+  content: "";
+  position: absolute;
+  top: 40%;
+  left: -10%;
+  width: 45%;
+  height: 100%;
+  scale: 0.9;
+  background: url(../img/major-minor-left-car.png) no-repeat;
+}
+.major-minor-form-left-side-car::after {
+  content: "";
+  position: absolute;
+  top: 30%;
+  right: -10%;
+  width: 45%;
+  height: 100%;
+  scale: 0.9;
+  background: url(../img/major-minor-rightcar.png) no-repeat;
+}
+.minor-bg,
+.major-bg {
+  background: url(../img/Chinese-Car-hero-bg.png) no-repeat center center/cover;
+}
+
+.european-Car-hero-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../img/European-Car-hero-bg.jpg) no-repeat center center/cover;
+  z-index: -1;
+  opacity: 0.6;
+}
+
+.german-Car-hero-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../img/German-cars-hero-bg.jpg) no-repeat center center/cover;
+  z-index: -1;
+  opacity: 0.6;
+}
+
+/* Index Page Styling Start*/
+
+.index-service-img-width-height-responsive {
+  width: 60%;
+  height: 6rem;
+  position: relative;
+}
+
+.index-service-img-width-height-responsive span {
+  display: block; /* Ensure span has dimensions */
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.index-hero-right-services-box-height-responsive {
+  height: 100%;
+}
+
+.index-service-img-width-height-responsive::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 50%;
+  height: 110%;
+  border: 3px solid #e6b110;
+}
+
+.index-service-img-width-height-responsive-1::after {
+  background: url(../img/services/Mechanical-Repair.jpg) no-repeat center
+    center/cover;
+}
+
+.index-service-img-width-height-responsive-2::after {
+  background: url(../img/services/Electric-Repair.jpg) no-repeat center
+    center/cover;
+}
+.index-service-img-width-height-responsive-3::after {
+  background: url(../img/services/services-section-1.jpg) no-repeat center
+    center/cover;
+}
+.index-service-img-width-height-responsive-4::after {
+  background: url(../img/services/European-Cars.jpg) no-repeat center
+    center/cover;
+}
+.index-service-img-width-height-responsive-5::after {
+  background: url(../img/services/Major-Minor-Service.jpg) no-repeat center
+    center/cover;
+}
+.index-service-img-width-height-responsive-6::after {
+  background: url(../img/services/Software-Repair-Update.avif) no-repeat center
+    center/cover;
+}
+.index-service-img-width-height-responsive-7::after {
+  background: url(../img/services/Warranty-Service-Contract.jpg) no-repeat
+    center center/cover;
+}
+.index-service-img-width-height-responsive-8::after {
+  background: url(../img/services/car-recovery.avif) no-repeat center
+    center/cover;
+}
+.index-service-img-width-height-responsive-9::after {
+  background: url(../img/services/German-cars.jpg) no-repeat center center/cover;
+}
+
+.blogs-main-blog-section-img {
+  position: relative;
+}
+.blogs-main-blog-section-styling::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  z-index: -1;
+}
+.blogs-main-blog-section-img::before {
+  background: url(../img/blog-img/blog-1-hero-bg.jpg) no-repeat center
+    center/cover;
+}
+.blogs-main-blog-section-img-2::before {
+  background: url(../img/blog-img/blog-2-hero-bg.png) no-repeat center
+    center/cover;
+}
+.blogs-main-blog-section-img-3::before {
+  background: url(../img/blog-img/blog-3-hero-bg.png) no-repeat center
+    center/cover;
+}
+.blogs-main-blog-section-img-4::before {
+  background: url(../img/blog-img/blog-4-hero-bg.jpg) no-repeat center
+    center/cover;
+}
+
+@media (max-width: 768px) {
+  .px-3.row {
+    row-gap: 1rem; /* Cards ke beech spacing */
+  }
+
+  .index-service-img-width-height-responsive {
+    width: 80%;
+    height: 5rem;
+  }
+
+  .index-hero-right-services-box-height-responsive {
+    padding: 1rem;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card {
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .index-service-img-width-height-responsive {
+    width: 100%;
+    height: 4rem;
+  }
+
+  .index-hero-right-services-box-height-responsive {
+    padding: 0.5rem;
+  }
+  .index-service-img-width-height-responsive::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 10px;
+    height: 110%;
+    border: none;
+  }
+}
+
+/* Index Page Styling End*/
+
+/* About us  Styling Start*/
+
+.update-about-bg {
+  position: relative;
+}
+
+.update-about-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../img/about-us-hero-bg.png) no-repeat center center/cover;
+  opacity: 0.6; /* Adjust this value (0.1 to 1) */
+  z-index: -1;
+}
+
+/* About us  Styling End*/
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  /* Index Page Styling Start */
+
+  .index-hero-card-text-font-size {
+    font-size: 1rem;
+  }
+  .slider-sec .slick-prev:before {
+    content: "";
+    font-family: "FontAwesome";
+    background-image: url(../img/left-arrow.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    opacity: 1;
+    left: 0;
+  }
+
+  .slider-sec .slick-next:before {
+    content: "";
+    font-family: "FontAwesome";
+    background-image: url(../img/right-arrow.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20%;
+    height: 45%;
+    position: absolute;
+    right: 0;
+    bottom: -25%;
+    opacity: 1;
+  }
+  .offers-section::after {
+    display: none;
+  }
+
+  .process-card-wrapper {
+    padding: 6px 25px;
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  /* Index Page Styling End */
+
+  /* Contract Page Styling Start */
+
+  .contract-icons-img-mobile-responsive {
+    width: 30% !important;
+  }
+
+  .contract-why-Choose-heading-font-size {
+    font-size: calc(1.325rem + 0.9vw) !important;
+  }
+
+  .contract-why-choose-section-padding {
+    padding: 0px 10px;
+  }
+  .contract-overview-section-margin-responsive {
+    margin-left: -1rem;
+  }
+  /* Contract Page Styling End */
+
+  /* Promotions Page Styling Start */
+
+  .promotion-section-bg-before::before {
+    display: none;
+  }
+  .promotion-section-bg-after::after {
+    display: none;
+  }
+
+  .pormotions-hero-para-responsive-font-padding {
+    padding: 0 !important;
+  }
+
+  .pormotions-hero-height-responsive {
+    height: auto !important;
+  }
+  .pormotions-text-section-margin-responsive {
+    margin-top: 0 !important;
+  }
+
+  .promotion-hero-heading-font-size {
+    font-size: calc(1.375rem + 1.5vw);
+  }
+
+  .pormotions-hero-img-margin-top-responsive {
+    margin-top: 0rem !important;
+  }
+  .promotions-blog-btn-font-size {
+    font-size: 20px !important;
+  }
+
+  /* Promotions Page Styling End */
+
+  /* Body Shop  Page Styling Start*/
+
+  .body-shop-hero-height-responsive {
+    height: auto !important;
+  }
+
+  /* Body Shop  Page Styling End*/
+  /* About us  Page Styling Start*/
+
+  .about-us-hero-height-responsive {
+    height: auto !important;
+  }
+
+  .about-us-our-team-text-padding-responsive {
+    padding: 1.3 !important;
+  }
+  .about-us-our-team-text-aling-responsive {
+    text-align: start !important;
+  }
+  .about-our-team-responsive-padding {
+    padding: 0 0 !important;
+  }
+  /* About us Page Styling End*/
+
+  /*blogs  Page Styling Start*/
+  .blogs-hero-height-responsive {
+    height: auto !important;
+  }
+  .blogs-hero-heading-font-size-responsive {
+    font-size: calc(1.375rem + 1.5vw) !important;
+  }
+  .blogs-hero-search-font-size-responsive {
+    font-size: 12px;
+  }
+  .blogs-popular-articales-hight-responsive {
+    height: 75vh;
+  }
+  .blogs-popular-articales-margin-top-responsive {
+    margin-top: 3rem;
+  }
+
+  /*blogs  Page Styling End*/
+
+  /*logo-slider  Styling End*/
+  .logo-slider-responsive-height {
+    height: auto;
+  }
+  /*logo-slider  Styling Start*/
+
+  /* Hero Styling End */
+
+  .all-pages-hero-height-responsive {
+    height: auto !important;
+  }
+
+  /* Hero Styling End */
+
+  /*Auto Spa  Page Styling End*/
+  .auto-spa-form-bg {
+    background: url(../img/auto-spa-service-form-mobile-bg.png) no-repeat center
+      center/cover;
+  }
+  .auto-spa-main-car-section-top-heading-responsive {
+    font-size: 1rem !important;
+  }
+  .auto-spa-main-car-section-main-heading-responsive {
+    font-size: 1rem !important;
+  }
+  .auto-spa-form-heading-font-size-responsive {
+    font-size: calc(1.375rem + 1.5vw);
+  }
+  .auto-spa-full-container-section-padding {
+    padding: 0px 0px !important;
+  }
+  .auto-spa-full-container-section-height-responsive {
+    height: 50vh !important;
+  }
+  .auto-spa-full-container-section-heading-font-size-responsive {
+    font-size: 1.3rem !important;
+  }
+  /*Auto Spa  Page Styling End*/
+
+  /* car-wrapping Page Styling Start*/
+
+  .car-wrapping-margin-top-responsive {
+    margin-top: 0px !important;
+  }
+
+  /* car-wrapping Page Styling End*/
+  /*  */
+  .ceramic-hero-heading-div {
+    margin-bottom: -3rem;
+  }
+  .ceramic-hero-img-margin-bottom {
+    margin-bottom: -3rem;
+  }
+  .ceramic-hero-heading-responsive {
+    font-size: 2.6rem;
+  }
+
+  .ceramic-save-section-margin-top-responsive {
+    margin-top: 4rem;
+  }
+
+  .ceramic-full-container-top-heading-responsive {
+    font-size: 1rem !important;
+  }
+  .ceramic-full-container-main-heading-responsive {
+    font-size: calc(1.325rem + 0.9vw) !important;
+  }
+  /*Chinese  Page Styling Start*/
+
+  .Chinese-Car-maintenace-section-heading {
+    font-size: calc(1.375rem + 1.5vw);
+  }
+  .chinese-car-form-bg {
+    background: url(../img/auto-spa-service-form-mobile-bg.png) no-repeat center
+      center/cover;
+  }
+  /*Chinese  Page Styling End*/
+
+  /* electric car  Page Styling Start*/
+  .electric-car-form-section-margin-top {
+    margin-top: 0rem;
+  }
+  .electric-repair-hero-heading-font-size-responsive {
+    font-size: calc(1.375rem + 1.5vw) !important;
+  }
+  .electric-repair-About-heading-font-size-responsive {
+    font-size: calc(1.375rem + 1.5vw) !important;
+  }
+  .form-bg-ew::before {
+    display: none;
+  }
+  .tip-card img {
+    width: 50% !important;
+  }
+  /* electric car  Page Styling End*/
+
+  /* extended-warranty  Page Styling Start*/
+
+  .extended-warranty-hero-car-img-responsive {
+    width: 100% !important;
+  }
+  .extended-warranty-form-heading-responsive {
+    font-size: calc(1.375rem + 1.5vw) !important;
+  }
+
+  /* extended-warranty  Page Styling End*/
+
+  /* general-repair Page Styling Start  */
+
+  .general-repair-form-bg {
+    background: url(../img/general-repair-form-mobile-bg.png) no-repeat center
+      center/cover;
+  }
+  .general-repair-about-heading-responsive {
+    font-size: calc(1.325rem + 0.9vw) !important;
+  }
+  /* general-repair Page Styling End  */
+
+  /* Assistance Page Styling Start  */
+
+  .Assistance-form-section-bg {
+    background: url(../img/general-repair-form-mobile-bg.png) no-repeat center
+      center/cover;
+  }
+  .road-side-assistance-full-container-text-font-size-responsive {
+    font-size: 1rem !important;
+  }
+  /* Assistance Page Styling End  */
+
+  /*  */
+  .tinting-main-car-heading-responsive {
+    font-size: calc(1.375rem + 1.5vw);
+  }
+  /*  */
+
+  /*major-minor  Page Styling Start*/
+  .major-minor-hero-img-responsive {
+    width: 100% !important;
+  }
+  .major-minor-form-left-side-car::after,
+  .major-minor-form-right-side-car::before {
+    display: none;
+  }
+  .major-mino-images-section-heading-mobile-font-size {
+    font-size: calc(1.375rem + 1.5vw) !important;
+  }
+  .major-mino-text-section-text-font-size-fs6 {
+    font-size: 1rem !important;
+  }
+
+  /*major-minor  Page Styling End*/
+
+  /* contact  Page Styling Start*/
+
+  .contact-hero-padding-responsive {
+    padding: 35px 10px !important;
+  }
+
+  /* contact  Page Styling End*/
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* yahan par small screens wali styles likho */
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* yahan par medium screens wali styles likho */
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* yahan par large screens wali styles likho */
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .index-hero-card-text-font-size {
+    font-size: 0.75rem;
+  }
+  .contract-why-shoose-section-heading-responsive-font-size {
+    font-size: 35px;
+  }
+  /* Promotions Page Styling Start */
+
+  /* Promotions Page Styling End */
+}
+
+/* XXL screens (Very large desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  /* Index Page  */
+
+  .index-services-box-height {
+    min-height: 20rem;
+  }
+
+  /* Index Page  */
+  /* contract Page Styling Start */
+
+  .contract-why-Choose-heading-font-size {
+    font-size: 2.5rem;
+  }
+  .contract-why-choose-section-padding {
+    padding: 50px;
+  }
+
+  /* contract Page Styling End */
+
+  /* promotion Page Styling Start */
+
+  .promotion-hero-heading-font-size {
+    font-size: 3.5rem;
+  }
+  .pormotions-hero-para-responsive-font-padding {
+    padding: 0px 13rem !important;
+  }
+  .pormotions-hero-img-margin-top-responsive {
+    margin-top: 8rem;
+  }
+  /* promotion Page Styling End */
+  /* about-us Styling End */
+  .about-us-our-team-text-padding-responsive {
+    padding: 50px !important;
+  }
+  .about-us-our-team-text-aling-responsive {
+    text-align: justify !important;
+  }
+  .about-our-team-responsive-padding {
+    padding: 20px;
+  }
+  /* about-us Styling End */
+  /*blogs  Page Styling Start*/
+
+  .blogs-hero-search-font-size-responsive {
+    font-size: 16px;
+  }
+  .blogs-popular-articales-hight-responsive {
+    height: 75vh;
+  }
+
+  /*blogs  Page Styling End*/
+
+  /*logo-slider  Styling End*/
+  .logo-slider-responsive-height {
+    height: 100% !important;
+  }
+
+  /*logo-slider  Styling Start*/
+  /*Auto Spa  Page Styling End*/
+
+  .auto-spa-form-bg {
+    background: url(../img/auto-spa-service-form-bg.png) no-repeat center
+      center/cover;
+  }
+
+  .auto-spa-main-car-section-top-heading-responsive {
+    font-size: 1.75rem !important;
+  }
+
+  .auto-spa-main-car-section-main-heading-responsive {
+    font-size: 3rem;
+  }
+  .auto-spa-form-heading-font-size-responsive {
+    font-size: 3rem;
+  }
+
+  .auto-spa-full-container-section-padding {
+    padding: 0px 20rem;
+  }
+  .auto-spa-full-container-section-height-responsive {
+    height: 50vh;
+  }
+  .auto-spa-full-container-section-heading-font-size-responsive {
+    font-size: 2rem !important;
+  }
+  /*Auto Spa  Page Styling End*/
+  /* car-wrapping Page Styling Start*/
+
+  .car-wrapping-margin-top-responsive {
+    margin-top: -160px !important;
+  }
+
+  /* car-wrapping Page Styling End*/
+
+  /*ceramic  Page Styling Start*/
+
+  .ceramic-hero-heading-responsive {
+    font-size: 145px !important;
+  }
+  .ceramic-hero-img-margin-bottom {
+    margin-bottom: -9rem;
+  }
+
+  .ceramic-hero-heading-div {
+    margin-bottom: -10rem;
+  }
+
+  .ceramic-hero-img-div {
+    margin-bottom: -15rem;
+  }
+  .ceramic-save-section-margin-top-responsive {
+    margin-top: 8rem;
+  }
+  .ceramic-full-container-top-heading-responsive {
+    font-size: 1.75rem !important;
+  }
+  .ceramic-full-container-main-heading-responsive {
+    font-size: 3rem;
+  }
+
+  /*ceramic  Page Styling end*/
+
+  /*Chinese  Page Styling Start*/
+  .Chinese-Car-Partner-right-car {
+    font-size: 3.5rem;
+  }
+  .chinese-car-form-bg {
+    background: url(../img/Chinese-Car-form-bg.png) no-repeat center
+      center/cover;
+  }
+  /*Chinese  Page Styling End*/
+
+  /* electric car  Page Styling Start*/
+  .electric-car-form-section-margin-top {
+    margin-top: -8rem;
+  }
+  /* electric car  Page Styling End*/
+
+  /* tinting  Page Styling Start*/
+
+  .tinting-hero-heading-div {
+    margin-bottom: -6rem;
+  }
+  .tinting-hero-img-div {
+    margin-bottom: -20rem;
+  }
+
+  /* tinting  Page Styling End*/
+
+  /* contact  Page Styling Start*/
+
+  .contact-hero-padding-responsive {
+    padding: 50px 20px 40px;
+  }
+
+  /* contact  Page Styling End*/
+}
+
+/* Hovering Effect */
+
+.index-services-box-height:hover {
+  scale: 1.02;
+}
+
+.index-hero-right-services-box-shadow-animation:hover {
+  scale: 1.02;
+  box-shadow: 0px 0px 10px 0px rgba(231, 166, 26, 1) !important;
+  cursor: pointer;
+}
