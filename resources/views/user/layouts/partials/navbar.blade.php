@@ -153,7 +153,7 @@
                                 class="header-link text-decoration-none level-8 primary-semibold-font dark-color link-here">Home</a>
                         </li>
                         <li class="list-item">
-                            <a href="{{ route('user.servicesDetail', ['slug' => 'contract']) }}"
+                            <a href="{{ route('user.contract') }}"
                                 class="header-link text-decoration-none level-8 primary-semibold-font dark-color link-here">Annual
                                 Contract</a>
                         </li>
@@ -529,7 +529,7 @@
                 class="header-link text-decoration-none level-8 primary-semibold-font dark-color link-here">Home</a>
         </li>
         <li class="list-item align-self-baseline"><a
-                href="{{ route('user.servicesDetail', ['slug' => 'contract']) }}"
+                href="{{ route('user.contract') }}"
                 class="header-link text-decoration-none level-8 primary-semibold-font dark-color link-here">Annual
                 Contract</a>
         </li>

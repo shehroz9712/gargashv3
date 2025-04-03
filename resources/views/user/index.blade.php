@@ -205,7 +205,7 @@
                                 </a>
                             </div>
                             <div class="card bg-transparent index-hero-right-services-box-animation ">
-                                <a href="{{ route('user.servicesDetail', ['slug' => 'contract']) }}"
+                                <a href="{{ route('user.servicesDetail', ['slug' => 'warranty-service-contract']) }}"
                                     class="text-black w-100 h-100">
                                     <div
                                         class="align-items-center d-flex flex-column py-3 rounded-4 shadow text-center index-hero-right-services-box-shadow-animation index-hero-right-services-box-height-responsive">

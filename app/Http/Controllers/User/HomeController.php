@@ -108,12 +108,16 @@ class HomeController extends Controller
             'chinese-car' => 'user.service.chinese_car',
             'tinting' => 'user.service.tinting',
             'car-inspection' => 'user.service.car_inspection',
-            'assistance' => 'user.service.assistance',
+            'road-side-assistance' => 'user.service.road_side_assistance',
             'car-wrapping' => 'user.service.car_wrapping',
             'major-minor-service' => 'user.service.major_minor_service',
             'electric-car' => 'user.service.electric_car',
             'ceramic' => 'user.service.ceramic',
             'auto-spa' => 'user.service.auto_spa',
+            'mechanical-repair' => 'user.service.mechanical_repair',
+            'european-cars' => 'user.service.european_cars',
+            'german-cars' => 'user.service.german_cars',
+            'contract' => 'user.service.contract',
         ];
 
         if (array_key_exists($slug, $services)) {
