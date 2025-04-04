@@ -1,4 +1,3 @@
-
 <?php
 
 namespace Database\Seeders;
@@ -33,7 +32,7 @@ class BlogTableSeeder extends Seeder
                 'author' => 'Gargash',
                 'is_featured' => true,
                 'status' => 'published',
-                'image' => 'assets/user/img/blog-img-5.png',
+                'image' => 'blog-2-hero-bg.png',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
@@ -58,7 +57,7 @@ class BlogTableSeeder extends Seeder
                 'author' => 'Gargash',
                 'is_featured' => false,
                 'status' => 'published',
-                'image' => 'assets/user/img/blog-img-5.png',
+                'image' => 'blog-3-hero-bg.png',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
@@ -83,7 +82,7 @@ class BlogTableSeeder extends Seeder
                 'author' => 'John Doe',
                 'is_featured' => false,
                 'status' => 'published',
-                'image' => 'assets/user/img/blog-img-5.png',
+                'image' => 'blog-img-3.png',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
@@ -108,7 +107,7 @@ class BlogTableSeeder extends Seeder
                 'author' => 'Jane Smith',
                 'is_featured' => true,
                 'status' => 'published',
-                'image' => 'assets/user/img/blog-img-5.png',
+                'image' => 'blog-4-hero-bg.jpg',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],

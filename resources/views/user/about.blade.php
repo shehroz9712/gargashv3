@@ -87,6 +87,28 @@
     </section>
 
     <!-- Our Team Styling End  -->
+    <!-- Our career  Styling Start  -->
+    <section class="container my-md-5">
+        <div class="row d-flex  flex-md-row align-items-center">
+            <div class="col-md-6 d-flex justify-content-center mt-4 mt-md-0">
+                <img class="mt-5 mt-md-0 w-75 w-md-100" src="{{ asset('assets/user/img//Career.jpg') }}" alt="hero" />
+            </div>
+            <div class="col-md-6 text-start">
+
+                <h2 class="display-6 fw-bold">Job<span class="main-color"> Career</span> </h2>
+                <p class="about-us-our-team-text-aling-responsive">Join Gargash Auto and build a rewarding career in the
+                    automotive industry. We offer exciting opportunities for skilled professionals passionate about
+                    high-quality auto repair services. Grow with us in a dynamic work environment. Explore open positions
+                    and apply today to be part of our expert team!</p>
+                <div class="d-flex justify-content-center justify-content-md-start">
+                    <a href="https://wa.me/971547935400" target="_blank" class="btn fs-6 fw-semibold rounded-3"> Submit Your
+                        CV </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Our career  Styling End  -->
     <!-- Our Vision Styling Start  -->
     <section class="container py-md-4">
         <div class="row d-flex  flex-md-row align-items-center">

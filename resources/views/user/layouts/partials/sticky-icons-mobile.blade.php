@@ -26,10 +26,13 @@
     .menu-sticky-iconsToggle::before {
         content: '+';
         position: absolute;
+        top: 58%;
+        left: 50%;
         font-size: 2.8em;
         font-weight: 550;
         color: #087fe0;
         transition: 1.5s;
+        transform: translate(-50%, -58%);
     }
 
     .menu-sticky-iconsToggle.active::before {

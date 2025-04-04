@@ -402,7 +402,7 @@
     <!--  -->
 
     @include('user.layouts.partials.footer')
-    @include('admin.layouts.partials.scripts')
+    @include('user.layouts.partials.scripts')
     @yield('js')
 </body>
 

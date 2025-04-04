@@ -15,9 +15,9 @@
         @media (max-width:786px) {
             .logo-item {
                 /* opacity: 0.5;
-                                                    transition: opacity 0.3s ease-in-out;
-                                                    height: 3rem;
-                                                    width: 60%; */
+                                                        transition: opacity 0.3s ease-in-out;
+                                                        height: 3rem;
+                                                        width: 60%; */
                 opacity: 0.5;
                 transition: opacity 0.3s ease-in-out;
                 height: auto;
@@ -88,20 +88,21 @@
                         <div class="banner-content-here pt-2 wow animate__animated animate__fadeInDown">
                             <figure class="position-relative">
                                 <img src="{{ asset('assets/user/img/banner-img.png') }}" alt="" class="img-fluid">
-                                <!-- <div class="banner-img-content text-center position-absolute top-0 left-0 right-0 p-5"> -->
-                                <div
-                                    class="banner-img-content left-0 position-absolute px-4 py-3 right-0 text-center top-0 p-md-5">
-                                    <h2 class="level-1 heading-font extra-color-2">
-                                        <span class="secondary-color d-block"> Claim Our </span> Latest Offer
-                                    </h2>
-                                    <a href="https://wa.me/971547935400" target="_blank" class="btn fs-6">Avail Your
-                                        Discount</a>
-                                </div>
-                                <div class="banner-car-wrap position-absolute bottom-0">
-                                    <figure>
-                                        <img src="{{ asset('assets/user/img/banner-car-img.png') }}" alt=""
-                                            class="img-fluid">
-                                    </figure>
+                                <div class="">
+                                    <div
+                                        class="banner-img-content d-flex flex-column gap-1 gap-md-4 left-0 mt-md-0 p-0 position-absolute pt-3 pt-md-5 right-0 text-center top-0">
+                                        <h2 class="level-1 heading-font extra-color-2 m-0">
+                                            <span class="secondary-color d-block"> Claim Our </span> Latest Offer
+                                        </h2>
+                                        <a href="https://wa.me/971547935400" target="_blank"
+                                            class="btn fs-6 mx-auto w-md-50 w-75">Avail Your Discount</a>
+                                    </div>
+                                    <div class="banner-car-wrap position-absolute bottom-0">
+                                        <figure>
+                                            <img src="{{ asset('assets/user/img/banner-car-img.png') }}" alt=""
+                                                class="img-fluid">
+                                        </figure>
+                                    </div>
                                 </div>
                             </figure>
                         </div>
@@ -112,14 +113,14 @@
                                 <a href="{{ route('user.servicesDetail', ['slug' => 'mechanical-repair']) }}"
                                     class="text-black w-100 h-100">
                                     <div
-                                        class="align-items-center d-flex flex-column py-3 rounded-4 shadow text-center index-hero-right-services-box-shadow-animation index-hero-right-services-box-height-responsive">
+                                        class="align-items-center d-flex flex-column index-hero-right-services-box-height-responsive index-hero-right-services-box-shadow-animation index-hero-right-services-box-bg  text-center ">
                                         <div class=" index-service-img-width-height-responsive">
                                             <span
-                                                class="index-service-img-width-height-responsive index-service-img-width-height-responsive-1"></span>
+                                                class="index-service-img-width-height-responsive index-service-img-width-height-responsive-6"></span>
                                         </div>
                                         <div
                                             class="align-items-center card-body d-flex justify-content-center m-0 p-0 py-3">
-                                            <h5 class="card-title fs-5 fw-bold m-0 px-2">Mechanical Repair</h5>
+                                            <h5 class="card-title fs-5 fw-normal m-0 px-2">Mechanical Repair</h5>
                                         </div>
                                     </div>
                                 </a>
@@ -128,14 +129,14 @@
                                 <a href="{{ route('user.servicesDetail', ['slug' => 'electric-repair']) }}"
                                     class="text-black w-100 h-100">
                                     <div
-                                        class="align-items-center d-flex flex-column py-3 rounded-4 shadow text-center index-hero-right-services-box-shadow-animation index-hero-right-services-box-height-responsive">
+                                        class="align-items-center d-flex flex-column index-hero-right-services-box-height-responsive index-hero-right-services-box-shadow-animation index-hero-right-services-box-bg  text-center ">
                                         <div class=" index-service-img-width-height-responsive">
                                             <span
                                                 class="index-service-img-width-height-responsive index-service-img-width-height-responsive-2"></span>
                                         </div>
                                         <div
                                             class="align-items-center card-body d-flex justify-content-center m-0 p-0 py-3">
-                                            <h5 class="card-title fs-5 fw-bold m-0 px-2">Electrical Repair</h5>
+                                            <h5 class="card-title fs-5 fw-normal m-0 px-2">Electrical Repair</h5>
                                         </div>
                                     </div>
                                 </a>
@@ -143,14 +144,30 @@
                             <div class="card bg-transparent index-hero-right-services-box-animation ">
                                 <a href="{{ route('user.shop') }}" class="text-black w-100 h-100">
                                     <div
-                                        class="align-items-center d-flex flex-column py-3 rounded-4 shadow text-center index-hero-right-services-box-shadow-animation index-hero-right-services-box-height-responsive">
+                                        class="align-items-center d-flex flex-column index-hero-right-services-box-height-responsive index-hero-right-services-box-shadow-animation index-hero-right-services-box-bg text-center ">
+                                        <div class=" index-service-img-width-height-responsive">
+                                            <span
+                                                class="index-service-img-width-height-responsive index-service-img-width-height-responsive-1"></span>
+                                        </div>
+                                        <div
+                                            class="align-items-center card-body d-flex justify-content-center m-0 p-0 py-3">
+                                            <h5 class="card-title fs-5 fw-normal m-0 px-2">Bodyshop</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card bg-transparent index-hero-right-services-box-animation py-4">
+                                <a href="{{ route('user.servicesDetail', ['slug' => 'electric-repair']) }}"
+                                    class="text-black w-100 h-100">
+                                    <div
+                                        class="align-items-center d-flex flex-column index-hero-right-services-box-height-responsive index-hero-right-services-box-shadow-animation index-hero-right-services-box-bg text-center ">
                                         <div class=" index-service-img-width-height-responsive">
                                             <span
                                                 class="index-service-img-width-height-responsive index-service-img-width-height-responsive-3"></span>
                                         </div>
                                         <div
                                             class="align-items-center card-body d-flex justify-content-center m-0 p-0 py-3">
-                                            <h5 class="card-title fs-5 fw-bold m-0 px-2">Bodyshop</h5>
+                                            <h5 class="card-title fs-5 fw-normal m-0 px-2">Electric Car Repair</h5>
                                         </div>
                                     </div>
                                 </a>
@@ -159,47 +176,30 @@
                                 <a href="{{ route('user.servicesDetail', ['slug' => 'major-minor-service']) }}"
                                     class="text-black w-100 h-100">
                                     <div
-                                        class="align-items-center d-flex flex-column py-3 rounded-4 shadow text-center index-hero-right-services-box-shadow-animation index-hero-right-services-box-height-responsive">
+                                        class="align-items-center d-flex flex-column index-hero-right-services-box-height-responsive index-hero-right-services-box-shadow-animation index-hero-right-services-box-bg index-hero-right-services-box-radius  text-center ">
                                         <div class=" index-service-img-width-height-responsive">
                                             <span
                                                 class="index-service-img-width-height-responsive index-service-img-width-height-responsive-5"></span>
                                         </div>
                                         <div
                                             class="align-items-center card-body d-flex justify-content-center m-0 p-0 py-3">
-                                            <h5 class="card-title fs-5 fw-bold m-0 px-2">Major & Minor Service</h5>
+                                            <h5 class="card-title fs-5 fw-normal m-0 px-2">Major & Minor Service</h5>
                                         </div>
                                     </div>
                                 </a>
                             </div>
                             <div class="card bg-transparent index-hero-right-services-box-animation py-4">
-                                <a href="{{ route('user.servicesDetail', ['slug' => 'european-cars']) }}"
+                                <a href="{{ route('user.servicesDetail', ['slug' => 'general-repair']) }}"
                                     class="text-black w-100 h-100">
                                     <div
-                                        class="align-items-center d-flex flex-column py-3 rounded-4 shadow text-center index-hero-right-services-box-shadow-animation index-hero-right-services-box-height-responsive">
+                                        class="align-items-center d-flex flex-column index-hero-right-services-box-height-responsive index-hero-right-services-box-shadow-animation index-hero-right-services-box-bg  index-hero-right-services-box-radius text-center ">
                                         <div class=" index-service-img-width-height-responsive">
                                             <span
                                                 class="index-service-img-width-height-responsive index-service-img-width-height-responsive-4"></span>
                                         </div>
                                         <div
                                             class="align-items-center card-body d-flex justify-content-center m-0 p-0 py-3">
-                                            <h5 class="card-title fs-5 fw-bold m-0 px-2">European Cars</h5>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="card bg-transparent index-hero-right-services-box-animation py-4">
-                                <a href="{{ route('user.servicesDetail', ['slug' => 'german-cars']) }}"
-                                    class="text-black w-100 h-100">
-                                    <div
-                                        class="align-items-center d-flex flex-column py-3 rounded-4 shadow text-center index-hero-right-services-box-shadow-animation index-hero-right-services-box-height-responsive">
-                                        <div class=" index-service-img-width-height-responsive">
-                                            <span
-                                                class="index-service-img-width-height-responsive index-service-img-width-height-responsive-9"></span>
-                                        </div>
-                                        <div
-                                            class="align-items-center card-body d-flex justify-content-center m-0 p-0 py-3">
-                                            <h5 class="card-title fs-5 fw-bold m-0 px-2">German Cars</h5>
+                                            <h5 class="card-title fs-5 fw-normal m-0 px-2">Software Repair & Update</h5>
                                         </div>
                                     </div>
                                 </a>
@@ -208,52 +208,51 @@
                                 <a href="{{ route('user.servicesDetail', ['slug' => 'warranty-service-contract']) }}"
                                     class="text-black w-100 h-100">
                                     <div
-                                        class="align-items-center d-flex flex-column py-3 rounded-4 shadow text-center index-hero-right-services-box-shadow-animation index-hero-right-services-box-height-responsive">
+                                        class="align-items-center d-flex flex-column index-hero-right-services-box-height-responsive index-hero-right-services-box-shadow-animation index-hero-right-services-box-bg index-hero-right-services-box-radius text-center ">
+                                        <div class=" index-service-img-width-height-responsive">
+                                            <span
+                                                class="index-service-img-width-height-responsive index-service-img-width-height-responsive-9"></span>
+                                        </div>
+                                        <div
+                                            class="align-items-center card-body d-flex justify-content-center m-0 p-0 py-3">
+                                            <h5 class="card-title fs-5 fw-normal m-0 px-2">Warranty & Service Contract</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card bg-transparent index-hero-right-services-box-animation ">
+                                <a href="{{ route('user.servicesDetail', ['slug' => 'road-side-assistance']) }}"
+                                    class="text-black w-100 h-100">
+                                    <div
+                                        class="align-items-center d-flex flex-column index-hero-right-services-box-height-responsive index-hero-right-services-box-shadow-animation index-hero-right-services-box-bg index-hero-right-services-box-radius text-center ">
                                         <div class=" index-service-img-width-height-responsive">
                                             <span
                                                 class="index-service-img-width-height-responsive index-service-img-width-height-responsive-7"></span>
                                         </div>
                                         <div
                                             class="align-items-center card-body d-flex justify-content-center m-0 p-0 py-3">
-                                            <h5 class="card-title fs-5 fw-bold m-0 px-2">Warranty & Service Contract</h5>
+                                            <h5 class="card-title fs-5 fw-normal m-0 px-2">Car Recovery</h5>
                                         </div>
                                     </div>
                                 </a>
                             </div>
                             <div class="card bg-transparent index-hero-right-services-box-animation ">
-                                <a href="./{{ route('user.servicesDetail', ['slug' => 'road-side-assistance']) }}"
-                                    class="text-black w-100 h-100">
+                                <a href="{{ route('user.promotions') }}" class="text-black w-100 h-100">
                                     <div
-                                        class="align-items-center d-flex flex-column py-3 rounded-4 shadow text-center index-hero-right-services-box-shadow-animation index-hero-right-services-box-height-responsive">
+                                        class="align-items-center d-flex flex-column index-hero-right-services-box-height-responsive index-hero-right-services-box-shadow-animation index-hero-right-services-box-bg index-hero-right-services-box-radius text-center ">
                                         <div class=" index-service-img-width-height-responsive">
                                             <span
                                                 class="index-service-img-width-height-responsive index-service-img-width-height-responsive-8"></span>
                                         </div>
                                         <div
                                             class="align-items-center card-body d-flex justify-content-center m-0 p-0 py-3">
-                                            <h5 class="card-title fs-5 fw-bold m-0 px-2">Car Recovery</h5>
+                                            <h5 class="card-title fs-5 fw-normal m-0 px-2">Offers</h5>
                                         </div>
                                     </div>
                                 </a>
                             </div>
-                            <div class="card bg-transparent index-hero-right-services-box-animation ">
-                                <a href="{{ route('user.servicesDetail', ['slug' => 'general-repair']) }}"
-                                    class="text-black w-100 h-100">
-                                    <div
-                                        class="align-items-center d-flex flex-column py-3 rounded-4 shadow text-center index-hero-right-services-box-shadow-animation index-hero-right-services-box-height-responsive">
-                                        <div class=" index-service-img-width-height-responsive">
-                                            <span
-                                                class="index-service-img-width-height-responsive index-service-img-width-height-responsive-6"></span>
-                                        </div>
-                                        <div
-                                            class="align-items-center card-body d-flex justify-content-center m-0 p-0 py-3">
-                                            <h5 class="card-title fs-5 fw-bold m-0 px-2">Software Repair & Update</h5>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
 
+                        </div>
                     </div>
                 </div>
             </div>
@@ -573,9 +572,7 @@
         </div>
     </section>
     <!-- offers-section Ends Here  -->
-    <!-- Brand SectionStart -->
-    @include('user.layouts.partials.brand')
-    <!-- brand-section Starts Here  -->
+
     <!-- On Desktop  -->
     <section class="brand-section d-lg-block d-none section">
         <div class="container">

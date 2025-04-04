@@ -81,14 +81,14 @@
     <div class="row justify-content-center align-items-center g-2 w-100 h-100">
         <!-- Left Column (Text Content) -->
         <div class="col-12 col-md-6 d-flex flex-column gap-3  justify-content-center text-center text-md-start">
-            <h2 class="display-3 fw-bolder lh-1  text-start">Brands We 
+            <h2 class="display-3 fw-bolder lh-1  text-start">Brands We <br class="d-md-block d-none">
                 <span class="main-color">Specialized In</span>
             </h2>
             <p class="fw-light fs-6  text-start">We Have Complete Auto Repair Solutions, Friendly Environment, Furnished Sitting Area Providing Quick & Quality Service</p>
         </div>
 
         <!-- Right Column (Image Grid) -->
-        <div class="col-12 col-md-6 d-flex h-100 justify-content-center align-items-center Brands-We-left-bg">
+        <div class="col-12 col-md-6 d-flex h-100 justify-content-center align-items-center">
             <div class="bg-white-overlay h-75 position-relative w-100 shadow rounded-2">
                 <div class="d-flex image-container justify-content-evenly mt-5 mt-md-0 p-md-3 px-md-5 row row-cols-3 row-cols-md-5 w-100  logo-slider-responsive-height" style="row-gap: 4rem;">
                     <img src="{{ asset('assets/user/img/shop-logo-1.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">

@@ -7,34 +7,35 @@
                 <li
                     class="single-item primary-semibold-font level-10 dark-color text-capitalize d-flex align-items-center gap-1 my-hero-text-size   pe-3">
                     <span>
-                        <img src="assets/img/header-icon1.png" alt="" class="img-fluid" style="max-width: 500px;" />
+                        <img src="{{ asset('assets/user/img/header-icon1.png') }}" alt="" class="img-fluid"
+                            style="max-width: 500px;" />
                     </span> <span class="me-2">FREE PICKUP</span>
                 </li>
                 <li
                     class="single-item primary-semibold-font level-10 dark-color text-capitalize d-flex align-items-center gap-1 my-hero-text-size px-3  ">
                     <span>
-                        <img src="assets/img/header-icon2.png" alt="" class="img-fluid"
+                        <img src="{{ asset('assets/user/img/header-icon2.png') }}" alt="" class="img-fluid"
                             style="max-width: 500px;" />
                     </span> FREE INSPECTION
                 </li>
                 <li
                     class="single-item primary-semibold-font level-10 dark-color text-capitalize d-flex align-items-center gap-1 my-hero-text-size  px-3 ">
                     <span>
-                        <img src="assets/img/header-icon3.png" alt="" class="img-fluid"
+                        <img src="{{ asset('assets/user/img/header-icon3.png') }}" alt="" class="img-fluid"
                             style="max-width: 500px;" />
                     </span> JOB APPROVAL
                 </li>
                 <li
                     class="single-item primary-semibold-font level-10 dark-color text-capitalize d-flex align-items-center gap-1 my-hero-text-size  px-3 ">
                     <span>
-                        <img src="assets/img/header-icon4.png" alt="" class="img-fluid"
+                        <img src="{{ asset('assets/user/img/header-icon4.png') }}" alt="" class="img-fluid"
                             style="max-width: 500px;" />
                     </span> REPAIR & FIX
                 </li>
                 <li
                     class="single-item primary-semibold-font level-10 dark-color text-capitalize d-flex align-items-center gap-1 my-hero-text-size  px-3 ">
                     <span>
-                        <img src="assets/img/header-icon5.png" alt="" class="img-fluid"
+                        <img src="{{ asset('assets/user/img/header-icon5.png') }}" alt="" class="img-fluid"
                             style="max-width: 500px;" />
                     </span> DELIVER BACK
                 </li>
@@ -116,8 +117,9 @@
                     </div>
                 </div>
                 <figure class="header-logo">
-                    <a href="index.php" class="d-block">
-                        <img src="assets/img/logo.png" class="logo-here w-100 object-cover" alt="" />
+                    <a href="{{ route('user.home') }}" class="d-block">
+                        <img src="{{ asset('assets/user/img/logo.png') }}" class="logo-here w-100 object-cover"
+                            alt="" />
                     </a>
                 </figure>
                 <div class="header-details-wrapper d-lg-flex d-none align-items-center justify-content-end gap-3">
@@ -147,23 +149,23 @@
                 <div class="header-nav col-xxl-10 col-lg-12">
                     <ul class="header-menus d-flex align-items-center list-unstyled w-100 justify-content-between m-0">
                         <li class="list-item">
-                            <a href="index.php"
+                            <a href="{{ route('user.home') }}"
                                 class="header-link text-decoration-none level-8 primary-semibold-font dark-color link-here">Home</a>
                         </li>
                         <li class="list-item">
-                            <a href="contract.php"
+                            <a href="{{ route('user.contract') }}"
                                 class="header-link text-decoration-none level-8 primary-semibold-font dark-color link-here">Annual
                                 Contract</a>
                         </li>
                         <li class="list-item">
-                            <a href="Promotions.php"
+                            <a href="{{ route('user.promotions') }}"
                                 class="header-link text-decoration-none level-8 primary-semibold-font dark-color link-here">Ongoing
                                 Promotions</a>
                         </li>
                         <!-- <li class="single-item">
-                <a class="header-link categoryBtn text-decoration-none level-8 primary-semibold-font dark-color link-here cursor-pointer"> Brands <i class="fa-solid fa-angle-down"></i>
-                </a>
-              </li> -->
+              <a class="header-link categoryBtn text-decoration-none level-8 primary-semibold-font dark-color link-here cursor-pointer"> Brands <i class="fa-solid fa-angle-down"></i>
+              </a>
+            </li> -->
                         <li class="single-item">
                             <a
                                 class="header-link categoryBtn-service text-decoration-none level-8 primary-semibold-font dark-color link-here cursor-pointer">
@@ -171,22 +173,22 @@
                             </a>
                         </li>
                         <li class="list-item">
-                            <a href="body-shop.php"
+                            <a href="{{ route('user.servicesDetail', ['slug' => 'body-shop']) }}"
                                 class="header-link text-decoration-none level-8 primary-semibold-font dark-color link-here">Body
                                 Shop </a>
                         </li>
                         <li class="list-item">
-                            <a href="blogs.php"
+                            <a href="{{ route('user.blogs') }}"
                                 class="header-link text-decoration-none level-8 primary-semibold-font dark-color link-here">Blog
                             </a>
                         </li>
                         <li class="list-item">
-                            <a href="about-us.php"
+                            <a href="{{ route('user.about-us') }}"
                                 class="header-link text-decoration-none level-8 primary-semibold-font dark-color link-here">About
                                 Us </a>
                         </li>
                         <li class="list-item">
-                            <a href="contact.php"
+                            <a href="{{ route('user.contact') }}"
                                 class="header-link text-decoration-none level-8 primary-semibold-font dark-color link-here">Contact
                                 Us</a>
                         </li>
@@ -263,619 +265,7 @@
     </style>
 
     <!-- Brands Mega Menu  -->
-    <!-- <div class="mega-menu category-menu self-mobile-respnsive mega-menu-mobile-respnsive-scrolling  "> -->
-    <!-- Close Button (Only for Mobile) -->
-    <!-- <button class="close-menu icon-badge me-3 mt-3 p-4 position-absolute right-0 top-0  d-md-none close-self-mobile-respnsive-div">
-        <i class="fa fa-close text-white"></i>
-      </button> -->
 
-    <!--Desktop  Mega  Menu Start here-->
-    <!-- <div class="card container d-md-block d-none mt-5 mt-md-0">
-        <div class="card-header bg-transparent">
-          <div class="tabbable-responsive"> -->
-    <!-- Desktop Tabs -->
-    <!-- <ul class="nav nav-tabs d-none d-md-flex overflow-hidden" id="myTab" role="tablist">
-              <li class="nav-item">
-                <a class="nav-link active" id="Dubai-tab" data-bs-toggle="tab" href="#Dubai" role="tab" aria-controls="Dubai" aria-selected="true">Dubai</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" id="Sharjah-tab" data-bs-toggle="tab" href="#Sharjah" role="tab" aria-controls="Sharjah" aria-selected="false">Sharjah</a>
-              </li>
-
-            </ul>
-
-
-          </div>
-        </div> -->
-    <!-- Desktop Content -->
-
-    <!-- <div class="card-body">
-          <div class="tab-content d-none d-md-block">
-            <div class="tab-pane fade show active" id="Dubai" role="tabpanel" aria-labelledby="Dubai-tab">
-              <h5 class="card-title">Dubai - Service</h5>
-              <div class="container">
-                <div class="row align-items-center mobile-responsive-scrolling">
-                  <div class="col-md-12">
-                    <div class="row align-items-center ">
-                      <div class="head pb-2 mb-2">
-                        <h6 class="title level-9 primary-semibold-font extra-color-3">Services</h6>
-                      </div>
-                      <div class="col-md-4 borderCol">
-                        <ul class="list-unstyled p-0 d-flex flex-column gap-4 mb-0">
-                          <li><a href="auto-spa.php" class="d-flex">
-                              <span class="menu-icon">
-                                <img src="assets/img/menu-icon12.png" alt="" class="img-fluid">
-                              </span>
-                              <div class="menu-text">
-                                <h6 class="primary-semibold-font primary-color">Auto Spa</h6>
-                                <span class="level-9 primary-medium-font extra-color-3">Luxurious detailing to keep your car looking brand new.</span>
-
-                              </div>
-                            </a></li>
-                          <li><a href="car-inspection.php" class="d-flex gap-2">
-                              <span class="menu-icon">
-                                <img src="assets/img/menu-icon6.png" alt="" class="img-fluid">
-                              </span>
-                              <div class="menu-text">
-                                <h6 class="level-7 primary-semibold-font primary-color">Car Inspection</h6>
-                                <span class="level-9 primary-medium-font extra-color-3">Thorough inspections to ensure safety and reliability.</span>
-                              </div>
-                            </a></li>
-                          <li><a href="car-wrapping.php" class="d-flex gap-2">
-                              <span class="menu-icon">
-                                <img src="assets/img/menu-icon8.png" alt="" class="img-fluid">
-                              </span>
-                              <div class="menu-text">
-                                <h6 class="level-7 primary-semibold-font primary-color">Car Wrapping</h6>
-                                <span class="level-9 primary-medium-font extra-color-3">Custom wraps to transform your vehicle's appearance.</span>
-                              </div>
-                            </a></li>
-                          <li><a href="ceramic.php" class="d-flex gap-2">
-                              <span class="menu-icon">
-                                <img src="assets/img/menu-icon11.png" alt="" class="img-fluid">
-                              </span>
-                              <div class="menu-text">
-                                <h6 class="level-7 primary-semibold-font primary-color">Ceramic</h6>
-                                <span class="level-9 primary-medium-font extra-color-3">Ceramic coating for long-lasting paint protection.</span>
-                              </div>
-                            </a></li>
-                        </ul>
-                      </div>
-                      <div class="col-md-4 borderCol">
-                        <ul class="list-unstyled p-0 d-flex flex-column gap-4 mb-0">
-                          <li><a href="european-cars.php" class="d-flex gap-2">
-                              <span class="menu-icon">
-                                <img src="assets/img/menu-icon3.png" alt="" class="img-fluid">
-                              </span>
-                              <div class="menu-text">
-                                <h6 class="level-7 primary-semibold-font primary-color">European Cars</h6>
-                                <span class="level-9 primary-medium-font extra-color-3">Specialized care for European Cars brands.</span>
-                              </div>
-                            </a></li>
-                          <li><a href="german-cars.php" class="d-flex gap-2">
-                              <span class="menu-icon">
-                                <img src="assets/img/menu-icon10.png" alt="" class="img-fluid">
-                              </span>
-                              <div class="menu-text">
-                                <h6 class="level-7 primary-semibold-font primary-color">German Cars</h6>
-                                <span class="level-9 primary-medium-font extra-color-3">Specialized care for German Cars brands.</span>
-                              </div>
-                            </a></li>
-                          <li><a href="electric-repair.php" class="d-flex gap-2">
-                              <span class="menu-icon">
-                                <img src="assets/img/menu-icon5.png" alt="" class="img-fluid">
-                              </span>
-                              <div class="menu-text">
-                                <h6 class="level-7 primary-semibold-font primary-color">Electric Repair</h6>
-                                <span class="level-9 primary-medium-font extra-color-3">Specialized repairs for electric vehicles.</span>
-                              </div>
-                            </a></li>
-                          <li><a href="extended-warranty.php" class="d-flex gap-2">
-                              <span class="menu-icon">
-                                <img src="assets/img/menu-icon2.png" alt="" class="img-fluid">
-                              </span>
-                              <div class="menu-text">
-                                <h6 class="level-7 primary-semibold-font primary-color">Extended Warranty</h6>
-                                <span class="level-9 primary-medium-font extra-color-3">Peace of mind with extended coverage on your vehicle.</span>
-                              </div>
-                            </a></li>
-                        </ul>
-                      </div>
-                      <div class="col-md-4 borderCol">
-                        <ul class="list-unstyled p-0 d-flex flex-column gap-4 mb-0">
-                          <li><a href="general-repair.php" class="d-flex gap-2">
-                              <span class="menu-icon">
-                                <img src="assets/img/menu-icon1.png" alt="" class="img-fluid">
-                              </span>
-                              <div class="menu-text">
-                                <h6 class="level-7 primary-semibold-font primary-color">General Repair</h6>
-                                <span class="level-9 primary-medium-font extra-color-3">Expert repair services for all makes and models.</span>
-                              </div>
-                            </a></li>
-                          <li><a href="major-minor-service.php" class="d-flex gap-2">
-                              <span class="menu-icon">
-                                <img src="assets/img/menu-icon9.png" alt="" class="img-fluid">
-                              </span>
-                              <div class="menu-text">
-                                <h6 class="level-7 primary-semibold-font primary-color">Major/Minor Service</h6>
-                                <span class="level-9 primary-medium-font extra-color-3">Comprehensive servicing for both routine and major repairs.</span>
-                              </div>
-                            </a></li>
-                          <li><a href="road-side-assistance.php" class="d-flex gap-2">
-                              <span class="menu-icon">
-                                <img src="assets/img/menu-icon7.png" alt="" class="img-fluid">
-                              </span>
-                              <div class="menu-text">
-                                <h6 class="level-7 primary-semibold-font primary-color">Roadside Assistance</h6>
-                                <span class="level-9 primary-medium-font extra-color-3">Reliable support when you need it the most.</span>
-                              </div>
-                            </a></li>
-                          <li><a href="tinting.php" class="d-flex gap-2">
-                              <span class="menu-icon">
-                                <img src="assets/img/menu-icon4.png" alt="" class="img-fluid">
-                              </span>
-                              <div class="menu-text">
-                                <h6 class="level-7 primary-semibold-font primary-color">Tinting</h6>
-                                <span class="level-9 primary-medium-font extra-color-3">Professional window tinting for added privacy and comfort.</span>
-                              </div>
-                            </a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-
-
-                </div>
-              </div>
-            </div>
-            <div class="tab-pane fade" id="Sharjah" role="tabpanel" aria-labelledby="Sharjah-tab">
-              <h5 class="card-title">Sharjah - The Capital</h5>
-              <div class="container">
-                <div class="row align-items-center mobile-responsive-scrolling">
-                  <div class="col-md-12">
-                    <div class="row align-items-center ">
-                      <div class="head pb-2 mb-2">
-                        <h6 class="title level-9 primary-semibold-font extra-color-3">Services</h6>
-                      </div>
-                      <div class="col-md-4 borderCol">
-                        <ul class="list-unstyled p-0 d-flex flex-column gap-4 mb-0">
-                          <li><a href="auto-spa.php" class="d-flex">
-                              <span class="menu-icon">
-                                <img src="assets/img/menu-icon12.png" alt="" class="img-fluid">
-                              </span>
-                              <div class="menu-text">
-                                <h6 class="primary-semibold-font primary-color">Auto Spa</h6>
-                                <span class="level-9 primary-medium-font extra-color-3">Luxurious detailing to keep your car looking brand new.</span>
-
-                              </div>
-                            </a></li>
-                          <li><a href="car-inspection.php" class="d-flex gap-2">
-                              <span class="menu-icon">
-                                <img src="assets/img/menu-icon6.png" alt="" class="img-fluid">
-                              </span>
-                              <div class="menu-text">
-                                <h6 class="level-7 primary-semibold-font primary-color">Car Inspection</h6>
-                                <span class="level-9 primary-medium-font extra-color-3">Thorough inspections to ensure safety and reliability.</span>
-                              </div>
-                            </a></li>
-                          <li><a href="car-wrapping.php" class="d-flex gap-2">
-                              <span class="menu-icon">
-                                <img src="assets/img/menu-icon8.png" alt="" class="img-fluid">
-                              </span>
-                              <div class="menu-text">
-                                <h6 class="level-7 primary-semibold-font primary-color">Car Wrapping</h6>
-                                <span class="level-9 primary-medium-font extra-color-3">Custom wraps to transform your vehicle's appearance.</span>
-                              </div>
-                            </a></li>
-                          <li><a href="ceramic.php" class="d-flex gap-2">
-                              <span class="menu-icon">
-                                <img src="assets/img/menu-icon11.png" alt="" class="img-fluid">
-                              </span>
-                              <div class="menu-text">
-                                <h6 class="level-7 primary-semibold-font primary-color">Ceramic</h6>
-                                <span class="level-9 primary-medium-font extra-color-3">Ceramic coating for long-lasting paint protection.</span>
-                              </div>
-                            </a></li>
-                        </ul>
-                      </div>
-                      <div class="col-md-4 borderCol">
-                        <ul class="list-unstyled p-0 d-flex flex-column gap-4 mb-0">
-                          <li><a href="european-cars.php" class="d-flex gap-2">
-                              <span class="menu-icon">
-                                <img src="assets/img/menu-icon3.png" alt="" class="img-fluid">
-                              </span>
-                              <div class="menu-text">
-                                <h6 class="level-7 primary-semibold-font primary-color">European Cars</h6>
-                                <span class="level-9 primary-medium-font extra-color-3">Specialized care for European Cars brands.</span>
-                              </div>
-                            </a></li>
-                          <li><a href="german-cars.php" class="d-flex gap-2">
-                              <span class="menu-icon">
-                                <img src="assets/img/menu-icon10.png" alt="" class="img-fluid">
-                              </span>
-                              <div class="menu-text">
-                                <h6 class="level-7 primary-semibold-font primary-color">German Cars</h6>
-                                <span class="level-9 primary-medium-font extra-color-3">Specialized care for German Cars brands.</span>
-                              </div>
-                            </a></li>
-                          <li><a href="electric-repair.php" class="d-flex gap-2">
-                              <span class="menu-icon">
-                                <img src="assets/img/menu-icon5.png" alt="" class="img-fluid">
-                              </span>
-                              <div class="menu-text">
-                                <h6 class="level-7 primary-semibold-font primary-color">Electric Repair</h6>
-                                <span class="level-9 primary-medium-font extra-color-3">Specialized repairs for electric vehicles.</span>
-                              </div>
-                            </a></li>
-                          <li><a href="extended-warranty.php" class="d-flex gap-2">
-                              <span class="menu-icon">
-                                <img src="assets/img/menu-icon2.png" alt="" class="img-fluid">
-                              </span>
-                              <div class="menu-text">
-                                <h6 class="level-7 primary-semibold-font primary-color">Extended Warranty</h6>
-                                <span class="level-9 primary-medium-font extra-color-3">Peace of mind with extended coverage on your vehicle.</span>
-                              </div>
-                            </a></li>
-                        </ul>
-                      </div>
-                      <div class="col-md-4 borderCol">
-                        <ul class="list-unstyled p-0 d-flex flex-column gap-4 mb-0">
-                          <li><a href="general-repair.php" class="d-flex gap-2">
-                              <span class="menu-icon">
-                                <img src="assets/img/menu-icon1.png" alt="" class="img-fluid">
-                              </span>
-                              <div class="menu-text">
-                                <h6 class="level-7 primary-semibold-font primary-color">General Repair</h6>
-                                <span class="level-9 primary-medium-font extra-color-3">Expert repair services for all makes and models.</span>
-                              </div>
-                            </a></li>
-                          <li><a href="major-minor-service.php" class="d-flex gap-2">
-                              <span class="menu-icon">
-                                <img src="assets/img/menu-icon9.png" alt="" class="img-fluid">
-                              </span>
-                              <div class="menu-text">
-                                <h6 class="level-7 primary-semibold-font primary-color">Major/Minor Service</h6>
-                                <span class="level-9 primary-medium-font extra-color-3">Comprehensive servicing for both routine and major repairs.</span>
-                              </div>
-                            </a></li>
-                          <li><a href="road-side-assistance.php" class="d-flex gap-2">
-                              <span class="menu-icon">
-                                <img src="assets/img/menu-icon7.png" alt="" class="img-fluid">
-                              </span>
-                              <div class="menu-text">
-                                <h6 class="level-7 primary-semibold-font primary-color">Roadside Assistance</h6>
-                                <span class="level-9 primary-medium-font extra-color-3">Reliable support when you need it the most.</span>
-                              </div>
-                            </a></li>
-                          <li><a href="tinting.php" class="d-flex gap-2">
-                              <span class="menu-icon">
-                                <img src="assets/img/menu-icon4.png" alt="" class="img-fluid">
-                              </span>
-                              <div class="menu-text">
-                                <h6 class="level-7 primary-semibold-font primary-color">Tinting</h6>
-                                <span class="level-9 primary-medium-font extra-color-3">Professional window tinting for added privacy and comfort.</span>
-                              </div>
-                            </a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-
-
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div> -->
-    <!--Desktop  Mega  Menu End here-->
-
-
-    <!-- Mobile Mega  Menu  Start here-->
-
-    <!-- <div class="d-md-none my-5">
-        <div class="accordion" id="mobileTabAccordion"> -->
-    <!-- Dubai -->
-    <!-- <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mobileDubai" aria-expanded="false" aria-controls="mobileDubai">
-                Dubai
-              </button>
-            </h2>
-            <div id="mobileDubai" class="accordion-collapse collapse" data-bs-parent="#mobileTabAccordion">
-              <div class="accordion-body">
-                <h5 class="card-title">Dubai - Service</h5>
-                <div class="container">
-                  <div class="row align-items-center mobile-responsive-scrolling">
-                    <div class="col-md-12">
-                      <div class="row align-items-center ">
-                        <div class="head pb-2 mb-2">
-                          <h6 class="title level-9 primary-semibold-font extra-color-3">Services</h6>
-                        </div>
-                        <div class="col-md-4 borderCol">
-                          <ul class="list-unstyled p-0 d-flex flex-column gap-4 mb-0">
-                            <li><a href="auto-spa.php" class="d-flex">
-                                <span class="menu-icon">
-                                  <img src="assets/img/menu-icon12.png" alt="" class="img-fluid">
-                                </span>
-                                <div class="menu-text">
-                                  <h6 class="primary-semibold-font primary-color">Auto Spa</h6>
-                                  <span class="level-9 primary-medium-font extra-color-3">Luxurious detailing to keep your car looking brand new.</span>
-
-                                </div>
-                              </a></li>
-                            <li><a href="car-inspection.php" class="d-flex gap-2">
-                                <span class="menu-icon">
-                                  <img src="assets/img/menu-icon6.png" alt="" class="img-fluid">
-                                </span>
-                                <div class="menu-text">
-                                  <h6 class="level-7 primary-semibold-font primary-color">Car Inspection</h6>
-                                  <span class="level-9 primary-medium-font extra-color-3">Thorough inspections to ensure safety and reliability.</span>
-                                </div>
-                              </a></li>
-                            <li><a href="car-wrapping.php" class="d-flex gap-2">
-                                <span class="menu-icon">
-                                  <img src="assets/img/menu-icon8.png" alt="" class="img-fluid">
-                                </span>
-                                <div class="menu-text">
-                                  <h6 class="level-7 primary-semibold-font primary-color">Car Wrapping</h6>
-                                  <span class="level-9 primary-medium-font extra-color-3">Custom wraps to transform your vehicle's appearance.</span>
-                                </div>
-                              </a></li>
-                            <li><a href="ceramic.php" class="d-flex gap-2">
-                                <span class="menu-icon">
-                                  <img src="assets/img/menu-icon11.png" alt="" class="img-fluid">
-                                </span>
-                                <div class="menu-text">
-                                  <h6 class="level-7 primary-semibold-font primary-color">Ceramic</h6>
-                                  <span class="level-9 primary-medium-font extra-color-3">Ceramic coating for long-lasting paint protection.</span>
-                                </div>
-                              </a></li>
-                          </ul>
-                        </div>
-                        <div class="col-md-4 borderCol">
-                          <ul class="list-unstyled p-0 d-flex flex-column gap-4 mb-0">
-                            <li><a href="european-cars.php" class="d-flex gap-2">
-                                <span class="menu-icon">
-                                  <img src="assets/img/menu-icon3.png" alt="" class="img-fluid">
-                                </span>
-                                <div class="menu-text">
-                                  <h6 class="level-7 primary-semibold-font primary-color">European Cars</h6>
-                                  <span class="level-9 primary-medium-font extra-color-3">Specialized care for European Cars brands.</span>
-                                </div>
-                              </a></li>
-                            <li><a href="german-cars.php" class="d-flex gap-2">
-                                <span class="menu-icon">
-                                  <img src="assets/img/menu-icon10.png" alt="" class="img-fluid">
-                                </span>
-                                <div class="menu-text">
-                                  <h6 class="level-7 primary-semibold-font primary-color">German Cars</h6>
-                                  <span class="level-9 primary-medium-font extra-color-3">Specialized care for German Cars brands.</span>
-                                </div>
-                              </a></li>
-                            <li><a href="electric-repair.php" class="d-flex gap-2">
-                                <span class="menu-icon">
-                                  <img src="assets/img/menu-icon5.png" alt="" class="img-fluid">
-                                </span>
-                                <div class="menu-text">
-                                  <h6 class="level-7 primary-semibold-font primary-color">Electric Repair</h6>
-                                  <span class="level-9 primary-medium-font extra-color-3">Specialized repairs for electric vehicles.</span>
-                                </div>
-                              </a></li>
-                            <li><a href="extended-warranty.php" class="d-flex gap-2">
-                                <span class="menu-icon">
-                                  <img src="assets/img/menu-icon2.png" alt="" class="img-fluid">
-                                </span>
-                                <div class="menu-text">
-                                  <h6 class="level-7 primary-semibold-font primary-color">Extended Warranty</h6>
-                                  <span class="level-9 primary-medium-font extra-color-3">Peace of mind with extended coverage on your vehicle.</span>
-                                </div>
-                              </a></li>
-                          </ul>
-                        </div>
-                        <div class="col-md-4 borderCol">
-                          <ul class="list-unstyled p-0 d-flex flex-column gap-4 mb-0">
-                            <li><a href="general-repair.php" class="d-flex gap-2">
-                                <span class="menu-icon">
-                                  <img src="assets/img/menu-icon1.png" alt="" class="img-fluid">
-                                </span>
-                                <div class="menu-text">
-                                  <h6 class="level-7 primary-semibold-font primary-color">General Repair</h6>
-                                  <span class="level-9 primary-medium-font extra-color-3">Expert repair services for all makes and models.</span>
-                                </div>
-                              </a></li>
-                            <li><a href="major-minor-service.php" class="d-flex gap-2">
-                                <span class="menu-icon">
-                                  <img src="assets/img/menu-icon9.png" alt="" class="img-fluid">
-                                </span>
-                                <div class="menu-text">
-                                  <h6 class="level-7 primary-semibold-font primary-color">Major/Minor Service</h6>
-                                  <span class="level-9 primary-medium-font extra-color-3">Comprehensive servicing for both routine and major repairs.</span>
-                                </div>
-                              </a></li>
-                            <li><a href="road-side-assistance.php" class="d-flex gap-2">
-                                <span class="menu-icon">
-                                  <img src="assets/img/menu-icon7.png" alt="" class="img-fluid">
-                                </span>
-                                <div class="menu-text">
-                                  <h6 class="level-7 primary-semibold-font primary-color">Roadside Assistance</h6>
-                                  <span class="level-9 primary-medium-font extra-color-3">Reliable support when you need it the most.</span>
-                                </div>
-                              </a></li>
-                            <li><a href="tinting.php" class="d-flex gap-2">
-                                <span class="menu-icon">
-                                  <img src="assets/img/menu-icon4.png" alt="" class="img-fluid">
-                                </span>
-                                <div class="menu-text">
-                                  <h6 class="level-7 primary-semibold-font primary-color">Tinting</h6>
-                                  <span class="level-9 primary-medium-font extra-color-3">Professional window tinting for added privacy and comfort.</span>
-                                </div>
-                              </a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> -->
-
-    <!-- Sharjah -->
-    <!-- <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mobileSharjah" aria-expanded="false" aria-controls="mobileSharjah">
-                Sharjah
-              </button>
-            </h2>
-            <div id="mobileSharjah" class="accordion-collapse collapse" data-bs-parent="#mobileTabAccordion">
-              <div class="accordion-body">
-                <h5 class="card-title">Sharjah - Service</h5>
-
-
-                <div class="container">
-                  <div class="row align-items-center mobile-responsive-scrolling">
-                    <div class="col-md-12">
-                      <div class="row align-items-center ">
-                        <div class="head pb-2 mb-2">
-                          <h6 class="title level-9 primary-semibold-font extra-color-3">Services</h6>
-                        </div>
-                        <div class="col-md-4 borderCol">
-                          <ul class="list-unstyled p-0 d-flex flex-column gap-4 mb-0">
-                            <li><a href="auto-spa.php" class="d-flex">
-                                <span class="menu-icon">
-                                  <img src="assets/img/menu-icon12.png" alt="" class="img-fluid">
-                                </span>
-                                <div class="menu-text">
-                                  <h6 class="primary-semibold-font primary-color">Auto Spa</h6>
-                                  <span class="level-9 primary-medium-font extra-color-3">Luxurious detailing to keep your car looking brand new.</span>
-
-                                </div>
-                              </a></li>
-                            <li><a href="car-inspection.php" class="d-flex gap-2">
-                                <span class="menu-icon">
-                                  <img src="assets/img/menu-icon6.png" alt="" class="img-fluid">
-                                </span>
-                                <div class="menu-text">
-                                  <h6 class="level-7 primary-semibold-font primary-color">Car Inspection</h6>
-                                  <span class="level-9 primary-medium-font extra-color-3">Thorough inspections to ensure safety and reliability.</span>
-                                </div>
-                              </a></li>
-                            <li><a href="car-wrapping.php" class="d-flex gap-2">
-                                <span class="menu-icon">
-                                  <img src="assets/img/menu-icon8.png" alt="" class="img-fluid">
-                                </span>
-                                <div class="menu-text">
-                                  <h6 class="level-7 primary-semibold-font primary-color">Car Wrapping</h6>
-                                  <span class="level-9 primary-medium-font extra-color-3">Custom wraps to transform your vehicle's appearance.</span>
-                                </div>
-                              </a></li>
-                            <li><a href="ceramic.php" class="d-flex gap-2">
-                                <span class="menu-icon">
-                                  <img src="assets/img/menu-icon11.png" alt="" class="img-fluid">
-                                </span>
-                                <div class="menu-text">
-                                  <h6 class="level-7 primary-semibold-font primary-color">Ceramic</h6>
-                                  <span class="level-9 primary-medium-font extra-color-3">Ceramic coating for long-lasting paint protection.</span>
-                                </div>
-                              </a></li>
-                          </ul>
-                        </div>
-                        <div class="col-md-4 borderCol">
-                          <ul class="list-unstyled p-0 d-flex flex-column gap-4 mb-0">
-                            <li><a href="european-cars.php" class="d-flex gap-2">
-                                <span class="menu-icon">
-                                  <img src="assets/img/menu-icon3.png" alt="" class="img-fluid">
-                                </span>
-                                <div class="menu-text">
-                                  <h6 class="level-7 primary-semibold-font primary-color">European Cars</h6>
-                                  <span class="level-9 primary-medium-font extra-color-3">Specialized care for European Cars brands.</span>
-                                </div>
-                              </a></li>
-                            <li><a href="german-cars.php" class="d-flex gap-2">
-                                <span class="menu-icon">
-                                  <img src="assets/img/menu-icon10.png" alt="" class="img-fluid">
-                                </span>
-                                <div class="menu-text">
-                                  <h6 class="level-7 primary-semibold-font primary-color">German Cars</h6>
-                                  <span class="level-9 primary-medium-font extra-color-3">Specialized care for German Cars brands.</span>
-                                </div>
-                              </a></li>
-                            <li><a href="electric-repair.php" class="d-flex gap-2">
-                                <span class="menu-icon">
-                                  <img src="assets/img/menu-icon5.png" alt="" class="img-fluid">
-                                </span>
-                                <div class="menu-text">
-                                  <h6 class="level-7 primary-semibold-font primary-color">Electric Repair</h6>
-                                  <span class="level-9 primary-medium-font extra-color-3">Specialized repairs for electric vehicles.</span>
-                                </div>
-                              </a></li>
-                            <li><a href="extended-warranty.php" class="d-flex gap-2">
-                                <span class="menu-icon">
-                                  <img src="assets/img/menu-icon2.png" alt="" class="img-fluid">
-                                </span>
-                                <div class="menu-text">
-                                  <h6 class="level-7 primary-semibold-font primary-color">Extended Warranty</h6>
-                                  <span class="level-9 primary-medium-font extra-color-3">Peace of mind with extended coverage on your vehicle.</span>
-                                </div>
-                              </a></li>
-                          </ul>
-                        </div>
-                        <div class="col-md-4 borderCol">
-                          <ul class="list-unstyled p-0 d-flex flex-column gap-4 mb-0">
-                            <li><a href="general-repair.php" class="d-flex gap-2">
-                                <span class="menu-icon">
-                                  <img src="assets/img/menu-icon1.png" alt="" class="img-fluid">
-                                </span>
-                                <div class="menu-text">
-                                  <h6 class="level-7 primary-semibold-font primary-color">General Repair</h6>
-                                  <span class="level-9 primary-medium-font extra-color-3">Expert repair services for all makes and models.</span>
-                                </div>
-                              </a></li>
-                            <li><a href="major-minor-service.php" class="d-flex gap-2">
-                                <span class="menu-icon">
-                                  <img src="assets/img/menu-icon9.png" alt="" class="img-fluid">
-                                </span>
-                                <div class="menu-text">
-                                  <h6 class="level-7 primary-semibold-font primary-color">Major/Minor Service</h6>
-                                  <span class="level-9 primary-medium-font extra-color-3">Comprehensive servicing for both routine and major repairs.</span>
-                                </div>
-                              </a></li>
-                            <li><a href="road-side-assistance.php" class="d-flex gap-2">
-                                <span class="menu-icon">
-                                  <img src="assets/img/menu-icon7.png" alt="" class="img-fluid">
-                                </span>
-                                <div class="menu-text">
-                                  <h6 class="level-7 primary-semibold-font primary-color">Roadside Assistance</h6>
-                                  <span class="level-9 primary-medium-font extra-color-3">Reliable support when you need it the most.</span>
-                                </div>
-                              </a></li>
-                            <li><a href="tinting.php" class="d-flex gap-2">
-                                <span class="menu-icon">
-                                  <img src="assets/img/menu-icon4.png" alt="" class="img-fluid">
-                                </span>
-                                <div class="menu-text">
-                                  <h6 class="level-7 primary-semibold-font primary-color">Tinting</h6>
-                                  <span class="level-9 primary-medium-font extra-color-3">Professional window tinting for added privacy and comfort.</span>
-                                </div>
-                              </a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> -->
-
-    <!-- Add remaining emirates in the same pattern -->
-    <!-- </div>
-      </div> -->
-
-    <!-- Mobile Mega  Menu End here -->
-    <!-- </div> -->
     <!-- Services Mega Menu  -->
     <div class="mega-menu category-services-menu self-mobile-respnsive mega-menu-mobile-respnsive-scrolling">
         <!-- Close Button (Only for Mobile) -->
@@ -892,9 +282,11 @@
                         </div>
                         <div class="col-md-3 borderCol">
                             <ul class="list-unstyled p-0 d-flex flex-column gap-4 mb-0">
-                                <li><a href="auto-spa.php" class="d-flex">
+                                <li><a href="{{ route('user.servicesDetail', ['slug' => 'auto-spa']) }}"
+                                        class="d-flex">
                                         <span class="menu-icon">
-                                            <img src="assets/img/menu-icon12.png" alt="" class="img-fluid">
+                                            <img src="{{ asset('assets/user/img/menu-icon12.png') }}" alt=""
+                                                class="img-fluid">
                                         </span>
                                         <div class="menu-text">
                                             <h6 class="primary-semibold-font primary-color">Auto Spa</h6>
@@ -903,9 +295,11 @@
 
                                         </div>
                                     </a></li>
-                                <li><a href="car-inspection.php" class="d-flex gap-2">
+                                <li><a href="{{ route('user.servicesDetail', ['slug' => 'car-inspection']) }}"
+                                        class="d-flex gap-2">
                                         <span class="menu-icon">
-                                            <img src="assets/img/menu-icon6.png" alt="" class="img-fluid">
+                                            <img src="{{ asset('assets/user/img/menu-icon6.png') }}" alt=""
+                                                class="img-fluid">
                                         </span>
                                         <div class="menu-text">
                                             <h6 class="level-7 primary-semibold-font primary-color">Car Inspection</h6>
@@ -913,9 +307,11 @@
                                                 inspections to ensure safety and reliability.</span>
                                         </div>
                                     </a></li>
-                                <li><a href="car-wrapping.php" class="d-flex gap-2">
+                                <li><a href="{{ route('user.servicesDetail', ['slug' => 'car-wrapping']) }}"
+                                        class="d-flex gap-2">
                                         <span class="menu-icon">
-                                            <img src="assets/img/menu-icon8.png" alt="" class="img-fluid">
+                                            <img src="{{ asset('assets/user/img/menu-icon8.png') }}" alt=""
+                                                class="img-fluid">
                                         </span>
                                         <div class="menu-text">
                                             <h6 class="level-7 primary-semibold-font primary-color">Car Wrapping</h6>
@@ -923,9 +319,11 @@
                                                 transform your vehicle's appearance.</span>
                                         </div>
                                     </a></li>
-                                <li><a href="ceramic.php" class="d-flex gap-2">
+                                <li><a href="{{ route('user.servicesDetail', ['slug' => 'ceramic']) }}"
+                                        class="d-flex gap-2">
                                         <span class="menu-icon">
-                                            <img src="assets/img/menu-icon11.png" alt="" class="img-fluid">
+                                            <img src="{{ asset('assets/user/img/menu-icon11.png') }}" alt=""
+                                                class="img-fluid">
                                         </span>
                                         <div class="menu-text">
                                             <h6 class="level-7 primary-semibold-font primary-color">Ceramic</h6>
@@ -937,9 +335,11 @@
                         </div>
                         <div class="col-md-3 borderCol">
                             <ul class="list-unstyled p-0 d-flex flex-column gap-4 mb-0">
-                                <li><a href="european-cars.php" class="d-flex gap-2">
+                                <li><a href="{{ route('user.servicesDetail', ['slug' => 'european-cars']) }}"
+                                        class="d-flex gap-2">
                                         <span class="menu-icon">
-                                            <img src="assets/img/menu-icon3.png" alt="" class="img-fluid">
+                                            <img src="{{ asset('assets/user/img/menu-icon3.png') }}" alt=""
+                                                class="img-fluid">
                                         </span>
                                         <div class="menu-text">
                                             <h6 class="level-7 primary-semibold-font primary-color">European Cars</h6>
@@ -947,9 +347,11 @@
                                                 for European Cars brands.</span>
                                         </div>
                                     </a></li>
-                                <li><a href="german-cars.php" class="d-flex gap-2">
+                                <li><a href="{{ route('user.servicesDetail', ['slug' => 'german-cars']) }}"
+                                        class="d-flex gap-2">
                                         <span class="menu-icon">
-                                            <img src="assets/img/menu-icon10.png" alt="" class="img-fluid">
+                                            <img src="{{ asset('assets/user/img/menu-icon10.png') }}" alt=""
+                                                class="img-fluid">
                                         </span>
                                         <div class="menu-text">
                                             <h6 class="level-7 primary-semibold-font primary-color">German Cars</h6>
@@ -957,9 +359,11 @@
                                                 for German Cars brands.</span>
                                         </div>
                                     </a></li>
-                                <li><a href="electric-repair.php" class="d-flex gap-2">
+                                <li><a href="{{ route('user.servicesDetail', ['slug' => 'electric-repair']) }}"
+                                        class="d-flex gap-2">
                                         <span class="menu-icon">
-                                            <img src="assets/img/menu-icon5.png" alt="" class="img-fluid">
+                                            <img src="{{ asset('assets/user/img/menu-icon5.png') }}" alt=""
+                                                class="img-fluid">
                                         </span>
                                         <div class="menu-text">
                                             <h6 class="level-7 primary-semibold-font primary-color">Electric Repair
@@ -968,9 +372,11 @@
                                                 for electric vehicles.</span>
                                         </div>
                                     </a></li>
-                                <li><a href="extended-warranty.php" class="d-flex gap-2">
+                                <li><a href="{{ route('user.servicesDetail', ['slug' => 'extended-warranty']) }}"
+                                        class="d-flex gap-2">
                                         <span class="menu-icon">
-                                            <img src="assets/img/menu-icon2.png" alt="" class="img-fluid">
+                                            <img src="{{ asset('assets/user/img/menu-icon2.png') }}" alt=""
+                                                class="img-fluid">
                                         </span>
                                         <div class="menu-text">
                                             <h6 class="level-7 primary-semibold-font primary-color">Extended Warranty
@@ -983,9 +389,11 @@
                         </div>
                         <div class="col-md-3 borderCol">
                             <ul class="list-unstyled p-0 d-flex flex-column gap-4 mb-0">
-                                <li><a href="general-repair.php" class="d-flex gap-2">
+                                <li><a href="{{ route('user.servicesDetail', ['slug' => 'general-repair']) }}"
+                                        class="d-flex gap-2">
                                         <span class="menu-icon">
-                                            <img src="assets/img/menu-icon1.png" alt="" class="img-fluid">
+                                            <img src="{{ asset('assets/user/img/menu-icon1.png') }}" alt=""
+                                                class="img-fluid">
                                         </span>
                                         <div class="menu-text">
                                             <h6 class="level-7 primary-semibold-font primary-color">General Repair</h6>
@@ -993,9 +401,11 @@
                                                 services for all makes and models.</span>
                                         </div>
                                     </a></li>
-                                <li><a href="major-minor-service.php" class="d-flex gap-2">
+                                <li><a href="{ route('user.servicesDetail', ['slug' => 'major-minor-service']) }}"
+                                        class="d-flex gap-2">
                                         <span class="menu-icon">
-                                            <img src="assets/img/menu-icon9.png" alt="" class="img-fluid">
+                                            <img src="{{ asset('assets/user/img/menu-icon9.png') }}" alt=""
+                                                class="img-fluid">
                                         </span>
                                         <div class="menu-text">
                                             <h6 class="level-7 primary-semibold-font primary-color">Major/Minor Service
@@ -1004,9 +414,11 @@
                                                 servicing for both routine and major repairs.</span>
                                         </div>
                                     </a></li>
-                                <li><a href="road-side-assistance.php" class="d-flex gap-2">
+                                <li><a href="{ route('user.servicesDetail', ['slug' => 'road-side-assistance']) }}"
+                                        class="d-flex gap-2">
                                         <span class="menu-icon">
-                                            <img src="assets/img/menu-icon7.png" alt="" class="img-fluid">
+                                            <img src="{{ asset('assets/user/img/menu-icon7.png') }}" alt=""
+                                                class="img-fluid">
                                         </span>
                                         <div class="menu-text">
                                             <h6 class="level-7 primary-semibold-font primary-color">Roadside Assistance
@@ -1015,9 +427,11 @@
                                                 when you need it the most.</span>
                                         </div>
                                     </a></li>
-                                <li><a href="tinting.php" class="d-flex gap-2">
+                                <li><a href="{{ route('user.servicesDetail', ['slug' => 'tinting']) }}"
+                                        class="d-flex gap-2">
                                         <span class="menu-icon">
-                                            <img src="assets/img/menu-icon4.png" alt="" class="img-fluid">
+                                            <img src="{{ asset('assets/user/img/menu-icon4.png') }}" alt=""
+                                                class="img-fluid">
                                         </span>
                                         <div class="menu-text">
                                             <h6 class="level-7 primary-semibold-font primary-color">Tinting</h6>
@@ -1028,8 +442,9 @@
                             </ul>
                         </div>
                         <div class="col-md-3 borderCol d-flex flex-column gap-4">
-                            <video src="./assets/img/1.mp4" controls autoplay muted disablePictureInPicture
-                                controlsList="nodownload noplaybackrate" class="h-100 rounded-3 w-100">
+                            <video src="{{ asset('assets/user/img/1.mp4') }}" controls autoplay muted
+                                disablePictureInPicture controlsList="nodownload noplaybackrate"
+                                class="h-100 rounded-3 w-100">
                             </video>
                             <a href="https://wa.me/971547935400" target="_blank" class="btn ">Book Now</a>
                         </div>
@@ -1084,7 +499,7 @@
         document.addEventListener('click', function(event) {
             // Mega Menu 1 (category-menu)
             if (event.target.closest('.close-self-mobile-respnsive-div') && event.target.closest(
-                '.category-menu')) {
+                    '.category-menu')) {
                 var categoryMenu = document.querySelector('.category-menu');
                 if (categoryMenu) {
                     categoryMenu.classList.remove('active');
@@ -1104,36 +519,33 @@
 
     <ul class="mobile-header list-unstyled d-flex flex-lg-row flex-column gap-4 ps-lg-0 mb-0 pe-lg-5 z-index-1"
         style="z-index: 15;">
-        <li class="list-item align-self-baseline"><a href="index.php"
+        <li class="list-item align-self-baseline"><a href="{{ route('user.home') }}"
                 class="header-link text-decoration-none level-8 primary-semibold-font dark-color link-here">Home</a>
         </li>
-        <li class="list-item align-self-baseline"><a href="contract.php"
+        <li class="list-item align-self-baseline"><a href="{{ route('user.contract') }}"
                 class="header-link text-decoration-none level-8 primary-semibold-font dark-color link-here">Annual
                 Contract</a>
         </li>
-        <li class="list-item align-self-baseline"><a href="Promotions.php"
+        <li class="list-item align-self-baseline"><a href="{{ route('user.promotions') }}"
                 class="header-link text-decoration-none level-8 primary-semibold-font dark-color link-here">Ongoing
                 Promotions</a>
         </li>
-        <!-- <li class="single-item align-self-baseline"><a href="#"
-          class="header-link categoryBtn text-decoration-none level-8 primary-semibold-font dark-color link-here">
-          Brands <i class="fa-solid fa-angle-down"></i></a>
-      </li> -->
         <li class="single-item align-self-baseline"><a href="#"
                 class="header-link categoryBtn-service text-decoration-none level-8 primary-semibold-font dark-color link-here">
                 Services <i class="fa-solid fa-angle-down"></i></a>
         </li>
-        <li class="list-item align-self-baseline"><a href="body-shop.php"
+        <li class="list-item align-self-baseline"><a
+                href="{{ route('user.servicesDetail', ['slug' => 'body-shop']) }}"
                 class="header-link text-decoration-none level-8 primary-semibold-font dark-color link-here">Body
                 Shop</a></li>
-        <li class="list-item align-self-baseline"><a href="blogs.php"
-                class="header-link text-decoration-none level-8 primary-semibold-font dark-color link-here">Blog
-                us</a></li>
-        <li class="list-item align-self-baseline"><a href="about-us.php"
+        <li class="list-item align-self-baseline"><a href="{{ route('user.blogs') }}"
+                class="header-link text-decoration-none level-8 primary-semibold-font dark-color link-here">Blogs</a>
+        </li>
+        <li class="list-item align-self-baseline"><a href="{{ route('user.about-us') }}"
                 class="header-link text-decoration-none level-8 primary-semibold-font dark-color link-here">About
                 Us
             </a></li>
-        <li class="list-item align-self-baseline"><a href="contact.php"
+        <li class="list-item align-self-baseline"><a href="{{ route('user.contact') }}"
                 class="header-link text-decoration-none level-8 primary-semibold-font dark-color link-here">Contact
                 Us</a></li>
         <div class="header-details-wrapper d-flex align-items-center justify-content-start gap-3 align-self-baseline">
