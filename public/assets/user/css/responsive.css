@@ -117,7 +117,7 @@ body {
 /* Index Page Styling Start*/
 
 .index-service-img-width-height-responsive {
-  width: 60%;
+  width: 100%;
   height: 6rem;
   position: relative;
 }
@@ -133,6 +133,7 @@ body {
 
 .index-hero-right-services-box-height-responsive {
   height: 100%;
+  /* border-radius: 10px 10px 0px 0px; */
 }
 
 .index-service-img-width-height-responsive::after {
@@ -142,13 +143,19 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  border-radius: 50%;
-  height: 110%;
-  border: 3px solid #e6b110;
+  height: 100%;
 }
-
+.index-hero-right-services-box-bg {
+  background-color: #ddd;
+  /* border-radius: 20px 3px; */
+  /* border: 1px dashed #2550DD; */
+}
+.index-hero-right-services-box-radius {
+  /* border-radius: 30px 5px;
+  border: 2px dashed #2550DD; */
+}
 .index-service-img-width-height-responsive-1::after {
-  background: url(../img/services/Mechanical-Repair.jpg) no-repeat center
+  background: url(../img/index-right-service-bodyshop.jpg) no-repeat center
     center/cover;
 }
 
@@ -157,11 +164,10 @@ body {
     center/cover;
 }
 .index-service-img-width-height-responsive-3::after {
-  background: url(../img/services/services-section-1.jpg) no-repeat center
-    center/cover;
+  background: url(../img/coche_electrico2\ 1.png) no-repeat center center/cover;
 }
 .index-service-img-width-height-responsive-4::after {
-  background: url(../img/services/European-Cars.jpg) no-repeat center
+  background: url(../img/services/Software-Repair-Update.avif) no-repeat center
     center/cover;
 }
 .index-service-img-width-height-responsive-5::after {
@@ -169,19 +175,19 @@ body {
     center/cover;
 }
 .index-service-img-width-height-responsive-6::after {
-  background: url(../img/services/Software-Repair-Update.avif) no-repeat center
+  background: url(../img/services/Mechanical-Repair.jpg) no-repeat center
     center/cover;
 }
 .index-service-img-width-height-responsive-7::after {
-  background: url(../img/services/Warranty-Service-Contract.jpg) no-repeat
-    center center/cover;
-}
-.index-service-img-width-height-responsive-8::after {
   background: url(../img/services/car-recovery.avif) no-repeat center
     center/cover;
 }
+.index-service-img-width-height-responsive-8::after {
+  background: url(../img/services/Offers.jpg) no-repeat center center/cover;
+}
 .index-service-img-width-height-responsive-9::after {
-  background: url(../img/services/German-cars.jpg) no-repeat center center/cover;
+  background: url(../img/services/Warranty-Service-Contract.jpg) no-repeat
+    center center/cover;
 }
 
 .blogs-main-blog-section-img {

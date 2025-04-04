@@ -6,7 +6,7 @@
 <!-- Site Title -->
 
 <!-- Favicon -->
-<link rel="icon" type="img/logo.png') }}" href="./img/fevicon.png') }}">
+<link rel="icon" type="img/logo.png" href="./img/fevicon.png">
 <!-- Site Title -->
 
 <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet" />

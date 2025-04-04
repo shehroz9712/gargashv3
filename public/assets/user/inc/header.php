@@ -6,23 +6,23 @@
                 class="top-updates d-flex align-items-center justify-content-center justify-content-between list-unstyled m-0 p-0">
                 <li
                     class="single-item primary-semibold-font level-10 dark-color text-capitalize d-flex align-items-center gap-2">
-                    <span><img src="./img/header-icon1.png') }}" alt="" class="img-fluid"></span> FREE PICKUP
+                    <span><img src="./img/header-icon1.png" alt="" class="img-fluid"></span> FREE PICKUP
                 </li>
                 <li
                     class="single-item primary-semibold-font level-10 dark-color text-capitalize d-flex align-items-center gap-2">
-                    <span><img src="./img/header-icon2.png') }}" alt="" class="img-fluid"></span> FREE INSPECTION
+                    <span><img src="./img/header-icon2.png" alt="" class="img-fluid"></span> FREE INSPECTION
                 </li>
                 <li
                     class="single-item primary-semibold-font level-10 dark-color text-capitalize d-flex align-items-center gap-2">
-                    <span><img src="./img/header-icon3.png') }}" alt="" class="img-fluid"></span> JOB APPROVAL
+                    <span><img src="./img/header-icon3.png" alt="" class="img-fluid"></span> JOB APPROVAL
                 </li>
                 <li
                     class="single-item primary-semibold-font level-10 dark-color text-capitalize d-flex align-items-center gap-2">
-                    <span><img src="./img/header-icon4.png') }}" alt="" class="img-fluid"></span> REPAIR & FIX
+                    <span><img src="./img/header-icon4.png" alt="" class="img-fluid"></span> REPAIR & FIX
                 </li>
                 <li
                     class="single-item primary-semibold-font level-10 dark-color text-capitalize d-flex align-items-center gap-2">
-                    <span><img src="./img/header-icon5.png') }}" alt="" class="img-fluid"></span> DELIVER BACK
+                    <span><img src="./img/header-icon5.png" alt="" class="img-fluid"></span> DELIVER BACK
                 </li>
                 <li
                     class="single-item primary-semibold-font level-10 dark-color text-capitalize d-flex align-items-center gap-2">
@@ -92,7 +92,7 @@
                 </div>
                 <figure class="header-logo">
                     <a href="index" class="d-block">
-                        <img src="./img/logo.png') }}" class="logo-here w-100 object-cover" alt="">
+                        <img src="./img/logo.png" class="logo-here w-100 object-cover" alt="">
                     </a>
                 </figure>
                 <div class="header-details-wrapper d-lg-flex d-none align-items-center justify-content-end gap-3">
@@ -164,7 +164,7 @@
                             <ul class="list-unstyled p-0 d-flex flex-column gap-2">
                                 <li><a href="./general-repair.php" class="d-flex gap-2">
                                         <span class="menu-icon">
-                                            <img src="./img/menu-icon1.png') }}" alt="" class="img-fluid">
+                                            <img src="./img/menu-icon1.png" alt="" class="img-fluid">
                                         </span>
                                         <div class="menu-text">
                                             <h6 class="level-7 primary-semibold-font primary-color">General Repair</h6>
@@ -175,7 +175,7 @@
                                     </a></li>
                                 <li><a href="#" class="d-flex gap-2">
                                         <span class="menu-icon">
-                                            <img src="./img/menu-icon2.png') }}" alt="" class="img-fluid">
+                                            <img src="./img/menu-icon2.png" alt="" class="img-fluid">
                                         </span>
                                         <div class="menu-text">
                                             <h6 class="level-7 primary-semibold-font primary-color">Extended Warranty
@@ -186,7 +186,7 @@
                                     </a></li>
                                 <li><a href="#" class="d-flex gap-2">
                                         <span class="menu-icon">
-                                            <img src="./img/menu-icon3.png') }}" alt="" class="img-fluid">
+                                            <img src="./img/menu-icon3.png" alt="" class="img-fluid">
                                         </span>
                                         <div class="menu-text">
                                             <h6 class="level-7 primary-semibold-font primary-color">Chinese Car</h6>
@@ -197,7 +197,7 @@
                                     </a></li>
                                 <li><a href="#" class="d-flex gap-2">
                                         <span class="menu-icon">
-                                            <img src="./img/menu-icon4.png') }}" alt="" class="img-fluid">
+                                            <img src="./img/menu-icon4.png" alt="" class="img-fluid">
                                         </span>
                                         <div class="menu-text">
                                             <h6 class="level-7 primary-semibold-font primary-color">Tinting</h6>
@@ -212,7 +212,7 @@
                             <ul class="list-unstyled p-0 d-flex flex-column gap-2">
                                 <li><a href="#" class="d-flex gap-2">
                                         <span class="menu-icon">
-                                            <img src="./img/menu-icon5.png') }}" alt="" class="img-fluid">
+                                            <img src="./img/menu-icon5.png" alt="" class="img-fluid">
                                         </span>
                                         <div class="menu-text">
                                             <h6 class="level-7 primary-semibold-font primary-color">Electric Repair</h6>
@@ -222,7 +222,7 @@
                                     </a></li>
                                 <li><a href="./car-inspection.php" class="d-flex gap-2">
                                         <span class="menu-icon">
-                                            <img src="./img/menu-icon6.png') }}" alt="" class="img-fluid">
+                                            <img src="./img/menu-icon6.png" alt="" class="img-fluid">
                                         </span>
                                         <div class="menu-text">
                                             <h6 class="level-7 primary-semibold-font primary-color">Car Inspection</h6>
@@ -232,7 +232,7 @@
                                     </a></li>
                                 <li><a href="#" class="d-flex gap-2">
                                         <span class="menu-icon">
-                                            <img src="./img/menu-icon7.png') }}" alt="" class="img-fluid">
+                                            <img src="./img/menu-icon7.png" alt="" class="img-fluid">
                                         </span>
                                         <div class="menu-text">
                                             <h6 class="level-7 primary-semibold-font primary-color">PPF</h6>
@@ -242,7 +242,7 @@
                                     </a></li>
                                 <li><a href="#" class="d-flex gap-2">
                                         <span class="menu-icon">
-                                            <img src="./img/menu-icon8.png') }}" alt="" class="img-fluid">
+                                            <img src="./img/menu-icon8.png" alt="" class="img-fluid">
                                         </span>
                                         <div class="menu-text">
                                             <h6 class="level-7 primary-semibold-font primary-color">Car Wrapping</h6>
@@ -256,7 +256,7 @@
                             <ul class="list-unstyled p-0 d-flex flex-column gap-2">
                                 <li><a href="./major-and-minor.php" class="d-flex gap-2">
                                         <span class="menu-icon">
-                                            <img src="./img/menu-icon9.png') }}" alt="" class="img-fluid">
+                                            <img src="./img/menu-icon9.png" alt="" class="img-fluid">
                                         </span>
                                         <div class="menu-text">
                                             <h6 class="level-7 primary-semibold-font primary-color">Major/Minor Service
@@ -267,7 +267,7 @@
                                     </a></li>
                                 <li><a href="#" class="d-flex gap-2">
                                         <span class="menu-icon">
-                                            <img src="./img/menu-icon10.png') }}" alt="" class="img-fluid">
+                                            <img src="./img/menu-icon10.png" alt="" class="img-fluid">
                                         </span>
                                         <div class="menu-text">
                                             <h6 class="level-7 primary-semibold-font primary-color">Electric Car </h6>
@@ -277,7 +277,7 @@
                                     </a></li>
                                 <li><a href="./ceramic.php" class="d-flex gap-2">
                                         <span class="menu-icon">
-                                            <img src="./img/menu-icon11.png') }}" alt="" class="img-fluid">
+                                            <img src="./img/menu-icon11.png" alt="" class="img-fluid">
                                         </span>
                                         <div class="menu-text">
                                             <h6 class="level-7 primary-semibold-font primary-color">Ceramic</h6>
@@ -287,7 +287,7 @@
                                     </a></li>
                                 <li><a href="./auto-spa-service.php" class="d-flex gap-2">
                                         <span class="menu-icon">
-                                            <img src="./img/menu-icon12.png') }}" alt="" class="img-fluid">
+                                            <img src="./img/menu-icon12.png" alt="" class="img-fluid">
                                         </span>
                                         <div class="menu-text">
                                             <h6 class="level-7 primary-semibold-font primary-color">Auto Spa</h6>
@@ -302,7 +302,7 @@
                 <div class="col-md-4 borderCol">
                     <div class="video-main-wrapper">
                         <figure class="video-figure-wrap position-relative w-100">
-                            <img src="./video/video.png') }}" alt="" class="img-fluid w-100 video-animate">
+                            <img src="./video/video.png" alt="" class="img-fluid w-100 video-animate">
                             <div id="customControls"
                                 class="custom-controls position-absolute top-0 right-0 bottom-0 left-0 d-flex justify-content-center align-items-center">
                                 <button id="playPause"

@@ -179,17 +179,17 @@
         }
 
         /* .mega-menu.active {
-      height: auto;
-      display: block;
-    } */
+          height: auto;
+          display: block;
+        } */
 
         /* header .mega-menu .head .title {
- font-size: 22px;
- font-weight: 700;
- padding-bottom: 15px;
- border-bottom: 1px solid #ddd;
- margin-bottom: 5px;
-} */
+     font-size: 22px;
+     font-weight: 700;
+     padding-bottom: 15px;
+     border-bottom: 1px solid #ddd;
+     margin-bottom: 5px;
+    } */
         header .mega-menu ul li a {
             font-size: 12px;
             color: var(--body-color);

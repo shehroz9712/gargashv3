@@ -302,7 +302,7 @@
                                                 class="level-7 extra-color-2 text-decoration-none d-flex align-items-center gap-3">
                                                 <div class="contact-img primary-regular-font">
                                                     <span class="secondary-color level-6">
-                                                        <img src="./img/whatsapp-icon.png') }}" alt="" class="img-fluid">
+                                                        <img src="./img/whatsapp-icon.png" alt="" class="img-fluid">
                                                     </span>
                                                 </div>
                                                 <div class="contact-text">
