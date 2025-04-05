@@ -44,9 +44,15 @@ class HomeController extends Controller
         $blog->update([
             'views' => $blog->views + 1,
         ]);
-        $blogs = Blog::where('is_featured', true)->where('status', 'published')->orderBy('created_at', 'desc')->paginate(6);
+        $featuredBlogs = Blog::where('is_featured', true)
+            ->where('status', 'published')
+            ->orderBy('created_at', 'desc')
+            ->get();
 
-        return view('user.blog', compact('blog', 'blogs'));
+        // Split into chunks of 4 for carousel items
+        $chunkedBlogs = $featuredBlogs->chunk(4);
+
+        return view('user.blog', compact('blog', 'chunkedBlogs'));
     }
     public function search(Request $request)
     {
