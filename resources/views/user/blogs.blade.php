@@ -59,11 +59,11 @@
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4" id="blog-container">
             @foreach ($blogs as $blog)
                 <div class="index-services-box-height blog-post {{ $loop->index >= 6 ? 'd-none' : '' }}">
-                    <a href="{{ url('assets/uploads/blogs/' . $blog->slug) }}" class="text-black w-100 h-100">
+                    <a href="{{ route('user.blog.detail', $blog->slug) }}" class="text-black w-100 h-100">
                         <div
                             class="col d-flex flex-column gap-5 justify-content-center rounded-5 shadow bg-white py-4 h-100">
                             <div class="img">
-                                <img src="{{ asset('uploads/blog/' . $blog->image) }}" alt="">
+                                <img src="{{ asset('assets/uploads/blogs/' . $blog->image) }}" alt="">
                             </div>
                             <div class="d-flex flex-column gap-3 px-3 px-md-5 text-start">
                                 <h5 class="m-0 fs-4 fw-bold text-capitalize">{{ $blog->title }}</h5>
@@ -75,7 +75,6 @@
                 </div>
             @endforeach
         </div>
-
         @if ($blogs->count() > 6)
             <div class="d-flex justify-content-center w-100 mt-4" id="load-more-container">
                 <button class="btn w-md-25 w-100 fs-6 fw-semibold" id="load-more-btn">Load More</button>

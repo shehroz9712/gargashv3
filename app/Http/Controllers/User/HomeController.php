@@ -30,7 +30,7 @@ class HomeController extends Controller
     public function blog()
     {
         $featuredBlog = Blog::where('is_featured', true)->where('status', 'published')->latest()->first();
-        $blogs = Blog::where('status', 'published')->orderBy('created_at', 'desc')->paginate(6);
+        $blogs = Blog::where('status', 'published')->orderBy('created_at', 'desc')->get();
         $mostViewedBlogs = Blog::where('status', 'published')
             ->orderBy('views', 'desc') // Assuming 'views' column stores the blog view count
             ->take(2)
@@ -40,7 +40,7 @@ class HomeController extends Controller
     }
     public function blog_detail($slug)
     {
-        $blog = Blog::where('id', $slug)->firstOrFail();
+        $blog = Blog::where('slug', $slug)->first();
         $blog->update([
             'views' => $blog->views + 1,
         ]);

@@ -50,7 +50,7 @@ Route::get('/blogs', [HomeController::class, 'blog'])->name('blogs');
 Route::get('/search/blogs', [HomeController::class, 'search'])->name('blog.search');
 
 // Route for blog single page
-Route::get('/blog/{id}', [HomeController::class, 'blog_detail'])->name('blog.detail');
+Route::get('/blog/{slug}', [HomeController::class, 'blog_detail'])->name('blog.detail');
 
 // Route for shop page
 
