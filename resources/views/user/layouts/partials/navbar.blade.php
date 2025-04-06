@@ -401,7 +401,7 @@
                                                 services for all makes and models.</span>
                                         </div>
                                     </a></li>
-                                <li><a href="{ route('user.servicesDetail', ['slug' => 'major-minor-service']) }}"
+                                <li><a href="{{ route('user.servicesDetail', ['slug' => 'major-minor-service']) }}"
                                         class="d-flex gap-2">
                                         <span class="menu-icon">
                                             <img src="{{ asset('assets/user/img/menu-icon9.png') }}" alt=""
@@ -534,8 +534,7 @@
                 class="header-link categoryBtn-service text-decoration-none level-8 primary-semibold-font dark-color link-here">
                 Services <i class="fa-solid fa-angle-down"></i></a>
         </li>
-        <li class="list-item align-self-baseline"><a
-                href="{{ route('user.shop') }}"
+        <li class="list-item align-self-baseline"><a href="{{ route('user.shop') }}"
                 class="header-link text-decoration-none level-8 primary-semibold-font dark-color link-here">Body
                 Shop</a></li>
         <li class="list-item align-self-baseline"><a href="{{ route('user.blogs') }}"
