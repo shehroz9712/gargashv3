@@ -414,7 +414,7 @@
                                                 servicing for both routine and major repairs.</span>
                                         </div>
                                     </a></li>
-                                <li><a href="{ route('user.servicesDetail', ['slug' => 'road-side-assistance']) }}"
+                                <li><a href="{{ route('user.servicesDetail', ['slug' => 'road-side-assistance']) }}"
                                         class="d-flex gap-2">
                                         <span class="menu-icon">
                                             <img src="{{ asset('assets/user/img/menu-icon7.png') }}" alt=""

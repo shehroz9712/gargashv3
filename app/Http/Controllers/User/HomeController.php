@@ -20,7 +20,7 @@ class HomeController extends Controller
     }
     public function shop()
     {
-        return view('user.shop');
+        return view('user.body-shop');
     }
     public function promotion()
     {
