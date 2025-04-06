@@ -173,7 +173,7 @@
                             </a>
                         </li>
                         <li class="list-item">
-                            <a href="{{ route('user.servicesDetail', ['slug' => 'body-shop']) }}"
+                            <a href="{{ route('user.shop') }}"
                                 class="header-link text-decoration-none level-8 primary-semibold-font dark-color link-here">Body
                                 Shop </a>
                         </li>
@@ -535,7 +535,7 @@
                 Services <i class="fa-solid fa-angle-down"></i></a>
         </li>
         <li class="list-item align-self-baseline"><a
-                href="{{ route('user.servicesDetail', ['slug' => 'body-shop']) }}"
+                href="{{ route('user.shop') }}"
                 class="header-link text-decoration-none level-8 primary-semibold-font dark-color link-here">Body
                 Shop</a></li>
         <li class="list-item align-self-baseline"><a href="{{ route('user.blogs') }}"

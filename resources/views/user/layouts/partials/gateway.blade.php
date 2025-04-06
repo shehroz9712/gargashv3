@@ -146,7 +146,7 @@
         </div>
         <div
             class="card bg-transparent index-hero-right-services-box-animation py-4 gateway-height-responsive-2 border-0">
-            <a href="{{ route('user.servicesDetail', ['slug' => 'body-shop']) }}" class="text-black w-100 h-100">
+            <a href="{{ route('user.shop') }}" class="text-black w-100 h-100">
                 <div
                     class="align-items-center d-flex flex-column index-hero-right-services-box-height-responsive index-hero-right-services-box-shadow-animation index-hero-right-services-box-bg  index-hero-right-services-box-radius text-center ">
                     <div class=" index-service-img-width-height-responsive gateway-service-img-width-height-responsive">
