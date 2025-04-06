@@ -12,6 +12,63 @@
    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
    <!-- Main JS -->
    <script src="{{ asset('assets/user/js/main.js') }}"></script>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+   <script>
+       toastr.options = {
+           "closeButton": true,
+           "progressBar": false,
+           "positionClass": "toast-top-right",
+           "preventDuplicates": true,
+           "showDuration": "30000",
+           "hideDuration": "10000",
+           "timeOut": "50000",
+           "extendedTimeOut": "10000",
+           "showEasing": "swing",
+           "hideEasing": "linear",
+           "showMethod": "fadeIn",
+           "hideMethod": "fadeOut",
+           "closeButton": true,
+           "progressBar": true
+       }
+
+       @if (Session::has('success'))
+
+           toastr.success("{{ session('success') }}");
+       @endif
+
+       @if (!empty($errors->all()))
+           @foreach ($errors->all() as $error)
+               toastr.error("{{ $error }}")
+           @endforeach
+       @endif
+
+       @if (Session::has('error'))
+
+           toastr.error("{{ session('error') }}");
+       @endif
+
+       @if (Session::has('info'))
+
+           toastr.info("{{ session('info') }}");
+       @endif
+
+       @if (Session::has('warning'))
+
+           toastr.warning("{{ session('warning') }}");
+       @endif
+   </script>
+   <script>
+       // Detect Device
+       document.getElementById('device_type').value = navigator.userAgent;
+
+       // You can get IP from backend or services like:
+       fetch('https://api.ipify.org?format=json')
+           .then(res => res.json())
+           .then(data => {
+               document.getElementById('ip_address').value = data.ip;
+           });
+   </script>
    <!-- Initialize Scripts -->
    <script>
        $(document).ready(function() {

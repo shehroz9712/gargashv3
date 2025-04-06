@@ -41,6 +41,7 @@
     <!-- HeaderLinks Include Here -->
     <link rel="stylesheet" href="{{ asset('assets/user/css/header.css') }}" />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
 
     @yield('css')
 

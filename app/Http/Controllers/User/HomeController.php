@@ -141,14 +141,28 @@ class HomeController extends Controller
             'user_name' => 'required|string|min:3|max:50',
             'user_phone_number' => 'required|digits_between:10,15',
             'email' => 'nullable|email',
-            'make' => 'nullable|string|max:30',
-            'model' => 'nullable|string|max:30',
-            'plate_no' => 'nullable|string|max:15',
+            'make' => 'nullable|string',
+            'model' => 'nullable|string',
             'service' => 'required|string',
-            'location' => 'nullable|string|max:100',
+            'location' => 'nullable|string',
+            'url' => 'nullable|url',
+            'device_type' => 'nullable|string',
+            'ip_address' => 'nullable|ip',
         ]);
 
-        ServiceRequest::create($request->all());
-        return redirect()->back()->with('success', 'Request submitted successfully.');
+        ServiceRequest::create([
+            'user_name' => $request->user_name,
+            'user_phone_number' => $request->user_phone_number,
+            'email' => $request->email,
+            'make' => $request->make,
+            'model' => $request->model,
+            'service' => $request->service,
+            'location' => $request->location,
+            'url' => $request->url,
+            'device_type' => $request->device_type,
+            'ip_address' => $request->ip_address ?? $request->ip(),
+        ]);
+
+        return back()->with('success', 'Your enquiry has been submitted successfully!');
     }
 }
