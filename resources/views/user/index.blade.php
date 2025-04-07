@@ -221,7 +221,7 @@
                                 </a>
                             </div>
                             <div class="card bg-transparent index-hero-right-services-box-animation ">
-                                <a href="{{ route('user.servicesDetail', ['slug' => 'road-side-assistance']) }}"
+                                <a href="{{ route('user.servicesDetail', ['slug' => 'car-recovery']) }}"
                                     class="text-black w-100 h-100">
                                     <div
                                         class="align-items-center d-flex flex-column index-hero-right-services-box-height-responsive index-hero-right-services-box-shadow-animation index-hero-right-services-box-bg index-hero-right-services-box-radius text-center ">
@@ -320,7 +320,7 @@
 
     <!-- gateway-section Start Here  -->
 
-    @include('user.layouts.partials.gateway')
+    {{-- @include('user.layouts.partials.gateway') --}}
     <!-- gateway-section Ends Here  -->
 
 

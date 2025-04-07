@@ -110,10 +110,14 @@
                         <i class="fa-solid fa-phone"></i>
                     </a>
                     <div class="contact-detail">
-                        <h6 class="level-9 primary-semibold-font extra-color-3 mb-0"> Call Us </h6>
+                        {{-- <h6 class="level-9 primary-semibold-font extra-color-3 mb-0"> Call Us </h6> --}}
+                        <a href="tel:08004272886"
+                        class="cell-no level-7 heading-font dark-color text-decoration-none dark-hover">Toll Free: 0800
+                        4272886</a><br>
                         <a href="tel:+971 56 545 8853"
-                            class="cell-no level-7 heading-font dark-color text-decoration-none dark-hover"> +971 56 545
-                            8853</a>
+                            class="cell-no level-7 heading-font dark-color text-decoration-none dark-hover">Call Now: +971 56 545
+                            8853</a> 
+                      
                     </div>
                 </div>
                 <figure class="header-logo">
@@ -414,14 +418,14 @@
                                                 servicing for both routine and major repairs.</span>
                                         </div>
                                     </a></li>
-                                <li><a href="{{ route('user.servicesDetail', ['slug' => 'road-side-assistance']) }}"
+                                <li><a href="{{ route('user.servicesDetail', ['slug' => 'car-recovery']) }}"
                                         class="d-flex gap-2">
                                         <span class="menu-icon">
                                             <img src="{{ asset('assets/user/img/menu-icon7.png') }}" alt=""
                                                 class="img-fluid">
                                         </span>
                                         <div class="menu-text">
-                                            <h6 class="level-7 primary-semibold-font primary-color">Roadside Assistance
+                                            <h6 class="level-7 primary-semibold-font primary-color">Car Recovery
                                             </h6>
                                             <span class="level-9 primary-medium-font extra-color-3">Reliable support
                                                 when you need it the most.</span>

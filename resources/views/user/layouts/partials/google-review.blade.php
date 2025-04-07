@@ -189,7 +189,7 @@
                       <div class="col-12 mt-5 mt-md-0">
                         <video controls autoplay muted disablePictureInPicture loop
                           controlsList="nodownload noplaybackrate" class="testimonial-img-height" width="90" height="100">
-                          <source src="./assets/video/review-video-1.mp4">
+                          <source src="{{ asset('assets/user/video/review-video-1.mp4') }}">
                         </video>
                       </div>
   
@@ -205,7 +205,7 @@
                       <div class="col-12 position-relative ">
                         <video controls autoplay muted disablePictureInPicture
                           controlsList="nodownload noplaybackrate" class="testimonial-img-height" width="90" height="100">
-                          <source src="./assets/video/review-video-2.mp4">
+                          <source src="{{ asset('assets/user/video/review-video-2.mp4') }}">
                         </video>
                       </div>
                     </div>
@@ -218,7 +218,7 @@
                     <div class="row align-items-center">
   
                       <div class="col-12">
-                        <video src="./assets/video/review-video-3.mp4" width="100%" height="auto" controls autoplay muted disablePictureInPicture
+                        <video src="{{ asset('assets/user/video/review-video-3.mp4') }}" width="100%" height="auto" controls autoplay muted disablePictureInPicture
                           controlsList="nodownload noplaybackrate" class="testimonial-img-height">
                         </video>
                       </div>
@@ -231,7 +231,7 @@
                     <div class="row align-items-center">
   
                       <div class="col-12">
-                        <video src="./assets/video/review-video-4.mp4" controls autoplay muted disablePictureInPicture
+                        <video src="{{ asset('assets/user/video/review-video-4.mp4') }}" controls autoplay muted disablePictureInPicture
                           controlsList="nodownload noplaybackrate" class="testimonial-img-height">
                         </video>
                       </div>
@@ -244,7 +244,7 @@
                     <div class="row align-items-center">
   
                       <div class="col-12">
-                        <video src="./assets/video/review-video-5.mp4" controls autoplay muted disablePictureInPicture
+                        <video src="{{ asset('assets/user/video/review-video-5.mp4') }}" controls autoplay muted disablePictureInPicture
                           controlsList="nodownload noplaybackrate" class="testimonial-img-height">
                         </video>
                       </div>
@@ -257,7 +257,7 @@
                     <div class="row align-items-center">
   
                       <div class="col-12">
-                        <video src="./assets/video/review-video-6.mp4" controls autoplay muted disablePictureInPicture
+                        <video src="{{ asset('assets/user/video/review-video-6.mp4') }}" controls autoplay muted disablePictureInPicture
                           controlsList="nodownload noplaybackrate" class="testimonial-img-height">
                         </video>
                       </div>
@@ -270,7 +270,7 @@
                     <div class="row align-items-center">
   
                       <div class="col-12">
-                        <video src="./assets/video/review-video-7.mp4" controls autoplay muted disablePictureInPicture
+                        <video src="{{ asset('assets/user/video/review-video-7.mp4') }}" controls autoplay muted disablePictureInPicture
                           controlsList="nodownload noplaybackrate" class="testimonial-img-height">
                         </video>
                       </div>

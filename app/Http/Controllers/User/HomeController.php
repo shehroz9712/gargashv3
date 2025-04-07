@@ -115,7 +115,7 @@ class HomeController extends Controller
             'chinese-car' => 'user.service.chinese_car',
             'tinting' => 'user.service.tinting',
             'car-inspection' => 'user.service.car_inspection',
-            'road-side-assistance' => 'user.service.road_side_assistance',
+            'car-recovery' => 'user.service.assistance',
             'car-wrapping' => 'user.service.car_wrapping',
             'major-minor-service' => 'user.service.major_minor_service',
             'electric-car' => 'user.service.electric_car',
@@ -124,7 +124,7 @@ class HomeController extends Controller
             'mechanical-repair' => 'user.service.mechanical_repair',
             'european-cars' => 'user.service.european_car',
             'german-cars' => 'user.service.german-cars',
-            'contract' => 'user.service.contract',
+            'warranty-service-contract' => 'user.service.warranty_service_contract',
         ];
 
         if (array_key_exists($slug, $services)) {
@@ -143,7 +143,7 @@ class HomeController extends Controller
             'email' => 'nullable|email',
             'make' => 'nullable|string',
             'model' => 'nullable|string',
-            'service' => 'required|string',
+            'service' => 'nullable|string',
             'location' => 'nullable|string',
             'url' => 'nullable|url',
             'device_type' => 'nullable|string',

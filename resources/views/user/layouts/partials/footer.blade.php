@@ -255,7 +255,7 @@
                     <h4>Branches Locations</h4>
                     <ul class="list-unstyled d-flex flex-column ps-0 mb-0 gap-3">
                         <li class="footer-social-li">
-                            <a href="#"
+                            <a target="_blank" href="https://maps.app.goo.gl/iQVBESPcxBcani4w9"
                                 class="level-7 extra-color-2 text-decoration-none d-flex align-items-center gap-3 ">
                                 <div class="contact-img primary-regular-font">
                                     <span class="secondary-color level-6">
@@ -269,7 +269,7 @@
                             </a>
                         </li>
                         <li class="footer-social-li">
-                            <a href="#"
+                            <a target="_blank" href="https://maps.app.goo.gl/h6zHQjcNaRzxaFXX6"
                                 class="level-7 extra-color-2 text-decoration-none d-flex align-items-center gap-3 ">
                                 <div class="contact-img primary-regular-font">
                                     <span class="secondary-color level-6">
@@ -283,7 +283,7 @@
                             </a>
                         </li>
                         <li class="footer-social-li">
-                            <a href="#"
+                            <a target="_blank" href="https://maps.app.goo.gl/edSSJeg6y3eXhR5s8"
                                 class="level-7 extra-color-2 text-decoration-none d-flex align-items-center gap-3 ">
                                 <div class="contact-img primary-regular-font">
                                     <span class="secondary-color level-6">
@@ -318,7 +318,7 @@
                                 <ul class="d-flex flex-column flex-md-row gap-3 list-unstyled mb-0 ps-0 pt-3">
                                     <li class="footer-social-li">
 
-                                        <a href="#"
+                                        <a target="_blank" href="https://maps.app.goo.gl/jLmLPWVXiFVUL5Yz6"
                                             class="level-7 extra-color-2 text-decoration-none d-flex align-items-center gap-3">
                                             <div class="contact-img primary-regular-font">
                                                 <span class="secondary-color level-6">
@@ -387,9 +387,8 @@
                         <li class="p-0"><a
                                 href="{{ route('user.servicesDetail', ['slug' => 'major-minor-service']) }}">Major/Minor
                                 Service</a></li>
-                        <li class="p-0"><a
-                                href="{{ route('user.servicesDetail', ['slug' => 'road-side-assistance']) }}">Roadside
-                                Assistance</a></li>
+                        <li class="p-0"><a href="{{ route('user.servicesDetail', ['slug' => 'car-recovery']) }}">Car
+                                Recovery</a></li>
                         <li class="p-0"><a
                                 href="{{ route('user.servicesDetail', ['slug' => 'tinting']) }}">Tinting</a></li>
 
@@ -440,7 +439,7 @@
                     <ul class="d-flex flex-column flex-md-row gap-3 list-unstyled mb-0 ps-0 pt-3">
                         <li class="footer-social-li">
 
-                            <a href="#"
+                            <a target="_blank" href="https://maps.app.goo.gl/jLmLPWVXiFVUL5Yz6"
                                 class="level-7 extra-color-2 text-decoration-none d-flex align-items-center gap-3">
                                 <div class="contact-img primary-regular-font">
                                     <span class="secondary-color level-6">
