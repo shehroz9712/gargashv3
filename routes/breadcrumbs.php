@@ -1,0 +1,51 @@
+<?php
+
+use Diglactic\Breadcrumbs\Breadcrumbs;
+use Diglactic\Breadcrumbs\Generator as BreadcrumbTrail;
+
+// Dashboard
+Breadcrumbs::for('dashboard', function (BreadcrumbTrail $trail) {
+    $trail->push('Dashboard', route('admin.dashboard'));
+});
+
+// Admins
+Breadcrumbs::for('admin.users.index', function (BreadcrumbTrail $trail) {
+    $trail->parent('dashboard');
+    $trail->push('Users List', route('admin.users.index'));
+});
+
+Breadcrumbs::for('admin.users.create', function (BreadcrumbTrail $trail) {
+    $trail->parent('admin.users.index');
+    $trail->push('Add', route('admin.users.create'));
+});
+
+Breadcrumbs::for('admin.users.show', function (BreadcrumbTrail $trail, $data) {
+    $trail->parent('admin.users.index');
+    $trail->push($data->title, route('admin.users.show', $data->id));
+});
+
+Breadcrumbs::for('admin.users.edit', function (BreadcrumbTrail $trail, $data) {
+    $trail->parent('admin.users.index');
+    $trail->push('Edit', route('admin.users.edit', $data->id));
+});
+
+// Blogs
+Breadcrumbs::for('admin.blogs.index', function (BreadcrumbTrail $trail) {
+    $trail->parent('dashboard');
+    $trail->push('Blogs List', route('admin.blogs.index'));
+});
+
+Breadcrumbs::for('admin.blogs.create', function (BreadcrumbTrail $trail) {
+    $trail->parent('admin.blogs.index');
+    $trail->push('Add', route('admin.blogs.create'));
+});
+
+Breadcrumbs::for('admin.blogs.show', function (BreadcrumbTrail $trail, $data) {
+    $trail->parent('admin.blogs.index');
+    $trail->push($data->title, route('admin.blogs.show', $data->id));
+});
+
+Breadcrumbs::for('admin.blogs.edit', function (BreadcrumbTrail $trail, $data) {
+    $trail->parent('admin.blogs.index');
+    $trail->push('Edit', route('admin.blogs.edit', $data->id));
+});
