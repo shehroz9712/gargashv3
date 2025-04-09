@@ -29,7 +29,7 @@
                     </li>
                     <li class="dropdown">
                         <a class="active nav-link menu-title {{ request()->routeIs('admin.blogs.*') ? 'active' : '' }}"
-                            href="{{ route('admin.service-requests.index') }}">
+                            href="{{ route('admin.service_requests.index') }}">
                             <i data-feather="user-check"></i><span>Service Requests</span>
                         </a>
                     </li>

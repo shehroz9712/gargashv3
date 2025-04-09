@@ -49,3 +49,24 @@ Breadcrumbs::for('admin.blogs.edit', function (BreadcrumbTrail $trail, $data) {
     $trail->parent('admin.blogs.index');
     $trail->push('Edit', route('admin.blogs.edit', $data->id));
 });
+
+// service_requests
+Breadcrumbs::for('admin.service_requests.index', function (BreadcrumbTrail $trail) {
+    $trail->parent('dashboard');
+    $trail->push('Service requests List', route('admin.service_requests.index'));
+});
+
+Breadcrumbs::for('admin.service_requests.create', function (BreadcrumbTrail $trail) {
+    $trail->parent('admin.service_requests.index');
+    $trail->push('Add', route('admin.service_requests.create'));
+});
+
+Breadcrumbs::for('admin.service_requests.show', function (BreadcrumbTrail $trail, $data) {
+    $trail->parent('admin.service_requests.index');
+    $trail->push($data->user_name, route('admin.service_requests.show', $data->id));
+});
+
+Breadcrumbs::for('admin.service_requests.edit', function (BreadcrumbTrail $trail, $data) {
+    $trail->parent('admin.service_requests.index');
+    $trail->push('Edit', route('admin.service_requests.edit', $data->id));
+});

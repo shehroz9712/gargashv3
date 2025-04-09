@@ -56,7 +56,6 @@ class ViewServiceProvider extends ServiceProvider
         });
 
 
-
         /*
          * blog
          */
@@ -71,6 +70,22 @@ class ViewServiceProvider extends ServiceProvider
         });
         view()->composer('admin.blogs.edit', function ($view) {
             $view->with(['pageTitle' => 'Edit  Blog']);
+        });
+
+        /*
+         * service-request
+         */
+        view()->composer('admin.service_requests.index', function ($view) {
+            $view->with(['pageTitle' => ' Service requests List']);
+        });
+        view()->composer('admin.service_requests.create', function ($view) {
+            $view->with(['pageTitle' => 'Add  Service request']);
+        });
+        view()->composer('admin.service_requests.show', function ($view) {
+            $view->with(['pageTitle' => 'Show  Service request']);
+        });
+        view()->composer('admin.service_requests.edit', function ($view) {
+            $view->with(['pageTitle' => 'Edit  Service request']);
         });
 
 
