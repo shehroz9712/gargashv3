@@ -1245,24 +1245,24 @@ span.product-top-img {
 }
 @import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap");
 
-.blag-img-1 {
+.blog-img-1 {
     background: url(../img/promotion-img-1.jpg) no-repeat center center/cover;
 }
-.blag-img-2 {
-    background: url(../img/services/promotion-img-3.jpg) no-repeat center
+.blog-img-2 {
+    background: url(../img/promotion-img-2.jpg) no-repeat center
         center/cover;
 }
-.blag-img-3 {
+.blog-img-3 {
     background: url(../img/promotion-img-3.jpg) no-repeat center center/cover;
 }
-.blag-img-4 {
+.blog-img-4 {
     background: url(../img/promotion-img-4.jpg) no-repeat center center/cover;
 }
-.blag-img-5 {
-    background: url(../img/promotion-img-4.webp) no-repeat center center/cover;
+.blog-img-5 {
+    background: url(../img/promotion-img-5.jpg) no-repeat center center/cover;
 }
-.blag-img-6 {
-    background: url(../img/promotion-img-5.webp) no-repeat center center/cover;
+.blog-img-6 {
+    background: url(../img/promotion-img-6.jpg) no-repeat center center/cover;
 }
 .kdam-thmor-pro-font {
     font-family: "Kdam Thmor Pro", sans-serif;

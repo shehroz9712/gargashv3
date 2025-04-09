@@ -1,4 +1,4 @@
-<header class="site-header" id="header">
+<header class="site-header">
     <div class="top-reading secondary-bg py-1 overflow-hidden">
         <div class="container">
             <!-- <ul class="top-updates d-flex align-items-center justify-content-center justify-content-between list-unstyled m-0 p-0"> -->
@@ -112,10 +112,10 @@
                     <div class="contact-detail">
                         {{-- <h6 class="level-9 primary-semibold-font extra-color-3 mb-0"> Call Us </h6> --}}
                         <a href="tel:8004272886"
-                            class="cell-no level-7 heading-font dark-color text-decoration-none dark-hover">Toll Free: 800
-                            4272886</a><br>
-                 
-
+                        class="cell-no level-7 heading-font dark-color text-decoration-none dark-hover">Toll Free: 800
+                        4272886</a><br>
+                     
+                      
                     </div>
                 </div>
                 <figure class="header-logo">
@@ -578,20 +578,3 @@
 
     </ul>
 </header>
-
-<script>
-    let prevScrollpos = window.pageYOffset;
-    const header = document.getElementById("header");
-
-    window.onscroll = () => {
-        let currentScrollPos = window.pageYOffset;
-        if (prevScrollpos > currentScrollPos) {
-            // Show header
-            header.style.top = "0";
-        } else {
-            // Hide header
-            header.style.top = "-80px"; // adjust based on header height
-        }
-        prevScrollpos = currentScrollPos;
-    };
-</script>

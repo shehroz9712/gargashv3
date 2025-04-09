@@ -16,7 +16,7 @@
             <!-- Left Side: Main Review -->
             <div class="col-lg-6">
               <div class="review-text pb-4 position-relative" id="main-review">
-                <a href="#" id="main-review-link" target="_blank">
+                <a id="main-review-link" target="_blank">
                   <div class="review-para pb-4">
                     <p class="level-7 primary-regular-font extra-color-2" id="main-review-comment">
                       I’ve been bringing my car to Gargash Auto for years, and they never disappoint. The team is always professional, and I know my car is in the best hands. From routine maintenance to major repairs, they handle everything with precision. Highly recommend their services!</strong>
@@ -57,7 +57,7 @@
             <div class="col-lg-6">
               <div class="review-right-wrapper">
                 <!-- Review 1 -->
-                <a target="_blank" class="review-link" data-comment="Gargash Auto transformed my car care experience. The convenience of their service contract makes it so easy for me to get my car serviced without disrupting my schedule. Plus, their team is always honest and efficient. Truly top-notch service!" data-name="– Mark R." data-rating="5">
+                <a class="cursor-pointer review-link" data-comment="Gargash Auto transformed my car care experience. The convenience of their service contract makes it so easy for me to get my car serviced without disrupting my schedule. Plus, their team is always honest and efficient. Truly top-notch service!" data-name="– Mark R." data-rating="5" data-reviewurl="https://www.google.com/maps/contrib/113581672704880399952/reviews/@23.1118938,80.4932083,4z/data=!3m1!4b1!4m3!8m2!3m1!1e1?hl=en-GB&entry=ttu&g_ep=EgoyMDI1MDMwMi4wIKXMDSoASAFQAw%3D%3D">
                   <div class="review-box d-flex align-items-center justify-content-between mb-3">
                     <div class="review-sub-name">
                       <h6 class="level-7 primary-semibold-font extra-color-2">– Mark R.</h6>
@@ -75,7 +75,7 @@
                 </a>
 
                 <!-- Review 2 -->
-                <a href="https://www.google.com/maps/contrib/113581672704880399952/reviews/@23.1118938,80.4932083,4z/data=!3m1!4b1!4m3!8m2!3m1!1e1?hl=en-GB&entry=ttu&g_ep=EgoyMDI1MDMwMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="review-link" data-comment="I recently had my luxury car serviced at Gargash Auto, and the results were outstanding. Their team treated my car like it was their own, and I could tell they used only the best tools and parts. I’ll definitely continue to trust them with all my vehicle needs." data-name="– Jasmine P." data-rating="5">
+                <a class="cursor-pointer review-link" data-comment="I recently had my luxury car serviced at Gargash Auto, and the results were outstanding. Their team treated my car like it was their own, and I could tell they used only the best tools and parts. I'll definitely continue to trust them with all my vehicle needs." data-name="– Jasmine P." data-rating="5" data-reviewurl="https://www.google.com/maps/contrib/113581672704880399952/reviews/@23.1118938,80.4932083,4z/data=!3m1!4b1!4m3!8m2!3m1!1e1?hl=en-GB&entry=ttu&g_ep=EgoyMDI1MDMwMi4wIKXMDSoASAFQAw%3D%3D">
                   <div class="review-box d-flex align-items-center justify-content-between mb-3">
                     <div class="review-sub-name">
                       <h6 class="level-7 primary-semibold-font extra-color-2">– Jasmine P.</h6>
@@ -93,7 +93,7 @@
                 </a>
 
                 <!-- Review 3 -->
-                <a href="https://www.google.com/maps/contrib/117252774557379550002/reviews/@25.1708598,55.3177495,11z/data=!3m1!4b1!4m3!8m2!3m1!1e1?hl=en-GB&entry=ttu&g_ep=EgoyMDI1MDMwMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="review-link" data-comment="Gargash Auto’s customer service is second to none. From booking the service to receiving my car back in perfect condition, the entire process was seamless. They even took the time to explain the repairs and answer all my questions. I wouldn't trust my car with anyone else." data-name="– David M." data-rating="5">
+                <a class="cursor-pointer review-link" data-comment="Gargash Auto's customer service is second to none. From booking the service to receiving my car back in perfect condition, the entire process was seamless. They even took the time to explain the repairs and answer all my questions. I wouldn't trust my car with anyone else." data-name="– David M." data-rating="5" data-reviewurl="https://www.google.com/maps/contrib/117252774557379550002/reviews/@25.1708598,55.3177495,11z/data=!3m1!4b1!4m3!8m2!3m1!1e1?hl=en-GB&entry=ttu&g_ep=EgoyMDI1MDMwMi4wIKXMDSoASAFQAw%3D%3D">
                   <div class="review-box d-flex align-items-center justify-content-between mb-3">
                     <div class="review-sub-name">
                       <h6 class="level-7 primary-semibold-font extra-color-2">– David M.</h6>
@@ -111,7 +111,7 @@
                 </a>
 
                 <!-- Review 4 -->
-                <a href="https://www.google.com/maps/contrib/101997236533537285372/reviews/@40.5203133,26.0415536,4z/data=!3m1!4b1!4m3!8m2!3m1!1e1?hl=en-GB&entry=ttu&g_ep=EgoyMDI1MDMwMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="review-link" data-comment="The team at Gargash Auto went above and beyond for me. They not only fixed my car efficiently but also provided a detailed inspection and offered helpful tips to keep my vehicle in top condition. It’s clear they truly care about their customers." data-name="– Ali K." data-rating="5">
+                <a  class="cursor-pointer review-link" data-comment="The team at Gargash Auto went above and beyond for me. They not only fixed my car efficiently but also provided a detailed inspection and offered helpful tips to keep my vehicle in top condition. It's clear they truly care about their customers." data-name="– Ali K." data-rating="5" data-reviewurl="https://www.google.com/maps/contrib/101997236533537285372/reviews/@40.5203133,26.0415536,4z/data=!3m1!4b1!4m3!8m2!3m1!1e1?hl=en-GB&entry=ttu&g_ep=EgoyMDI1MDMwMi4wIKXMDSoASAFQAw%3D%3D">
                   <div class="review-box d-flex align-items-center justify-content-between">
                     <div class="review-sub-name">
                       <h6 class="level-7 primary-semibold-font extra-color-2">– Ali K.</h6>
@@ -133,6 +133,7 @@
         </div>
 
         <!-- JavaScript for Dynamic Content Update -->
+        <!-- JavaScript for Dynamic Content Update -->
         <script>
           document.addEventListener("DOMContentLoaded", function() {
             const reviewLinks = document.querySelectorAll(".review-link");
@@ -140,6 +141,16 @@
             const mainReviewName = document.getElementById("main-review-name");
             const mainReviewRating = document.getElementById("main-review-rating");
             const mainReviewLink = document.getElementById("main-review-link");
+
+            // Store the currently selected review URL
+            let currentReviewUrl = '';
+
+            // Make the main review comment clickable only when there's a URL
+            mainReviewComment.addEventListener('click', function() {
+              if (currentReviewUrl) {
+                window.open(currentReviewUrl, '_blank');
+              }
+            });
 
             reviewLinks.forEach((link) => {
               link.addEventListener("click", function(e) {
@@ -149,12 +160,14 @@
                 const comment = link.getAttribute("data-comment");
                 const name = link.getAttribute("data-name");
                 const rating = link.getAttribute("data-rating");
-                const href = link.getAttribute("href");
+                const reviewUrl = link.getAttribute("data-reviewurl");
+
+                // Store the current review URL
+                currentReviewUrl = reviewUrl;
 
                 // Update main review section
                 mainReviewComment.innerHTML = comment;
                 mainReviewName.textContent = name;
-                mainReviewLink.setAttribute("href", href);
 
                 // Update rating stars
                 mainReviewRating.innerHTML = "";
@@ -164,8 +177,23 @@
                   star.innerHTML = '<i class="fa-solid fa-star" style="color: #E6B110;"></i>';
                   mainReviewRating.appendChild(star);
                 }
+
+                // Add clickable style if there's a URL
+                if (reviewUrl) {
+                  mainReviewComment.style.cursor = 'pointer';
+                  mainReviewComment.title = 'Click to view full review';
+                } else {
+                  mainReviewComment.style.cursor = 'default';
+                  mainReviewComment.style.textDecoration = 'none';
+                  mainReviewComment.title = '';
+                }
               });
             });
+
+            // Initialize with first review (optional)
+            if (reviewLinks.length > 0) {
+              reviewLinks[0].click();
+            }
           });
         </script>
 
