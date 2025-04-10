@@ -37,35 +37,35 @@
     }
 
     .gateway-img-width-height-responsive-1::after {
-        background: url('{{ asset('assets/user/img/gateway-new-img-Transmission-Repair.jpg') }}') no-repeat center center/cover;
+        background: url('assets/user/img/gateway-new-img-Transmission-Repair.jpg') no-repeat center center/cover;
     }
 
     .gateway-img-width-height-responsive-2::after {
-        background: url('{{ asset('assets/user/img/gateway-new-img7.jpg') }}') no-repeat center center/cover;
+        background: url('assets/user/img/gateway-new-img7.jpg') no-repeat center center/cover;
     }
 
     .gateway-img-width-height-responsive-3::after {
-        background: url('{{ asset('assets/user/img/gateway-new-img2.jpg') }}') no-repeat center center/cover;
+        background: url('assets/user/img/gateway-new-img2.jpg') no-repeat center center/cover;
     }
 
     .gateway-img-width-height-responsive-4::after {
-        background: url('{{ asset('assets/user/img/gateway-new-img-Car-AC-Repair.jpg') }}') no-repeat center center/cover;
+        background: url('assets/user/img/gateway-new-img-Car-AC-Repair.jpg') no-repeat center center/cover;
     }
 
     .gateway-img-width-height-responsive-5::after {
-        background: url('{{ asset('assets/user/img/gateway-new-img-Car-Painting.jpg') }}') no-repeat center center/cover;
+        background: url('assets/user/img/gateway-new-img-Car-Painting.jpg') no-repeat center center/cover;
     }
 
     .gateway-img-width-height-responsive-6::after {
-        background: url('{{ asset('assets/user/img/gateway-new-img4.jpg') }}') no-repeat center center/cover;
+        background: url('assets/user/img/gateway-new-img4.jpg') no-repeat center center/cover;
     }
 
     .gateway-img-width-height-responsive-7::after {
-        background: url('{{ asset('assets/user/img/gateway-new-img-Car-Restoration.jpg') }}') no-repeat center center/cover;
+        background: url('assets/user/img/gateway-new-img-Car-Restoration.jpg') no-repeat center center/cover;
     }
 
     .gateway-img-width-height-responsive-8::after {
-        background: url('{{ asset('assets/user/img/gateway-new-img-Car-Tint.jpg') }}') no-repeat center center/cover;
+        background: url('assets/user/img/gateway-new-img-Car-Tint.jpg') no-repeat center center/cover;
     }
 </style>
 <section class="container">

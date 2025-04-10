@@ -40,6 +40,7 @@
                 <div class="col-lg-5">
                     <img src="{{ asset('assets/user/img/shop-hero-right.png') }}" alt="" />
                 </div>
+
             </div>
         </div>
     </section>
@@ -113,10 +114,14 @@
                     style="margin-right: 1rem;">
             </div>
         </div>
+
+    </div>
+
     </section>
     <!-- gateway-section Start Here  -->
     @include('user.layouts.partials.gateway')
     <!-- gateway-section Ends Here  -->
+
 
 
 
