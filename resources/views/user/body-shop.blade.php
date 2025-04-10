@@ -36,10 +36,9 @@
                                 Now</button></a>
                     </span>
                 </div>
-
             </div>
             <div class="col-lg-5">
-                <img src="{{ asset('assets/user/img/body-shop-hero-2.jpg') }}" alt="" style="mix-blend-mode: multiply;"/>
+                <img src="{{ asset('assets/user/img/body-shop-hero-2.jpg') }}" alt="" style="mix-blend-mode: multiply;" />
             </div>
         </div>
     </div>
@@ -116,7 +115,7 @@
     </div>
 </section>
 <!-- gateway-section Start Here  -->
-@include('user.layouts.partials.gateway')
+<!-- @include('user.layouts.partials.gateway') -->
 <!-- gateway-section Ends Here  -->
 
 

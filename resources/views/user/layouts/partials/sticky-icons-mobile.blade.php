@@ -26,7 +26,7 @@
     .menu-sticky-iconsToggle::before {
         content: '+';
         position: absolute;
-        top: 58%;
+        top: 50%;
         left: 50%;
         font-size: 2.8em;
         font-weight: 550;
@@ -37,6 +37,8 @@
 
     .menu-sticky-iconsToggle.active::before {
         transform: rotate(315deg);
+        top: -10%;
+        left: 15%;
     }
 
     .menu-sticky-icons {
@@ -120,7 +122,7 @@
             <li style="--i:0.1s"><a href="https://wa.me/971547935400" target="_blank">
                     <i title="Whatsapp" class="fa-brands fa-whatsapp" style="color: #25D366; font-size:larger;"></i>
                 </a></li>
-            <li style="--i:0.2s"><a href="tel:+971 56 545 8853" target="_blank">
+            <li style="--i:0.2s"><a href="tel:8004272886" target="_blank">
                     <i title="Call Number" class="fa-solid fa-phone-volume" style="color: #111"></i>
                 </a></li>
             <li style="--i:0.3s"><a href="#" target="_blank">

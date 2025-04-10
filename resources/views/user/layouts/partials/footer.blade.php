@@ -297,7 +297,7 @@
                             </a>
                         </li>
                         <li class="footer-social-li">
-                            <a href="#"
+                            <a 
                                 class="level-7 extra-color-2 text-decoration-none d-flex align-items-center gap-3 ">
                                 <div class="contact-img primary-regular-font">
                                     <span class="secondary-color level-6">
@@ -334,7 +334,7 @@
                                         </a>
                                     </li>
                                     <li class="footer-social-li">
-                                        <a href="#"
+                                        <a 
                                             class="level-7 extra-color-2 text-decoration-none d-flex align-items-center gap-3">
                                             <div class="contact-img primary-regular-font">
                                                 <span class="secondary-color level-6">
@@ -454,7 +454,7 @@
                             </a>
                         </li>
                         <li class="footer-social-li">
-                            <a href="#"
+                            <a 
                                 class="level-7 extra-color-2 text-decoration-none d-flex align-items-center gap-3">
                                 <div class="contact-img primary-regular-font">
                                     <span class="secondary-color level-6">

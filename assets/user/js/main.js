@@ -170,8 +170,6 @@ if ($(".dropdown").length) {
 		}
 	});
 }
-
-
 // Wrap each letter with a span element for each .ml14 element
 document.querySelectorAll('.ml14 .letters').forEach(function (textWrapper) {
 	textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");

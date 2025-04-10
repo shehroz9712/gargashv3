@@ -91,21 +91,24 @@
        })
    </script>
 
-   <script>
-       window.addEventListener('scroll', function() {
-           const header = document.querySelector('.site-header');
-           const headerBg = document.querySelector('.header-bg');
-           const scrollPosition = window.scrollY;
+<script>
+    window.addEventListener('scroll', function() {
+        const header = document.querySelector('.site-header');
+        const headerBg = document.querySelector('.header-bg');
+        const topReading = document.querySelector('.top-reading');
+        const scrollPosition = window.scrollY;
 
-           if (scrollPosition > 50) { // Adjust this value as needed
-               header.classList.add('scrolled');
-               headerBg.classList.add('scrolled');
-           } else {
-               header.classList.remove('scrolled');
-               headerBg.classList.remove('scrolled');
-           }
-       });
-   </script>
+        if (scrollPosition > 50) { // Adjust this value as needed
+            header.classList.add('scrolled');
+            headerBg.classList.add('scrolled');
+            topReading.style.display = 'none'; // Hide top-reading when scrolled down
+        } else {
+            header.classList.remove('scrolled');
+            headerBg.classList.remove('scrolled');
+            topReading.style.display = 'block'; // Show top-reading when at top
+        }
+    });
+</script>
 
    <script>
        // Get the button:

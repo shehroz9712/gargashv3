@@ -191,10 +191,10 @@
                                                     </span>
                                                 </div>
                                                 <div class="contact-text">
-                                                    <h6 class="level-7 primary-regular-font dark-color">16 29th St - AI
+                                                    <a href="https://g.co/kgs/M5zZGaz" target="_blank" class="level-7 primary-regular-font dark-color">16 29th St - AI
                                                         Quoz
                                                         Industrial Area 4 - Dubai
-                                                    </h6>
+                                                    </a>
                                                 </div>
                                             </a>
                                         </li>
@@ -238,7 +238,7 @@
                                                 </div>
                                                 <div class="contact-text">
                                                     <h6 class="level-7 primary-regular-font dark-color">Monday -
-                                                        Saturday: 8 am - 6 pm Sunday: Closed </h6>
+                                                        Saturday: 8 am - 6 pmSunday: Closed </h6>
                                                 </div>
                                             </a>
                                         </li>
@@ -275,7 +275,7 @@
                                                 </div>
                                                 <div class="contact-text">
                                                     <h6 class="level-7 primary-regular-font dark-color">Monday -
-                                                        Wednesday: 10 am - 10 pm Thursday - Sunday: 10 am - 11 pm </h6>
+                                                        Wednesday: 10 am - 10 pmThursday - Sunday: 10 am - 11 pm </h6>
                                                 </div>
                                             </a>
                                         </li>

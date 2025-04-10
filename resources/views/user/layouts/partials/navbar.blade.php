@@ -1,7 +1,18 @@
+<style>
+    .top-reading {
+        transition: all 0.5s ease-in-out;
+    }
+
+    /* Optional: Add this if you want to hide the top-reading section by default when scrolled */
+    .scrolled .top-reading {
+        display: none !important;
+    }
+</style>
+
 <header class="site-header">
     <div class="top-reading secondary-bg py-1 overflow-hidden">
         <div class="container">
-            <!-- <ul class="top-updates d-flex align-items-center justify-content-center justify-content-between list-unstyled m-0 p-0"> -->
+
             <ul
                 class="top-updates d-flex align-items-center justify-content-center  justify-content-between list-unstyled m-0 p-0">
                 <li
@@ -75,11 +86,10 @@
     </div>
 
     <!-- ////////////////////// -->
-
     <script>
         const topUpdates = document.querySelector('.top-updates');
 
-        // Slider ko stop karein jab hover ya click ho
+        // Stop the slider when hovered or clicked
         topUpdates.addEventListener('mouseenter', () => {
             topUpdates.style.animationPlayState = 'paused';
         });
@@ -88,7 +98,7 @@
             topUpdates.style.animationPlayState = 'running';
         });
 
-        // Mobile par touch events ke liye
+        // For touch events on mobile
         topUpdates.addEventListener('touchstart', () => {
             topUpdates.style.animationPlayState = 'paused';
         });
@@ -97,110 +107,102 @@
             topUpdates.style.animationPlayState = 'running';
         });
     </script>
-
     <!-- ////////////////////// -->
+    <span>
+        <div class="container-fluid header-options header-bg py-3">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-between flex-lg-row gap-lg-0 gap-3">
+                    <div class="header-details-wrapper d-lg-flex d-none align-items-center justify-content-end gap-3">
+                        <a class="contact-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+                        <div class="contact-detail">
+                            <h6 class="level-9 primary-semibold-font extra-color-3 mb-0"> Toll Free: </h6>
+                            <a href="tel:8004272886"
+                                class="cell-no level-7 heading-font dark-color text-decoration-none dark-hover"> 800
+                                4272886</a><br>
 
 
-
-    <div class="container-fluid header-options header-bg py-3">
-        <div class="container">
-            <div class="d-flex align-items-center justify-content-between flex-lg-row gap-lg-0 gap-3">
-                <div class="header-details-wrapper d-lg-flex d-none align-items-center justify-content-end gap-3">
-                    <a class="contact-icon">
-                        <i class="fa-solid fa-phone"></i>
-                    </a>
-                    <div class="contact-detail">
-                        {{-- <h6 class="level-9 primary-semibold-font extra-color-3 mb-0"> Call Us </h6> --}}
-                        <a href="tel:8004272886"
-                            class="cell-no level-7 heading-font dark-color text-decoration-none dark-hover">Toll Free: 800
-                            4272886</a><br>
-                 
-
+                        </div>
                     </div>
-                </div>
-                <figure class="header-logo">
-                    <a href="{{ route('user.home') }}" class="d-block">
-                        <img src="{{ asset('assets/user/img/logo.png') }}" class="logo-here w-100 object-cover"
-                            alt="" />
-                    </a>
-                </figure>
-                <div class="header-details-wrapper d-lg-flex d-none align-items-center justify-content-end gap-3">
-                    <a class="contact-icon">
-                        <i class="fa-solid fa-envelope"></i>
-                    </a>
-                    <div class="contact-detail">
-                        <h6 class="level-9 primary-semibold-font extra-color-3 mb-0"> Mail Us </h6>
-                        <a href="mailto:sales@gargashauto.ae"
-                            class="cell-no level-7 heading-font dark-color text-decoration-none dark-hover">
-                            sales@gargashauto.ae</a>
+                    <figure class="header-logo">
+                        <a href="{{ route('user.home') }}" class="d-block">
+                            <img src="{{ asset('assets/user/img/logo.png') }}" class="logo-here w-100 object-cover"
+                                alt="" />
+                        </a>
+                    </figure>
+                    <div class="header-details-wrapper d-lg-flex d-none align-items-center justify-content-end gap-3">
+                        <a class="contact-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                        <div class="contact-detail">
+                            <h6 class="level-9 primary-semibold-font extra-color-3 mb-0"> Mail Us </h6>
+                            <a href="mailto:sales@gargashauto.ae"
+                                class="cell-no level-7 heading-font dark-color text-decoration-none dark-hover">
+                                sales@gargashauto.ae</a>
+                        </div>
                     </div>
-                </div>
-                <!-- <button class="icon-badge position-absolute top-0 right-0 mt-3 me-3 d-lg-none d-block" onclick='$(".mobile-header").toggleClass("active");$("body").toggleClass("overflow-hidden")'><i class="fa fa-close"></i></button> -->
-                <button class="d-lg-none icon-badge p-4 bg-dark"
-                    onclick='$(".mobile-header").toggleClass("active");$("body").toggleClass("overflow-hidden")'>
-                    <i class="fa fa-bars"></i>
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <!-- ///////////////////////// -->
-    <div class="header-menu-bar py-3 d-lg-block d-none bg-white">
-        <div class="container">
-            <div class="row align-items-center justify-content-center">
-                <div class="header-nav col-xxl-10 col-lg-12">
-                    <ul class="header-menus d-flex align-items-center list-unstyled w-100 justify-content-between m-0">
-                        <li class="list-item">
-                            <a href="{{ route('user.home') }}"
-                                class="header-link text-decoration-none level-8 primary-semibold-font dark-color link-here">Home</a>
-                        </li>
-                        <li class="list-item">
-                            <a href="{{ route('user.contract') }}"
-                                class="header-link text-decoration-none level-8 primary-semibold-font dark-color link-here">Annual
-                                Contract</a>
-                        </li>
-                        <li class="list-item">
-                            <a href="{{ route('user.promotions') }}"
-                                class="header-link text-decoration-none level-8 primary-semibold-font dark-color link-here">Ongoing
-                                Promotions</a>
-                        </li>
-                        <!-- <li class="single-item">
-              <a class="header-link categoryBtn text-decoration-none level-8 primary-semibold-font dark-color link-here cursor-pointer"> Brands <i class="fa-solid fa-angle-down"></i>
-              </a>
-            </li> -->
-                        <li class="single-item">
-                            <a
-                                class="header-link categoryBtn-service text-decoration-none level-8 primary-semibold-font dark-color link-here cursor-pointer">
-                                Services <i class="fa-solid fa-angle-down"></i>
-                            </a>
-                        </li>
-                        <li class="list-item">
-                            <a href="{{ route('user.shop') }}"
-                                class="header-link text-decoration-none level-8 primary-semibold-font dark-color link-here">Body
-                                Shop </a>
-                        </li>
-                        <li class="list-item">
-                            <a href="{{ route('user.blogs') }}"
-                                class="header-link text-decoration-none level-8 primary-semibold-font dark-color link-here">Blog
-                            </a>
-                        </li>
-                        <li class="list-item">
-                            <a href="{{ route('user.about-us') }}"
-                                class="header-link text-decoration-none level-8 primary-semibold-font dark-color link-here">About
-                                Us </a>
-                        </li>
-                        <li class="list-item">
-                            <a href="{{ route('user.contact') }}"
-                                class="header-link text-decoration-none level-8 primary-semibold-font dark-color link-here">Contact
-                                Us</a>
-                        </li>
-                    </ul>
+                    <!-- <button class="icon-badge position-absolute top-0 right-0 mt-3 me-3 d-lg-none d-block" onclick='$(".mobile-header").toggleClass("active");$("body").toggleClass("overflow-hidden")'><i class="fa fa-close"></i></button> -->
+                    <button class="d-lg-none icon-badge p-4 bg-dark"
+                        onclick='$(".mobile-header").toggleClass("active");$("body").toggleClass("overflow-hidden")'>
+                        <i class="fa fa-bars"></i>
+                    </button>
                 </div>
             </div>
         </div>
-    </div>
+        <!-- ///////////////////////// -->
+        <div class="header-menu-bar py-3 d-lg-block d-none bg-white">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="header-nav col-xxl-10 col-lg-12">
+                        <ul class="header-menus d-flex align-items-center list-unstyled w-100 justify-content-between m-0">
+                            <li class="list-item">
+                                <a href="{{ route('user.home') }}"
+                                    class="header-link text-decoration-none level-8 primary-semibold-font dark-color link-here">Home</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="{{ route('user.contract') }}"
+                                    class="header-link text-decoration-none level-8 primary-semibold-font dark-color link-here">Annual
+                                    Contract</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="{{ route('user.promotions') }}"
+                                    class="header-link text-decoration-none level-8 primary-semibold-font dark-color link-here">Ongoing
+                                    Promotions</a>
+                            </li>
 
-
+                            <li class="single-item">
+                                <a
+                                    class="header-link categoryBtn-service text-decoration-none level-8 primary-semibold-font dark-color link-here cursor-pointer">
+                                    Services <i class="fa-solid fa-angle-down"></i>
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <a href="{{ route('user.shop') }}"
+                                    class="header-link text-decoration-none level-8 primary-semibold-font dark-color link-here">Body
+                                    Shop </a>
+                            </li>
+                            <li class="list-item">
+                                <a href="{{ route('user.blogs') }}"
+                                    class="header-link text-decoration-none level-8 primary-semibold-font dark-color link-here">Blog
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <a href="{{ route('user.about-us') }}"
+                                    class="header-link text-decoration-none level-8 primary-semibold-font dark-color link-here">About
+                                    Us </a>
+                            </li>
+                            <li class="list-item">
+                                <a href="{{ route('user.contact') }}"
+                                    class="header-link text-decoration-none level-8 primary-semibold-font dark-color link-here">Contact
+                                    Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </span>
     <style>
         .tabbable-responsive {
             width: 100%;
@@ -456,9 +458,6 @@
 
             </div>
         </div>
-
-
-
     </div>
 
 
