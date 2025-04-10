@@ -99,7 +99,7 @@
                     <a class="contact-icon">
                         <i class="fa-solid fa-envelope"></i>
                     </a>
-                    <div class="contact-detail">
+                    <div class="contact-detail"> 
                         <h6 class="level-9 primary-semibold-font extra-color-3 mb-0">Mail Us </h6>
                         <a href="mailto:sales@gargashauto.ae"
                             class="cell-no level-7 heading-font dark-color text-decoration-none dark-hover">
@@ -376,20 +376,3 @@
     </ul>
 </header>
 <!-- Header End Here -->
-
-<script>
-    let prevScrollpos = window.pageYOffset;
-    const header = document.getElementById("header");
-
-    window.onscroll = () => {
-        let currentScrollPos = window.pageYOffset;
-        if (prevScrollpos > currentScrollPos) {
-            // Show header
-            header.style.top = "0";
-        } else {
-            // Hide header
-            header.style.top = "-80px"; // adjust based on header height
-        }
-        prevScrollpos = currentScrollPos;
-    };
-</script>

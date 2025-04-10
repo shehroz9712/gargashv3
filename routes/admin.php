@@ -27,7 +27,8 @@ Route::middleware(['auth:admin'])->group(function () {
     Route::get('/', [BlogController::class, 'index'])->name('dashboard');
     Route::get('/dashboard', action: [BlogController::class, 'index'])->name('dashboard');
 
-    Route::resource('service-requests', ServiceRequestController::class);
+    Route::get('service_requests', [ServiceRequestController::class, 'index'])->name('service_requests.index');
+    Route::get('service_requests/detail/{id}', [ServiceRequestController::class, 'show'])->name('service_requests.show');
     Route::resource('blogs', BlogController::class);
     Route::resource('users', AdminController::class);
 });

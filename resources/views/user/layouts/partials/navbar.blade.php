@@ -111,10 +111,12 @@
                     </a>
                     <div class="contact-detail">
                         {{-- <h6 class="level-9 primary-semibold-font extra-color-3 mb-0"> Call Us </h6> --}}
-                        <a href="tel:8004272886"
-                        class="cell-no level-7 heading-font dark-color text-decoration-none dark-hover">Toll Free: 800
+                        <a href="tel:08004272886"
+                        class="cell-no level-7 heading-font dark-color text-decoration-none dark-hover">Toll Free: 0800
                         4272886</a><br>
-                     
+                        <a href="tel:+971 56 545 8853"
+                            class="cell-no level-7 heading-font dark-color text-decoration-none dark-hover">Call Now: +971 56 545
+                            8853</a> 
                       
                     </div>
                 </div>

@@ -88,10 +88,14 @@
 
 <!--Start Sticky Icon-->
 <div class="justify-content-center sticky-icon d-none d-md-block" style="z-index: 20;">
-    <a href="tel:800 4272886" target="_blank" class="align-items-center bg-warning d-flex text-black"><i
+    {{-- <a href="tel:0800 4272886" target="_blank" class="align-items-center bg-warning d-flex text-black"><i
             class="fa-solid fa-phone"></i>
-        <p class="m-0">800 4272886</p>
-    </a> 
+        <p class="m-0">Toll Free:0800 4272886</p>
+    </a> --}}
+    <a href="tel:0800 4272886" target="_blank" class="align-items-center bg-warning d-flex text-black"><i
+            class="fa-solid fa-phone-volume"></i>
+        <p class="m-0">0800 4272886 , +971 56 545 8853 </p>
+    </a>
     <a href="https://wa.me/971547935400" target="_blank" class="align-items-center bg-warning d-flex text-black"><i
             class="fa-brands fa-whatsapp"></i>
         <p class="m-0">+971 54 793 5400</p>

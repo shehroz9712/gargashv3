@@ -183,7 +183,7 @@
                                 <div class="col-lg-4">
                                     <ul class="list-unstyled d-flex flex-column ps-0 mb-0 gap-3">
                                         <li class="footer-social-li">
-                                            <a href="https://g.co/kgs/M5zZGaz"
+                                            <a href="#"
                                                 class="level-7 extra-color-2 text-decoration-none d-flex align-items-start gap-3">
                                                 <div class="contact-img primary-regular-font">
                                                     <span class="secondary-color level-6">

@@ -232,7 +232,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        background: url(assets/user/img/footer-bottom.png) no-repeat center;
+        background: url('{{ asset('assets/user/img/footer-bottom.png') }}') no-repeat center;
         width: 100%;
         height: 100%;
         z-index: -1;
@@ -297,7 +297,7 @@
                             </a>
                         </li>
                         <li class="footer-social-li">
-                            <a 
+                            <a href="#"
                                 class="level-7 extra-color-2 text-decoration-none d-flex align-items-center gap-3 ">
                                 <div class="contact-img primary-regular-font">
                                     <span class="secondary-color level-6">
@@ -334,7 +334,7 @@
                                         </a>
                                     </li>
                                     <li class="footer-social-li">
-                                        <a 
+                                        <a href="#"
                                             class="level-7 extra-color-2 text-decoration-none d-flex align-items-center gap-3">
                                             <div class="contact-img primary-regular-font">
                                                 <span class="secondary-color level-6">
@@ -454,7 +454,7 @@
                             </a>
                         </li>
                         <li class="footer-social-li">
-                            <a 
+                            <a href="#"
                                 class="level-7 extra-color-2 text-decoration-none d-flex align-items-center gap-3">
                                 <div class="contact-img primary-regular-font">
                                     <span class="secondary-color level-6">

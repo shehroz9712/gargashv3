@@ -21,8 +21,3 @@ error_log
 .well-known
 /composer.lock
 /public/.htaccess
-*.zip
-check_and_remove_images.bat
-unused_images.txt
-unused_images_backup
-public/assets/user/unused_images_backup/

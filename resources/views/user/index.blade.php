@@ -644,7 +644,7 @@
                     <p class="level-7 primary-regular-font dark-color col-lg-9 mx-auto">Our advanced repair services are
                         powered by modern tools, cutting-edge techniques, innovative processes, and skilled technicians. Our
                         4-step car repair model is designed to provide comfort and convenience for every car owner.</p>
-                    <a href="https://wa.me/971547935400" target="_blank" class="btn">Speak to an expert <span class="ps-2">
+                    <a href="#" class="btn">Speak to an expert <span class="ps-2">
                             <i class="fa-solid fa-angle-right"></i>
                         </span>
                     </a>

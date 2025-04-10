@@ -10,7 +10,7 @@
             <div class="col-lg-4">
                 <div class="d-flex flex-column gap-3 gateway-btn-wrapper w-100">
                     <a href="https://wa.me/971547935400" target="_blank"
-                        cprolass="align-self-baseline align-self-lg-end btn fs-6 w-100 w-md-75">Avail Your Discount</a>
+                        class="align-self-baseline align-self-lg-end btn fs-6 w-100 w-md-75">Avail Your Discount</a>
                     <a href="tel:+971 56 545 8853" target="_blank"
                         class="align-self-baseline align-self-lg-end btn fs-6 transparent-btn w-100 w-md-75">Call
                         Now</a>
