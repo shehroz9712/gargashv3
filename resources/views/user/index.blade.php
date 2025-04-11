@@ -431,7 +431,6 @@
     </section>
     <!-- On Desktop  -->
     <!-- On Mobile  -->
-
     <section class="container d-block d-lg-none vh-100 w-100 pb-0 ">
         <div class="d-flex flex-column gap-3 h-100 w-100">
             <a href="#brand-seciont" class="w-100 h-50">
@@ -451,8 +450,6 @@
         </div>
 
     </section>
-
-
     <!-- On Mobile  -->
 
     <!-- brand-section Ends Here  -->
