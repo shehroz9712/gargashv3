@@ -29,6 +29,7 @@ Route::get('/about', [HomeController::class, 'about'])->name('about-us');
 
 
 Route::get('/body-shop', [HomeController::class, 'shop'])->name('shop');
+Route::get('/brands', [HomeController::class, 'brands'])->name('brands');
 
 
 

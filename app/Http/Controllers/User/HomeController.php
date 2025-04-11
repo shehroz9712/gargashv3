@@ -22,6 +22,10 @@ class HomeController extends Controller
     {
         return view('user.body-shop');
     }
+    public function brands()
+    {
+        return view('user.brands');
+    }
     public function promotion()
     {
         return view('user.promotions');
