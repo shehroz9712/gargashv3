@@ -20,7 +20,18 @@ body {
     background: url(../img/atuo-spa-specialists.png) no-repeat center
         center/cover;
 }
-.car-insp-bg {
+.audi-full-container-bg {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
+        url(../img/brands/audi-black-car.jpg) no-repeat center center/cover;
+}
+.audi-full-container-btn-hover-bg-change:hover {
+    color: #e6b110 !important;
+}
+.Maintenance-box-hover-effect:hover {
+    scale: 1.02;
+    box-shadow: 0px 0px 10px 0px rgba(231, 166, 26, 1) !important;
+}
+r-insp-bg {
     background: url(../img/car-insp-bg.png) no-repeat center center/cover;
 }
 .car-insp-form-section-bg {

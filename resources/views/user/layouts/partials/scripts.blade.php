@@ -32,31 +32,31 @@
            "progressBar": true
        }
 
-       @if (Session::has('success'))
+       //    @if (Session::has('success'))
 
-           toastr.success("{{ session('success') }}");
-       @endif
+       //        toastr.success("{{ session('success') }}");
+       //    @endif
 
-       @if (!empty($errors->all()))
-           @foreach ($errors->all() as $error)
-               toastr.error("{{ $error }}")
-           @endforeach
-       @endif
+       //    @if (!empty($errors->all()))
+       //        @foreach ($errors->all() as $error)
+       //            toastr.error("{{ $error }}")
+       //        @endforeach
+       //    @endif
 
-       @if (Session::has('error'))
+       //    @if (Session::has('error'))
 
-           toastr.error("{{ session('error') }}");
-       @endif
+       //        toastr.error("{{ session('error') }}");
+       //    @endif
 
-       @if (Session::has('info'))
+       //    @if (Session::has('info'))
 
-           toastr.info("{{ session('info') }}");
-       @endif
+       //        toastr.info("{{ session('info') }}");
+       //    @endif
 
-       @if (Session::has('warning'))
+       //    @if (Session::has('warning'))
 
-           toastr.warning("{{ session('warning') }}");
-       @endif
+       //        toastr.warning("{{ session('warning') }}");
+       //    @endif
    </script>
    <script>
        // Detect Device
@@ -90,25 +90,25 @@
            open_brand_section_El.classList.toggle("show")
        })
    </script>
+   <script>
+       window.addEventListener('scroll', function() {
+           const header = document.querySelector('.site-header');
+           const headerBg = document.querySelector('.header-bg');
+           const topReading = document.querySelector('.top-reading');
+           const scrollPosition = window.scrollY;
 
-<script>
-    window.addEventListener('scroll', function() {
-        const header = document.querySelector('.site-header');
-        const headerBg = document.querySelector('.header-bg');
-        const topReading = document.querySelector('.top-reading');
-        const scrollPosition = window.scrollY;
 
-        if (scrollPosition > 50) { // Adjust this value as needed
-            header.classList.add('scrolled');
-            headerBg.classList.add('scrolled');
-            topReading.style.display = 'none'; // Hide top-reading when scrolled down
-        } else {
-            header.classList.remove('scrolled');
-            headerBg.classList.remove('scrolled');
-            topReading.style.display = 'block'; // Show top-reading when at top
-        }
-    });
-</script>
+           if (scrollPosition > 50) {
+               header.classList.add('scrolled');
+               headerBg.classList.add('scrolled');
+               topReading.classList.add('hide'); // slide out
+           } else {
+               header.classList.remove('scrolled');
+               headerBg.classList.remove('scrolled');
+               topReading.classList.remove('hide'); // slide in
+           }
+       });
+   </script>
 
    <script>
        // Get the button:
