@@ -37,59 +37,59 @@
 
 <!-- On Desktop  -->
 <section class="brand-section d-lg-block d-none section">
-        <div class="container">
-            <div class="brand-wrapper bg-img-cover img-img-no-repeat w-100 position-center">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <a href="https://wa.me/971547935400" target="_blank">
-                            <div class="text-center">
-                                <h4 class="level-3 heading-font extra-color-2 mb-0">Choose Your</h4>
-                                <div class="">
-                                    <h2 class="level-1-lg heading-font extra-color-2">
-                                        <span class="letters">Brand</span>
-                                    </h2>
-                                </div>
+    <div class="container">
+        <div class="brand-wrapper bg-img-cover img-img-no-repeat w-100 position-center">
+            <div class="row">
+                <div class="col-lg-6">
+                    <a href="https://wa.me/971547935400" target="_blank">
+                        <div class="text-center">
+                            <h4 class="level-3 heading-font extra-color-2 mb-0">Choose Your</h4>
+                            <div class="">
+                                <h2 class="level-1-lg heading-font extra-color-2">
+                                    <span class="letters">Brand</span>
+                                </h2>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-6">
-                        <a href="https://wa.me/971547935400" target="_blank">
-                            <div class="text-center">
-                                <h4 class="level-3 heading-font extra-color-2 mb-0">Choose Your</h4>
-                                <div class="">
-                                    <h2 class="level-1-lg heading-font extra-color-2">
-                                        <span class="letters">Services</span>
-                                    </h2>
-                                </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <a href="https://wa.me/971547935400" target="_blank">
+                        <div class="text-center">
+                            <h4 class="level-3 heading-font extra-color-2 mb-0">Choose Your</h4>
+                            <div class="">
+                                <h2 class="level-1-lg heading-font extra-color-2">
+                                    <span class="letters">Services</span>
+                                </h2>
                             </div>
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- On Desktop  -->
-    <!-- On Mobile  -->
-    <section class="container d-block d-lg-none vh-100 w-100 pb-0 ">
-        <div class="d-flex flex-column gap-3 h-100 w-100">
-            <a href="#brand-seciont" class="w-100 h-50">
-                <div
-                    class="Choose-Your-brand-in-mobile rounded-4 align-items-center d-flex flex-column  justify-content-center h-100 w-100 brand-section-open">
-                    <h4 class="fw-bolder level-1 text-light pb-1 ">Choose Your</h4>
-                    <h2 class="fw-bolder level-1 text-light">Brand</h2>
-                </div>
-            </a>
-            <a href="#service-seciont" class="w-100 h-50">
-                <div
-                    class="Choose-Your-Services-in-mobile rounded-4 align-items-center d-flex flex-column justify-content-center w-100 h-100">
-                    <h4 class="fw-bolder level-1 text-light pb-1 ">Choose Your</h4>
-                    <h2 class="fw-bolder level-1 text-light">Services</h2>
-                </div>
-            </a>
-        </div>
+    </div>
+</section>
+<!-- On Desktop  -->
+<!-- On Mobile  -->
+<section class="container d-block d-lg-none vh-100 w-100 pb-0 ">
+    <div class="d-flex flex-column gap-3 h-100 w-100">
+        <a href="#brand-seciont" class="w-100 h-50">
+            <div
+                class="Choose-Your-brand-in-mobile rounded-4 align-items-center d-flex flex-column  justify-content-center h-100 w-100 brand-section-open">
+                <h4 class="fw-bolder level-1 text-light pb-1 ">Choose Your</h4>
+                <h2 class="fw-bolder level-1 text-light">Brand</h2>
+            </div>
+        </a>
+        <a href="#service-seciont" class="w-100 h-50">
+            <div
+                class="Choose-Your-Services-in-mobile rounded-4 align-items-center d-flex flex-column justify-content-center w-100 h-100">
+                <h4 class="fw-bolder level-1 text-light pb-1 ">Choose Your</h4>
+                <h2 class="fw-bolder level-1 text-light">Services</h2>
+            </div>
+        </a>
+    </div>
 
-    </section>
-    <!-- On Mobile  -->
+</section>
+<!-- On Mobile  -->
 
 <!-- offers-section Starts Here  -->
 <section class="offers-section section position-relative z-index-1 overflow-visible">

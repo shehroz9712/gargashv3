@@ -29,7 +29,6 @@ Route::get('/about', [HomeController::class, 'about'])->name('about-us');
 
 
 Route::get('/body-shop', [HomeController::class, 'shop'])->name('shop');
-Route::get('/brands', [HomeController::class, 'brands'])->name('brands');
 
 
 
@@ -45,6 +44,9 @@ Route::post('/submit_contact', [HomeController::class, 'submit_contact'])->name(
 // Route for services page
 Route::get('/services', [HomeController::class, 'services'])->name('services');
 Route::get('/services/{slug}', [HomeController::class, 'service_detail'])->name('servicesDetail');
+// Route for brands page
+Route::get('/brands', [HomeController::class, 'brands'])->name('brands');
+Route::get('/brand/{slug}', [HomeController::class, 'brand_detail'])->name('brandDetail');
 
 // Route for blog page
 Route::get('/blogs', [HomeController::class, 'blog'])->name('blogs');

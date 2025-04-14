@@ -1,13 +1,24 @@
 <style>
-    .top-reading {
-        transition: all 0.5s ease-in-out;
+    .scroll-transition {
+        transition: margin-top 0.3s ease;
     }
 
-    /* Optional: Add this if you want to hide the top-reading section by default when scrolled */
-    .scrolled .top-reading {
-        display: none !important;
+    .top-reading {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .top-reading.hide {
+        transform: translateY(-100%);
+        opacity: 0;
+        pointer-events: none;
     }
 </style>
+
 
 <header class="site-header">
     <div class="top-reading secondary-bg py-1 overflow-hidden">
@@ -109,7 +120,7 @@
     </script>
     <!-- ////////////////////// -->
     <span>
-        <div class="container-fluid header-options header-bg py-3">
+        <div class="container-fluid header-options header-bg py-3 mt-5">
             <div class="container">
                 <div class="d-flex align-items-center justify-content-between flex-lg-row gap-lg-0 gap-3">
                     <div class="header-details-wrapper d-lg-flex d-none align-items-center justify-content-end gap-3">

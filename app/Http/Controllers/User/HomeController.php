@@ -22,10 +22,6 @@ class HomeController extends Controller
     {
         return view('user.body-shop');
     }
-    public function brands()
-    {
-        return view('user.brands');
-    }
     public function promotion()
     {
         return view('user.promotions');
@@ -98,6 +94,10 @@ class HomeController extends Controller
     {
         return view('user.services');
     }
+    public function brands()
+    {
+        return view('user.brands');
+    }
     public function job()
     {
         return view('user.job');
@@ -129,6 +129,24 @@ class HomeController extends Controller
             'european-cars' => 'user.service.european_car',
             'german-cars' => 'user.service.german-cars',
             'warranty-service-contract' => 'user.service.warranty_service_contract',
+        ];
+
+        if (array_key_exists($slug, $services)) {
+            return view($services[$slug]);
+        }
+
+        abort(404);
+    }
+    public function brand()
+    {
+        return view('user.brand');
+    }
+    public function brand_detail($slug)
+    {
+        $services = [
+            // 'electric-repair' => 'user.service.electric_repair'
+            'audi' => 'user.brand.audi'
+
         ];
 
         if (array_key_exists($slug, $services)) {
