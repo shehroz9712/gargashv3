@@ -6,11 +6,13 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 
-class section extends Model
+class Section extends Model
 {
     use HasFactory;
 
-    public function shareable(): MorphTo
+    protected $fillable = ['heading', 'image', 'description', 'link', 'btn_text', 'another_link', 'another_btn_text'];
+
+    public function shareable()
     {
         return $this->morphTo();
     }

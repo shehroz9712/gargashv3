@@ -28,6 +28,19 @@
                         </a>
                     </li>
                     <li class="dropdown">
+                        <a class="active nav-link menu-title {{ request()->routeIs('admin.categories.*') ? 'active' : '' }}"
+                            href="{{ route('admin.categories.index') }}">
+                            <i data-feather="user-check"></i><span>Categories</span>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="active nav-link menu-title {{ request()->routeIs('admin.brands.*') ? 'active' : '' }}"
+                            href="{{ route('admin.brands.index') }}">
+                            <i data-feather="user-check"></i><span>Brands</span>
+                        </a>
+                    </li>
+
+                    <li class="dropdown">
                         <a class="active nav-link menu-title {{ request()->routeIs('admin.blogs.*') ? 'active' : '' }}"
                             href="{{ route('admin.service_requests.index') }}">
                             <i data-feather="user-check"></i><span>Service Requests</span>

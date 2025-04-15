@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
 use App\Models\Brand;
-use App\Http\Controllers\Controller;
+use App\Models\Category;
 use Illuminate\Http\Request;
 
 class BrandController extends Controller
@@ -13,7 +13,9 @@ class BrandController extends Controller
      */
     public function index()
     {
-        //
+        $brands = Brand::latest()->get();
+
+        return view('admin.brands.index', compact('brands'));
     }
 
     /**
@@ -21,7 +23,9 @@ class BrandController extends Controller
      */
     public function create()
     {
-        //
+        $categories = Category::latest()->get();
+
+        return view('admin.brands.create', compact('categories'));
     }
 
     /**
@@ -37,7 +41,7 @@ class BrandController extends Controller
      */
     public function show(Brand $brand)
     {
-        //
+        return view('admin.brands.show', compact('brand'));
     }
 
     /**
@@ -45,8 +49,9 @@ class BrandController extends Controller
      */
     public function edit(Brand $brand)
     {
-        //
+        return view('admin.brands.edit', compact('brand'));
     }
+
 
     /**
      * Update the specified resource in storage.
@@ -61,6 +66,7 @@ class BrandController extends Controller
      */
     public function destroy(Brand $brand)
     {
-        //
+        $brand->delete();
+        return redirect()->route('admin.brands.index')->with('success', 'Brand deleted successfully.');
     }
 }

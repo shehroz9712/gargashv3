@@ -58,7 +58,6 @@ class ViewServiceProvider extends ServiceProvider
             $view->with(['pageTitle' => 'Edit Admin Setting']);
         });
 
-
         /*
          * blog
          */
@@ -73,6 +72,37 @@ class ViewServiceProvider extends ServiceProvider
         });
         view()->composer('admin.blogs.edit', function ($view) {
             $view->with(['pageTitle' => 'Edit  Blog']);
+        });
+
+        /*
+         * category
+         */
+        view()->composer('admin.categories.index', function ($view) {
+            $view->with(['pageTitle' => ' Categories List']);
+        });
+        view()->composer('admin.categories.create', function ($view) {
+            $view->with(['pageTitle' => 'Add  Category']);
+        });
+        view()->composer('admin.categories.show', function ($view) {
+            $view->with(['pageTitle' => 'Show  Category']);
+        });
+        view()->composer('admin.categories.edit', function ($view) {
+            $view->with(['pageTitle' => 'Edit  Category']);
+        });
+        /*
+         * brand
+         */
+        view()->composer('admin.brands.index', function ($view) {
+            $view->with(['pageTitle' => ' Brands List']);
+        });
+        view()->composer('admin.brands.create', function ($view) {
+            $view->with(['pageTitle' => 'Add  Brand']);
+        });
+        view()->composer('admin.brands.show', function ($view) {
+            $view->with(['pageTitle' => 'Show  Brand']);
+        });
+        view()->composer('admin.brands.edit', function ($view) {
+            $view->with(['pageTitle' => 'Edit  Brand']);
         });
 
         /*
