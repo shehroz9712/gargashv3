@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use App\Models\Blog;
+use App\Models\Brand;
 use App\Models\DailyBalance;
 use App\Models\Setting;
 use Illuminate\Database\QueryException;
@@ -24,9 +26,10 @@ class ViewServiceProvider extends ServiceProvider
     public function boot(): void
     {
 
-            // $settings = Setting::first();
-            // View::share(['setting' => $settings]);
-            // $this->composeAdminPages();
+        $settings = Setting::first();
+        $brands = Brand::Active()->get();
+        View::share(['setting' => $settings, 'brands' => $brands]);
+        $this->composeAdminPages();
     }
 
     private function composeAdminPages()

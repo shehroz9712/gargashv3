@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\User;
 
 use App\Models\Blog;
+use App\Models\Brand;
 use App\Models\ServiceRequest;
 use Illuminate\Http\Request;
 
@@ -96,7 +97,8 @@ class HomeController extends Controller
     }
     public function brands()
     {
-        return view('user.brands');
+        $brands = Brand::Active()->get();
+        return view('user.brands', compact('brands'));
     }
     public function job()
     {
@@ -143,17 +145,8 @@ class HomeController extends Controller
     }
     public function brand_detail($slug)
     {
-        $services = [
-            // 'electric-repair' => 'user.service.electric_repair'
-            'audi' => 'user.brand.audi'
-
-        ];
-
-        if (array_key_exists($slug, $services)) {
-            return view($services[$slug]);
-        }
-
-        abort(404);
+        $brand = Brand::Active()->where('slug', $slug)->firstOrFail();
+        return view('user.brand_detail', compact('brand'));
     }
 
 
