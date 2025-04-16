@@ -13,6 +13,10 @@
         .section-wrapper {
             margin-top: 20px;
         }
+
+        .section-item {
+            margin-bottom: 20px;
+        }
     </style>
 @endsection
 
@@ -80,8 +84,6 @@
                                     </div>
                                 </div>
 
-                                <!-- User Dropdown -->
-                               
 
                                 <!-- Image -->
                                 <div class="col-md-6">
@@ -134,7 +136,6 @@
                                         @enderror
                                     </div>
                                 </div>
-
                             </div>
 
                             <!-- Sections (Optional) -->
@@ -154,10 +155,10 @@
                                             </div>
 
                                             <!-- Section Description -->
-                                            <div class="col-md-6">
+                                            <div class="col-md-12">
                                                 <div class="mb-3">
                                                     <label class="form-label">Section Description</label>
-                                                    <textarea name="sections[0][description]" class="form-control" rows="3" placeholder="Enter section description"></textarea>
+                                                    <textarea name="sections[0][description]" class="form-control" rows="5" placeholder="Enter section description"></textarea>
                                                 </div>
                                             </div>
 
@@ -172,8 +173,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button type="button" id="add-section-btn" class="btn btn-secondary">Add
-                                    Section</button>
+                                <button type="button" id="add-section-btn" class="btn btn-secondary">Add Section</button>
                             </div>
                         </div>
 
@@ -190,9 +190,21 @@
 @endsection
 
 @section('js')
+    <script src="https://cdn.tiny.cloud/1/2y3p8uc59d1kpcs6tuz1xqphcprx1hou1p8guysk3cbstc1t/tinymce/5/tinymce.min.js">
+    </script>
     <script>
+        // Initialize TinyMCE editor for description fields
+        tinymce.init({
+            selector: 'textarea[name="description"], textarea[name^="sections["][name$="[description]"]',
+            plugins: 'link image code',
+            menubar: false,
+            toolbar: 'undo redo | formatselect | bold italic | link image | alignleft aligncenter alignright | code',
+            height: 300,
+        });
+
         let sectionCount = 1;
 
+        // Add new section dynamically
         document.getElementById('add-section-btn').addEventListener('click', function() {
             const sectionContainer = document.createElement('div');
             sectionContainer.classList.add('section-item');
@@ -205,10 +217,10 @@
                         </div>
                     </div>
 
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         <div class="mb-3">
                             <label class="form-label">Section Description</label>
-                            <textarea name="sections[${sectionCount}][description]" class="form-control" rows="3" placeholder="Enter section description"></textarea>
+                            <textarea name="sections[${sectionCount}][description]" class="form-control" rows="5" placeholder="Enter section description"></textarea>
                         </div>
                     </div>
 
@@ -223,6 +235,15 @@
 
             document.getElementById('sections-container').appendChild(sectionContainer);
             sectionCount++;
+
+            // Re-initialize the TinyMCE editor for new section descriptions
+            tinymce.init({
+                selector: `textarea[name="sections[${sectionCount - 1}][description]"]`,
+                plugins: 'link image code',
+                menubar: false,
+                toolbar: 'undo redo | formatselect | bold italic | link image | alignleft aligncenter alignright | code',
+                height: 300,
+            });
         });
     </script>
 @endsection
