@@ -1,6 +1,27 @@
 @extends('admin.layouts.app')
+
 @section('css')
+    <style>
+        .img-fluid {
+            max-width: 200px;
+        }
+
+        .badge {
+            font-size: 0.9rem;
+        }
+
+        .section-heading {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .section-description {
+            margin-top: 10px;
+        }
+    </style>
 @endsection
+
 @section('content')
     <div class="container-fluid">
         <div class="page-header">
@@ -12,6 +33,7 @@
             </div>
         </div>
     </div>
+
     <!-- Container-fluid starts-->
     <div class="container-fluid">
         <div class="row starter-main">
@@ -26,28 +48,35 @@
                                 <tbody>
                                     <tr>
                                         <th>Title</th>
-                                        <td>{{ $brand->title }}</td>
+                                        <td>{{ $brand->name }}</td>
                                     </tr>
                                     <tr>
                                         <th>Author</th>
-                                        <td>{{ $brand->author ?? 'Unknown' }}</td>
+                                        <td>{{ $brand->user->name ?? 'Unknown' }}</td>
                                     </tr>
+
+                                    <!-- Display Brand Image -->
                                     @if ($brand->image)
                                         <tr>
-                                            <th>Author</th>
+                                            <th>Brand Image</th>
                                             <td>
-                                                <img src="{{ asset('assets/uploads/brands/' . $brand->author_image) }}"
-                                                    alt="Brand Image" class="img-fluid rounded shadow"
-                                                    style="max-width: 200px;">
+                                                <img src="{{ asset('assets/uploads/brands/' . $brand->image) }}"
+                                                    alt="Brand Image" class="img-fluid rounded shadow">
                                             </td>
                                         </tr>
                                     @else
-                                        <p>No image available</p>
+                                        <tr>
+                                            <th>Brand Image</th>
+                                            <td>No image available</td>
+                                        </tr>
                                     @endif
+
                                     <tr>
                                         <th>Slug</th>
                                         <td>{{ $brand->slug }}</td>
                                     </tr>
+
+                                    <!-- Display Brand Status -->
                                     <tr>
                                         <th>Status</th>
                                         <td>
@@ -60,21 +89,25 @@
                                             @endif
                                         </td>
                                     </tr>
+
                                     <tr>
                                         <th>Created At</th>
                                         <td>{{ $brand->created_at->format('d M, Y') }}</td>
                                     </tr>
+
+                                    <!-- Content Description -->
                                     <tr>
-                                        <th>Content</th>
-                                        <td>{!! $brand->content !!}</td>
+                                        <th>Description</th>
+                                        <td>{!! $brand->description !!}</td>
                                     </tr>
+
+                                    <!-- Image for Brand -->
                                     <tr>
                                         <th>Image</th>
                                         <td>
                                             @if ($brand->image)
                                                 <img src="{{ asset('assets/uploads/brands/' . $brand->image) }}"
-                                                    alt="Brand Image" class="img-fluid rounded shadow"
-                                                    style="max-width: 200px;">
+                                                    alt="Brand Image" class="img-fluid rounded shadow">
                                             @else
                                                 <p>No image available</p>
                                             @endif
@@ -83,23 +116,53 @@
                                 </tbody>
                             </table>
                         </div>
+
+                        <!-- Sections Section -->
+                        @if ($brand->sections->count() > 0)
+                            <div class="section-wrapper">
+                                <h4 class="section-heading">Brand Sections</h4>
+
+                                @foreach ($brand->sections as $section)
+                                    <div class="section-item">
+                                        <h5>{{ $section->heading }}</h5>
+                                        <p class="section-description">{!! $section->description !!}</p>
+                                        @if ($section->link)
+                                            <p><strong>Link:</strong> <a href="{{ $section->link }}"
+                                                    target="_blank">{{ $section->link }}</a></p>
+                                        @endif
+                                        @if ($section->another_link)
+                                            <p><strong>Another Link:</strong> <a href="{{ $section->another_link }}"
+                                                    target="_blank">{{ $section->another_link }}</a></p>
+                                        @endif
+                                    </div>
+                                    <hr>
+                                @endforeach
+                            </div>
+                        @else
+                            <p>No sections available for this brand.</p>
+                        @endif
+
+                        <!-- Action Buttons -->
                         <div class="mt-4">
                             <a href="{{ route('admin.brands.index') }}" class="btn btn-secondary">Back to List</a>
                             <a href="{{ route('admin.brands.edit', $brand->id) }}" class="btn btn-warning">Edit</a>
-                            <form action="{{ route('admin.brands.destroy', $brand->id) }}" method="POST" class="d-inline">
+
+                            <!-- Delete Form -->
+                            <form action="{{ route('admin.brands.destroy', $brand->id) }}" method="POST" class="d-inline"
+                                onsubmit="return confirm('Are you sure you want to delete this brand?')">
                                 @csrf
                                 @method('DELETE')
-                                <button type="submit" class="btn btn-danger"
-                                    onclick="return confirm('Are you sure you want to delete this brand?')">Delete</button>
+                                <button type="submit" class="btn btn-danger">Delete</button>
                             </form>
                         </div>
                     </div>
                 </div>
-                s
             </div>
         </div>
     </div>
     <!-- Container-fluid Ends-->
 @endsection
+
 @section('js')
+    <!-- You can add additional JS or scripts here if needed -->
 @endsection

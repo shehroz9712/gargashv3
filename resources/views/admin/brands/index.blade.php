@@ -26,20 +26,31 @@
                             <table class="display" id="basic-1">
                                 <thead>
                                     <tr>
-                                        <th>ID</th>
-                                        <th>Title</th>
-                                        <th>Author</th>
+                                        <th>#</th>
+                                        <th>Brand Name</th>
+                                        <th>Category</th>
                                         <th>Status</th>
+                                        <th>Created At</th>
                                         <th>Actions</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach ($brands as $brand)
+                                    @foreach ($brands as $index => $brand)
                                         <tr>
-                                            <td>{{ $brand->id }}</td>
-                                            <td>{{ $brand->title }}</td>
-                                            <td>{{ $brand->author ?? 'Unknown' }}</td>
-                                            <td>{{ ucfirst($brand->status) }}</td>
+                                            <td>{{ $index + 1 }}</td>
+                                            <td>{{ $brand->name }}</td>
+                                            <td>{{ $brand->category->name }}</td>
+                                            <td>
+                                                @if ($brand->status == 'published')
+                                                    <span class="badge bg-success">Published</span>
+                                                @elseif ($brand->status == 'draft')
+                                                    <span class="badge bg-warning">Draft</span>
+                                                @else
+                                                    <span class="badge bg-secondary">Archived</span>
+                                                @endif
+                                            </td>
+                                            <td>{{ $brand->created_at->format('d M, Y') }}</td>
+
                                             <td>
                                                 <a href="{{ route('admin.brands.show', $brand->id) }}" class="action-btn"><i
                                                         class="fa fa-eye"></i></a>

@@ -25,24 +25,16 @@
                     </div>
                 </div>
                 <div class="col-md-7 d-flex justify-content-end">
-                    <img src="{{ asset('assets/user/img/brands/audo-hero.png') }}" alt="" style="scale:1.2;" />
+                    <img src="{{ asset('assets/Uploads/brands/' . $brand->image) }}" alt="" style="scale:1.2;" />
                 </div>
             </div>
         </div>
     </section>
     <!-- Hero  Section End -->
-    <!-- Our Vision  Start  -->
     <section class="container">
         <div class="row d-flex  flex-md-row align-items-center">
             <div class="col-md-8 text-start">
-                <h2 class="display-6 fw-bold"> The Finest Dealer Alternative Audi Service Center <span class="main-color">
-                        in Dubai</span>
-                </h2>
-                <p class="about-us-our-team-text-aling-responsive">We offer top-notch Audi services at our luxury car
-                    maintenance center, leveraging upgraded special tools and catalyst software to troubleshoot and repair
-                    your Audi. We are one of the largest stand-alone Audi garages in Dubai.
-
-                </p>
+                {!! $brand->description !!}
 
             </div>
             <div class="col-md-4 d-flex flex-column gap-3 justify-content-center mt-4 mt-md-0 align-items-end">
@@ -58,107 +50,25 @@
             </div>
         </div>
     </section>
-    <!-- Our Vision  End  -->
+    <!-- Our Vision  Start  -->
+    @foreach ($brand->sections as $section)
+        <section class="container">
+            <div class="row d-flex  flex-md-row align-items-center">
+                <div class="col-md-6">
+                    <img class="img-fluid rounded-3" src="{{ asset('assets/Uploads/brands/' . $section->image) }}"
+                        alt="hero" />
+                </div>
+                <div class="col-md-6 text-start">
 
-    <!-- Technicians Start  -->
-    <section class="container">
-        <div class="row d-flex  flex-md-row align-items-center">
-            <div class="col-md-6">
-                <img class="img-fluid rounded-3" src="{{ asset('assets/user/img/brands/technicians-tnrivalled.jpg') }}"
-                    alt="hero" />
-            </div>
-            <div class="col-md-6 text-start">
-
-                <h2 class="display-6 fw-bold">Unrivalled
-                    <span class="main-color"> Technicians</span>
-                </h2>
-                <p class="about-us-our-team-text-aling-responsive">We collaborate with the most trusted and experienced
-                    automobile technicians in the industry. Each technician is carefully selected by our Audi service
-                    advisor to ensure expertise and reliability. Their skills guarantee that your vehicle receives the best
-                    attention, using advanced tools and techniques tailored specifically for Audi models.
-
-                </p>
-                <p class="about-us-our-team-text-aling-responsive">
-                    Our team ensures precise diagnostics and delivers top-tier service every time. With a focus on customer
-                    satisfaction, we maintain high standards in every aspect of Audi repair and maintenance. From
-                    identifying the smallest issues to performing complex repairs, our professionals handle every task with
-                    dedication, giving your Audi the care it truly deserves.
-                </p>
-
-            </div>
-
-        </div>
-    </section>
-    <!-- Technicians End  -->
-    <!-- Genuine Start  -->
-    <section class="container">
-        <div class="row d-flex  flex-md-row align-items-center">
-
-            <div class="col-md-6 text-start">
-
-                <h2 class="display-6 fw-bold">
-                    <span class="main-color">Genuine </span>
-                    Audi Parts Use
-                </h2>
-                <p class="about-us-our-team-text-aling-responsive">At our service center, we use only genuine Audi parts
-                    sourced directly from the original equipment manufacturer. This ensures your vehicle maintains its
-                    performance, safety, and value. By choosing authentic components, we guarantee a perfect fit and lasting
-                    durability, keeping your Audi running like it just left the showroom.</p>
-                <p class="about-us-our-team-text-aling-responsive">
-                    We take pride in offering uncompromised Audi repair services that meet the highest industry standards.
-                    Our goal is to provide you with a brand-new car experience every time you hit the road. With our expert
-                    care and original parts, your Audi receives the premium attention it deserves, delivering smooth and
-                    reliable performance.
-                </p>
-                <div class="d-flex justify-content-center justify-content-md-start">
+                    <h2 class="display-6 fw-bold">{{ $section->heading }}</h2>
+                    <p>{!! $section->description !!}</p>
 
                 </div>
+
             </div>
-            <div class="col-md-6">
-                <img class="img-fluid rounded-3" src="{{ asset('assets/user/img/brands/Audi-Parts-Use.jpg') }}"
-                    alt="hero" />
-            </div>
+        </section>
+    @endforeach
 
-        </div>
-    </section>
-    <!-- Genuine End  -->
-    <!-- Genuine Start  -->
-    <section class="container">
-        <div class="row d-flex  flex-md-row align-items-center">
-
-
-            <div class="col-md-6">
-                <img class="img-fluid rounded-3" src="{{ asset('assets/user/img/brands/audi-car-interior-side.jpg') }}"
-                    alt="hero" />
-            </div>
-            <div class="col-md-6 text-start">
-
-                <h2 class="display-6 fw-bold">
-
-                    Transparency
-                </h2>
-                <p class="main-color">( 0 hidden charges)</p>
-                <p class="about-us-our-team-text-aling-responsive">When you hand over your Audi to us, you can do so with
-                    full confidence. We assure complete transparency in our process, with no hidden charges. Integrity is at
-                    the heart of our service, ensuring that your trust is valued and respected throughout your Audi’s repair
-                    journey.
-
-                </p>
-                <p class="about-us-our-team-text-aling-responsive">
-                    From the moment we begin repairs to the final delivery, we keep you informed at every step. Regular
-                    updates eliminate communication gaps and make the entire process smooth and stress-free. Our streamlined
-                    service ensures you’re always in the loop, giving you peace of mind and confidence in the care your Audi
-                    receives.
-                </p>
-                <div class="d-flex justify-content-center justify-content-md-start">
-
-                </div>
-            </div>
-
-
-        </div>
-    </section>
-    <!-- Genuine End  -->
     <!-- full container Start -->
 
     <div class="audi-full-container-bg container-fluid d-flex flex-column gap-4 justify-content-center px-5"
@@ -204,9 +114,11 @@
     <!-- icons section Start -->
     <section class="container">
         <div>
-            <h2 class="fs-1 fw-bold text-center">Our Periodic <span style="color: #E6B110;"> {{ $brand->name }} Maintenance </span>Service
+            <h2 class="fs-1 fw-bold text-center">Our Periodic <span style="color: #E6B110;"> {{ $brand->name }} Maintenance
+                </span>Service
                 Includes</h2>
-            <p class="fs-6 fw-semibold text-black-50 text-center">After you hand over the car to our Audi garage, we will go
+            <p class="fs-6 fw-semibold text-black-50 text-center">After you hand over the car to our {{ $brand->name }}
+                garage, we will go
                 through an essential examination, create an inspection report, and start working on the issues. We will
                 decide and consult with you before making any replacements or repairs during the servicing period.</p>
         </div>
@@ -217,7 +129,7 @@
                         <img src="{{ asset('assets/user/img/brands/logo-1.png') }}" alt="">
                     </div>
                     <div class="d-flex flex-column gap-2 text-center col-8">
-                        <h5 class="m-0 fs-6 fw-normal text-capitalize">Audi Engine oil check and change
+                        <h5 class="m-0 fs-6 fw-normal text-capitalize">{{ $brand->name }} Engine oil check and change
                         </h5>
 
                     </div>
@@ -313,7 +225,8 @@
                         <img src="{{ asset('assets/user/img/brands/logo-9.webp') }}" alt="">
                     </div>
                     <div class="d-flex flex-column gap-2 text-center col-8">
-                        <h5 class="m-0 fs-6 fw-normal text-capitalize">Audi transmission repair and oil refill
+                        <h5 class="m-0 fs-6 fw-normal text-capitalize">{{ $brand->name }} transmission repair and oil
+                            refill
                         </h5>
 
                     </div>
