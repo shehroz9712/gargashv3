@@ -52,7 +52,10 @@ class BrandController extends Controller
         foreach ($request->sections as $index => $sectionData) {
             if (isset($sectionFiles[$index]['image'])) {
                 $sectionData['image'] = uploadImage($sectionFiles[$index]['image'], 'brands');
+                $sectionData['shareable_type'] =    Brand::class;
+                $sectionData['shareable_id'] = $brand->id;
             }
+
             $brand->sections()->create($sectionData);
         }
 
@@ -84,28 +87,42 @@ class BrandController extends Controller
      */
     public function update(BrandRequest $request, Brand $brand)
     {
-        $brand->update($request->only([
-            'name',
-            'slug',
-            'category_id',
-            'user_id',
-            'image',
-            'heading',
-            'description',
-            'status'
-        ]));
-
-        // Delete old sections (optional, if you want full replace)
-        $brand->sections()->delete();
-
-        if ($request->has('sections')) {
-            foreach ($request->sections as $sectionData) {
-                $brand->sections()->create($sectionData);
-            }
+        // 1️⃣ Brand image
+        if ($request->hasFile('image')) {
+            // optional: delete old image file here if you want
+            $brand->image = uploadImage($request->file('image'), 'brands');
         }
 
-        return redirect()->route('admin.brands.index')->with('success', 'Brand updated successfully!');
+        // 2️⃣ Update brand fields
+        $brand->name        = $request->name;
+        $brand->slug        = $request->slug;
+        $brand->category_id = $request->category_id;
+        $brand->heading     = $request->heading;
+        $brand->description = $request->description;
+        $brand->status      = $request->status;
+        $brand->save();
+
+        // 3️⃣ Sections — wipe & re-create
+        $brand->sections()->delete();
+
+        $sectionFiles = $request->file('sections', []);
+        foreach ($request->sections as $i => $sectionData) {
+            // if a file was uploaded for this section, handle it
+            if (isset($sectionFiles[$i]['image'])) {
+                $sectionData['image'] = uploadImage($sectionFiles[$i]['image'], 'brands');
+            }
+            // maintain your polymorphic keys
+            $sectionData['shareable_type'] = Brand::class;
+            $sectionData['shareable_id']   = $brand->id;
+
+            $brand->sections()->create($sectionData);
+        }
+
+        return redirect()
+            ->route('admin.brands.index')
+            ->with('success', 'Brand updated successfully!');
     }
+
 
     /**
      * Remove the specified resource from storage.
