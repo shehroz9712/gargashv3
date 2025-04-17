@@ -192,7 +192,7 @@
 @endsection
 
 @section('js')
-    <script src="https://cdn.tiny.cloud/1/2y3p8uc59d1kpcs6tuz1xqphcprx1hou1p8guysk3cbstc1t/tinymce/5/tinymce.min.js"></script>
+    <script src="https://cdn.tiny.cloud/1/o97qnk8zj3tk8vhpnvjh9labykwhrbtwblxcdof8mps79ctm/tinymce/5/tinymce.min.js"></script>
     <script>
         // Initialize TinyMCE editor for description fields
         tinymce.init({
