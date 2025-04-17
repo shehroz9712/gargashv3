@@ -71,43 +71,43 @@
 
     <!-- full container Start -->
 
-    <div class="audi-full-container-bg container-fluid d-flex flex-column gap-4 justify-content-center px-5"
-        style="height: 50vh;">
-        <div class="container">
+    <!--<div class="audi-full-container-bg container-fluid d-flex flex-column gap-4 justify-content-center px-5"-->
+    <!--    style="height: 50vh;">-->
+    <!--    <div class="container">-->
 
-            <div class="align-items-center d-flex flex-column justify-content-center gap-4">
-                <span class="text-center">
+    <!--        <div class="align-items-center d-flex flex-column justify-content-center gap-4">-->
+    <!--            <span class="text-center">-->
 
-                    <h2 class="ceramic-full-container-main-heading-responsive fw-bolder text-white m-0 lh-lg">Trusted
-                        {{ $brand->name }}
-                        Repair Workshop & Service Center
-                    </h2>
-                    <p class="fs-6 fw-normal text-white">We custom-make our affordable Audi service quotation based on your
-                        car’s requirements and do not use any generic price. We ensure you get the best-in-class affordable
-                        Audi service at our Audi workshop. As German car experts, we know the ins and outs of every premium
-                        car. Powered by trusted parts and equipment suppliers and a passionate Audi mechanics team, our goal
-                        is to become the best dealer-alternative Audi Service Center in Dubai.
+    <!--                <h2 class="ceramic-full-container-main-heading-responsive fw-bolder text-white m-0 lh-lg">Trusted-->
+    <!--                    {{ $brand->name }}-->
+    <!--                    Repair Workshop & Service Center-->
+    <!--                </h2>-->
+    <!--                <p class="fs-6 fw-normal text-white">We custom-make our affordable Audi service quotation based on your-->
+    <!--                    car’s requirements and do not use any generic price. We ensure you get the best-in-class affordable-->
+    <!--                    Audi service at our Audi workshop. As German car experts, we know the ins and outs of every premium-->
+    <!--                    car. Powered by trusted parts and equipment suppliers and a passionate Audi mechanics team, our goal-->
+    <!--                    is to become the best dealer-alternative Audi Service Center in Dubai.-->
 
-                    </p>
-                </span>
-                <span class="d-flex gap-3">
-                    <button type="button"
-                        class="btn btn-primary text-white w-100 w-md-50 fs-6 audi-full-container-btn-hover-bg-change">
-                        Our Services
-                    </button>
-                    <button type="button"
-                        class="bg-transparent border btn btn-primary text-white w-100 w-md-50 fs-6 audi-full-container-btn-hover-bg-change">
+    <!--                </p>-->
+    <!--            </span>-->
+    <!--            <span class="d-flex gap-3">-->
+    <!--                <button type="button"-->
+    <!--                    class="btn btn-primary text-white w-100 w-md-50 fs-6 audi-full-container-btn-hover-bg-change">-->
+    <!--                    Our Services-->
+    <!--                </button>-->
+    <!--                <button type="button"-->
+    <!--                    class="bg-transparent border btn btn-primary text-white w-100 w-md-50 fs-6 audi-full-container-btn-hover-bg-change">-->
 
-                        Our Services
-                    </button>
-                </span>
+    <!--                    Our Services-->
+    <!--                </button>-->
+    <!--            </span>-->
 
-            </div>
+    <!--        </div>-->
 
 
-        </div>
+    <!--    </div>-->
 
-    </div>
+    <!--</div>-->
 
     <!-- full container End -->
 
@@ -319,6 +319,7 @@
 
         </div>
     </section>
+    @include('user.layouts.partials.google-review')
 
     <!-- icons section End -->
 
