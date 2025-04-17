@@ -145,7 +145,7 @@ class HomeController extends Controller
     }
     public function brand_detail($slug)
     {
-        $brand = Brand::Active()->where('slug', $slug)->firstOrFail();
+        $brand = Brand::with('sections')->Active()->where('slug', $slug)->firstOrFail();
         return view('user.brand_detail', compact('brand'));
     }
 
