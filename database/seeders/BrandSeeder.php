@@ -18,13 +18,12 @@ class BrandSeeder extends Seeder
     public function run()
     {
         // Fetch an existing admin and category
-      
-        $category = Category::first();
 
-        if (! $category) {
-            $this->command->error('No admin or category found. Please seed Admins and Categories first.');
-            return;
-        }
+        $category = Category::create([
+            'name' => 'German Cars',
+            'status' => 'published',
+        ]);
+
 
         // List of brand names
         $brandNames = [
@@ -80,7 +79,7 @@ class BrandSeeder extends Seeder
                 [
                     'name'        => $name,
                     'category_id' => $category->id,
-                    'user_id'     => $admin->id,
+                    'user_id'     => 1,
                     'image'       => null,
                     'heading'     => null,
                     'description' => null,
