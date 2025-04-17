@@ -63,11 +63,18 @@
 
             <h2 class="display-6 fw-bold">Comprehensive Audi Repair Services in Dubai
             </h2>
+<<<<<<< HEAD
             <p class="about-us-our-team-text-aling-responsive"> From electrical diagnostics to mechanical repairs, our Audi Repair Dubai services cover every aspect of Audi maintenance and repair. Our team is trained to handle all types of issues, from minor cosmetic repairs to complex engine and transmission work.
 </p>
             <p class="about-us-our-team-text-aling-responsive">
  We offer full-service repairs, including brake system checks, exhaust system repairs, and suspension work. Whatever issue you face, we are equipped with the expertise and tools to get your Audi back on the road in no time.
             </p>
+=======
+                <p class="about-us-our-team-text-aling-responsive">At our service center, we use only genuine Audi parts sourced directly from the original equipment manufacturer. This ensures your vehicle maintains its performance, safety, and value. By choosing authentic components, we guarantee a perfect fit and lasting durability, keeping your Audi running like it just left the showroom.</p>
+                <p class="about-us-our-team-text-aling-responsive">
+                    We take pride in offering uncompromised Audi repair services that meet the highest industry standards. Our goal is to provide you with a brand-new car experience every time you hit the road. With our expert care and original parts, your Audi receives the premium attention it deserves, delivering smooth and reliable performance.
+                </p>
+>>>>>>> 52d550a920bcbcff01b62eb4b6e3cfb5691d6643
             <div class="d-flex justify-content-center justify-content-md-start">
 
             </div>

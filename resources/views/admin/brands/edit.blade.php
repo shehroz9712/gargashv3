@@ -85,23 +85,6 @@
                                     </div>
                                 </div>
 
-                                <!-- User Dropdown -->
-                                <div class="col-md-6">
-                                    <div class="mb-3">
-                                        <label class="form-label">User</label>
-                                        <select name="user_id" class="form-control">
-                                            <option value="">Select User</option>
-                                            @foreach ($users as $user)
-                                                <option value="{{ $user->id }}"
-                                                    {{ old('user_id', $brand->user_id) == $user->id ? 'selected' : '' }}>
-                                                    {{ $user->name }}</option>
-                                            @endforeach
-                                        </select>
-                                        @error('user_id')
-                                            <small class="text-danger">{{ $message }}</small>
-                                        @enderror
-                                    </div>
-                                </div>
 
                                 <!-- Image -->
                                 <div class="col-md-6">

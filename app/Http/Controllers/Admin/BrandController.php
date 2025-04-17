@@ -74,7 +74,8 @@ class BrandController extends Controller
      */
     public function edit(Brand $brand)
     {
-        return view('admin.brands.edit', compact('brand'));
+        $categories = Category::latest()->get();
+        return view('admin.brands.edit', compact('brand', 'categories'));
     }
 
 
