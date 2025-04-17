@@ -12,7 +12,7 @@
                 <div class="col-md-5">
                     <div class="experiecne-top-content">
                         <h2 class="display-3 fw-bold">
-                            <span class="secondary-color">{{ $brand->name }} Repair </span> <br> Dubai Service
+                            <span class="secondary-color">{{ $brand->name }} </span> <br> Service
                         </h2>
                         <p class="fs-6 fw-semibold lh-sm text-secondary">{{ $brand->heading }}
                         </p>
