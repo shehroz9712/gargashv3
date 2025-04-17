@@ -25,7 +25,7 @@
                     </div>
                 </div>
                 <div class="col-md-7 d-flex justify-content-end">
-                    <img src="{{ asset('assets/Uploads/brands/' . $brand->image) }}" alt="" style="scale:1.2;" />
+                    <img src="{{ asset('assets/uploads/brands/' . $brand->image) }}" alt="" style="scale:1.2;" />
                 </div>
             </div>
         </div>
@@ -55,7 +55,7 @@
         <section class="container">
             <div class="row d-flex  flex-md-row align-items-center">
                 <div class="col-md-6">
-                    <img class="img-fluid rounded-3" src="{{ asset('assets/Uploads/brands/' . $section->image) }}"
+                    <img class="img-fluid rounded-3" src="{{ asset('assets/uploads/brands/' . $section->image) }}"
                         alt="hero" />
                 </div>
                 <div class="col-md-6 text-start">
