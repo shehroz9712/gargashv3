@@ -92,7 +92,7 @@
                                         <label class="form-label">Brand Image</label>
                                         <input type="file" name="image" class="form-control">
                                         @if ($brand->image)
-                                            <img src="{{ asset('storage/' . $brand->image) }}" class="img-thumbnail mt-2"
+                                            <img src="{{ asset('assets/uploads/brands/' . $brand->image) }}" class="img-thumbnail mt-2"
                                                 width="100">
                                         @endif
                                         @error('image')
@@ -158,7 +158,7 @@
                                                         <input type="file" name="sections[{{ $index }}][image]"
                                                             class="form-control">
                                                         @if ($section->image)
-                                                            <img src="{{ asset('storage/' . $section->image) }}"
+                                                            <img src="{{ asset('assets/uploads/brands/' . $section->image) }}"
                                                                 class="img-thumbnail mt-2" width="100">
                                                         @endif
                                                     </div>
