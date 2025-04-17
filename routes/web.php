@@ -46,7 +46,7 @@ Route::get('/services', [HomeController::class, 'services'])->name('services');
 Route::get('/services/{slug}', [HomeController::class, 'service_detail'])->name('servicesDetail');
 // Route for brands page
 Route::get('/brands', [HomeController::class, 'brands'])->name('brands');
-//Route::get('/brand/{slug}', [HomeController::class, 'brand_detail'])->name('brandDetail');
+// Route::get('/brand/{slug}', [HomeController::class, 'brand_detail'])->name('brandDetail');
 
 // Route for blog page
 Route::get('/blogs', [HomeController::class, 'blog'])->name('blogs');
