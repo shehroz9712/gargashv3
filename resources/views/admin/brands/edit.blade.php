@@ -44,7 +44,8 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="card">
-                    <form action="{{ route('admin.brands.update', $brand->id) }}" method="POST" enctype="multipart/form-data" class="form theme-form">
+                    <form action="{{ route('admin.brands.update', $brand->id) }}" method="POST" enctype="multipart/form-data"
+                        class="form theme-form">
                         @csrf
                         @method('PUT')
                         <div class="card-body">
@@ -53,15 +54,21 @@
                                 <div class="col-md-6">
                                     <div class="mb-3">
                                         <label class="form-label">Brand Title</label>
-                                        <input type="text" name="name" class="form-control" value="{{ old('name', $brand->name) }}" placeholder="Enter brand title">
-                                        @error('name')<small class="text-danger">{{ $message }}</small>@enderror
+                                        <input type="text" name="name" class="form-control"
+                                            value="{{ old('name', $brand->name) }}" placeholder="Enter brand title">
+                                        @error('name')
+                                            <small class="text-danger">{{ $message }}</small>
+                                        @enderror
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="mb-3">
                                         <label class="form-label">Slug</label>
-                                        <input type="text" name="slug" class="form-control" value="{{ old('slug', $brand->slug) }}" placeholder="Enter slug" readonly>
-                                        @error('slug')<small class="text-danger">{{ $message }}</small>@enderror
+                                        <input type="text" name="slug" class="form-control"
+                                            value="{{ old('slug', $brand->slug) }}" placeholder="Enter slug" readonly>
+                                        @error('slug')
+                                            <small class="text-danger">{{ $message }}</small>
+                                        @enderror
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -70,10 +77,14 @@
                                         <select name="category_id" class="form-control">
                                             <option value="">Select Category</option>
                                             @foreach ($categories as $category)
-                                                <option value="{{ $category->id }}" {{ old('category_id', $brand->category_id) == $category->id ? 'selected' : '' }}>{{ $category->name }}</option>
+                                                <option value="{{ $category->id }}"
+                                                    {{ old('category_id', $brand->category_id) == $category->id ? 'selected' : '' }}>
+                                                    {{ $category->name }}</option>
                                             @endforeach
                                         </select>
-                                        @error('category_id')<small class="text-danger">{{ $message }}</small>@enderror
+                                        @error('category_id')
+                                            <small class="text-danger">{{ $message }}</small>
+                                        @enderror
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -81,34 +92,51 @@
                                         <label class="form-label">Brand Image</label>
                                         <input type="file" name="image" class="form-control">
                                         @if ($brand->image)
-                                            <img src="{{ asset('storage/' . $brand->image) }}" class="img-thumbnail mt-2" width="100">
+                                            <img src="{{ asset('storage/' . $brand->image) }}" class="img-thumbnail mt-2"
+                                                width="100">
                                         @endif
-                                        @error('image')<small class="text-danger">{{ $message }}</small>@enderror
+                                        @error('image')
+                                            <small class="text-danger">{{ $message }}</small>
+                                        @enderror
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="mb-3">
                                         <label class="form-label">Brand Heading</label>
-                                        <input type="text" name="heading" class="form-control" value="{{ old('heading', $brand->heading) }}" placeholder="Enter brand heading">
-                                        @error('heading')<small class="text-danger">{{ $message }}</small>@enderror
+                                        <input type="text" name="heading" class="form-control"
+                                            value="{{ old('heading', $brand->heading) }}"
+                                            placeholder="Enter brand heading">
+                                        @error('heading')
+                                            <small class="text-danger">{{ $message }}</small>
+                                        @enderror
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="mb-3">
                                         <label class="form-label">Brand Description</label>
                                         <textarea name="description" class="form-control" rows="5">{{ old('description', $brand->description) }}</textarea>
-                                        @error('description')<small class="text-danger">{{ $message }}</small>@enderror
+                                        @error('description')
+                                            <small class="text-danger">{{ $message }}</small>
+                                        @enderror
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="mb-3">
                                         <label class="form-label">Status</label>
                                         <select name="status" class="form-control">
-                                            <option value="draft" {{ old('status', $brand->status) == 'draft' ? 'selected' : '' }}>Draft</option>
-                                            <option value="published" {{ old('status', $brand->status) == 'published' ? 'selected' : '' }}>Published</option>
-                                            <option value="archived" {{ old('status', $brand->status) == 'archived' ? 'selected' : '' }}>Archived</option>
+                                            <option value="draft"
+                                                {{ old('status', $brand->status) == 'draft' ? 'selected' : '' }}>Draft
+                                            </option>
+                                            <option value="published"
+                                                {{ old('status', $brand->status) == 'published' ? 'selected' : '' }}>
+                                                Published</option>
+                                            <option value="archived"
+                                                {{ old('status', $brand->status) == 'archived' ? 'selected' : '' }}>
+                                                Archived</option>
                                         </select>
-                                        @error('status')<small class="text-danger">{{ $message }}</small>@enderror
+                                        @error('status')
+                                            <small class="text-danger">{{ $message }}</small>
+                                        @enderror
                                     </div>
                                 </div>
                             </div>
@@ -119,22 +147,27 @@
                                 <div id="sections-container">
                                     @foreach ($brand->sections as $index => $section)
                                         <div class="section-item">
-                                            <button type="button" class="btn btn-danger btn-sm remove-section">Remove</button>
+                                            <button type="button"
+                                                class="btn btn-danger btn-sm remove-section">Remove</button>
                                             <div class="row">
-                                                <input type="hidden" name="sections[{{ $index }}][id]" value="{{ $section->id }}">
+                                                <input type="hidden" name="sections[{{ $index }}][id]"
+                                                    value="{{ $section->id }}">
                                                 <div class="col-md-6">
                                                     <div class="mb-3">
                                                         <label class="form-label">Section Image</label>
-                                                        <input type="file" name="sections[{{ $index }}][image]" class="form-control">
+                                                        <input type="file" name="sections[{{ $index }}][image]"
+                                                            class="form-control">
                                                         @if ($section->image)
-                                                            <img src="{{ asset('storage/' . $section->image) }}" class="img-thumbnail mt-2" width="100">
+                                                            <img src="{{ asset('storage/' . $section->image) }}"
+                                                                class="img-thumbnail mt-2" width="100">
                                                         @endif
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="mb-3">
                                                         <label class="form-label">Section Heading</label>
-                                                        <input type="text" name="sections[{{ $index }}][heading]" class="form-control" value="{{ $section->heading }}">
+                                                        <input type="text" name="sections[{{ $index }}][heading]"
+                                                            class="form-control" value="{{ $section->heading }}">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-12">
@@ -146,32 +179,41 @@
                                                 <div class="col-md-6">
                                                     <div class="mb-3">
                                                         <label class="form-label">Section Link</label>
-                                                        <input type="text" name="sections[{{ $index }}][link]" class="form-control" value="{{ $section->link }}">
+                                                        <input type="text" name="sections[{{ $index }}][link]"
+                                                            class="form-control" value="{{ $section->link }}">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="mb-3">
                                                         <label class="form-label">Section Button Text</label>
-                                                        <input type="text" name="sections[{{ $index }}][btn_text]" class="form-control" value="{{ $section->btn_text }}">
+                                                        <input type="text"
+                                                            name="sections[{{ $index }}][btn_text]"
+                                                            class="form-control" value="{{ $section->btn_text }}">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="mb-3">
                                                         <label class="form-label">Another Link</label>
-                                                        <input type="text" name="sections[{{ $index }}][another_link]" class="form-control" value="{{ $section->another_link }}">
+                                                        <input type="text"
+                                                            name="sections[{{ $index }}][another_link]"
+                                                            class="form-control" value="{{ $section->another_link }}">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="mb-3">
                                                         <label class="form-label">Another Button Text</label>
-                                                        <input type="text" name="sections[{{ $index }}][another_btn_text]" class="form-control" value="{{ $section->another_btn_text }}">
+                                                        <input type="text"
+                                                            name="sections[{{ $index }}][another_btn_text]"
+                                                            class="form-control"
+                                                            value="{{ $section->another_btn_text }}">
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     @endforeach
                                 </div>
-                                <button type="button" id="add-section-btn" class="btn btn-secondary mt-2">Add Section</button>
+                                <button type="button" id="add-section-btn" class="btn btn-secondary mt-2">Add
+                                    Section</button>
                             </div>
                         </div>
 
@@ -187,7 +229,8 @@
 @endsection
 
 @section('js')
-    <script src="https://cdn.tiny.cloud/1/o97qnk8zj3tk8vhpnvjh9labykwhrbtwblxcdof8mps79ctm/tinymce/5/tinymce.min.js"></script>
+    <script src="https://cdn.tiny.cloud/1/o97qnk8zj3tk8vhpnvjh9labykwhrbtwblxcdof8mps79ctm/tinymce/5/tinymce.min.js">
+    </script>
     <script>
         document.querySelector('input[name="name"]').addEventListener('input', function() {
             const title = this.value;
