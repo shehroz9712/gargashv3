@@ -168,6 +168,8 @@
                                                         <label class="form-label">Section Heading</label>
                                                         <input type="text" name="sections[{{ $index }}][heading]"
                                                             class="form-control" value="{{ $section->heading }}">
+                                                            <input type="hidden" name="sections[{{ $loop->index }}][id]" value="{{ $section->id ?? '' }}">
+
                                                     </div>
                                                 </div>
                                                 <div class="col-md-12">

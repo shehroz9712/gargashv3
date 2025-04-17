@@ -87,41 +87,53 @@ class BrandController extends Controller
      */
     public function update(BrandRequest $request, Brand $brand)
     {
-        // 1️⃣ Brand image
+        // ✅ Update brand fields in one go
+        $data = $request->only(['name', 'slug', 'category_id', 'heading', 'description', 'status']);
         if ($request->hasFile('image')) {
-            // optional: delete old image file here if you want
-            $brand->image = uploadImage($request->file('image'), 'brands');
+            $data['image'] = uploadImage($request->file('image'), 'brands');
         }
+        $brand->update($data);
 
-        // 2️⃣ Update brand fields
-        $brand->name        = $request->name;
-        $brand->slug        = $request->slug;
-        $brand->category_id = $request->category_id;
-        $brand->heading     = $request->heading;
-        $brand->description = $request->description;
-        $brand->status      = $request->status;
-        $brand->save();
-
-        // 3️⃣ Sections — wipe & re-create
-        $brand->sections()->delete();
+        // 🔄 Handle sections
+        $existingSectionIds = $brand->sections()->pluck('id')->toArray();
+        $incomingSectionIds = [];
 
         $sectionFiles = $request->file('sections', []);
-        foreach ($request->sections as $i => $sectionData) {
-            // if a file was uploaded for this section, handle it
+        foreach ($request->sections ?? [] as $i => $sectionData) {
+            $sectionId = $sectionData['id'] ?? null;
+
+            // ✅ If image is uploaded, replace it
             if (isset($sectionFiles[$i]['image'])) {
                 $sectionData['image'] = uploadImage($sectionFiles[$i]['image'], 'brands');
+            } else {
+                unset($sectionData['image']); // retain old image if not updating
             }
-            // maintain your polymorphic keys
+
             $sectionData['shareable_type'] = Brand::class;
             $sectionData['shareable_id']   = $brand->id;
 
-            $brand->sections()->create($sectionData);
+            if ($sectionId && in_array($sectionId, $existingSectionIds)) {
+                // ✅ Update existing section
+                $brand->sections()->where('id', $sectionId)->update($sectionData);
+                $incomingSectionIds[] = $sectionId;
+            } else {
+                // ➕ Create new section
+                $new = $brand->sections()->create($sectionData);
+                $incomingSectionIds[] = $new->id;
+            }
+        }
+
+        // ❌ Delete removed sections
+        $toDelete = array_diff($existingSectionIds, $incomingSectionIds);
+        if (!empty($toDelete)) {
+            $brand->sections()->whereIn('id', $toDelete)->delete();
         }
 
         return redirect()
             ->route('admin.brands.index')
             ->with('success', 'Brand updated successfully!');
     }
+
 
 
     /**
