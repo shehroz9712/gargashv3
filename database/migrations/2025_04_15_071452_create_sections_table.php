@@ -16,7 +16,7 @@ return new class extends Migration
             $table->morphs('shareable');
             $table->string('heading')->unique();
             $table->string('image')->nullable();
-            $table->string('description')->nullable();
+            $table->text('description')->nullable();
             $table->string('link')->nullable();
             $table->string('btn_text')->nullable();
             $table->string('another_link')->nullable();
