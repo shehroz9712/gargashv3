@@ -10,22 +10,22 @@ use App\Models\Category;
 
 class BrandSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     *
-     * @return void
-     */
     public function run()
     {
-        // Fetch an existing admin and category
+        // 1️⃣ Fetch (or require) an admin
+        $admin = Admin::first();
+        if (! $admin) {
+            $this->command->error('No Admin found! Please seed your Admins table first.');
+            return;
+        }
 
-        $category = Category::create([
-            'name' => 'German Cars',
-            'status' => 'published',
-        ]);
+        // 2️⃣ Create or fetch the “German Cars” category
+        $category = Category::firstOrCreate(
+            ['name' => 'German Cars'],
+            ['status' => 'published']
+        );
 
-
-        // List of brand names
+        // 3️⃣ Your list of brand names
         $brandNames = [
             'Audi Repair Dubai',
             'BMW Repair Dubai',
@@ -79,15 +79,18 @@ class BrandSeeder extends Seeder
                 [
                     'name'        => $name,
                     'category_id' => $category->id,
-                    'user_id'     => 1,
-                    'image'       => null,
-                    'heading'     => null,
-                    'description' => null,
+                    'user_id'     => $admin->id,
+                    'image'       => 'audo-hero.png',
+                    'heading'     => "Own an {$name}? Our premium {$name} Service Center offers expert repairs and top‑tier care.",
+                    'description' => <<<HTML
+<h2 class="display-6 fw-bold">The Finest Dealer-Alternative {$name} Service Center in Dubai</h2>
+<p>We offer top‑notch {$name} services at our luxury car maintenance center, leveraging advanced tools and diagnostic software to service every model. We are one of the largest stand‑alone {$name} garages in the region.</p>
+HTML,
                     'status'      => 'published',
                 ]
             );
         }
 
-        $this->command->info('Brands seeded successfully!');
+        $this->command->info('✅ Brands seeded successfully!');
     }
 }
