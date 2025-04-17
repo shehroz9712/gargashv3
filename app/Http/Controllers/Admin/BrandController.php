@@ -102,26 +102,29 @@ class BrandController extends Controller
         foreach ($request->sections ?? [] as $i => $sectionData) {
             $sectionId = $sectionData['id'] ?? null;
 
-            // ✅ If image is uploaded, replace it
+            // ✅ If image is uploaded, use new
             if (isset($sectionFiles[$i]['image'])) {
                 $sectionData['image'] = uploadImage($sectionFiles[$i]['image'], 'brands');
+            } elseif (!empty($sectionData['old_image'])) {
+                // ✅ If not uploaded, retain old image from hidden input
+                $sectionData['image'] = $sectionData['old_image'];
             } else {
-                unset($sectionData['image']); // retain old image if not updating
+                // 🚨 No image at all? Optional: provide a fallback
+                $sectionData['image'] = null; // or set default image path
             }
 
             $sectionData['shareable_type'] = Brand::class;
             $sectionData['shareable_id']   = $brand->id;
 
             if ($sectionId && in_array($sectionId, $existingSectionIds)) {
-                // ✅ Update existing section
                 $brand->sections()->where('id', $sectionId)->update($sectionData);
                 $incomingSectionIds[] = $sectionId;
             } else {
-                // ➕ Create new section
                 $new = $brand->sections()->create($sectionData);
                 $incomingSectionIds[] = $new->id;
             }
         }
+
 
         // ❌ Delete removed sections
         $toDelete = array_diff($existingSectionIds, $incomingSectionIds);
