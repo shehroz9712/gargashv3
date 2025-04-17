@@ -51,20 +51,17 @@
         </div>
     </section>
     <!-- Our Vision  Start  -->
-    @foreach ($brand->sections as $section)
-        <section class="container">
-            <div class="row d-flex  flex-md-row align-items-center">
+    @foreach ($brand->sections as $index => $section)
+        <section class="container py-5">
+            <div class="row d-flex align-items-center {{ $index % 2 == 1 ? 'flex-md-row-reverse' : '' }}">
                 <div class="col-md-6">
                     <img class="img-fluid rounded-3" src="{{ asset('assets/uploads/brands/' . $section->image) }}"
                         alt="hero" />
                 </div>
                 <div class="col-md-6 text-start">
-
                     <h2 class="display-6 fw-bold">{{ $section->heading }}</h2>
                     <p>{!! $section->description !!}</p>
-
                 </div>
-
             </div>
         </section>
     @endforeach
