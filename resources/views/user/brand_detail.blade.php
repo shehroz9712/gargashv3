@@ -18,26 +18,26 @@
                         </p>
                         <span class="d-flex flex-column flex-md-row gap-4">
                             <a href="https://wa.me/971547935400" target="_blank"><button
-                                    class="btn fw-semibold rounded-3 text-black fs-6">Avail Your Discount</button></a>
-                            <a href="tel:+971 56 545 8853" target="_blank"><button class="transparent-btn w-100">Call
+                                    class="btn fw-semibold rounded-3 text-black fs-6">Schedule Your Car Service
                                     Now</button></a>
+
                         </span>
                     </div>
-                </div>
-                <div class="col-md-7 d-flex justify-content-end">
-                    <img src="{{ asset('assets/uploads/brands/' . $brand->image) }}" alt="" style="scale:1.2;" />
+                    <div class="col-md-7 d-flex justify-content-end">
+                        <img src="{{ asset('assets/uploads/brands/' . $brand->image) }}" alt=""
+                            style="scale:1.2;" />
+                    </div>
                 </div>
             </div>
-        </div>
     </section>
     <!-- Hero  Section End -->
     <section class="container">
         <div class="row d-flex  flex-md-row align-items-center">
-            <div class="col-md-8 text-start">
+            <div class="col-md-12 text-start">
                 {!! $brand->description !!}
 
             </div>
-            <div class="col-md-4 d-flex flex-column gap-3 justify-content-center mt-4 mt-md-0 align-items-end">
+            {{-- <div class="col-md-4 d-flex flex-column gap-3 justify-content-center mt-4 mt-md-0 align-items-end">
 
                 <a href="https://wa.me/971547935400" target="_blank" class="btn fw-semibold rounded-3 text-black fs-6 w-75">
                     Click here
@@ -47,7 +47,7 @@
                     class="bg-transparent border-2 border-dark btn fs-6 fw-semibold rounded-3 text-black w-75">Avail Your
                     Discount</a>
 
-            </div>
+            </div> --}}
         </div>
     </section>
     <!-- Our Vision  Start  -->
