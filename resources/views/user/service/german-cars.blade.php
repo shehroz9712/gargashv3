@@ -2,8 +2,6 @@
 
 @section('css')
 @endsection
-
-
 @section('content')
     <!-- Hero Section Start -->
 
@@ -13,21 +11,14 @@
             <div class="row align-items-md-center h-100 ">
                 <div class="col-md-6 d-flex flex-column gap-4">
                     <h1 class="display-3 fw-bolder lh-1 m-0 gap-4">
-                        Precision German
-                        <span style="color: #E6B110;"> Car Services </span>
+                        Unleashing the Full Potential of 
+                        <span style="color: #E6B110;"> German Engineering and Luxury </span>
                     </h1>
-                    <h6 class="fw-light me-auto">Experience the pinnacle of German engineering, performance, and luxury.</h6>
-                    <div class="d-flex flex-column flex-md-row flex-wrap gap-4">
-                        <button class="btn fs-6 fw-bold text-dark">Our Services</button>
-                        <a href="tel:+971 56 545 8853" target="_blank">
-                            <button class="bg-transparent border-2 border-dark btn fs-6 fw-bold px-5 text-dark ">Call
-                                Now</button>
-                        </a>
-                    </div>
+                    <h6 class="fw-light me-auto">At Gargash Auto, we specialize in providing expert care for your German luxury vehicle, ensuring top-tier performance, precision, and unrivaled craftsmanship with every service.
+</h6>
+                   <span class="d-flex flex-column flex-md-row gap-4"> <a href="https://wa.me/971547935400" target="_blank"><button class="btn fw-semibold rounded-3 text-black fs-6">Book Your Premium Service Today!</button></a> </span>
                 </div>
-                <div class="col-md-6 ">
-
-                </div>
+                
             </div>
         </div>
     </section>
@@ -47,18 +38,8 @@
                         class="Chinese-Car-Partner-right-car mt-5">
                 </div>
                 <div class="col-md-6 d-flex flex-column justify-content-center gap-3">
-                    <h2 class="fs-1 fw-bold fw-semibold m-0">Your Ultimate German Car Destination</h2>
-                    <ul class="fs-6 fw-semibold gap-1 list-group text-secondary">
-                        <li><strong>Expert Repairs</strong> for All German Car Models</li>
-                        <li><strong>Certified Technicians</strong> Specializing in German Engineering</li>
-                        <li><strong>Genuine German Parts</strong> for Peak Performance</li>
-                        <li><strong>Comprehensive Warranty</strong> on All Repairs and Services</li>
-                        <li><strong>Affordable Pricing</strong> with No Hidden Costs</li>
-                        <li><strong>Luxury German Cars</strong> Sales and Maintenance Experts</li>
-                        <li><strong>Wide Range of Pre-Owned German Cars</strong> for Sale</li>
-                        <li><strong>Brands We Serve:</strong> BMW, Mercedes-Benz, Audi, Porsche, Volkswagen, and More</li>
-                        <li><strong>Your Trusted German Car Repair & Sales Hub</strong></li>
-                    </ul>
+                    <h2 class="fs-1 fw-bold fw-semibold m-0">Expert Repairs for All German Car Models</h2>
+                    <p>At Gargash Auto, we offer specialized services for all German car brands, ensuring expert repairs and maintenance with certified technicians who understand the intricacies of German engineering. We use only genuine parts to guarantee peak performance, and all repairs come with a comprehensive warranty for your peace of mind. Enjoy affordable pricing with no hidden costs, alongside our extensive selection of pre-owned German cars for sale. Brands we serve include BMW, Mercedes-Benz, Audi, Porsche, and Volkswagen, among others. Trust us as your go-to hub for German car repairs, sales, and maintenance.</p>
                     <a href="tel:+971 56 545 8853" target="_blank">
                         <button class="btn fs-6 fw-bold w-50">Call Now</button>
                     </a>
@@ -75,19 +56,15 @@
         <div class="container">
             <div class="g-3 g-md-0 row">
                 <div class="col-md-7">
-                    <h3 class="ceramic-full-container-top-heading-responsive fw-light text-white">Your Trusted Partner for
+                    <h3 class="ceramic-full-container-top-heading-responsive fw-light text-white"> Specialized German Auto Solutions in Dubai
                     </h3>
-                    <h2 class="ceramic-full-container-main-heading-responsive fw-bolder text-white">German Car Repairs &
-                        Sales in Dubai</h2>
+                    <h2 class="ceramic-full-container-main-heading-responsive fw-bolder text-white"> – Repairs & Sales Under One Roof
+</h2>
 
                 </div>
                 <div class="col-md-5 d-flex flex-column gap-3 gap-md-4 align-items-end">
-                    <button type="button" class="bg-transparent border btn btn-primary text-white w-100 w-md-50 fs-6">
-                        View Our Services
-                    </button>
-                    <button type="button" class="btn btn-primary w-100 w-md-50 fs-6">
-                        Contact Us Today
-                    </button>
+              
+                   <span class="d-flex flex-column flex-md-row gap-4"> <a href="https://wa.me/971547935400" target="_blank"><button class="btn fw-semibold rounded-3 text-black fs-6">Book Your Premium Auto Spa Today!</button></a> </span>
                 </div>
             </div>
         </div>
@@ -97,20 +74,9 @@
 
 
 
+@include('user.layouts.partials.logo-slider')
 
-    <!-- sticky-icons Section Start -->
-    @include('user.layouts.partials.google-review')
-
-
-    <!-- sticky-icons Section End -->
-    <!-- sticky-icons Section Start -->
-    @include('user.layouts.partials.logo-slider')
-
-
-    <!-- sticky-icons Section End -->
-
-
-    <!-- sticky-icons Section Start -->
+@include('user.layouts.partials.google-review')
     @include('user.layouts.partials.sticky-icons')
 
 

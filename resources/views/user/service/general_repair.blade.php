@@ -7,22 +7,14 @@
 @section('content')
 
 <!-- Hero Section start -->
-<section class="container-fluid vh-100 general_repair_hero_bg">
+<section class="container-fluid vh-50 general_repair_hero_bg">
     <div class="container h-100 w-100">
       <div class="align-items-center d-flex flex-column h-100 justify-content-center text-center w-100">
         <h1 class="fw-bolder text-white lh-1 responsive-heading-2">
-          <span class="main-color">Gargash Auto Service</span>
-          <br> Center Dubai
+          <span class="main-color">Gargash Auto General Repair</span>
+          <br> Services Center Dubai
         </h1>
-        <p class="fs-6 fw-light text-light">Adding exquisite care to your luxurious journey</p>
-        <div class="align-items-center d-flex flex-column flex-md-row gap-4 h-auto w-100 justify-content-center">
-          <a href="https://wa.me/971547935400" target="_blank">
-            <button class="btn ">Avail Your Discount</button>
-          </a>
-          <a href="tel:+971 56 545 8853" target="_blank">
-            <button class="bg-transparent border btn px-5 text-white w-fit">Call Now</button>
-          </a>
-        </div>
+        <p class="fs-6 fw-light text-light">Your seamless Driving Experience Begins Here</p>
       </div>
     </div>
   </section>
@@ -30,11 +22,14 @@
   <!-- Form Section  start-->
   <section class="container-fluid   general-repair-form-bg overflow-visible ">
     <div class="container h-100 w-100">
-      <div class="align-items-center flex-wrap-reverse g-md-5 g-3 justify-content-center row">
+      <div class="align-items-center flex-wrap-reverse g-md-5 g-3 dark justify-content-center row">
         <div class="col-md-6 white">  @include('user.layouts.partials.form') </div>
         <div class="col-md-6 px-0 text-center">
-          <h2 class="fw-bolder text-black lh-1 responsive-heading-3"> Your seamless <span class="main-color">Driving Experience</span> Begins Here. </h2>
-          <p>Book Gargash Car Services</p>
+        <h2 class="fs-3 fw-semibold m-0">Advanced Auto Repair Services Dubai for Every Make & Model</h2>
+        <br/>
+          <p>At Gargash Auto, we provide General Repair Services Dubai that go beyond expectations. As a Leading Auto Repair Center Dubai, we specialize in offering reliable and advanced repair solutions for all vehicle types. Our expert team of Automotive Professionals Dubai ensures that every repair, big or small, is carried out with precision and care, using the best tools and genuine parts for optimal performance. Whether you need minor repairs or more complex services, we are your trusted destination for Complete Auto Repair Solutions Dubai.</p>
+          <p>We use only genuine parts and cutting-edge tools to restore your vehicle to peak condition, maintaining safety, reliability, and performance. From minor fixes to extensive overhauls, Gargash Auto stands as your one-stop destination for Complete Auto Repair Solutions Dubai, trusted by car owners who expect nothing but the best.</p>
+          
         </div>
       </div>
       <img src="{{ asset('assets/user/img/gr-form-car-collection.png') }}" alt="" class="img-fluid d-none d-md-block" style="margin-bottom: -7rem;">
@@ -46,15 +41,8 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 d-flex flex-column justify-content-center gap-4">
-          <h2 class="fs-3 fw-semibold m-0">Why Choose Gargash Auto As your Car Service Partner? </h2>
-          <ul class="fs-6 lh-base list-group m-0">
-            <li>Professional Environment with High-Tech Certified Technicians</li>
-            <li>Largest Independent Dealer Standard Service Center ( 4 Branches across UAE )</li>
-            <li>One Stop Service Workshop with all repair facilities under one roof</li>
-            <li>German, American, European, Japanese, Chinese Luxury, Exotic, Classic & EV Cars Specialists </li>
-            <li>Transparent & Affordable prices, Guaranteed Customer Satisfaction</li>
-            <li>Free Pickup, Inspection, Honest Video Reporting & Drop off Service</li>
-          </ul>
+          <h2 class="fs-3 fw-semibold m-0">Your Trusted Choice for Complete Auto Repair Solutions in Dubai</h2>
+         <p>At Gargash Auto, we offer a professional environment with high-tech, certified technicians dedicated to providing top-tier service. As the largest independent dealer-standard service center with four branches across the UAE, we are your one-stop workshop for all car repair needs. Whether you drive German, American, European, Japanese, Chinese, luxury, exotic, classic, or EV vehicles, our specialists ensure your car gets the care it deserves. We pride ourselves on transparent and affordable pricing, guaranteeing customer satisfaction. Additionally, we offer convenient services such as free pickup, inspection, honest video reporting, and drop-off, making your experience as seamless and hassle-free as possible.</p>
           <button type="button" class="btn btn-primary w-fit fs-6 fw-semibold"> Call Our Advisor </button>
         </div>
         <div class="col-md-6 my-auto">

@@ -40,7 +40,7 @@
     <!-- Css Stylesheet -->
     <!-- HeaderLinks Include Here -->
     <link rel="stylesheet" href="{{ asset('assets/user/css/header.css') }}" />
-
+<meta name="google-site-verification" content="qGs1sXNVQHSkF7U3S7aNQCP_YlxrWyVab_2ZqgoJFfE" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
 
     @yield('css')
@@ -55,4 +55,48 @@
             max-width: 100%;
         }
     </style>
+    <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/670e582c2480f5b4f58dabcd/1ia80grv2';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+
+<script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Corporation",
+            "name": "Gargash Auto",
+            "alternateName": "Gargash Auto",
+            "url": "https://gargashauto.ae/",
+            "logo": "https://gargashauto.ae/assets/user/img/logo.png"
+        }
+    </script>
+
+
+
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org/",
+            "@type": "Product",
+            "name": "Gargash Auto",
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.9",
+                "ratingCount": "21541",
+                "reviewCount": "11241"
+            }
+        }
+    </script>
+
+<!--End of Tawk.to Script-->
+
+<!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-CSVJ04BMPG"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-CSVJ04BMPG'); </script>
+
 </head>

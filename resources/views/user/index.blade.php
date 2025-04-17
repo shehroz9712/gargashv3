@@ -1,6 +1,4 @@
-@extends('user.layouts.app')
-
-@section('css')
+@extends('user.layouts.app') @section('css')
 <style>
     .logo-item {
         opacity: 0.5;
@@ -108,10 +106,7 @@
         border-bottom-right-radius: 0;
     }
 </style>
-@endsection
-
-
-@section('content')
+@endsection @section('content')
 <!-- Banner Start Here -->
 
 
@@ -120,10 +115,10 @@
         <div class="banner-start-here">
             <div class="banner-top-content text-center">
                 <h1 class="level-1 heading-font primary-color" style="font-weight:700;">
-                    <span class="secondary-color d-block"> Transform Your Car Care
-                        with </span> 20+ Years of Expertise
+                    <span class="secondary-color d-block"> Experience Premium Car Care with 
+ </span> 20+ Years of Expertise
                 </h1>
-                <span class="level-8 primary-regular-font dark-color">Adding a Touch of Luxury to Every Journey</span>
+                <span class="level-8 primary-regular-font dark-color">Expert Care for All German & European Brands</span>
             </div>
             <div class="row pt-4">
                 <div class="col-lg-6 my-auto">
@@ -131,26 +126,53 @@
                         <figure class="position-relative">
                             <img src="{{ asset('assets/user/img/banner-img.png') }}" alt="" class="img-fluid">
                             <div class="">
-                                <div
-                                    class="banner-img-content d-flex flex-column gap-1 gap-md-4 left-0 mt-md-0 p-0 position-absolute pt-3 pt-md-5 right-0 text-center top-0">
-                                    <h2 class="level-1 heading-font extra-color-2 m-0">
-                                        <span class="secondary-color d-block"> Claim Our </span> Latest Offer
-                                    </h2>
-                                    <a href="https://wa.me/971547935400" target="_blank"
-                                        class="btn fs-6 mx-auto w-md-50 w-75">Avail Your Discount</a>
+                                <div class="banner-img-content d-flex flex-column gap-1 gap-md-4 left-0 mt-md-0 p-0 position-absolute pt-3 pt-md-5 right-0 text-center top-0">
+                                    <h4 class="level-1 heading-font extra-color-2 m-0">
+                                        <span class="secondary-color d-block"> Brands  </span> we specialized In
+                                    </h4>
+                                    <a href="https://wa.me/971547935400" target="_blank" class="btn fs-6 mx-auto w-md-50 w-75">Unlock Your Discount!</a>
                                 </div>
                                 <div class="banner-car-wrap position-absolute bottom-0">
                                     <figure>
-                                        <img src="{{ asset('assets/user/img/banner-car-img.png') }}" alt=""
-                                            class="img-fluid">
+                                        <img src="{{ asset('assets/user/img/banner-car-img.png') }}" alt="" class="img-fluid">
                                     </figure>
                                 </div>
                             </div>
                         </figure>
                     </div>
                 </div>
-                <div class="col-lg-6 ps-md-5 dark">
-                    @include('user.layouts.partials.form')
+                <div class="col-lg-6 my-auto">
+                    <div class="d-flex">
+            <div class="bg-white-overlay h-75 position-relative w-100 shadow rounded-2">
+                <div class="d-flex image-container justify-content-evenly mt-5 mt-md-0 p-md-3 px-md-5 row row-cols-3 row-cols-md-5 w-100 " style="row-gap: 3rem; overflow-y: scroll; height:500px">
+                    <img src="{{ asset('assets/user/img/shop-logo-1.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                    <img src="{{ asset('assets/user/img/shop-logo-2.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                    <img src="{{ asset('assets/user/img/shop-logo-3.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                    <img src="{{ asset('assets/user/img/shop-logo-4.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                    <img src="{{ asset('assets/user/img/shop-logo-5.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                    <img src="{{ asset('assets/user/img/shop-logo-6.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                    <img src="{{ asset('assets/user/img/shop-logo-7.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                    <img src="{{ asset('assets/user/img/shop-logo-8.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                    <img src="{{ asset('assets/user/img/shop-logo-9.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                    <img src="{{ asset('assets/user/img/shop-logo-10.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                    <img src="{{ asset('assets/user/img/shop-logo-11.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                    <img src="{{ asset('assets/user/img/shop-logo-12.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                    <img src="{{ asset('assets/user/img/shop-logo-13.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                    <img src="{{ asset('assets/user/img/shop-logo-14.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                    <img src="{{ asset('assets/user/img/shop-logo-15.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                    <img src="{{ asset('assets/user/img/shop-logo-16.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                    <img src="{{ asset('assets/user/img/shop-logo-17.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                    <img src="{{ asset('assets/user/img/shop-logo-18.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                    <img src="{{ asset('assets/user/img/shop-logo-19.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                    <img src="{{ asset('assets/user/img/shop-logo-20.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                    <img src="{{ asset('assets/user/img/shop-logo-21.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                    <img src="{{ asset('assets/user/img/shop-logo-22.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                    <img src="{{ asset('assets/user/img/shop-logo-23.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                    <img src="{{ asset('assets/user/img/shop-logo-24.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                    <img src="{{ asset('assets/user/img/shop-logo-25.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                </div>
+            </div>
+        </div>
 
                 </div>
             </div>
@@ -165,18 +187,19 @@
     <div class="align-items-center row">
         <div class="col-lg-6">
             <h2 class="fs-2 fw-semibold">About Us</h2>
-            <p class="fs-6 fw-normal lh-sm">
-                Gargash Auto was founded by a team of top in line and experienced automotive professionals committed to
-                delivering high-quality auto repair services in Dubai. It later extended to Sharjah. Having recognized
-                the common issues and complaints car owners face with other repair shops, our primary goal is to offer a
-                friendly, transparent environment while ensuring top-notch service to earn the trust, satisfaction, and
-                loyalty of our valued customers.
+            <p class="fs-6 fw-normal lh-sm text-justify">
+                Gargash Auto was founded by a team of highly experienced automotive professionals committed to offering Luxury Car Care services Dubai UAE that go beyond expectations. With a presence in both Dubai and Sharjah, we have established ourselves as a trusted
+                name for car owners seeking premium service. Our mission is to provide a transparent and customer-friendly experience that addresses common frustrations found in other repair shops, ensuring every visit is a seamless one.
             </p>
-            <p class="fs-6 fw-normal lh-sm"> At Gargash Auto, we warmly welcome all customers and guarantee
-                premium-quality auto repairs at the most competitive prices.</p>
-            <p class="fs-6 fw-normal lh-sm">For more information or suggestions, feel free to reach out to us.</p>
-            <a href="https://wa.me/971547935400" target="_blank" class="btn fs-6 fw-semibold rounded-3"> Click here
-                for more Offers </a>
+            <p class="fs-6 fw-normal lh-sm"> We specialize in car care services Dubai, focusing on delivering expert maintenance and repairs for the finest German and European brands. From Mercedes to BMW, Audi to Porsche, our skilled technicians bring unmatched expertise to every service.
+                At Gargash Auto, attention to detail and precision are our top priorities, and we take immense pride in offering tailored solutions for each vehicle.
+            </p>
+            <p class="fs-6 fw-normal lh-sm">Our commitment to quality service doesn’t stop there—we ensure that you receive the highest level of care at the most competitive prices, making exceptional Luxury Car Care services Dubai UAE accessible to all luxury vehicle owners. At Gargash
+                Auto, your satisfaction is our top priority, and we are dedicated to keeping your car running smoothly for years to come.</p>
+            <p class="fs-6 fw-normal lh-sm">For inquiries or suggestions, feel free to contact us anytime.
+            </p>
+
+            <a href="/about" class="btn fs-6 fw-semibold rounded-3"> Read More </a>
         </div>
         <div class="col-lg-6 mt-5 mt-md-0">
             <div class="about-text-bottom">
@@ -200,7 +223,6 @@
 <!-- discover-section Ends Here  -->
 
 
-
 <!-- offers-section Starts Here  -->
 <section class="offers-section section position-relative z-index-1 overflow-visible">
     <div class="container">
@@ -209,11 +231,10 @@
                 <div class="offers-wrapper">
                     <div class="ml14">
                         <h2 class="level-2 heading-font text-wrapper extra-color-2">
-                            <span class="letters">Experience Luxury Car Care with Unbeatable Offers</span>
+                            <span>Luxury Car Care with Exclusive Offers</span>
                         </h2>
                     </div>
-                    <p class="level-7 primary-light-font extra-color-5 col-lg-7 col-md-9">Enjoy exclusive discounts and
-                        exceptional services, ensuring your elite vehicle receives the best care and expert maintenance.
+                    <p class="level-7 primary-light-font extra-color-5 col-lg-7 col-md-9">Get unbeatable deals and premium car care services Dubai to keep your elite German and European vehicle in top condition.
                     </p>
                     <a href="https://wa.me/971547935400" target="_blank" class="btn">Get Started Today</a>
                 </div>
@@ -221,63 +242,7 @@
         </div>
     </div>
 </section>
-<!-- offers-section Ends Here  -->
 
-<!-- On Desktop  -->
-<section class="brand-section d-lg-block d-none section">
-    <div class="container">
-        <div class="brand-wrapper bg-img-cover img-img-no-repeat w-100 position-center">
-            <div class="row">
-                <div class="col-lg-6">
-                    <a href="https://wa.me/971547935400" target="_blank">
-                        <div class="text-center">
-                            <h4 class="level-3 heading-font extra-color-2 mb-0">Choose Your</h4>
-                            <div class="">
-                                <h2 class="level-1-lg heading-font extra-color-2">
-                                    <span class="letters">Brand</span>
-                                </h2>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-6">
-                    <a href="https://wa.me/971547935400" target="_blank">
-                        <div class="text-center">
-                            <h4 class="level-3 heading-font extra-color-2 mb-0">Choose Your</h4>
-                            <div class="">
-                                <h2 class="level-1-lg heading-font extra-color-2">
-                                    <span class="letters">Services</span>
-                                </h2>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- On Desktop  -->
-<!-- On Mobile  -->
-<section class="container d-block d-lg-none vh-100 w-100 pb-0 ">
-    <div class="d-flex flex-column gap-3 h-100 w-100">
-        <a href="#brand-seciont" class="w-100 h-50">
-            <div
-                class="Choose-Your-brand-in-mobile rounded-4 align-items-center d-flex flex-column  justify-content-center h-100 w-100 brand-section-open">
-                <h4 class="fw-bolder level-1 text-light pb-1 ">Choose Your</h4>
-                <h2 class="fw-bolder level-1 text-light">Brand</h2>
-            </div>
-        </a>
-        <a href="#service-seciont" class="w-100 h-50">
-            <div
-                class="Choose-Your-Services-in-mobile rounded-4 align-items-center d-flex flex-column justify-content-center w-100 h-100">
-                <h4 class="fw-bolder level-1 text-light pb-1 ">Choose Your</h4>
-                <h2 class="fw-bolder level-1 text-light">Services</h2>
-            </div>
-        </a>
-    </div>
-
-</section>
-<!-- On Mobile  -->
 
 <!-- brand-section Ends Here  -->
 <!-- process-section Starts Here  -->
@@ -286,11 +251,9 @@
         <div class="process-top-content text-center mb-5">
             <div class="ml14">
                 <h2 class="level-1 heading-font text-wrapper dark-color">
-                    <span class="letters">LUXURY IN AND OUT </span>
+                    <span>Luxury In and Out </span>
                 </h2>
-                <p class="level-7 primary-regular-font dark-color col-lg-9 mx-auto">Our advanced repair services are
-                    powered by modern tools, cutting-edge techniques, innovative processes, and skilled technicians. Our
-                    4-step car repair model is designed to provide comfort and convenience for every car owner.</p>
+                <p class="level-7 primary-regular-font dark-color col-lg-9 mx-auto">Our expert Luxury Car Care services Dubai UAE combine advanced tools, modern techniques, and skilled technicians. With our 4-step car repair model, we ensure comfort, convenience, and premium care for every German and European car owner.</p>
                 <a href="https://wa.me/971547935400" target="_blank" class="btn">Speak to an expert <span
                         class="ps-2">
                         <i class="fa-solid fa-angle-right"></i>
@@ -300,26 +263,23 @@
         </div>
         <div class="process-wrapper position-relative mt-5">
             <div class="process-wrap position-relative">
-                <div
-                    class="align-items-md-center align-items-md-center d-flex flex-sm-row gap-3 gap-sm-0 justify-content-between pb-sm-5">
+                <div class="align-items-md-center align-items-md-center d-flex flex-sm-row gap-3 gap-sm-0 justify-content-between pb-sm-5">
                     <div class="process-card-wrapper process-card1 extra-bg-2 radius-29 position-absolute">
                         <div class="process-card">
                             <figure>
-                                <img src="{{ asset('assets/user/img/process-icon1.png') }}" alt=""
-                                    class="inmg-fluid">
+                                <img src="{{ asset('assets/user/img/process-icon1.png') }}" alt="" class="inmg-fluid">
                             </figure>
                             <div class="process-text">
                                 <h5 class="level-6 heading-font secondary-color">BOOK A SERVICE</h5>
-                                <p class="level-9 primary-regular-font dark-color">Call us to book your service <br>
-                                    and enjoy a free inspection.</p>
+                                <p class="level-9 primary-regular-font dark-color">Call us to book your service
+                                    <br> and enjoy a free inspection.</p>
                             </div>
                         </div>
                     </div>
                     <div class="process-card-wrapper process-card2 extra-bg-2 radius-29 position-absolute right-0">
                         <div class="process-card">
                             <figure>
-                                <img src="{{ asset('assets/user/img/process-icon2.png') }}" alt=""
-                                    class="inmg-fluid">
+                                <img src="{{ asset('assets/user/img/process-icon2.png') }}" alt="" class="inmg-fluid">
                             </figure>
                             <div class="process-text">
                                 <h5 class="level-6 heading-font secondary-color">HASSLE FREE PICKUP</h5>
@@ -337,8 +297,7 @@
                     <div class="process-card-wrapper process-card3 extra-bg-2 radius-29 position-absolute">
                         <div class="process-card">
                             <figure>
-                                <img src="{{ asset('assets/user/img/process-icon3.png') }}" alt=""
-                                    class="inmg-fluid">
+                                <img src="{{ asset('assets/user/img/process-icon3.png') }}" alt="" class="inmg-fluid">
                             </figure>
                             <div class="process-text">
                                 <h5 class="level-6 heading-font secondary-color">REPAIR & FIX</h5>
@@ -351,8 +310,7 @@
                     <div class="process-card-wrapper process-card4 extra-bg-2 radius-29 position-absolute right-0">
                         <div class="process-card">
                             <figure>
-                                <img src="{{ asset('assets/user/img/process-icon4.png') }}" alt=""
-                                    class="inmg-fluid">
+                                <img src="{{ asset('assets/user/img/process-icon4.png') }}" alt="" class="inmg-fluid">
                             </figure>
                             <div class="process-text">
                                 <h5 class="level-6 heading-font secondary-color">SMOOTH RETURN</h5>
@@ -383,9 +341,5 @@
 <!-- sticky-icons Section Start -->
 @include('user.layouts.partials.sticky-icons-mobile')
 
-
 <!-- sticky-icons Section End -->
-@endsection
-
-@section('js')
-@endsection
+@endsection @section('js') @endsection

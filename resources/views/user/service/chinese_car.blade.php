@@ -87,20 +87,7 @@
   
   
   
-  
-  
-  <!-- sticky-icons Section Start -->
-      @include('user.layouts.partials.sticky-icons')
-  
-  
-  <!-- sticky-icons Section End -->
-   <!-- sticky-icons Section Start -->
-  
-      @include('user.layouts.partials.sticky-icons-mobile')
-  
-  
-  
-  <!-- sticky-icons Section End -->
+@include('user.layouts.partials.gateway-images') @include('user.layouts.partials.google-review') @include('user.layouts.partials.sticky-icons') @include('user.layouts.partials.sticky-icons-mobile')
   
 @endsection
 

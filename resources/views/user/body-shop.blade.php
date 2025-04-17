@@ -53,7 +53,7 @@
                         class="main-color">Driving Experience </span> Starts Here.</h2>
                 <p>Schedule your appointment at Gargash Auto today!</p>
             </div>
-            <div class="col-md-6 white"> @include('user.layouts.partials.form') </div>
+            <div class="col-md-6 dark"> @include('user.layouts.partials.form') </div>
         </div>
     </div>
 </section>
@@ -76,7 +76,7 @@
                 <h3 class="fs-5 fw-semibold">Our services include:</h3>
             </span>
             <span class="d-flex flex-column flex-md-row gap-1 gap-md-5">
-                <ul class="fs-6 fw-light list-group text-secondary">
+                <ul class="fs-6 list-group ">
                     <li>Accident/Collision Repair</li>
                     <li>Car Painting Service</li>
                     <li>Scratch Removal & Repaint</li>
@@ -90,7 +90,7 @@
                     <li>Convertible Roof Repair</li>
                     <li>Chassis Repair</li>
                 </ul>
-                <ul class="fs-6 fw-light list-group text-secondary">
+                <ul class="fs-6 list-group">
                     <li>Calipers Painting</li>
                     <li>Rim Painting Service</li>
                     <li>Dent Removal</li>
