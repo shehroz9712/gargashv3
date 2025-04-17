@@ -88,10 +88,11 @@
 <section class="section contact-hero-padding-responsive container-fluid contract-hero ">
   <div class="container d-flex flex-column h-100  justify-content-center text-center w-100">
     <div class="contract-hero-content">
-      <h4 class="fs-4 fw-bold">Get Hitch-Free Experience! </h4>
+      <h4 class="fs-4 fw-bold">Experience Seamless Service</h4>
       <h1 class="display-3 fw-bolder">Contact <span class="text-warning"> Us</span>
       </h1>
-      <h4 class="fs-5 fw-semibold">We'd love to hear from you and provide assistance for all your car servicing needs.</h4>
+      <h4 class="fs-5 fw-semibold">Let’s Get You Back on the Road—Smoothly</h4>
+      
     </div>
   </div>
 </section>
@@ -103,6 +104,7 @@
 
       <div class="col-md-12 bg-white p-4 rounded-3 shadow">
         <h3 class="fw-bolder">Talk to our <span class="text-warning"> team today</span></h3>
+        <p>Whether you have a question, need expert advice, or are ready to book your next service, we’re here to help—every step of the way. At Gargash Auto, your convenience and peace of mind come first. Reach out to us today and discover a hassle-free, transparent car care experience tailored to your needs.</p>
         <form class="container py-4">
 
           <div class="row g-3">

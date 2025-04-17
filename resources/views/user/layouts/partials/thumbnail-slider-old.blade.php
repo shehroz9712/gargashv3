@@ -3,12 +3,11 @@
 <section class="discover-section section">
     <div class="container">
         <div class="discover-top-content text-center mb-4">
-            <h2 class="level-2 heading-font dark-color"> No Matter What Brand<span class="secondary-color"> You Own
+            <h2 class="level-2 heading-font dark-color"> We Service All Leading cars especially <span class="secondary-color"> German & European Brands
                 </span>
             </h2>
-            <p class="level-7 primary-light-font dark-color col-lg-8 opacity-70 mx-auto">We provide complete auto
-                repair solutions in a welcoming environment, featuring a comfortable sitting area and delivering fast,
-                high-quality service.</p>
+            <p class="level-7 col-lg-8 opacity-70 mx-auto">We offer complete auto repair solutions with fast, high-quality service in a welcoming environment, including a comfortable lounge for your convenience.
+</p>
         </div>
         <!-- Slick Slider Section -->
         <div class="product-slider-wrapper slider-sec mt-md-0">

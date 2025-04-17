@@ -11,10 +11,9 @@
             <div class="g-4 g-md-0 row">
                 <div class="col-md-6 my-auto">
                     <div class="contract-hero-content">
-
                         <h2 class="fw-bolder display-4"> <span class="text-warning">Welcome To </span>Gargash Auto Service
                         </h2>
-                        <h4 class="fs-4 fw-bold">A Right Place To Fix Your Car</h4>
+                        <h4 class="fs-4 fw-bold">Where Precision Meets Performance</h4>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -33,18 +32,13 @@
         <div class="align-items-center row">
             <div class="col-lg-6">
                 <h2 class="fs-2 fw-semibold">About Us</h2>
+                <h5>Driven by Expertise. Built on Trust. Focused on You.</h5>
                 <p class="fs-6 fw-normal lh-sm">
-                    Gargash Auto was founded by a team of top in line and experienced automotive professionals committed to
-                    delivering high-quality auto repair services in Dubai. It later extended to Sharjah. Having recognized
-                    the common issues and complaints car owners face with other repair shops, our primary goal is to offer a
-                    friendly, transparent environment while ensuring top-notch service to earn the trust, satisfaction, and
-                    loyalty of our valued customers.
-                </p>
-                <p class="fs-6 fw-normal lh-sm"> At Gargash Auto, we warmly welcome all customers and guarantee
-                    premium-quality auto repairs at the most competitive prices.</p>
-                <p class="fs-6 fw-normal lh-sm">For more information or suggestions, feel free to reach out to us.</p>
-                <a href="https://wa.me/971547935400" target="_blank" class="btn fs-6 fw-semibold rounded-3"> Click here for
-                    more Offers </a>
+                 Gargash Auto was born from a vision shared by a group of elite automotive professionals—craftsmen, technicians, and service advisors who have spent decades mastering their art in the global automotive industry. United by a passion for precision and a desire to transform the car repair experience in the UAE, we came together to create something different—something better.                </p>
+                <p class="fs-6 fw-normal lh-sm">Our journey began in Dubai, a city that thrives on excellence and innovation. From humble beginnings, we set out with a bold purpose: to raise the standard of auto service—not just in how cars are fixed, but in how people are treated. That commitment soon led us to expand our services to Sharjah, driven by the trust and loyalty of our growing community.</p>
+                <p class="fs-6 fw-normal lh-sm">At Gargash Auto, we understand the unspoken bond between driver and vehicle. We know that for many, a car is more than just transportation—it’s freedom, livelihood, a lifeline to family, or a symbol of hard work and progress. That’s why we treat every vehicle that enters our workshop as if it were our own.</p>
+                <p class="fs-6 fw-normal lh-sm">We’ve listened closely to what car owners truly want—and deserve. No more hidden charges. No rushed explanations. No compromises. Just honest, transparent service backed by world-class skill and a customer-first mindset. From routine oil changes to engine overhauls and high-end diagnostics, we deliver dealership-grade quality—without the dealership price tag or pressure.</p>
+                <a href="https://wa.me/971547935400" target="_blank" class="btn fs-6 fw-semibold rounded-3">Let’s drive forward—together.</a>
             </div>
             <div class="col-lg-6 mt-5 mt-md-0">
                 <div class="about-text-bottom">
@@ -71,23 +65,20 @@
                 <div class="about-us-our-team-text-padding-responsive col-lg-6 mt-4 mt-md-0">
                     <h2 class="display-6 fw-bold">Meet Our<span class="main-color"> Expert Team</span>
                     </h2>
-                    <p class="about-us-our-team-text-aling-responsive">At Gargash Auto, our team is the backbone of our
-                        exceptional service. Comprising highly experienced automotive professionals from around the world,
-                        we specialize in working with luxury cars using the latest diagnostic tools and advanced technology.
-                        From rebuilding engines and gearboxes to providing meticulous repairs and maintenance, our team
-                        brings a wealth of expertise to every project. We are dedicated to ensuring your vehicle receives
-                        the highest quality care, and we pride ourselves on creating a transparent, customer-focused
-                        experience. With a commitment to excellence, our team is here to deliver unmatched service for your
-                        luxury car needs.</p>
-                    <a href="https://wa.me/971547935400" target="_blank"><button
-                            class="btn fs-6 fw-semibold rounded-3">Click here for more Offers</button></a>
+                    <h5>Global Talent. Local Trust. Unmatched Precision.</h5>
+                    <p class="about-us-our-team-text-aling-responsive">At Gargash Auto, our people are our power. Behind every smooth engine, every precision repair, and every satisfied customer stands a team of world-class automotive professionals—each bringing specialized experience, deep technical knowledge, and a shared passion for perfection.
+
+Handpicked from diverse international backgrounds, our technicians are experts in handling luxury and performance vehicles. From complex engine and gearbox rebuilds to highly detailed diagnostics and routine maintenance, they work with cutting-edge tools and the latest automotive technologies to ensure your vehicle performs at its best.
+
+But we’re not just about technical skill—we're about trust. Every repair, every service, every recommendation is made with honesty, clarity, and your satisfaction in mind.</p>
+                    
                 </div>
 
             </div>
     </section>
 
     <!-- Our Team Styling End  -->
-    <!-- Our career  Styling Start  -->
+    <!-- Our career  Styling Start  
     <section class="container my-md-5">
         <div class="row d-flex  flex-md-row align-items-center">
             <div class="col-md-6 d-flex justify-content-center mt-4 mt-md-0">
@@ -115,13 +106,12 @@
             <div class="col-md-6 text-start">
                 <h2 class="display-6 fw-bold"> Our <span class="main-color">Vision</span>
                 </h2>
-                <p class="about-us-our-team-text-aling-responsive">At Gargash Auto, our vision is to deliver seamless,
-                    reliable, and top-quality car repair solutions that exceed customer expectations. We are dedicated to
-                    staying ahead of the curve by adopting the latest technologies and innovations to enhance our services
-                    and ensure the best care for your vehicle.</p>
+                <h5>Driving Excellence. Inspiring Trust. Shaping the Future.</h5>
+                <p class="about-us-our-team-text-aling-responsive">At Gargash Auto, our vision is clear: to redefine the standard of automotive care across the region by delivering seamless, transparent, and high-performance repair solutions that consistently exceed customer expectations.
+We envision a future where every vehicle receives the precision it deserves, every customer enjoys peace of mind, and every service reflects our deep-rooted values of integrity, innovation, and excellence.
+By continuously investing in cutting-edge technologies, advanced diagnostics, and industry-best practices, we aim to stay at the forefront of automotive innovation—ensuring your vehicle is always in expert hands.</p>
                 <div class="d-flex justify-content-center justify-content-md-start">
-                    <a href="https://wa.me/971547935400" target="_blank" class="btn fs-6 fw-semibold rounded-3"> Click here
-                        for more Offers </a>
+                   
                 </div>
             </div>
             <div class="col-md-6 d-flex justify-content-center mt-4 mt-md-0">
@@ -131,6 +121,26 @@
         </div>
     </section>
     <!-- Our Vision Styling End  -->
+    <section class="container py-md-4">
+        <div class="row d-flex  flex-md-row align-items-center">
+            <div class="col-md-6 d-flex justify-content-center mt-4 mt-md-0">
+                <img class="mt-5 mt-md-0 w-75 w-md-100" src="{{ asset('assets/user/img/vision-section-right.png') }}"
+                    alt="hero" />
+            </div>
+            <div class="col-md-6 text-start">
+                <h2 class="display-6 fw-bold"> Our <span class="main-color">Mission</span>
+                </h2>
+                <h5>Precision in Service. Passion in Every Detail.</h5>
+                <p class="about-us-our-team-text-aling-responsive">At Gargash Auto, our mission is to provide exceptional, transparent, and customer-focused automotive solutions that deliver lasting value and total peace of mind. We are committed to maintaining the highest standards in diagnostics, repair, and maintenance—combining expert craftsmanship with advanced technology.
+
+We believe every customer deserves honesty, every vehicle deserves care, and every service should reflect our unwavering dedication to excellence. Through continuous improvement, professional integrity, and a culture of respect, we strive to build long-term relationships and become the trusted auto care partner for generations to come.</p>
+                <div class="d-flex justify-content-center justify-content-md-start">
+                  
+                </div>
+            </div>
+            
+        </div>
+    </section>
     <!-- sticky-icons Section Start -->
     @include('user.layouts.partials.sticky-icons')
 

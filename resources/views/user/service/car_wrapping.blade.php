@@ -10,311 +10,113 @@
 
 <div class="container-fluid Wrapping-bg overflow-hidden">
     <div class="container">
-      <h1 class="fw-bolder text-center m-0 gradient-text responsive-heading-1"> Wrapping </h1>
+      <h1 class="fw-bolder text-center m-0 gradient-text responsive-heading-1"> Car Wrapping </h1>
       <img src="{{ asset('assets/user/img/Wrapping-car.png') }}" alt="" loading="lazy">
     </div>
   </div>
   <!-- hero section end -->
-  <!-- Form Section Start -->
-  <section class="container car-wrapping-margin-top-responsive overflow-hidden">
-    <div class="align-items-center dark g-5  row">
-      <div class="col-md-4">
-        <p class="m-0 fs-6 fw-light">From exclusive discounts to top-tier services, we guarantee your premium vehicle receives the finest care and smart maintenance.</p>
+  <!-- Save Section Start -->
+  <div class="container ">
+    <div class="align-items-center row">
+      <div class="col-md-6">
+        <h3 class="fs-4 fw-normal lh-lg"></h3>
+        <h1 class="display-5 fw-bold lh-1"> Premium <span class="main-color">Car Wrapping</span> Service in Dubai
+          </h1>
+          <p class="fs-6 fw-normal lh-sm text-secondary"> Transform your vehicle's appearance and protect its original paint with our top-tier car wrapping services in Dubai. At Gargash Auto, we offer a wide range of high-quality wraps that not only enhance your car's aesthetics but also provide a durable shield against everyday wear and tear.</p>
+          <div class="d-flex flex-column flex-md-row gap-3">
+           <span class="d-flex flex-column flex-md-row gap-4"> <a href="https://wa.me/971547935400" target="_blank"><button class="btn fw-semibold rounded-3 text-black fs-6">Book Your Services Today!!</button></a> </span> 
+          </div>
       </div>
-      <div class="col-md-5">  @include('user.layouts.partials.form') </div>
-      <div class="col-md-3 d-flex flex-column gap-3">
-        <a href="https://wa.me/971547935400" target="_blank"><button class="btn btn-primary fs-6">Avail Your Discount</button></a>
-        <a href="tel:+971 56 545 8853" target="_blank" target="_blank"><button class="transparent-btn w-md-75 w-100">Call Now</button></a>
+      <div class="col-md-6">
+        <img src="{{ asset('assets/user/img/save-section-right.png') }}" alt="" />
+      </div>
+    </div>
+  </div>
+  <!-- Save Section End -->
+  <!-- Cearmic Form Section Start -->
+  <!-- Form Section Start Here -->
+  
+  
+  <section class="ceramic-form-section-bg">
+    <div class="container">
+      <div class="align-items-center flex-wrap-reverse row white">
+  
+        <div class="col-md-6 dark">
+           @include('user.layouts.partials.form')
+        </div>
+  
+        <div class="col-md-6 mb-4 mb-md-0">
+          <h3 class="auto-spa-form-heading-font-size-responsive fw-bold lh-1 mb-4 px-5 text-center">
+            Your seamless
+            <span class="main-color">Driving Experience</span> Begins Here.
+          </h3>
+          
+        </div>
+  
+  
   
       </div>
     </div>
+  
   </section>
-  <!-- Form Section End -->
-  <!-- icons section Start -->
+  
+  <!-- Form Section End Here -->
+  <!-- Cearmic Form Section End -->
+  <!-- Coating Section Start -->
   <section class="container">
-    <div>
-      <h2 class="fs-1 fw-bold text-center">Vinyl Wrap <span style="color: #E6B110;">Types</span>
-      </h2>
-    </div>
-    <div class="row row-cols-1  row-cols-sm-2 row-cols-md-4 g-4">
-      <div class="align-items-center col d-flex flex-column justify-content-center">
-        <div class="img">
-          <img src="{{ asset('assets/user/img/Vinyl-grid-item-1.png') }}" alt="">
-        </div>
-        <div class="d-flex flex-column gap-2 text-center">
-          <h5 class="m-0 fs-6 fw-semibold">COLOR SHIFT VINYL WRAP</h5>
-          <p class="m-0" style="font-size:14px;"> <a href="tel:+971 56 545 8853" target="_blank" target="_blank">Call Now</a> <span class="px-1 py-1 rounded-circle" style="border:1px solid gray; font-size:10px;">
-              <i class="fa-solid fa-arrow-right"></i>
-            </span>
-          </p>
-        </div>
-      </div>
-      <div class="align-items-center col d-flex flex-column justify-content-center">
-        <div class="img">
-          <img src="{{ asset('assets/user/img/Vinyl-grid-item-2.png') }}" alt="">
-        </div>
-        <div class="d-flex flex-column gap-2 text-center">
-          <h5 class="m-0 fs-6 fw-semibold">CARBON VINYL WRAP</h5>
-          <p class="m-0" style="font-size:14px;"> <a href="tel:+971 56 545 8853" target="_blank">Call Now</a> <span class="px-1 py-1 rounded-circle" style="border:1px solid gray; font-size:10px;">
-              <i class="fa-solid fa-arrow-right"></i>
-            </span>
-          </p>
-        </div>
-      </div>
-      <div class="align-items-center col d-flex flex-column justify-content-center">
-        <div class="img">
-          <img src="{{ asset('assets/user/img/Vinyl-grid-item-3.png') }}" alt="">
-        </div>
-        <div class="d-flex flex-column gap-2 text-center">
-          <h5 class="m-0 fs-6 fw-semibold">CHROME VINYL WRAP</h5>
-          <p class="m-0" style="font-size:14px;"> <a href="tel:+971 56 545 8853" target="_blank">Call Now</a> <span class="px-1 py-1 rounded-circle" style="border:1px solid gray; font-size:10px;">
-              <i class="fa-solid fa-arrow-right"></i>
-            </span>
-          </p>
-        </div>
-      </div>
-      <div class="align-items-center col d-flex flex-column justify-content-center">
-        <div class="img">
-          <img src="{{ asset('assets/user/img/Vinyl-grid-item-4.png') }}" alt="">
-        </div>
-        <div class="d-flex flex-column gap-2 text-center">
-          <h5 class="m-0 fs-6 fw-semibold">DEEP GLOSS VINYL WRAP</h5>
-          <p class="m-0" style="font-size:14px;"> <a href="tel:+971 56 545 8853" target="_blank">Call Now</a> <span class="px-1 py-1 rounded-circle" style="border:1px solid gray; font-size:10px;">
-              <i class="fa-solid fa-arrow-right"></i>
-            </span>
-          </p>
-        </div>
-      </div>
-      <div class="align-items-center col d-flex flex-column justify-content-center">
-        <div class="img">
-          <img src="{{ asset('assets/user/img/Vinyl-grid-item-5.png') }}" alt="">
-        </div>
-        <div class="d-flex flex-column gap-2 text-center">
-          <h5 class="m-0 fs-6 fw-semibold">SATIN VINYL WRAP</h5>
-          <p class="m-0" style="font-size:14px;"> <a href="tel:+971 56 545 8853" target="_blank">Call Now</a> <span class="px-1 py-1 rounded-circle" style="border:1px solid gray; font-size:10px;">
-              <i class="fa-solid fa-arrow-right"></i>
-            </span>
-          </p>
-        </div>
-      </div>
-      <div class="align-items-center col d-flex flex-column justify-content-center">
-        <div class="img">
-          <img src="{{ asset('assets/user/img/Vinyl-grid-item-6.png') }}" alt="">
-        </div>
-        <div class="d-flex flex-column gap-2 text-center">
-          <h5 class="m-0 fs-6 fw-semibold">GLOSS VINYL WRAP</h5>
-          <p class="m-0" style="font-size:14px;"> <a href="tel:+971 56 545 8853" target="_blank">Call Now</a> <span class="px-1 py-1 rounded-circle" style="border:1px solid gray; font-size:10px;">
-              <i class="fa-solid fa-arrow-right"></i>
-            </span>
-          </p>
-        </div>
-      </div>
-      <div class="align-items-center col d-flex flex-column justify-content-center">
-        <div class="img">
-          <img src="{{ asset('assets/user/img/Vinyl-grid-item-7.png') }}" alt="">
-        </div>
-        <div class="d-flex flex-column gap-2 text-center">
-          <h5 class="m-0 fs-6 fw-semibold">MATTE VINYL WRAP</h5>
-          <p class="m-0" style="font-size:14px;"> <a href="tel:+971 56 545 8853" target="_blank">Call Now</a> <span class="px-1 py-1 rounded-circle" style="border:1px solid gray; font-size:10px;">
-              <i class="fa-solid fa-arrow-right"></i>
-            </span>
-          </p>
-        </div>
-      </div>
-      <div class="align-items-center col d-flex flex-column justify-content-center">
-        <div class="img">
-          <img src="{{ asset('assets/user/img/Vinyl-grid-item-8.png') }}" alt="">
-        </div>
-        <div class="d-flex flex-column gap-2 text-center">
-          <h5 class="m-0 fs-6 fw-semibold">FORGED CARBON VINYL WRAP</h5>
-          <p class="m-0" style="font-size:14px;"> <a href="tel:+971 56 545 8853" target="_blank">Call Now</a> <span class="px-1 py-1 rounded-circle" style="border:1px solid gray; font-size:10px;">
-              <i class="fa-solid fa-arrow-right"></i>
-            </span>
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- icons section End -->
-  <!-- Full container  section Start-->
-  <section class="align-items-center align-items-md-baseline container-fluid d-flex full-container-bg justify-content-center justify-content-md-end px-5" style="height: 75vh;">
-    <span class="align-items-end d-flex flex-column" style="color: #0d6efd;">
-      <h5 class="display-5 fw-bold ">OCEAN GREEN</h5>
-      <button type="button" class="transparent-btn" style=" color:#0d6efd !important; border:2px solid #0d6efd !important; "> DEEP GLOSS WRAPS </button>
-    </span>
-  </section>
-  <!-- Full container  section End-->
-  <!-- Car images grid section Start -->
-  <section class="container-fluid">
-    <div class="px-4 d-flex flex-column gap-4">
-      <div>
-        <h2 class="fs-1 fw-bold text-center">Colors <span style="color: #E6B110;">We Have</span>
+    <div class="d-flex flex-column gap-4">
+      <div class="text-center">
+        <h2 class="display-5 fw-bold">Benefits of Car <span class="main-color">Ceramic Coating</span>
         </h2>
+        <p class="fs-6 fw-normal lh-sm"> We’ve equipped our auto body workshop with cutting-edge tools and technology to deliver premium car wrapping services in Dubai. Each wrap is precisely applied to blend seamlessly with your vehicle’s curves and contours, ensuring a flawless, paint-like finish that lasts. Unlike paint, wraps don’t chip or fade under harsh conditions—making it a smart, long-term solution for both style and protection. Give your vehicle the makeover it deserves with our expert car wrapping service today!</p>
       </div>
-      <div class="row row-cols-1  row-cols-sm-2 row-cols-md-4 g-4">
-        <div class="align-items-center col d-flex flex-column justify-content-center gap-3">
-          <div class="img">
-            <img src="{{ asset('assets/user/img/we-have-1.png') }}" alt="">
-          </div>
-          <div class="d-flex flex-column gap-2 text-center">
-            <h5 class="m-0 fs-6 fw-semibold">GREY VINYL WRAP</h5>
-            <p class="m-0" style="font-size:14px;"> <a href="tel:+971 56 545 8853" target="_blank">Call Now</a> <span class="px-1 py-1 rounded-circle" style="border:1px solid gray; font-size:10px;">
-                <i class="fa-solid fa-arrow-right"></i>
-              </span>
-            </p>
-          </div>
+      <div class="g-3 row row-cols-md-3">
+        <div class=" d-flex flex-column gap-3 align-items-center">
+          <img src="{{ asset('assets/user/img/coating-bottom-1.png') }}" alt="" />
+          <p class="fs-6 fw-normal lh-sm"> Car wrapping acts like a second skin, shielding your vehicle’s original paint from harsh sun, sand, road debris, and minor scratches. Especially in Dubai’s intense climate, a quality wrap is your car’s best defense against fading and oxidation. It keeps your factory finish untouched, helping retain resale value while reducing the need for touch-ups or repaints.
+</p>
         </div>
-        <div class="align-items-center col d-flex flex-column justify-content-center gap-3">
-          <div class="img">
-            <img src="{{ asset('assets/user/img/we-have-2.png') }}" alt="">
-          </div>
-          <div class="d-flex flex-column gap-2 text-center">
-            <h5 class="m-0 fs-6 fw-semibold">GREEN VINYL WRAP</h5>
-            <p class="m-0" style="font-size:14px;"> <a href="tel:+971 56 545 8853" target="_blank">Call Now</a> <span class="px-1 py-1 rounded-circle" style="border:1px solid gray; font-size:10px;">
-                <i class="fa-solid fa-arrow-right"></i>
-              </span>
-            </p>
-          </div>
+        <div class=" d-flex flex-column gap-3 align-items-center">
+          <p> Whether you're into matte black, high-gloss finishes, carbon fiber textures, or bold color shifts, wrapping opens up endless personalization options. And the best part? It’s not permanent. You can change your car’s look whenever you want—no paint required. It’s the ultimate freedom of expression, wrapped up in one clean package.
+</p>
+          <img src="{{ asset('assets/user/img/coating-bottom-2.png') }}" alt="" />
         </div>
-        <div class="align-items-center col d-flex flex-column justify-content-center gap-3">
-          <div class="img">
-            <img src="{{ asset('assets/user/img/we-have-3.png') }}" alt="">
-          </div>
-          <div class="d-flex flex-column gap-2 text-center">
-            <h5 class="m-0 fs-6 fw-semibold">ORANGE VINYL WRAP</h5>
-            <p class="m-0" style="font-size:14px;"> <a href="tel:+971 56 545 8853" target="_blank">Call Now</a> <span class="px-1 py-1 rounded-circle" style="border:1px solid gray; font-size:10px;">
-                <i class="fa-solid fa-arrow-right"></i>
-              </span>
-            </p>
-          </div>
-        </div>
-        <div class="align-items-center col d-flex flex-column justify-content-center gap-3">
-          <div class="img">
-            <img src="{{ asset('assets/user/img/we-have-4.png') }}" alt="">
-          </div>
-          <div class="d-flex flex-column gap-2 text-center">
-            <h5 class="m-0 fs-6 fw-semibold">BLACK VINYL WRAP</h5>
-            <p class="m-0" style="font-size:14px;"> <a href="tel:+971 56 545 8853" target="_blank">Call Now</a> <span class="px-1 py-1 rounded-circle" style="border:1px solid gray; font-size:10px;">
-                <i class="fa-solid fa-arrow-right"></i>
-              </span>
-            </p>
-          </div>
-        </div>
-        <div class="align-items-center col d-flex flex-column justify-content-center gap-3">
-          <div class="img">
-            <img src="{{ asset('assets/user/img/we-have-5.png') }}" alt="">
-          </div>
-          <div class="d-flex flex-column gap-2 text-center">
-            <h5 class="m-0 fs-6 fw-semibold">BLUE VINYL WRAP</h5>
-            <p class="m-0" style="font-size:14px;"> <a href="tel:+971 56 545 8853" target="_blank">Call Now</a> <span class="px-1 py-1 rounded-circle" style="border:1px solid gray; font-size:10px;">
-                <i class="fa-solid fa-arrow-right"></i>
-              </span>
-            </p>
-          </div>
-        </div>
-        <div class="align-items-center col d-flex flex-column justify-content-center gap-3">
-          <div class="img">
-            <img src="{{ asset('assets/user/img/we-have-6.png') }}" alt="">
-          </div>
-          <div class="d-flex flex-column gap-2 text-center">
-            <h5 class="m-0 fs-6 fw-semibold">GOLD VINYL WRAP</h5>
-            <p class="m-0" style="font-size:14px;"> <a href="tel:+971 56 545 8853" target="_blank">Call Now</a> <span class="px-1 py-1 rounded-circle" style="border:1px solid gray; font-size:10px;">
-                <i class="fa-solid fa-arrow-right"></i>
-              </span>
-            </p>
-          </div>
-        </div>
-        <div class="align-items-center col d-flex flex-column justify-content-center gap-3">
-          <div class="img">
-            <img src="{{ asset('assets/user/img/we-have-7.png') }}" alt="">
-          </div>
-          <div class="d-flex flex-column gap-2 text-center">
-            <h5 class="m-0 fs-6 fw-semibold">BROWN VINYL WRAP</h5>
-            <p class="m-0" style="font-size:14px;"> <a href="tel:+971 56 545 8853" target="_blank">Call Now</a> <span class="px-1 py-1 rounded-circle" style="border:1px solid gray; font-size:10px;">
-                <i class="fa-solid fa-arrow-right"></i>
-              </span>
-            </p>
-          </div>
-        </div>
-        <div class="align-items-center col d-flex flex-column justify-content-center gap-3">
-          <div class="img">
-            <img src="{{ asset('assets/user/img/we-have-8.png') }}" alt="">
-          </div>
-          <div class="d-flex flex-column gap-2 text-center">
-            <h5 class="m-0 fs-6 fw-semibold">PINK VINYL WRAP</h5>
-            <p class="m-0" style="font-size:14px;"> <a href="tel:+971 56 545 8853" target="_blank">Call Now</a> <span class="px-1 py-1 rounded-circle" style="border:1px solid gray; font-size:10px;">
-                <i class="fa-solid fa-arrow-right"></i>
-              </span>
-            </p>
-          </div>
-        </div>
-        <div class="align-items-center col d-flex flex-column justify-content-center gap-3">
-          <div class="img">
-            <img src="{{ asset('assets/user/img/we-have-9.png') }}" alt="">
-          </div>
-          <div class="d-flex flex-column gap-2 text-center">
-            <h5 class="m-0 fs-6 fw-semibold">SILVER VINYL WRAP</h5>
-            <p class="m-0" style="font-size:14px;"> <a href="tel:+971 56 545 8853" target="_blank">Call Now</a> <span class="px-1 py-1 rounded-circle" style="border:1px solid gray; font-size:10px;">
-                <i class="fa-solid fa-arrow-right"></i>
-              </span>
-            </p>
-          </div>
-        </div>
-        <div class="align-items-center col d-flex flex-column justify-content-center gap-3">
-          <div class="img">
-            <img src="{{ asset('assets/user/img/we-have-10.png') }}" alt="">
-          </div>
-          <div class="d-flex flex-column gap-2 text-center">
-            <h5 class="m-0 fs-6 fw-semibold">WHITE VINYL WRAP</h5>
-            <p class="m-0" style="font-size:14px;"> <a href="tel:+971 56 545 8853" target="_blank">Call Now</a> <span class="px-1 py-1 rounded-circle" style="border:1px solid gray; font-size:10px;">
-                <i class="fa-solid fa-arrow-right"></i>
-              </span>
-            </p>
-          </div>
-        </div>
-        <div class="align-items-center col d-flex flex-column justify-content-center gap-3">
-          <div class="img">
-            <img src="{{ asset('assets/user/img/we-have-11.png') }}" alt="">
-          </div>
-          <div class="d-flex flex-column gap-2 text-center">
-            <h5 class="m-0 fs-6 fw-semibold">YELLOW VINYL WRAP</h5>
-            <p class="m-0" style="font-size:14px;"> <a href="tel:+971 56 545 8853" target="_blank">Call Now</a> <span class="px-1 py-1 rounded-circle" style="border:1px solid gray; font-size:10px;">
-                <i class="fa-solid fa-arrow-right"></i>
-              </span>
-            </p>
-          </div>
-        </div>
-        <div class="align-items-center col d-flex flex-column justify-content-center gap-3">
-          <div class="img">
-            <img src="{{ asset('assets/user/img/we-have-12.png') }}" alt="">
-          </div>
-          <div class="d-flex flex-column gap-2 text-center">
-            <h5 class="m-0 fs-6 fw-semibold">PURPLE VINYL WRAP</h5>
-            <p class="m-0" style="font-size:14px;"> <a href="tel:+971 56 545 8853" target="_blank">Call Now</a> <span class="px-1 py-1 rounded-circle" style="border:1px solid gray; font-size:10px;">
-                <i class="fa-solid fa-arrow-right"></i>
-              </span>
-            </p>
-          </div>
+        <div class=" d-flex flex-column gap-3 align-items-center">
+          <img src="{{ asset('assets/user/img/coating-bottom-3.png') }}" alt="" />
+          <p class="fs-6 fw-normal lh-sm"> Car wraps are designed for durability and low maintenance. They’re resistant to fading, cracking, and peeling when properly cared for—and they don’t require any special products to stay clean. Just regular washes and you’re good to go. It's a sleek, stress-free way to keep your car turning heads year after year.
+</p>
         </div>
       </div>
     </div>
   </section>
-  <!-- Car images grid section End -->
+  <!-- full container Start -->
   
-  <!-- sticky-icons Section Start -->
-      @include('user.layouts.partials.sticky-icons')
+  <div class="auto-spa-full-container-bg container-fluid d-flex flex-column gap-4 justify-content-center px-5" style="height: 50vh;">
+    <div class="container">
+      <div class="g-3 g-md-0 row">
+        <div class="col-md-7">
+          <h3 class=" ceramic-full-container-top-heading-responsive fw-light text-white">Get a Quick Contact with our</h3>
+          <h2 class="ceramic-full-container-main-heading-responsive fw-bolder text-white">Service Advisor in Dubai</h2>
+        </div>
+        <div class="col-md-5 d-flex flex-column gap-3 gap-md-4 align-items-end">
+          <button
+            type="button"
+            class="bg-transparent border btn btn-primary text-white w-100 w-md-50 fs-6">
+            Our Services
+          </button>
+          <a href="tel:+971 56 545 8853" target="_blank" class="d-flex justify-content-end w-100"> <button
+              type="button"
+              class="btn btn-primary w-100 w-md-50 fs-6">
+              Call Now
+            </button></a>
   
+        </div>
+      </div>
+    </div>
   
-  <!-- sticky-icons Section End -->
-  <!-- sticky-icons Section Start -->
+  </div>
   
-      @include('user.layouts.partials.sticky-icons-mobile')
-  
-  
-  
-  <!-- sticky-icons Section End -->
-  
-  
+@include('user.layouts.partials.gateway-images') @include('user.layouts.partials.google-review') @include('user.layouts.partials.sticky-icons') @include('user.layouts.partials.sticky-icons-mobile')
   
 @endsection
 

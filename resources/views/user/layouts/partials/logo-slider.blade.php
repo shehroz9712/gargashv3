@@ -84,7 +84,8 @@
             <h2 class="display-3 fw-bolder lh-1  text-start">Brands We <br class="d-md-block d-none">
                 <span class="main-color">Specialized In</span>
             </h2>
-            <p class="fw-light fs-6  text-start">We Have Complete Auto Repair Solutions, Friendly Environment, Furnished Sitting Area Providing Quick & Quality Service</p>
+            <p class="fw-light fs-6  text-start">At Gargash Auto, we specialize in offering expert services for a wide range of luxury European car brands. Whether it’s a BMW, Mercedes-Benz, Audi, Porsche, or Jaguar, our Premium European Car Experts Dubai provide tailored solutions to keep your vehicle running at its best. With years of experience and genuine parts, we ensure optimal performance for every brand we service.
+</p>
         </div>
 
         <!-- Right Column (Image Grid) -->

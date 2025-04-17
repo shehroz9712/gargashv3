@@ -2,9 +2,14 @@
 <section class="container-fluid">
     <div class="d-flex flex-column gap-2">
         <div class="text-center">
-            <h2 class="display-4 fw-bold text-md-center text-start"> Specialized In <span class="main-color">All Brands</span>
+            <h2 class="display-4 fw-bold text-md-center text-start"> Specialized In <span class="main-color">All Major Brands</span>
             </h2>
-            <p class="fs-6 fw-normal px-0 px-md-5 text-md-center text-start"> We at Gargash Auto provide a dealer alternative service for American, European and high-end Japanese cars. We provide complete auto repair and service solution under 1 roof. Any minor or major service, interval services, major repairs like engine and gearbox rebuilding. For more information or any suggestion, you may call our service advisor. </p>
+            <h5>Dealer-Level Expertise Without the Dealer Price Tag</h5>
+            <p class="fs-6 fw-normal px-0 px-md-5 text-md-center text-start">At Gargash Auto, we specialize in servicing a wide range of vehicles—from high-performance American and European marques to premium Japanese brands. We proudly offer a comprehensive, dealer-alternative solution for all your automotive needs—all under one roof.
+
+Whether it's routine maintenance, interval servicing, or complex mechanical repairs like engine and gearbox overhauls, our team is equipped with the tools, training, and technical expertise to get the job done right—the first time.
+
+We’re committed to providing the same high standards you'd expect from a dealership, with a personalized, transparent approach that puts you in the driver’s seat.</p>
         </div>
         <div class="g-3 px-3 px-md-5 row row-cols-2 row-cols-md-5">
             <img src="{{ asset('assets/user/img/specialized-logo-1.png') }}" alt="" />

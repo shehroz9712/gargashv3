@@ -10,48 +10,27 @@
 <section class="container-fluid all-pages-hero-height-responsive auto-spa-bg section overflow-hidden">
     <div class="container d-flex align-items-center">
         <div class="row align-items-center white">
-            <div class="col-md-5">
+            <div class="col-md-6">
                 <div class="experiecne-top-content">
-                    <h2 class="display-3 fw-bold">
-                        <span class="secondary-color">Audi Repair </span> <br> Dubai Service
-                    </h2>
-                    <p class="fs-6 fw-semibold lh-sm text-secondary">Own an Audi in Dubai? Our premium Audi Service Center offers expert repairs, top facilities, and care for all models.
+                    <h4 class="display-3 fw-bold">
+                        <span class="secondary-color"> Trusted Audi Repair </span> Dubai  Expert Services at  Gargash Auto 
+                    </h4>
+                    <p class="fs-6  lh-sm " style="color:black;">Looking for premium Audi Repair Dubai? At Gargash Auto, we offer reliable and professional Audi repair services to keep your vehicle running smoothly. From minor repairs to major engine overhauls, we’re your go-to destination for all your Audi service needs in Dubai.
                     </p>
                     <span class="d-flex flex-column flex-md-row gap-4">
-                        <a href="https://wa.me/971547935400" target="_blank"><button class="btn fw-semibold rounded-3 text-black fs-6">Avail Your Discount</button></a>
-                        <a href="tel:+971 56 545 8853" target="_blank"><button class="transparent-btn w-100">Call Now</button></a>
+                        <a href="https://wa.me/971547935400" target="_blank"><button class="btn fw-semibold rounded-3 text-black fs-6">Book Your Audi Repair Today</button></a>
+                        
                     </span>
                 </div>
             </div>
-            <div class="col-md-7 d-flex justify-content-end">
+            <div class="col-md-6 d-flex justify-content-end">
                 <img src="{{ asset('assets/user/img/brands/audo-hero.png') }}" alt="" style="scale:1.2;" />
             </div>
         </div>
     </div>
 </section>
 <!-- Hero  Section End -->
-<!-- Our Vision  Start  -->
-<section class="container">
-    <div class="row d-flex  flex-md-row align-items-center">
-        <div class="col-md-8 text-start">
-            <h2 class="display-6 fw-bold"> The Finest Dealer Alternative Audi Service Center <span class="main-color"> in Dubai</span>
-            </h2>
-            <p class="about-us-our-team-text-aling-responsive">We offer top-notch Audi services at our luxury car maintenance center, leveraging upgraded special tools and catalyst software to troubleshoot and repair your Audi. We are one of the largest stand-alone Audi garages in Dubai.
 
-            </p>
-
-        </div>
-        <div class="col-md-4 d-flex flex-column gap-3 justify-content-center mt-4 mt-md-0 align-items-end">
-
-            <a href="https://wa.me/971547935400" target="_blank" class="btn fw-semibold rounded-3 text-black fs-6 w-75"> Click here
-                for more Offers </a>
-
-            <a href="https://wa.me/971547935400" target="_blank" class="bg-transparent border-2 border-dark btn fs-6 fw-semibold rounded-3 text-black w-75">Avail Your Discount</a>
-
-        </div>
-    </div>
-</section>
-<!-- Our Vision  End  -->
 
 <!-- Technicians Start  -->
 <section class="container">
@@ -61,14 +40,14 @@
         </div>
         <div class="col-md-6 text-start">
 
-            <h2 class="display-6 fw-bold">Unrivalled
-                <span class="main-color"> Technicians</span>
+            <h2 class="display-6 fw-bold">Why Choose Gargash Auto for Audi Repair in Dubai?
+                
             </h2>
-            <p class="about-us-our-team-text-aling-responsive">We collaborate with the most trusted and experienced automobile technicians in the industry. Each technician is carefully selected by our Audi service advisor to ensure expertise and reliability. Their skills guarantee that your vehicle receives the best attention, using advanced tools and techniques tailored specifically for Audi models.
+            <p class="about-us-our-team-text-aling-responsive">At Gargash Auto, we provide exceptional Audi Repair Dubai services tailored to your vehicle’s specific needs. Our certified technicians have extensive experience working with Audi models and use only the highest-quality parts to ensure a perfect repair every time.
 
             </p>
             <p class="about-us-our-team-text-aling-responsive">
-                Our team ensures precise diagnostics and delivers top-tier service every time. With a focus on customer satisfaction, we maintain high standards in every aspect of Audi repair and maintenance. From identifying the smallest issues to performing complex repairs, our professionals handle every task with dedication, giving your Audi the care it truly deserves.
+                 With a customer-first approach, we focus on transparency, honesty, and quality repairs. Whether your Audi requires routine maintenance or urgent repairs, we guarantee a fast turnaround time and competitive pricing, making us the best choice for Audi Repair Dubai.
             </p>
 
         </div>
@@ -82,14 +61,20 @@
 
         <div class="col-md-6 text-start">
 
-            <h2 class="display-6 fw-bold">
-                <span class="main-color">Genuine </span>
-                Audi Parts Use
+            <h2 class="display-6 fw-bold">Comprehensive Audi Repair Services in Dubai
             </h2>
+<<<<<<< HEAD
+            <p class="about-us-our-team-text-aling-responsive"> From electrical diagnostics to mechanical repairs, our Audi Repair Dubai services cover every aspect of Audi maintenance and repair. Our team is trained to handle all types of issues, from minor cosmetic repairs to complex engine and transmission work.
+</p>
+            <p class="about-us-our-team-text-aling-responsive">
+ We offer full-service repairs, including brake system checks, exhaust system repairs, and suspension work. Whatever issue you face, we are equipped with the expertise and tools to get your Audi back on the road in no time.
+            </p>
+=======
                 <p class="about-us-our-team-text-aling-responsive">At our service center, we use only genuine Audi parts sourced directly from the original equipment manufacturer. This ensures your vehicle maintains its performance, safety, and value. By choosing authentic components, we guarantee a perfect fit and lasting durability, keeping your Audi running like it just left the showroom.</p>
                 <p class="about-us-our-team-text-aling-responsive">
                     We take pride in offering uncompromised Audi repair services that meet the highest industry standards. Our goal is to provide you with a brand-new car experience every time you hit the road. With our expert care and original parts, your Audi receives the premium attention it deserves, delivering smooth and reliable performance.
                 </p>
+>>>>>>> 52d550a920bcbcff01b62eb4b6e3cfb5691d6643
             <div class="d-flex justify-content-center justify-content-md-start">
 
             </div>
@@ -112,19 +97,13 @@
         <div class="col-md-6 text-start">
 
             <h2 class="display-6 fw-bold">
-
-                Transparency
+Engine and Transmission Repairs for Audi
             </h2>
-            <p class="main-color">( 0 hidden charges)</p>
-            <p class="about-us-our-team-text-aling-responsive">When you hand over your Audi to us, you can do so with full confidence. We assure complete transparency in our process, with no hidden charges. Integrity is at the heart of our service, ensuring that your trust is valued and respected throughout your Audi’s repair journey.
-
-            </p>
+            <p class="about-us-our-team-text-aling-responsive">Your Audi’s engine and transmission are vital to its performance. Our Audi Repair Dubai specialists provide thorough diagnostics to identify issues and offer reliable repairs. Whether it’s a fuel system problem or transmission failure, we ensure your vehicle runs at optimal performance.</p>
             <p class="about-us-our-team-text-aling-responsive">
-                From the moment we begin repairs to the final delivery, we keep you informed at every step. Regular updates eliminate communication gaps and make the entire process smooth and stress-free. Our streamlined service ensures you’re always in the loop, giving you peace of mind and confidence in the care your Audi receives.
+              We take pride in offering high-quality engine and transmission repairs using only Audi-approved parts, ensuring long-lasting results and a smooth driving experience.
             </p>
-            <div class="d-flex justify-content-center justify-content-md-start">
-
-            </div>
+            
         </div>
 
 
@@ -139,24 +118,14 @@
         <div class="align-items-center d-flex flex-column justify-content-center gap-4">
             <span class="text-center">
 
-                <h2 class="ceramic-full-container-main-heading-responsive fw-bolder text-white m-0 lh-lg">Trusted Audi Repair Workshop & Service Center
+                <h2 class="ceramic-full-container-main-heading-responsive fw-bolder text-white m-0 lh-lg">Audi Electrical System Repairs
                 </h2>
-                <p class="fs-6 fw-normal text-white">We custom-make our affordable Audi service quotation based on your car’s requirements and do not use any generic price. We ensure you get the best-in-class affordable Audi service at our Audi workshop. As German car experts, we know the ins and outs of every premium car. Powered by trusted parts and equipment suppliers and a passionate Audi mechanics team, our goal is to become the best dealer-alternative Audi Service Center in Dubai.
+                <p class="fs-6 fw-normal text-white"> Audi vehicles feature advanced electrical systems that require specialized attention. If you're experiencing electrical issues, such as malfunctioning lights, faulty wiring, or battery problems, our Audi Repair Dubai experts can help.
 
                 </p>
             </span>
             <span class="d-flex gap-3">
-                <button
-                    type="button"
-                    class="btn btn-primary text-white w-100 w-md-50 fs-6 audi-full-container-btn-hover-bg-change">
-                    Our Services
-                </button>
-                <button
-                    type="button"
-                    class="bg-transparent border btn btn-primary text-white w-100 w-md-50 fs-6 audi-full-container-btn-hover-bg-change">
-
-                    Our Services
-                </button>
+               <span class="d-flex flex-column flex-md-row gap-4"> <a href="https://wa.me/971547935400" target="_blank"><button class="btn fw-semibold rounded-3 text-black fs-6">Book Your Services Today!!</button></a> </span>
             </span>
 
         </div>

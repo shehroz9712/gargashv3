@@ -82,11 +82,11 @@
                     <h2 class="display-3 electric-repair-hero-heading-font-size-responsive fw-bold">
                         <span class="secondary-color ">Safeguard Your Car's Electricals </span> With Our Expertise
                     </h2>
-                    <p class="fs-6 fw-semibold lh-sm text-secondary">Delivering exceptional car care services for your peace of mind on every mile
+                    <p class="fs-6 fw-semibold lh-sm text-secondary">Delivering exceptional car care services for your peace of mind on every mile
                     </p>
                     <span class="d-flex flex-column flex-md-row gap-4">
                         <a href="tel:+971 56 545 8853" target="_blank"><button class="btn fw-semibold rounded-3 text-black fs-6">Call Now</button></a>
-                        <button class="transparent-btn">Our Services</button>
+                        
                     </span>
                 </div>
             </div>
@@ -184,11 +184,11 @@
 
             <div class="col-md-4">
                 <div class="card service-card">
-                    <img src="{{ asset('assets/user/img/image-6.png') }}" alt="Ignition System Check">
+                    <img src="{{ asset('assets/user/img/image-784.png') }}" alt="Ignition System Check">
                     <div class="card-body text-center">
-                        <h5 class="fw-bold">Ignition System Check</h5>
+                        <h5 class="fw-bold">Battery System Check</h5>
                         <p class="text-muted">Our certified technicians inspect and repair all the components related to
-                            the ignition system.</p>
+                            the electric system.</p>
                     </div>
                 </div>
             </div>
@@ -225,7 +225,7 @@
 
             <div class="col-md-3">
                 <div class="tip-card border p-3">
-                    <img src="{{ asset('assets/user/img/image 785.png') }}" alt="Battery Check">
+                    <img src="{{ asset('assets/user/img/image-784.jpg') }}" alt="Battery Check">
                     <h5 class="tip-title">Battery Check</h5>
                     <p class="text-muted">Ensure a timely check of your car's battery life and avoid to the unexpected failures.</p>
                 </div>
@@ -244,21 +244,7 @@
     </div>
 </section>
 <!-- Tips Section Start -->
-
-
-<!-- sticky-icons Section Start -->
-    @include('user.layouts.partials.sticky-icons')
-
-
-<!-- sticky-icons Section End -->
- <!-- sticky-icons Section Start -->
-
-    @include('user.layouts.partials.sticky-icons-mobile')
-
-
-
-<!-- sticky-icons Section End -->
-
+@include('user.layouts.partials.gateway-images') @include('user.layouts.partials.google-review') @include('user.layouts.partials.sticky-icons') @include('user.layouts.partials.sticky-icons-mobile')
 
 @endsection
 

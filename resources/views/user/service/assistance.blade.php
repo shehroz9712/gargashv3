@@ -24,15 +24,7 @@
                             here to rescue you from any car troubles, 24/7.
                         </p>
 
-                        <a href="tel:+971 56 545 8853" class="align-items-center d-flex gap-3 flex-wrap">
-                            <i class="fa-solid fa-phone fs-3 text-black fw-bold"></i>
-                            <span>
-                                <p class="fs-6 fw-semibold m-0 text-dark text-black-50">We Are Ready 24/7</p>
-                                <p class="fs-6 fw-bold text-black m-0">+971 56 545 8853</p>
-                            </span>
-                        </a>
-
-                    </div>
+                                        </div>
                 </div>
                 <div class="col-md-6 mt-5 mt-md-0">
                     <img src="{{ asset('assets/user/img/road-side-car.png') }}" alt="" style="max-width: 155%;" />
@@ -119,32 +111,7 @@
 
     <!-- Form Section  End-->
 
-    <!-- full container Section  start-->
 
-    <section class="container-fluid assistance-full-section-bg " style="height: 40vh;">
-        <div class="align-items-center h-100 justify-content-center px-5 row row-cols-md-2 w-100">
-            <div class=" text-white">
-                <p class="fs-6 fw-semibold m-0">Less than 30 min Arrival and</p>
-                <h2 class="fs-2  fw-semibold">24/7 Car Recovery</h2>
-            </div>
-
-            <a href="tel:+971 56 545 8853" class="align-items-center text-white d-flex gap-1 flex-wrap justify-content-end">
-                <span class="align-items-center border d-flex gap-4 px-4 px-md-5 py-3 rounded-2">
-                    <i class="fa-solid fa-phone fs-1 fw-bold"></i>
-                    <span>
-                        <p class="fs-4 road-side-assistance-full-container-text-font-size-responsive fw-semibold m-0  ">We
-                            Are Ready 24/7</p>
-                        <p class="fs-4 road-side-assistance-full-container-text-font-size-responsive fw-bold m-0">+971 56
-                            545 8853</p>
-                    </span>
-                </span>
-            </a>
-
-        </div>
-
-    </section>
-
-    <!-- full container Section  End-->
     <!-- Fast & Reliable  Section Start -->
 
     <section class="container">
@@ -181,24 +148,7 @@
         </div>
 
     </section>
-
-    <!-- Fast & Reliable  Section End -->
-
-    <!-- sticky-icons Section Start -->
-    @include('user.layouts.partials.sticky-icons')
-
-
-    <!-- sticky-icons Section End -->
-
-    <!-- Body Content End Here -->
-
-    <!-- sticky-icons Section Start -->
-
-    @include('user.layouts.partials.sticky-icons-mobile')
-
-
-
-    <!-- sticky-icons Section End -->
+@include('user.layouts.partials.gateway-images') @include('user.layouts.partials.google-review') @include('user.layouts.partials.sticky-icons') @include('user.layouts.partials.sticky-icons-mobile')
 @endsection
 
 @section('js')

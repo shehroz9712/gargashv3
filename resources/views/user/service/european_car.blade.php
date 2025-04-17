@@ -13,13 +13,12 @@
         <div class="row align-items-md-center h-100 ">
             <div class="col-md-6 d-flex flex-column gap-4">
                 <h1 class="display-3 fw-bolder lh-1 m-0 gap-4"><span style="color: #E6B110;">Premium European </span>
-                    Car Experts</h1>
-                <h6 class="fw-light me-auto">Expert Repairs and Sales for European Car Enthusiasts</h6>
+                    Car Experts Dubai</h1>
+                <p class=" me-auto" style="color:white">At Gargash Auto, we specialize in providing top-tier care for European vehicles. As European Car Experts Dubai, we offer expert repairs, maintenance, and unparalleled service tailored to meet the needs of high-end European brands.
+</p>
                 <div class="d-flex flex-column flex-md-row flex-wrap gap-4">
-                    <button class="btn fs-6 fw-bold text-dark">Our Services</button>
-                    <a href="tel:+971 56 545 8853" target="_blank"> <button
-                            class="bg-transparent border-2 border-dark btn fs-6 fw-bold px-5 text-dark ">Call
-                            Now</button></a>
+                    <a href="https://wa.me/971547935400"><button class="btn fs-6 fw-bold text-dark">Book Your Service Today!!</button></a>
+                    
                 </div>
             </div>
             <div class="col-md-6 dark mt-5 mt-md-0">
@@ -44,20 +43,9 @@
                     class="Chinese-Car-Partner-right-car mt-5">
             </div>
             <div class="col-md-6 d-flex flex-column justify-content-center gap-3">
-                <h2 class="fs-1 fw-bold fw-semibold m-0">Your Trusted European Car Repair & Sales Experts in Dubai</h2>
-                <ul class="fs-6 fw-semibold gap-1 list-group text-secondary">
-                    <li><strong>Expert Repairs</strong> for All European Car Brands</li>
-                    <li><strong>Certified Technicians</strong> with Years of Experience</li>
-                    <li><strong>Genuine Parts</strong> for Optimal Performance</li>
-                    <li><strong>Comprehensive Warranty</strong> on Repairs and Services</li>
-                    <li><strong>Affordable Pricing</strong> with Transparent Quotes</li>
-                    <li><strong>Luxury & High-End European Cars Specialists</strong></li>
-                    <li><strong>Wide Range of Pre-Owned European Cars for Sale</strong></li>
-                    <li><strong>Brands We Serve:</strong> BMW, Mercedes, Audi, Porsche, Jaguar, Volvo, and More</li>
-                    <li><strong>Dubai’s Trusted European Car Repair & Sales Center</strong></li>
-                </ul>
-                <a href="tel:+971 56 545 8853" target="_blank"><button class="btn fs-6 fw-bold w-50">Call
-                        Now</button></a>
+                <h2 class="fs-1 fw-bold fw-semibold m-0">Your Premium European Car Experts Dubai</h2>
+                <p>At Gargash Auto, we are proud to be the Premium European Car Experts Dubai, offering specialized repair, maintenance, and sales services for a wide range of European car brands. Our team of certified technicians has years of experience working on high-end vehicles, ensuring that each car receives expert care tailored to its specific needs. Whether it’s a European Car Repair Dubai service or routine maintenance, we use only genuine, high-quality parts to keep your car running at its best and to maintain its performance for the long term. <br/>We also offer a wide selection of pre-owned European cars for sale, providing you with the opportunity to own a luxury vehicle from renowned brands like BMW, Mercedes, Audi, Porsche, Jaguar, and Volvo, all at competitive prices. Each vehicle in our collection is carefully inspected to meet the highest standards of quality, ensuring you get a reliable and high-performance car.
+<br/>At Gargash Auto, we believe in offering European Car Experts Dubai services with transparency and integrity. We provide clear, upfront pricing with no hidden costs, so you can trust that you are getting the best value for your investment. Our comprehensive warranty on repairs and services gives you peace of mind, knowing that your European car is in expert hands. Whether you need professional repairs, maintenance, or are interested in purchasing a pre-owned European car, we are your go-to destination for all things European automotive in Dubai.</p>
             </div>
 
         </div>
@@ -74,13 +62,15 @@
                 <h3 class="ceramic-full-container-top-heading-responsive fw-light text-white">Get in Touch with Our</h3>
                 <h2 class="ceramic-full-container-main-heading-responsive fw-bolder text-white">European Car Experts in
                     Dubai</h2>
+                    <p style="color:white">Reach out today to schedule your service, repair, or consultation with our skilled European Car Experts Dubai. Our team is here to provide expert care and guidance for your luxury European vehicle.
+</p>
 
             </div>
             <div class="col-md-5 d-flex flex-column gap-3 gap-md-4 align-items-end">
-                <button type="button" class="bg-transparent border btn btn-primary text-white w-100 w-md-50 fs-6">
-                    Explore Our Services
+                <a href="https://wa.me/971547935400"><button type="button" class="bg-transparent border btn btn-primary text-white w-100 w-md-50 fs-6">
+                    Book Your Service Today!!
                 </button>
-                <a href="tel:+971 56 545 8853" target="_blank" class="btn btn-primary w-100 w-md-50 fs-6">Call Now</a>
+                </a>
             </div>
         </div>
     </div>
