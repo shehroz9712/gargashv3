@@ -22,7 +22,7 @@ class BrandRequest extends FormRequest
      */
     public function rules(): array
     {
-        $brandId = $this->route('brands')?->id;
+        $brandId = $this->route('brand')?->id;
 
         return [
             'name' => [
@@ -34,14 +34,14 @@ class BrandRequest extends FormRequest
                 Rule::unique('brands', 'slug')->ignore($brandId),
             ],
             'category_id' => 'required|exists:categories,id',
-            'image' => 'nullable|image|max:2048',
+            'image' => 'nullable|image',
             'heading' => 'nullable|string',
             'description' => 'nullable|string',
             'status' => ['required', Rule::in(['draft', 'published', 'archived'])],
 
             'sections' => 'nullable|array',
             'sections.*.heading' => 'nullable|string|distinct',
-            'sections.*.image' => 'nullable|image|max:2048',
+            'sections.*.image' => 'nullable|image',
             'sections.*.description' => 'nullable|string',
             'sections.*.link' => 'nullable|string',
             'sections.*.btn_text' => 'nullable|string',

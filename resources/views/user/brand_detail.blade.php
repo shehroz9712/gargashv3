@@ -12,23 +12,23 @@
                 <div class="col-md-5">
                     <div class="experiecne-top-content">
                         <h2 class="display-3 fw-bold">
-                            <span class="secondary-color">{{ $brand->name }} </span> <br> Service
+                            <span class="secondary-color">{{ $brand->name }}  </span>
                         </h2>
                         <p class="fs-6 fw-semibold lh-sm text-secondary">{{ $brand->heading }}
                         </p>
                         <span class="d-flex flex-column flex-md-row gap-4">
                             <a href="https://wa.me/971547935400" target="_blank"><button
-                                    class="btn fw-semibold rounded-3 text-black fs-6">Schedule Your Car Service
-                                    Now</button></a>
-
+                                    class="btn fw-semibold rounded-3 text-black fs-6">Schedule Your Car Service Now</button></a>
+                            <!--<a href="tel:+971 56 545 8853" target="_blank"><button class="transparent-btn w-100">Call-->
+                            <!--        Now</button></a>-->
                         </span>
                     </div>
-                    <div class="col-md-7 d-flex justify-content-end">
-                        <img src="{{ asset('assets/uploads/brands/' . $brand->image) }}" alt=""
-                            style="scale:1.2;" />
-                    </div>
+                </div>
+                <div class="col-md-7 d-flex justify-content-end">
+                    <img src="{{ asset('assets/uploads/brands/' . $brand->image) }}" alt="" style="scale:1.2;" />
                 </div>
             </div>
+        </div>
     </section>
     <!-- Hero  Section End -->
     <section class="container">
@@ -37,31 +37,34 @@
                 {!! $brand->description !!}
 
             </div>
-            {{-- <div class="col-md-4 d-flex flex-column gap-3 justify-content-center mt-4 mt-md-0 align-items-end">
+            <!--<div class="col-md-4 d-flex flex-column gap-3 justify-content-center mt-4 mt-md-0 align-items-end">-->
 
-                <a href="https://wa.me/971547935400" target="_blank" class="btn fw-semibold rounded-3 text-black fs-6 w-75">
-                    Click here
-                    for more Offers </a>
+            <!--    <a href="https://wa.me/971547935400" target="_blank" class="btn fw-semibold rounded-3 text-black fs-6 w-75">-->
+            <!--        Click here-->
+            <!--        for more Offers </a>-->
 
-                <a href="https://wa.me/971547935400" target="_blank"
-                    class="bg-transparent border-2 border-dark btn fs-6 fw-semibold rounded-3 text-black w-75">Avail Your
-                    Discount</a>
+            <!--    <a href="https://wa.me/971547935400" target="_blank"-->
+            <!--        class="bg-transparent border-2 border-dark btn fs-6 fw-semibold rounded-3 text-black w-75">Avail Your-->
+            <!--        Discount</a>-->
 
-            </div> --}}
+            <!--</div>-->
         </div>
     </section>
     <!-- Our Vision  Start  -->
     @foreach ($brand->sections as $index => $section)
-        <section class="container py-5">
+        <section class="container">
             <div class="row d-flex align-items-center {{ $index % 2 == 1 ? 'flex-md-row-reverse' : '' }}">
                 <div class="col-md-6">
                     <img class="img-fluid rounded-3" src="{{ asset('assets/uploads/brands/' . $section->image) }}"
                         alt="hero" />
                 </div>
                 <div class="col-md-6 text-start">
+
                     <h2 class="display-6 fw-bold">{{ $section->heading }}</h2>
                     <p>{!! $section->description !!}</p>
+
                 </div>
+
             </div>
         </section>
     @endforeach
