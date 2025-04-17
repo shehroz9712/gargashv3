@@ -63,7 +63,7 @@ Breadcrumbs::for('admin.brands.create', function (BreadcrumbTrail $trail) {
 
 Breadcrumbs::for('admin.brands.show', function (BreadcrumbTrail $trail, $data) {
     $trail->parent('admin.brands.index');
-    $trail->push($data->title, route('admin.brands.show', $data->id));
+    $trail->push($data->name, route('admin.brands.show', $data->id));
 });
 
 Breadcrumbs::for('admin.brands.edit', function (BreadcrumbTrail $trail, $data) {

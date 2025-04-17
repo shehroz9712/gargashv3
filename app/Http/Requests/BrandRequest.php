@@ -3,6 +3,7 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Validation\Rule;
 
 class BrandRequest extends FormRequest
 {
@@ -22,22 +23,21 @@ class BrandRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'name' => ['required', 'string', 'max:255', 'unique:brands,name'],
-            'slug' => ['required', 'string', 'max:255', 'unique:brands,slug'],
-            'category_id' => ['required', 'exists:categories,id'],
-            'user_id' => ['required', 'exists:users,id'],
-            'status' => ['required', 'in:draft,published,archived'],
-            'image' => ['nullable', 'image', 'mimes:jpeg,png,jpg,gif,svg', 'max:2048'],
-            'heading' => ['nullable', 'string', 'max:255'],
-            'description' => ['nullable', 'string'],
-            'sections' => ['nullable', 'array'],
-            'sections.*.heading' => ['nullable', 'string', 'max:255'],
-            'sections.*.image' => ['nullable', 'image', 'mimes:jpeg,png,jpg,gif,svg', 'max:2048'],
-            'sections.*.description' => ['nullable', 'string'],
-            'sections.*.link' => ['nullable', 'url'],
-            'sections.*.btn_text' => ['nullable', 'string', 'max:255'],
-            'sections.*.another_link' => ['nullable', 'url'],
-            'sections.*.another_btn_text' => ['nullable', 'string', 'max:255'],
+            'name' => 'required|unique:brands,name',
+            'slug' => 'required|unique:brands,slug',
+            'category_id' => 'required|exists:categories,id',
+            'image' => 'nullable|',
+            'heading' => 'nullable|string',
+            'description' => 'nullable|string',
+            'status' => ['required', Rule::in(['draft', 'published', 'archived'])],
+            'sections' => 'nullable|array',
+            'sections.*.heading' => 'required|string|distinct',
+            'sections.*.image' => 'nullable|',
+            'sections.*.description' => 'nullable|string',
+            'sections.*.link' => 'nullable|string',
+            'sections.*.btn_text' => 'nullable|string',
+            'sections.*.another_link' => 'nullable|string',
+            'sections.*.another_btn_text' => 'nullable|string',
         ];
     }
 }

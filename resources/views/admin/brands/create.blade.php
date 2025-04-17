@@ -16,6 +16,16 @@
 
         .section-item {
             margin-bottom: 20px;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 8px;
+            position: relative;
+        }
+
+        .remove-section {
+            position: absolute;
+            top: 10px;
+            right: 10px;
         }
     </style>
 @endsection
@@ -30,11 +40,8 @@
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Container-fluid starts-->
-    <div class="container-fluid">
-        <div class="row starter-main">
+        <div class="row">
             <div class="col-sm-12">
                 <div class="card">
                     <form action="{{ route('admin.brands.store') }}" method="POST" enctype="multipart/form-data"
@@ -42,7 +49,7 @@
                         @csrf
                         <div class="card-body">
                             <div class="row">
-                                <!-- Brand Title -->
+                                <!-- Brand Fields -->
                                 <div class="col-md-6">
                                     <div class="mb-3">
                                         <label class="form-label">Brand Title</label>
@@ -53,20 +60,16 @@
                                         @enderror
                                     </div>
                                 </div>
-
-                                <!-- Slug -->
                                 <div class="col-md-6">
                                     <div class="mb-3">
                                         <label class="form-label">Slug</label>
                                         <input type="text" name="slug" class="form-control"
-                                            value="{{ old('slug') }}" placeholder="Enter slug">
+                                            value="{{ old('slug') }}" placeholder="Enter slug" readonly>
                                         @error('slug')
                                             <small class="text-danger">{{ $message }}</small>
                                         @enderror
                                     </div>
                                 </div>
-
-                                <!-- Category Dropdown -->
                                 <div class="col-md-6">
                                     <div class="mb-3">
                                         <label class="form-label">Category</label>
@@ -83,20 +86,15 @@
                                         @enderror
                                     </div>
                                 </div>
-
-
-                                <!-- Image -->
                                 <div class="col-md-6">
                                     <div class="mb-3">
-                                        <label class="form-label">Image</label>
+                                        <label class="form-label">Brand Image</label>
                                         <input type="file" name="image" class="form-control">
                                         @error('image')
                                             <small class="text-danger">{{ $message }}</small>
                                         @enderror
                                     </div>
                                 </div>
-
-                                <!-- Heading -->
                                 <div class="col-md-6">
                                     <div class="mb-3">
                                         <label class="form-label">Brand Heading</label>
@@ -107,8 +105,6 @@
                                         @enderror
                                     </div>
                                 </div>
-
-                                <!-- Description -->
                                 <div class="col-md-12">
                                     <div class="mb-3">
                                         <label class="form-label">Brand Description</label>
@@ -118,8 +114,6 @@
                                         @enderror
                                     </div>
                                 </div>
-
-                                <!-- Status -->
                                 <div class="col-md-6">
                                     <div class="mb-3">
                                         <label class="form-label">Status</label>
@@ -138,42 +132,12 @@
                                 </div>
                             </div>
 
-                            <!-- Sections (Optional) -->
+                            <!-- Sections -->
                             <div class="section-wrapper">
                                 <h4>Brand Sections</h4>
-                                <div id="sections-container">
-                                    <!-- Section 1 -->
-                                    <div class="section-item">
-                                        <div class="row">
-                                            <!-- Section Heading -->
-                                            <div class="col-md-6">
-                                                <div class="mb-3">
-                                                    <label class="form-label">Section Heading</label>
-                                                    <input type="text" name="sections[0][heading]" class="form-control"
-                                                        placeholder="Enter section heading">
-                                                </div>
-                                            </div>
-
-                                            <!-- Section Description -->
-                                            <div class="col-md-12">
-                                                <div class="mb-3">
-                                                    <label class="form-label">Section Description</label>
-                                                    <textarea name="sections[0][description]" class="form-control" rows="5" placeholder="Enter section description"></textarea>
-                                                </div>
-                                            </div>
-
-                                            <!-- Section Link -->
-                                            <div class="col-md-6">
-                                                <div class="mb-3">
-                                                    <label class="form-label">Section Link</label>
-                                                    <input type="text" name="sections[0][link]" class="form-control"
-                                                        placeholder="Enter section link">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <button type="button" id="add-section-btn" class="btn btn-secondary">Add Section</button>
+                                <div id="sections-container"></div>
+                                <button type="button" id="add-section-btn" class="btn btn-secondary mt-2">Add
+                                    Section</button>
                             </div>
                         </div>
 
@@ -186,64 +150,100 @@
             </div>
         </div>
     </div>
-    <!-- Container-fluid Ends-->
 @endsection
 
 @section('js')
-    <script src="https://cdn.tiny.cloud/1/2y3p8uc59d1kpcs6tuz1xqphcprx1hou1p8guysk3cbstc1t/tinymce/5/tinymce.min.js">
-    </script>
+    <script src="https://cdn.tiny.cloud/1/o97qnk8zj3tk8vhpnvjh9labykwhrbtwblxcdof8mps79ctm/tinymce/5/tinymce.min.js"></script>
     <script>
-        // Initialize TinyMCE editor for description fields
-        tinymce.init({
-            selector: 'textarea[name="description"], textarea[name^="sections["][name$="[description]"]',
-            plugins: 'link image code',
-            menubar: false,
-            toolbar: 'undo redo | formatselect | bold italic | link image | alignleft aligncenter alignright | code',
-            height: 300,
+        // Slug auto-generation
+        document.querySelector('input[name="name"]').addEventListener('input', function() {
+            const title = this.value;
+            const slug = title
+                .toLowerCase()
+                .replace(/[^a-z0-9\s-]/g, '')
+                .replace(/\s+/g, '-')
+                .replace(/-+/g, '-')
+                .replace(/^-|-$/g, '');
+            document.querySelector('input[name="slug"]').value = slug;
         });
 
-        let sectionCount = 1;
+        let sectionCount = 0;
 
-        // Add new section dynamically
-        document.getElementById('add-section-btn').addEventListener('click', function() {
-            const sectionContainer = document.createElement('div');
-            sectionContainer.classList.add('section-item');
-            sectionContainer.innerHTML = `
+        function initEditor(selector) {
+            tinymce.init({
+                selector,
+                plugins: 'link image code',
+                menubar: false,
+                toolbar: 'undo redo | formatselect | bold italic | link image | alignleft aligncenter alignright | code',
+                height: 300,
+            });
+        }
+
+        function addSection() {
+            const container = document.createElement('div');
+            container.classList.add('section-item');
+            container.innerHTML = `
+                <button type="button" class="btn btn-danger btn-sm remove-section">Remove</button>
                 <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label">Section Image</label>
+                            <input type="file" name="sections[${sectionCount}][image]" class="form-control">
+                        </div>
+                    </div>
                     <div class="col-md-6">
                         <div class="mb-3">
                             <label class="form-label">Section Heading</label>
                             <input type="text" name="sections[${sectionCount}][heading]" class="form-control" placeholder="Enter section heading">
                         </div>
                     </div>
-
                     <div class="col-md-12">
                         <div class="mb-3">
                             <label class="form-label">Section Description</label>
-                            <textarea name="sections[${sectionCount}][description]" class="form-control" rows="5" placeholder="Enter section description"></textarea>
+                            <textarea name="sections[${sectionCount}][description]" class="form-control" rows="5"></textarea>
                         </div>
                     </div>
-
                     <div class="col-md-6">
                         <div class="mb-3">
                             <label class="form-label">Section Link</label>
                             <input type="text" name="sections[${sectionCount}][link]" class="form-control" placeholder="Enter section link">
                         </div>
                     </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label">Section Button Text</label>
+                            <input type="text" name="sections[${sectionCount}][btn_text]" class="form-control" placeholder="Enter section button text">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label">Another Link</label>
+                            <input type="text" name="sections[${sectionCount}][another_link]" class="form-control" placeholder="Enter another link">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label">Another Button Text</label>
+                            <input type="text" name="sections[${sectionCount}][another_btn_text]" class="form-control" placeholder="Enter another button text">
+                        </div>
+                    </div>
                 </div>
             `;
-
-            document.getElementById('sections-container').appendChild(sectionContainer);
+            document.getElementById('sections-container').appendChild(container);
+            initEditor(`textarea[name="sections[${sectionCount}][description]"]`);
             sectionCount++;
+        }
 
-            // Re-initialize the TinyMCE editor for new section descriptions
-            tinymce.init({
-                selector: `textarea[name="sections[${sectionCount - 1}][description]"]`,
-                plugins: 'link image code',
-                menubar: false,
-                toolbar: 'undo redo | formatselect | bold italic | link image | alignleft aligncenter alignright | code',
-                height: 300,
-            });
+        document.getElementById('add-section-btn').addEventListener('click', addSection);
+        document.addEventListener('click', function(e) {
+            if (e.target.classList.contains('remove-section')) {
+                e.target.closest('.section-item').remove();
+            }
         });
+
+        window.onload = function() {
+            addSection();
+            initEditor('textarea[name="description"]');
+        };
     </script>
 @endsection
