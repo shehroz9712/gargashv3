@@ -86,10 +86,10 @@
                 <span class="main-color">Genuine </span>
                 Audi Parts Use
             </h2>
-            <p class="about-us-our-team-text-aling-responsive">At our service center, we use only genuine Audi parts sourced directly from the original equipment manufacturer. This ensures your vehicle maintains its performance, safety, and value. By choosing authentic components, we guarantee a perfect fit and lasting durability, keeping your Audi running like it just left the showroom.</p>
-            <p class="about-us-our-team-text-aling-responsive">
-                We take pride in offering uncompromised Audi repair services that meet the highest industry standards. Our goal is to provide you with a brand-new car experience every time you hit the road. With our expert care and original parts, your Audi receives the premium attention it deserves, delivering smooth and reliable performance.
-            </p>
+                <p class="about-us-our-team-text-aling-responsive">At our service center, we use only genuine Audi parts sourced directly from the original equipment manufacturer. This ensures your vehicle maintains its performance, safety, and value. By choosing authentic components, we guarantee a perfect fit and lasting durability, keeping your Audi running like it just left the showroom.</p>
+                <p class="about-us-our-team-text-aling-responsive">
+                    We take pride in offering uncompromised Audi repair services that meet the highest industry standards. Our goal is to provide you with a brand-new car experience every time you hit the road. With our expert care and original parts, your Audi receives the premium attention it deserves, delivering smooth and reliable performance.
+                </p>
             <div class="d-flex justify-content-center justify-content-md-start">
 
             </div>
