@@ -7,7 +7,7 @@ function uploadImage($file, $folder): string
 
         $path = 'assets/uploads/' . $folder . '/';
         $extension = $file->getClientOriginalExtension();
-        $image_name = time() . '.' . $extension;
+        $image_name = time() . rand(0, 99) . '.' . $extension;
         $file->move($path, $image_name);
         return $image_name;
     } else {
