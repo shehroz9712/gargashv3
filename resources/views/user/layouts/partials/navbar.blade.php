@@ -8,7 +8,7 @@
         top: 0;
         left: 0;
         width: 100%;
-        z-index: 999;
+        z-index: 10;
         transition: transform 0.3s ease, opacity 0.3s ease;
     }
 
@@ -183,6 +183,11 @@
                             </li>
 
                             <li class="single-item">
+                                <a class="header-link categoryBtn text-decoration-none level-8 primary-semibold-font dark-color link-here cursor-pointer"> Brands <i class="fa-solid fa-angle-down"></i>
+                                </a>
+                            </li>
+
+                            <li class="single-item">
                                 <a
                                     class="header-link categoryBtn-service text-decoration-none level-8 primary-semibold-font dark-color link-here cursor-pointer">
                                     Services <i class="fa-solid fa-angle-down"></i>
@@ -280,9 +285,581 @@
     </style>
 
     <!-- Brands Mega Menu  -->
+    <div class="mega-menu category-menu self-mobile-respnsive mega-menu-mobile-respnsive-scrolling self-margin-top-responsive">
+        <!-- Close Button (Only for Mobile) -->
+        <button class="close-menu icon-badge me-3 mt-3 p-4 position-absolute right-0 top-0  d-md-none close-self-mobile-respnsive-div">
+            <i class="fa fa-close text-white"></i>
+        </button>
 
+        <!--Desktop  Mega  Menu Start here-->
+        <div class="card container d-md-block d-none mt-5 mt-md-0">
+            <div class="card-header bg-transparent">
+                <div class="tabbable-responsive">
+                    <!-- Desktop Tabs -->
+                    <ul class="nav nav-tabs d-none d-md-flex overflow-hidden" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="Dubai-tab" data-bs-toggle="tab" href="#Dubai" role="tab" aria-controls="Dubai" aria-selected="true">Dubai
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="sharjah-tab" data-bs-toggle="tab" href="#sharjah" role="tab" aria-controls="sharjah" aria-selected="true">Sharjah
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Desktop Content -->
+
+            <div class="card-body brand-card-body-display-responsive">
+                <div class="tab-content d-none d-md-block">
+                    <div class="tab-pane fade show active" id="Dubai" role="tabpanel" aria-labelledby="Dubai-tab">
+                        <h5 class="card-title fs-4">Dubai
+                            <p class="fs-6 fw-normal m-0 mb-4 text-black-50">Brands we speacilze in</p>
+                        </h5>
+                        <div class="container">
+                            <div class="row align-items-center mobile-responsive-scrolling">
+                                <div class="col-md-12">
+                                    <div class="row">
+
+                                        <div class="col">
+
+                                            <div class="menu-text">
+                                                <h6 class="fs-5 fw-bold primary-color">German Cars</h6>
+                                                <ul class="d-flex flex-column gap-0 list-unstyled mt-2">
+                                                    <li>
+                                                        <a href="" class="self-navbar-text-color fs-6 fw-normal">
+                                                            Audi
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="" class="self-navbar-text-color fs-6 fw-normal">
+                                                            BMW
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="" class="self-navbar-text-color fs-6 fw-normal">
+                                                            Mercedes
+                                                        </a>
+                                                    </li>
+                                                    <li><a href="" class="self-navbar-text-color fs-6 fw-normal">
+                                                            Porsche
+                                                        </a></li>
+                                                    <li><a href="" class="self-navbar-text-color fs-6 fw-normal">
+                                                            Porsche
+                                                        </a></li>
+                                                    <li><a href="" class="self-navbar-text-color fs-6 fw-normal">
+                                                            Volvo
+                                                        </a></li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                        <div class="col">
+
+                                            <div class="menu-text">
+                                                <h6 class="fs-5 fw-bold primary-color">Italian Cars</h6>
+                                                <ul class="d-flex flex-column fs-5 fw-semibold gap-0 list-unstyled mt-2">
+                                                    <li>
+                                                        <a href="" class="self-navbar-text-color fs-6 fw-normal">
+                                                            Ferrari
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="" class="self-navbar-text-color fs-6 fw-normal">
+                                                            Lamborghini
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="" class="self-navbar-text-color fs-6 fw-normal">
+                                                            Maserati
+                                                        </a>
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                        <div class="col">
+
+                                            <div class="menu-text">
+                                                <h6 class="fs-5 fw-bold primary-color">British Cars</h6>
+                                                <ul class="d-flex flex-column fs-5 fw-semibold gap-0 list-unstyled mt-2">
+                                                    <li>
+                                                        <a href="" class="self-navbar-text-color fs-6 fw-normal">
+                                                            Bentley
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="" class="self-navbar-text-color fs-6 fw-normal">
+                                                            Jaguar
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="" class="self-navbar-text-color fs-6 fw-normal">
+                                                            Range Rover
+                                                        </a>
+                                                    </li>
+                                                    <li><a href="" class="self-navbar-text-color fs-6 fw-normal">
+                                                            Mini Cooper
+                                                        </a></li>
+                                                    <li><a href="" class="self-navbar-text-color fs-6 fw-normal">
+                                                            Rolls Royce
+                                                        </a></li>
+
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                        <div class="col">
+
+                                            <div class="menu-text">
+                                                <h6 class="fs-5 fw-bold primary-color">American Cars</h6>
+                                                <ul class="d-flex flex-column fs-6 fw-semibold gap-0 list-unstyled mt-2">
+                                                    <li>
+                                                        <a href="" class="self-navbar-text-color fs-6 fw-normal">
+                                                            Cadillac
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="" class="self-navbar-text-color fs-6 fw-normal">
+                                                            Chevrolet
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="" class="self-navbar-text-color fs-6 fw-normal">
+                                                            Dodge
+                                                        </a>
+                                                    </li>
+                                                    <li><a href="" class="self-navbar-text-color fs-6 fw-normal">
+                                                            Ford
+                                                        </a></li>
+                                                    <li><a href="" class="self-navbar-text-color fs-6 fw-normal">
+                                                            GMC
+                                                        </a></li>
+                                                    <li><a href="" class="self-navbar-text-color fs-6 fw-normal">
+                                                            Hummer
+                                                        </a></li>
+                                                    <li><a href="" class="self-navbar-text-color fs-6 fw-normal">
+                                                            Jeep
+                                                        </a></li>
+                                                    <li><a href="" class="self-navbar-text-color fs-6 fw-normal">
+                                                            Lincoln
+                                                        </a></li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                        <div class="col">
+
+                                            <div class="menu-text">
+                                                <h6 class="fs-5 fw-bold primary-color">Japanese Cars</h6>
+                                                <ul class="d-flex flex-column fs-6 fw-semibold gap-0 list-unstyled mt-2">
+                                                    <li>
+                                                        <a href="" class="self-navbar-text-color fs-6 fw-normal">
+                                                            Lexus
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="" class="self-navbar-text-color fs-6 fw-normal">
+                                                            Nissan
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="" class="self-navbar-text-color fs-6 fw-normal">
+                                                            Toyota
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body brand-card-body-display-responsive d-none">
+                <div class="tab-content d-none d-md-block ">
+                    <div class="tab-pane fade show " id="sharjah" role="tabpanel" aria-labelledby="sharjah-tab">
+                        <h5 class="card-title fs-4">Sharjah
+                            <p class="fs-6 fw-normal m-0 mb-4 text-black-50">Brands we speacilze in</p>
+                        </h5>
+                        <div class="container">
+                            <div class="row align-items-center mobile-responsive-scrolling">
+                                <div class="col-md-12">
+                                    <div class="row">
+
+                                        <div class="col">
+
+                                            <div class="menu-text">
+                                                <h6 class="fs-5 fw-bold primary-color">German Cars</h6>
+                                                <ul class="d-flex flex-column gap-0 list-unstyled mt-2">
+                                                    <li>
+                                                        <a href="" class="self-navbar-text-color fs-6 fw-normal">
+                                                            Audi
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="" class="self-navbar-text-color fs-6 fw-normal">
+                                                            BMW
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="" class="self-navbar-text-color fs-6 fw-normal">
+                                                            Mercedes
+                                                        </a>
+                                                    </li>
+                                                    <li><a href="" class="self-navbar-text-color fs-6 fw-normal">
+                                                            Porsche
+                                                        </a></li>
+                                                    <li><a href="" class="self-navbar-text-color fs-6 fw-normal">
+                                                            Porsche
+                                                        </a></li>
+                                                    <li><a href="" class="self-navbar-text-color fs-6 fw-normal">
+                                                            Volvo
+                                                        </a></li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                        <div class="col">
+
+                                            <div class="menu-text">
+                                                <h6 class="fs-5 fw-bold primary-color">Italian Cars</h6>
+                                                <ul class="d-flex flex-column fs-5 fw-semibold gap-0 list-unstyled mt-2">
+                                                    <li>
+                                                        <a href="" class="self-navbar-text-color fs-6 fw-normal">
+                                                            Ferrari
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="" class="self-navbar-text-color fs-6 fw-normal">
+                                                            Lamborghini
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="" class="self-navbar-text-color fs-6 fw-normal">
+                                                            Maserati
+                                                        </a>
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                        <div class="col">
+
+                                            <div class="menu-text">
+                                                <h6 class="fs-5 fw-bold primary-color">British Cars</h6>
+                                                <ul class="d-flex flex-column fs-5 fw-semibold gap-0 list-unstyled mt-2">
+                                                    <li>
+                                                        <a href="" class="self-navbar-text-color fs-6 fw-normal">
+                                                            Bentley
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="" class="self-navbar-text-color fs-6 fw-normal">
+                                                            Jaguar
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="" class="self-navbar-text-color fs-6 fw-normal">
+                                                            Range Rover
+                                                        </a>
+                                                    </li>
+                                                    <li><a href="" class="self-navbar-text-color fs-6 fw-normal">
+                                                            Mini Cooper
+                                                        </a></li>
+                                                    <li><a href="" class="self-navbar-text-color fs-6 fw-normal">
+                                                            Rolls Royce
+                                                        </a></li>
+
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                        <div class="col">
+
+                                            <div class="menu-text">
+                                                <h6 class="fs-5 fw-bold primary-color">American Cars</h6>
+                                                <ul class="d-flex flex-column fs-6 fw-semibold gap-0 list-unstyled mt-2">
+                                                    <li>
+                                                        <a href="" class="self-navbar-text-color fs-6 fw-normal">
+                                                            Cadillac
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="" class="self-navbar-text-color fs-6 fw-normal">
+                                                            Chevrolet
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="" class="self-navbar-text-color fs-6 fw-normal">
+                                                            Dodge
+                                                        </a>
+                                                    </li>
+                                                    <li><a href="" class="self-navbar-text-color fs-6 fw-normal">
+                                                            Ford
+                                                        </a></li>
+                                                    <li><a href="" class="self-navbar-text-color fs-6 fw-normal">
+                                                            GMC
+                                                        </a></li>
+                                                    <li><a href="" class="self-navbar-text-color fs-6 fw-normal">
+                                                            Hummer
+                                                        </a></li>
+                                                    <li><a href="" class="self-navbar-text-color fs-6 fw-normal">
+                                                            Jeep
+                                                        </a></li>
+                                                    <li><a href="" class="self-navbar-text-color fs-6 fw-normal">
+                                                            Lincoln
+                                                        </a></li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                        <div class="col">
+
+                                            <div class="menu-text">
+                                                <h6 class="fs-5 fw-bold primary-color">Japanese Cars</h6>
+                                                <ul class="d-flex flex-column fs-6 fw-semibold gap-0 list-unstyled mt-2">
+                                                    <li>
+                                                        <a href="" class="self-navbar-text-color fs-6 fw-normal">
+                                                            Infiniti
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="" class="self-navbar-text-color fs-6 fw-normal">
+                                                            Lexus
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="" class="self-navbar-text-color fs-6 fw-normal">
+                                                            Nissan
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="" class="self-navbar-text-color fs-6 fw-normal">
+                                                            Toyota
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Tab top extra tabs remove wit JS-->
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                // Function to handle tab visibility
+                function handleTabVisibility() {
+                    // Get all tab panes
+                    const tabPanes = document.querySelectorAll('.tab-pane');
+
+                    tabPanes.forEach(pane => {
+                        // Get the parent's parent of each tab-pane (card-body)
+                        const cardBody = pane.closest('.card-body');
+
+                        if (pane.classList.contains('active')) {
+                            // If tab is active, show its parent's parent
+                            cardBody.classList.remove('d-none');
+                            cardBody.classList.add('d-block');
+                        } else {
+                            // If tab is not active, hide its parent's parent
+                            cardBody.classList.remove('d-block');
+                            cardBody.classList.add('d-none');
+                        }
+                    });
+                }
+
+                // Initial check when page loads
+                handleTabVisibility();
+
+                // Listen for Bootstrap tab change events
+                const tabEls = document.querySelectorAll('[data-bs-toggle="tab"]');
+                tabEls.forEach(tab => {
+                    tab.addEventListener('shown.bs.tab', function() {
+                        handleTabVisibility();
+                    });
+                });
+            });
+        </script>
+        <!--Desktop  Mega  Menu End here-->
+
+
+        <!-- Mobile Mega  Menu  Start here-->
+
+        <div class="d-md-none my-5">
+            <div class="accordion" id="mobileTabAccordion">
+                <!-- Dubai -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mobileDubai" aria-expanded="false" aria-controls="mobileDubai">
+                            Dubai
+                        </button>
+                    </h2>
+                    <div id="mobileDubai" class="accordion-collapse collapse" data-bs-parent="#mobileTabAccordion">
+                        <div class="accordion-body">
+                            <h5 class="card-title">Dubai
+
+                            </h5>
+                            <div class="container">
+                                <div class="row align-items-center mobile-responsive-scrolling">
+                                    <div class="col-md-12">
+                                        <div class="row align-items-center ">
+                                            <div class="head pb-2 mb-2">
+                                                <h6 class="title level-9 primary-semibold-font extra-color-3">Brands we speacilze in</h6>
+                                            </div>
+                                            <div class="col-md-4 borderCol">
+                                                <ul class="list-unstyled p-0 d-flex flex-column gap-4 mb-0">
+                                                    <li><a href="auto-spa.php" class="d-flex">
+                                                            <span class="menu-icon">
+                                                                <img src="assets/img/menu-icon12.png" alt="" class="img-fluid">
+                                                            </span>
+                                                            <div class="menu-text">
+                                                                <h6 class="primary-semibold-font primary-color">Auto Spa</h6>
+                                                                <span class="level-9 primary-medium-font extra-color-3">Luxurious detailing to keep your car looking brand new.</span>
+
+                                                            </div>
+                                                        </a></li>
+                                                    <li><a href="car-inspection.php" class="d-flex gap-2">
+                                                            <span class="menu-icon">
+                                                                <img src="assets/img/menu-icon6.png" alt="" class="img-fluid">
+                                                            </span>
+                                                            <div class="menu-text">
+                                                                <h6 class="level-7 primary-semibold-font primary-color">Car Inspection</h6>
+                                                                <span class="level-9 primary-medium-font extra-color-3">Thorough inspections to ensure safety and reliability.</span>
+                                                            </div>
+                                                        </a></li>
+                                                    <li><a href="car-wrapping.php" class="d-flex gap-2">
+                                                            <span class="menu-icon">
+                                                                <img src="assets/img/menu-icon8.png" alt="" class="img-fluid">
+                                                            </span>
+                                                            <div class="menu-text">
+                                                                <h6 class="level-7 primary-semibold-font primary-color">Car Wrapping</h6>
+                                                                <span class="level-9 primary-medium-font extra-color-3">Custom wraps to transform your vehicle's appearance.</span>
+                                                            </div>
+                                                        </a></li>
+                                                    <li><a href="ceramic.php" class="d-flex gap-2">
+                                                            <span class="menu-icon">
+                                                                <img src="assets/img/menu-icon11.png" alt="" class="img-fluid">
+                                                            </span>
+                                                            <div class="menu-text">
+                                                                <h6 class="level-7 primary-semibold-font primary-color">Ceramic</h6>
+                                                                <span class="level-9 primary-medium-font extra-color-3">Ceramic coating for long-lasting paint protection.</span>
+                                                            </div>
+                                                        </a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-4 borderCol">
+                                                <ul class="list-unstyled p-0 d-flex flex-column gap-4 mb-0">
+                                                    <li><a href="european-cars.php" class="d-flex gap-2">
+                                                            <span class="menu-icon">
+                                                                <img src="assets/img/menu-icon3.png" alt="" class="img-fluid">
+                                                            </span>
+                                                            <div class="menu-text">
+                                                                <h6 class="level-7 primary-semibold-font primary-color">European Cars</h6>
+                                                                <span class="level-9 primary-medium-font extra-color-3">Specialized care for European Cars brands.</span>
+                                                            </div>
+                                                        </a></li>
+                                                    <li><a href="german-cars.php" class="d-flex gap-2">
+                                                            <span class="menu-icon">
+                                                                <img src="assets/img/menu-icon10.png" alt="" class="img-fluid">
+                                                            </span>
+                                                            <div class="menu-text">
+                                                                <h6 class="level-7 primary-semibold-font primary-color">German Cars</h6>
+                                                                <span class="level-9 primary-medium-font extra-color-3">Specialized care for German Cars brands.</span>
+                                                            </div>
+                                                        </a></li>
+                                                    <li><a href="electric-repair.php" class="d-flex gap-2">
+                                                            <span class="menu-icon">
+                                                                <img src="assets/img/menu-icon5.png" alt="" class="img-fluid">
+                                                            </span>
+                                                            <div class="menu-text">
+                                                                <h6 class="level-7 primary-semibold-font primary-color">Electric Repair</h6>
+                                                                <span class="level-9 primary-medium-font extra-color-3">Specialized repairs for electric vehicles.</span>
+                                                            </div>
+                                                        </a></li>
+                                                    <li><a href="extended-warranty.php" class="d-flex gap-2">
+                                                            <span class="menu-icon">
+                                                                <img src="assets/img/menu-icon2.png" alt="" class="img-fluid">
+                                                            </span>
+                                                            <div class="menu-text">
+                                                                <h6 class="level-7 primary-semibold-font primary-color">Extended Warranty</h6>
+                                                                <span class="level-9 primary-medium-font extra-color-3">Peace of mind with extended coverage on your vehicle.</span>
+                                                            </div>
+                                                        </a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-4 borderCol">
+                                                <ul class="list-unstyled p-0 d-flex flex-column gap-4 mb-0">
+                                                    <li><a href="general-repair.php" class="d-flex gap-2">
+                                                            <span class="menu-icon">
+                                                                <img src="assets/img/menu-icon1.png" alt="" class="img-fluid">
+                                                            </span>
+                                                            <div class="menu-text">
+                                                                <h6 class="level-7 primary-semibold-font primary-color">General Repair</h6>
+                                                                <span class="level-9 primary-medium-font extra-color-3">Expert repair services for all makes and models.</span>
+                                                            </div>
+                                                        </a></li>
+                                                    <li><a href="major-minor-service.php" class="d-flex gap-2">
+                                                            <span class="menu-icon">
+                                                                <img src="assets/img/menu-icon9.png" alt="" class="img-fluid">
+                                                            </span>
+                                                            <div class="menu-text">
+                                                                <h6 class="level-7 primary-semibold-font primary-color">Major/Minor Service</h6>
+                                                                <span class="level-9 primary-medium-font extra-color-3">Comprehensive servicing for both routine and major repairs.</span>
+                                                            </div>
+                                                        </a></li>
+                                                    <li><a href="road-side-assistance.php" class="d-flex gap-2">
+                                                            <span class="menu-icon">
+                                                                <img src="assets/img/menu-icon7.png" alt="" class="img-fluid">
+                                                            </span>
+                                                            <div class="menu-text">
+                                                                <h6 class="level-7 primary-semibold-font primary-color">Roadside Assistance</h6>
+                                                                <span class="level-9 primary-medium-font extra-color-3">Reliable support when you need it the most.</span>
+                                                            </div>
+                                                        </a></li>
+                                                    <li><a href="tinting.php" class="d-flex gap-2">
+                                                            <span class="menu-icon">
+                                                                <img src="assets/img/menu-icon4.png" alt="" class="img-fluid">
+                                                            </span>
+                                                            <div class="menu-text">
+                                                                <h6 class="level-7 primary-semibold-font primary-color">Tinting</h6>
+                                                                <span class="level-9 primary-medium-font extra-color-3">Professional window tinting for added privacy and comfort.</span>
+                                                            </div>
+                                                        </a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add remaining emirates in the same pattern -->
+            </div>
+        </div>
+
+    </div>
+    <!-- Mobile Mega  Menu End here -->
     <!-- Services Mega Menu  -->
-    <div class="mega-menu category-services-menu self-mobile-respnsive mega-menu-mobile-respnsive-scrolling">
+    <div class="mega-menu category-services-menu self-mobile-respnsive mega-menu-mobile-respnsive-scrolling self-margin-top-services">
         <!-- Close Button (Only for Mobile) -->
         <button
             class="close-menu icon-badge me-3 mt-3 p-4 position-absolute right-0 top-0  d-md-none close-self-mobile-respnsive-div">
@@ -541,6 +1118,11 @@
         <li class="list-item align-self-baseline"><a href="{{ route('user.promotions') }}"
                 class="header-link text-decoration-none level-8 primary-semibold-font dark-color link-here">Ongoing
                 Promotions</a>
+        </li>
+
+        <li class="single-item">
+            <a class="header-link categoryBtn text-decoration-none level-8 primary-semibold-font dark-color link-here cursor-pointer"> Brands <i class="fa-solid fa-angle-down"></i>
+            </a>
         </li>
         <li class="single-item align-self-baseline"><a href="#"
                 class="header-link categoryBtn-service text-decoration-none level-8 primary-semibold-font dark-color link-here">
