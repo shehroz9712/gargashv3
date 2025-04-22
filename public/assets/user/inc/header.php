@@ -6,23 +6,23 @@
                 class="top-updates d-flex align-items-center justify-content-center justify-content-between list-unstyled m-0 p-0">
                 <li
                     class="single-item primary-semibold-font level-10 dark-color text-capitalize d-flex align-items-center gap-2">
-                    <span><img src="./img/header-icon1.png" alt="" class="img-fluid"></span> FREE PICKUP
+                    <span><img src="./img/header-icon1.png" width="28" height="29" alt="" class="img-fluid"></span> FREE PICKUP
                 </li>
                 <li
                     class="single-item primary-semibold-font level-10 dark-color text-capitalize d-flex align-items-center gap-2">
-                    <span><img src="./img/header-icon2.png" alt="" class="img-fluid"></span> FREE INSPECTION
+                    <span><img src="./img/header-icon2.png" width="24" height="24" alt="" class="img-fluid"></span> FREE INSPECTION
                 </li>
                 <li
                     class="single-item primary-semibold-font level-10 dark-color text-capitalize d-flex align-items-center gap-2">
-                    <span><img src="./img/header-icon3.png" alt="" class="img-fluid"></span> JOB APPROVAL
+                    <span><img src="./img/header-icon3.png" width="23" height="30" alt="" class="img-fluid"></span> JOB APPROVAL
                 </li>
                 <li
                     class="single-item primary-semibold-font level-10 dark-color text-capitalize d-flex align-items-center gap-2">
-                    <span><img src="./img/header-icon4.png" alt="" class="img-fluid"></span> REPAIR & FIX
+                    <span><img src="./img/header-icon4.png" width="22" height="23" alt="" class="img-fluid"></span> REPAIR & FIX
                 </li>
                 <li
                     class="single-item primary-semibold-font level-10 dark-color text-capitalize d-flex align-items-center gap-2">
-                    <span><img src="./img/header-icon5.png" alt="" class="img-fluid"></span> DELIVER BACK
+                    <span><img src="./img/header-icon5.png" width="34" height="21" alt="" class="img-fluid"></span> DELIVER BACK
                 </li>
                 <li
                     class="single-item primary-semibold-font level-10 dark-color text-capitalize d-flex align-items-center gap-2">
@@ -99,7 +99,7 @@
                     <a class="contact-icon">
                         <i class="fa-solid fa-envelope"></i>
                     </a>
-                    <div class="contact-detail"> 
+                    <div class="contact-detail">
                         <h6 class="level-9 primary-semibold-font extra-color-3 mb-0">Mail Us </h6>
                         <a href="mailto:sales@gargashauto.ae"
                             class="cell-no level-7 heading-font dark-color text-decoration-none dark-hover">

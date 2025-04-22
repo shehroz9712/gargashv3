@@ -4,10 +4,11 @@
         <div class="row">
             <div class="col-md-12">
                 <h2 class="text-center text-black fs-1 fw-bolder">Explore Our Portfolio of Exceptional Car Services</h2>
-                
+
                 <p>At Gargash Auto, we take pride in offering a comprehensive range of auto repair services in Dubai—each tailored to meet the highest standards of quality and precision. From essential routine maintenance to advanced diagnostics and complex mechanical or electrical repairs, our expert technicians are equipped with the latest tools and deep industry knowledge to keep your vehicle performing at its best.
-<br/>Whether it’s a simple oil change, brake service, engine overhaul, or specialized work on luxury and German cars, our workshop is your one-stop destination for reliable, efficient, and transparent auto care. Every service we offer reflects our commitment to excellence, customer satisfaction, and long-term performance. When you choose Gargash Auto, you’re not just booking a service—you’re investing in peace of mind.
-</p></div>
+                    <br />Whether it’s a simple oil change, brake service, engine overhaul, or specialized work on luxury and German cars, our workshop is your one-stop destination for reliable, efficient, and transparent auto care. Every service we offer reflects our commitment to excellence, customer satisfaction, and long-term performance. When you choose Gargash Auto, you’re not just booking a service—you’re investing in peace of mind.
+                </p>
+            </div>
         </div>
         <div class="row">
             <div class="col-6 col-md-3">

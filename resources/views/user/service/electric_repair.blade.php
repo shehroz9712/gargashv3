@@ -86,7 +86,7 @@
                     </p>
                     <span class="d-flex flex-column flex-md-row gap-4">
                         <a href="tel:+971 56 545 8853" target="_blank"><button class="btn fw-semibold rounded-3 text-black fs-6">Call Now</button></a>
-                        
+
                     </span>
                 </div>
             </div>
@@ -111,7 +111,7 @@
         <div class="contact-form-section">
             <div class="row align-items-center justify-content-center dark">
                 <div class="col-lg-5">
-                     @include('user.layouts.partials.form')
+                    @include('user.layouts.partials.form')
 
                 </div>
 

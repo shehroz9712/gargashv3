@@ -6,23 +6,23 @@
                 class="top-updates d-flex align-items-center justify-content-center justify-content-between list-unstyled m-0 p-0">
                 <li
                     class="single-item primary-semibold-font level-10 dark-color text-capitalize d-flex align-items-center gap-2">
-                    <span><img src="./img/header-icon1.png" alt="" class="img-fluid"></span> FREE PICKUP
+                    <span><img src="./img/header-icon1.png" alt="" class="img-fluid" width="28" height="29"></span> FREE PICKUP
                 </li>
                 <li
                     class="single-item primary-semibold-font level-10 dark-color text-capitalize d-flex align-items-center gap-2">
-                    <span><img src="./img/header-icon2.png" alt="" class="img-fluid"></span> FREE INSPECTION
+                    <span><img src="./img/header-icon2.png" alt="" class="img-fluid" width="24" height="24"></span> FREE INSPECTION
                 </li>
                 <li
                     class="single-item primary-semibold-font level-10 dark-color text-capitalize d-flex align-items-center gap-2">
-                    <span><img src="./img/header-icon3.png" alt="" class="img-fluid"></span> JOB APPROVAL
+                    <span><img src="./img/header-icon3.png" width="23" height="30" alt="" class="img-fluid"></span> JOB APPROVAL
                 </li>
                 <li
                     class="single-item primary-semibold-font level-10 dark-color text-capitalize d-flex align-items-center gap-2">
-                    <span><img src="./img/header-icon4.png" alt="" class="img-fluid"></span> REPAIR & FIX
+                    <span><img src="./img/header-icon4.png" width="22" height="23" alt="" class="img-fluid"></span> REPAIR & FIX
                 </li>
                 <li
                     class="single-item primary-semibold-font level-10 dark-color text-capitalize d-flex align-items-center gap-2">
-                    <span><img src="./img/header-icon5.png" alt="" class="img-fluid"></span> DELIVER BACK
+                    <span><img src="./img/header-icon5.png" alt="" width="34" height="21" class="img-fluid"></span> DELIVER BACK
                 </li>
                 <li
                     class="single-item primary-semibold-font level-10 dark-color text-capitalize d-flex align-items-center gap-2">

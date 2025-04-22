@@ -87,8 +87,8 @@
   <div class="container">
     <div class="d-flex flex-column text-center top">
       <h2 class="fs-1 fw-bolder">Package </h2>
-      <p class="fs-5  text-secondary"> We specialize in delivering comprehensive, hassle-free Luxury Car Care services Dubai UAE   for all your vehicle service needs, ensuring expert care for your German and European cars.
-</p>
+      <p class="fs-5  text-secondary"> We specialize in delivering comprehensive, hassle-free Luxury Car Care services Dubai UAE for all your vehicle service needs, ensuring expert care for your German and European cars.
+      </p>
     </div>
     <div class="bottom row contract-overview-section-margin-responsive">
       <div class="col-md-6 px-0 px-md-3">
@@ -142,8 +142,8 @@
       <h2 class="fs-1 fw-bolder">Best In <span style="color: #E6B110;">Everything</span>
       </h2>
       <p class="fs-6 fw-light text-secondary">Our Annual Service Contracts provide peace of mind, ensuring your German and European vehicle receives regular maintenance and care to stay in top condition year-round.
-</p>
-     
+      </p>
+
     </div>
     <div class="bottom col-md-12 d-flex justify-content-center">
       <img src="{{ asset('assets/user/img/everythig-img2.png') }}" alt="" class="w-100 w-md-75" />
@@ -158,9 +158,9 @@
       <div class="col-md-7">
         <h2 class="fs-1 fw-bolder text-left">Why Choose Our <span style="color: #E6B110;">Annual Service </span> Contracts?</h2>
         <p class="fs-6 fw-light text-secondary text-left">Enjoy consistent, expert care for your German and European vehicle, with guaranteed regular maintenance to keep it running smoothly and efficiently all year long.
-<br/>Experience unparalleled car care at Gargash Auto, a premier multi-brand luxury car service center. From Mercedes, BMW, and Rolls-Royce to Volkswagen, Mini Cooper, Maserati, Lamborghini, and more, we provide bespoke solutions for your luxury vehicle’s needs.
+          <br />Experience unparalleled car care at Gargash Auto, a premier multi-brand luxury car service center. From Mercedes, BMW, and Rolls-Royce to Volkswagen, Mini Cooper, Maserati, Lamborghini, and more, we provide bespoke solutions for your luxury vehicle’s needs.
 
-</p>
+        </p>
       </div>
       <div class="align-items-end col-md-5 d-flex flex-column gap-4 p-5 justify-content-start">
         <button class="btn btn-primary fs-6 fw-semibold rounded-4 w-100 w-md-75" style=" color: #0D4383;">Schedule your car service <i class="ri-arrow-drop-right-line fs-5"></i>
@@ -234,7 +234,7 @@
           <div>
             <h6 class="fs-6 fw-bold">Tailored Maintenance</h6>
             <p> Enjoy customized service plans designed for your vehicle’s unique needs, ensuring long-term reliability and optimal performance.
-</p>
+            </p>
           </div>
         </div>
       </div>
@@ -262,11 +262,11 @@
     <div class="col-md-6 d-flex flex-column gap-2 justify-content-center">
       <h2 style="letter-spacing: -4%; " class="fw-bolder lh-1 contract-why-Choose-heading-font-size">Your <span class="main-color"> Premier Destination </span> for Luxury Car Maintenance </h2>
       <p class="fs-6 fw-normal"> Gargash Auto is your trusted partner for Luxury Car Care services Dubai UAE, offering specialized maintenance and repairs for German and European luxury vehicles. With over 20 years of experience in the UAE, Gargash Auto is a trusted multi-brand luxury automotive repair and service center, offering Luxury Car Care services Dubai UAE of dealership quality at competitive prices. We provide a comprehensive range of solutions for your luxury vehicle, including mechanical, body shop, and electrical services—all in one convenient location. Our expert technicians ensure your German and European car receives the highest standard of care, making us the go-to destination for car care services Dubai.
-</p>
+      </p>
       <span class="d-flex flex-column flex-md-row gap-4 w-100">
         <a href="https://wa.me/971547935400"><button class="btn btn-primary fs-6 fw-semibold rounded-4" style=" color: #0D4383;"> Book Your Service Now! <i class="ri-arrow-drop-right-line fs-5"></i>
-        </button></a>
-        
+          </button></a>
+
       </span>
     </div>
   </div>

@@ -23,7 +23,7 @@
                     <span class="d-flex flex-column flex-md-row gap-4">
                         <a href="tel:+971 56 545 8853" target="_blank"><button class="btn fw-semibold rounded-3 text-black fs-6">Call Now</button></a>
                         <a href="https://wa.me/971547935400" target="_blank">
-                        <button class="transparent-btn">Schedule Services</button>
+                            <button class="transparent-btn">Schedule Services</button>
                         </a>
                     </span>
                 </div>
@@ -55,7 +55,7 @@
 
                 </ul>
                 <a href="https://wa.me/971547935400" target="_blank">
-                <button class="btn fs-6 fw-bold w-100 w-md-50 px-0">Click here for more Offers</button>
+                    <button class="btn fs-6 fw-bold w-100 w-md-50 px-0">Click here for more Offers</button>
                 </a>
             </div>
 
@@ -72,14 +72,14 @@
         <div class="align-items-center row white">
 
             <div class="col-md-6 d-flex flex-column gap-3">
-                <h1 class="display-5 extended-warranty-form-heading-responsive m-0 fw-bold lh-1 px-5 text-center text-black" >
+                <h1 class="display-5 extended-warranty-form-heading-responsive m-0 fw-bold lh-1 px-5 text-center text-black">
                     Dealership Quality Services At
                     <span class="main-color">Competitive Prices!</span>
                 </h1>
                 <p class="fs-6 fw-semibold text-black text-center m-0">Book Gargash Car Workshop</p>
             </div>
             <div class="col-md-6 black">
-                 @include('user.layouts.partials.form')
+                @include('user.layouts.partials.form')
             </div>
 
         </div>
@@ -144,21 +144,21 @@
 <!-- Packages Section End -->
 
 <!-- review-section Starts Here  -->
-    @include('user.layouts.partials.google-review')
+@include('user.layouts.partials.google-review')
 
 
 <!-- review-section Ends Here  -->
 
 
 <!-- sticky-icons Section Start -->
-    @include('user.layouts.partials.sticky-icons')
+@include('user.layouts.partials.sticky-icons')
 
 
 <!-- sticky-icons Section End -->
- 
+
 <!-- sticky-icons Section Start -->
 
-    @include('user.layouts.partials.sticky-icons-mobile')
+@include('user.layouts.partials.sticky-icons-mobile')
 
 
 

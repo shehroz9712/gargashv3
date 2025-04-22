@@ -1,0 +1,11 @@
+⚠️ Notes:
+This does not compress chrome extensions (ignore that line).
+
+
+If this still doesn't work, your host might have compression disabled — in that case, you can:
+
+
+Ask support to enable mod_deflate
+
+
+Or use a CDN like Cloudflare, which adds compression & caching without server changes.

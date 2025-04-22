@@ -71,7 +71,8 @@
             row-gap: 2rem !important;
             /* Reduce gap between rows on mobile */
         }
-        .logo-slider-height-responsive{
+
+        .logo-slider-height-responsive {
             height: auto !important;
         }
     }
@@ -85,7 +86,7 @@
                 <span class="main-color">Specialized In</span>
             </h2>
             <p class="fw-light fs-6  text-start">At Gargash Auto, we specialize in offering expert services for a wide range of luxury European car brands. Whether it’s a BMW, Mercedes-Benz, Audi, Porsche, or Jaguar, our Premium European Car Experts Dubai provide tailored solutions to keep your vehicle running at its best. With years of experience and genuine parts, we ensure optimal performance for every brand we service.
-</p>
+            </p>
         </div>
 
         <!-- Right Column (Image Grid) -->
@@ -96,10 +97,10 @@
                     <img src="{{ asset('assets/user/img/shop-logo-2.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
                     <img src="{{ asset('assets/user/img/shop-logo-3.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
                     <img src="{{ asset('assets/user/img/shop-logo-4.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
-                    <img src="{{ asset('assets/user/img/shop-logo-5.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                    <img src="{{ asset('assets/user/img/shop-logo-5.png') }}" width="80" height="80" alt="" class="h-25 w-auto" style="z-index: 10;">
                     <img src="{{ asset('assets/user/img/shop-logo-6.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
                     <img src="{{ asset('assets/user/img/shop-logo-7.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
-                    <img src="{{ asset('assets/user/img/shop-logo-8.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                    <img src="{{ asset('assets/user/img/shop-logo-8.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;" width="75" height="76">
                     <img src="{{ asset('assets/user/img/shop-logo-9.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
                     <img src="{{ asset('assets/user/img/shop-logo-10.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
                     <img src="{{ asset('assets/user/img/shop-logo-11.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">

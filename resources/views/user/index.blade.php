@@ -115,8 +115,8 @@
         <div class="banner-start-here">
             <div class="banner-top-content text-center">
                 <h1 class="level-1 heading-font primary-color" style="font-weight:700;">
-                    <span class="secondary-color d-block"> Experience Premium Car Care with 
- </span> 20+ Years of Expertise
+                    <span class="secondary-color d-block"> Experience Premium Car Care with
+                    </span> 20+ Years of Expertise
                 </h1>
                 <span class="level-8 primary-regular-font dark-color">Expert Care for All German & European Brands</span>
             </div>
@@ -128,7 +128,7 @@
                             <div class="">
                                 <div class="banner-img-content d-flex flex-column gap-1 gap-md-4 left-0 mt-md-0 p-0 position-absolute pt-3 pt-md-5 right-0 text-center top-0">
                                     <h4 class="level-1 heading-font extra-color-2 m-0">
-                                        <span class="secondary-color d-block"> Brands  </span> we specialized In
+                                        <span class="secondary-color d-block"> Brands </span> we specialized In
                                     </h4>
                                     <a href="https://wa.me/971547935400" target="_blank" class="btn fs-6 mx-auto w-md-50 w-75">Unlock Your Discount!</a>
                                 </div>
@@ -143,36 +143,36 @@
                 </div>
                 <div class="col-lg-6 my-auto">
                     <div class="d-flex">
-            <div class="bg-white-overlay h-75 position-relative w-100 shadow rounded-2">
-                <div class="d-flex image-container justify-content-evenly mt-5 mt-md-0 p-md-3 px-md-5 row row-cols-3 row-cols-md-5 w-100 " style="row-gap: 3rem; overflow-y: scroll; height:500px">
-                    <img src="{{ asset('assets/user/img/shop-logo-1.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
-                    <img src="{{ asset('assets/user/img/shop-logo-2.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
-                    <img src="{{ asset('assets/user/img/shop-logo-3.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
-                    <img src="{{ asset('assets/user/img/shop-logo-4.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
-                    <img src="{{ asset('assets/user/img/shop-logo-5.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
-                    <img src="{{ asset('assets/user/img/shop-logo-6.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
-                    <img src="{{ asset('assets/user/img/shop-logo-7.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
-                    <img src="{{ asset('assets/user/img/shop-logo-8.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
-                    <img src="{{ asset('assets/user/img/shop-logo-9.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
-                    <img src="{{ asset('assets/user/img/shop-logo-10.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
-                    <img src="{{ asset('assets/user/img/shop-logo-11.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
-                    <img src="{{ asset('assets/user/img/shop-logo-12.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
-                    <img src="{{ asset('assets/user/img/shop-logo-13.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
-                    <img src="{{ asset('assets/user/img/shop-logo-14.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
-                    <img src="{{ asset('assets/user/img/shop-logo-15.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
-                    <img src="{{ asset('assets/user/img/shop-logo-16.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
-                    <img src="{{ asset('assets/user/img/shop-logo-17.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
-                    <img src="{{ asset('assets/user/img/shop-logo-18.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
-                    <img src="{{ asset('assets/user/img/shop-logo-19.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
-                    <img src="{{ asset('assets/user/img/shop-logo-20.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
-                    <img src="{{ asset('assets/user/img/shop-logo-21.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
-                    <img src="{{ asset('assets/user/img/shop-logo-22.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
-                    <img src="{{ asset('assets/user/img/shop-logo-23.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
-                    <img src="{{ asset('assets/user/img/shop-logo-24.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
-                    <img src="{{ asset('assets/user/img/shop-logo-25.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
-                </div>
-            </div>
-        </div>
+                        <div class="bg-white-overlay h-75 position-relative w-100 shadow rounded-2">
+                            <div class="d-flex image-container justify-content-evenly mt-5 mt-md-0 p-md-3 px-md-5 row row-cols-3 row-cols-md-5 w-100 " style="row-gap: 3rem; overflow-y: scroll; height:500px">
+                                <img src="{{ asset('assets/user/img/shop-logo-1.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                                <img src="{{ asset('assets/user/img/shop-logo-2.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                                <img src="{{ asset('assets/user/img/shop-logo-3.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                                <img src="{{ asset('assets/user/img/shop-logo-4.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                                <img src="{{ asset('assets/user/img/shop-logo-5.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                                <img src="{{ asset('assets/user/img/shop-logo-6.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                                <img src="{{ asset('assets/user/img/shop-logo-7.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                                <img src="{{ asset('assets/user/img/shop-logo-8.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                                <img src="{{ asset('assets/user/img/shop-logo-9.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                                <img src="{{ asset('assets/user/img/shop-logo-10.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                                <img src="{{ asset('assets/user/img/shop-logo-11.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                                <img src="{{ asset('assets/user/img/shop-logo-12.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                                <img src="{{ asset('assets/user/img/shop-logo-13.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                                <img src="{{ asset('assets/user/img/shop-logo-14.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                                <img src="{{ asset('assets/user/img/shop-logo-15.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                                <img src="{{ asset('assets/user/img/shop-logo-16.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                                <img src="{{ asset('assets/user/img/shop-logo-17.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                                <img src="{{ asset('assets/user/img/shop-logo-18.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                                <img src="{{ asset('assets/user/img/shop-logo-19.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                                <img src="{{ asset('assets/user/img/shop-logo-20.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                                <img src="{{ asset('assets/user/img/shop-logo-21.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                                <img src="{{ asset('assets/user/img/shop-logo-22.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                                <img src="{{ asset('assets/user/img/shop-logo-23.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                                <img src="{{ asset('assets/user/img/shop-logo-24.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                                <img src="{{ asset('assets/user/img/shop-logo-25.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
             </div>
@@ -272,7 +272,8 @@
                             <div class="process-text">
                                 <h5 class="level-6 heading-font secondary-color">BOOK A SERVICE</h5>
                                 <p class="level-9 primary-regular-font dark-color">Call us to book your service
-                                    <br> and enjoy a free inspection.</p>
+                                    <br> and enjoy a free inspection.
+                                </p>
                             </div>
                         </div>
                     </div>

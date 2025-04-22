@@ -135,7 +135,7 @@
 
 
 
-<script>
+<script async>
     let menu_sticky_iconsToggle = document.querySelector('.menu-sticky-iconsToggle');
     menu_sticky_iconsToggle.onclick = function() {
         menu_sticky_iconsToggle.classList.toggle('active');

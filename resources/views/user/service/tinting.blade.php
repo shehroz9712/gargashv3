@@ -69,7 +69,7 @@
             <img src="{{ asset('assets/user/img/tinting-form-left-car.png') }}" alt="" loading="lazy">
         </div>
         <div class=" col-md-6 light position-relative white">
-             @include('user.layouts.partials.form')
+            @include('user.layouts.partials.form')
         </div>
     </div>
 </section>
@@ -229,13 +229,13 @@
 
 
 <!-- sticky-icons Section Start -->
-    @include('user.layouts.partials.sticky-icons')
+@include('user.layouts.partials.sticky-icons')
 
 
 <!-- sticky-icons Section End -->
- <!-- sticky-icons Section Start -->
+<!-- sticky-icons Section Start -->
 
-    @include('user.layouts.partials.sticky-icons-mobile')
+@include('user.layouts.partials.sticky-icons-mobile')
 
 
 

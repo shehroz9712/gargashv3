@@ -1,6 +1,11 @@
 body {
     overflow-x: hidden;
 }
+img {
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
 
 /* auto spa Styling Start */
 
@@ -316,32 +321,41 @@ r-insp-bg {
 
 /* About us  Styling End*/
 /* navbar Styling Start */
-.self-margin-top-responsive{
+.self-margin-top-responsive {
     margin-top: 0rem !important;
 }
-.self-margin-top-services{
+.self-margin-top-services {
     margin-top: 0rem !important;
 }
-.self-navbar-text-color{
+.self-navbar-text-color {
     color: #111 !important;
 }
-.self-navbar-text-color:hover{
+.self-navbar-text-color:hover {
     color: #e6b110 !important;
 }
+.brand-mega-menu-width-responsive{
+    width: fit-content !important;
+}
+
 /* navbar Styling End */
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-
     /* header Styling Start */
-.self-margin-top-responsive{
-    margin-top: 7.5rem !important;
-}
-.self-margin-top-services{
-    margin-top: 9.5rem !important;
-}
-
-/* header Styling End */
+    .self-margin-top-responsive {
+        margin-top: 9.5rem !important;
+    }
+    .self-margin-top-services {
+        margin-top: 9.5rem !important;
+    }
+    .self-mobile-navbar-height-responsive {
+        height: 20rem !important;
+    }
+    .brand-mega-menu-width-responsive{
+        width: auto !important;
+    }
+    
+    /* header Styling End */
     /* Index Page Styling Start */
 
     .index-hero-card-text-font-size {
