@@ -101,6 +101,18 @@
                                         <td>{!! $brand->description !!}</td>
                                     </tr>
 
+                                    <tr>
+                                        <th>Meta Title</th>
+                                        <td>{{ $brand->meta_title }}</td>
+                                    </tr>
+                                       <tr>
+                                        <th>Meta Description</th>
+                                        <td>{{ $brand->meta_description }}</td>
+                                    </tr>
+                                       <tr>
+                                        <th>Meta Keyword</th>
+                                        <td>{{ $brand->meta_keyword }}</td>
+                                    </tr>
                                     <!-- Image for Brand -->
                                     <tr>
                                         <th>Image</th>

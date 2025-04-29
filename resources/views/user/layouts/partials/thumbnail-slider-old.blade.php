@@ -7,7 +7,7 @@
                 </span>
             </h2>
             <p class="level-7 col-lg-8 opacity-70 mx-auto">We offer complete auto repair solutions with fast, high-quality service in a welcoming environment, including a comfortable lounge for your convenience.
-</p>
+            </p>
         </div>
         <!-- Slick Slider Section -->
         <div class="product-slider-wrapper slider-sec mt-md-0">
@@ -16,6 +16,7 @@
                     <img src="{{ asset('assets/user/img/Merc.png') }}" alt=""
                         class="img-fluid w-75 mx-auto">
                 </figure>
+                
                 <figure class="p-2 pb-0 slide-fig position-relative text-center">
                     <img src="{{ asset('assets/user/img/Jeep-1.png') }}" alt=""
                         class="img-fluid w-75 mx-auto">
@@ -34,7 +35,7 @@
                 </figure>
                 <figure class="p-2 pb-0 slide-fig position-relative text-center">
                     <img src="{{ asset('assets/user/img/CarImg1.png') }}" alt=""
-                        class="img-fluid w-75 mx-auto">
+                        class="img-fluid w-75 mx-auto" width="300" height="300">
                 </figure>
                 <figure class="p-2 pb-0 slide-fig position-relative text-center">
                     <img src="{{ asset('assets/user/img/CarImg2.png') }}" alt=""

@@ -5,7 +5,11 @@
 
 
 @section('content')
-
+@section('meta')
+    <title>Professional Auto Car Window Tinting Services Dubai UAE </title>
+    <meta name="description" content="Professional Auto Car Window Tinting Services Dubai UAE. Our experienced staff carefully apply the desired tint or film at the car’s glass with perfection.">
+    <meta name="keywords" content="Professional Car Window Tinting Dubai,Auto Window Tinting Service Dubai,Paint rotection Film Dubai,Car Tinting Services Dubai">    
+@endsection
 
 <!-- hero section start -->
 
@@ -37,19 +41,7 @@
     </h2>
     <img src="{{ asset('assets/user/img/tinting-main-car.png') }}" alt="" loading="lazy">
     <div class="d-flex flex-column flex-md-row gap-4 justify-content-center w-100 align-items-center">
-        <a href="tel:+971 56 545 8853" target="_blank" class="btn btn-primary fs-6 w-md-25 w-75">
-
-            Call Now
-
-        </a>
-        <button
-            type="button"
-            class="bg-transparent border border-dark btn btn-primary fs-6 w-md-25 w-75">
-            Our Services
-        </button>
-
-
-    </div>
+        <a href="https://wa.me/971547935400" target="_blank"><button class="btn fw-semibold rounded-3 text-black fs-6">Book Your Service Today!</button></a>    </div>
 
 </section>
 
@@ -69,7 +61,7 @@
             <img src="{{ asset('assets/user/img/tinting-form-left-car.png') }}" alt="" loading="lazy">
         </div>
         <div class=" col-md-6 light position-relative white">
-             @include('user.layouts.partials.form')
+            @include('user.layouts.partials.form')
         </div>
     </div>
 </section>
@@ -98,9 +90,7 @@
                     <li>We Also Provide Premium Quality Tint For Exotic & High_End Cars</li>
                     <li>Brands: 3m – Lumar – Hexis – XPEL</li>
                 </ul>
-                <a href="tel:+971 56 545 8853" target="_blank">
-                    <button class="btn fs-6 fw-bold w-md-50">Call Now</button>
-                </a>
+                <a href="https://wa.me/971547935400" target="_blank"><button class="btn fw-semibold rounded-3 text-black fs-6">Book Your Service Today!</button></a>
             </div>
 
         </div>
@@ -126,9 +116,7 @@
                     <li>Specialized in Exotic And High-End Cars</li>
 
                 </ul>
-                <a href="tel:+971 56 545 8853" target="_blank">
-                    <button class="btn fs-6 fw-bold w-md-50">Call Now</button>
-                </a>
+               <a href="https://wa.me/971547935400" target="_blank"><button class="btn fw-semibold rounded-3 text-black fs-6">Book Your Service Today!</button></a>
             </div>
             <div class="col-md-6 my-auto">
                 <img src="{{ asset('assets/user/img/Car-Tinting-car-3.png') }}" alt="" class="Chinese-Car-Partner-right-car mt-5">
@@ -228,21 +216,7 @@
 <!-- icons section End -->
 
 
-<!-- sticky-icons Section Start -->
-    @include('user.layouts.partials.sticky-icons')
-
-
-<!-- sticky-icons Section End -->
- <!-- sticky-icons Section Start -->
-
-    @include('user.layouts.partials.sticky-icons-mobile')
-
-
-
-<!-- sticky-icons Section End -->
-
-
-
+@include('user.layouts.partials.gateway-images') @include('user.layouts.partials.google-review')
 @endsection
 
 @section('js')

@@ -45,6 +45,9 @@ class BrandController extends Controller
             'image' => $image,
             'heading' => $request->heading,
             'description' => $request->description,
+            'meta_description' => $request->meta_description,
+            'meta_keyword' => $request->meta_keyword,
+            'meta_title ' => $request->meta_title ,
             'status' => $request->status,
         ]);
 
@@ -88,7 +91,8 @@ class BrandController extends Controller
     public function update(BrandRequest $request, Brand $brand)
     {
         // ✅ Update brand fields in one go
-        $data = $request->only(['name', 'slug', 'category_id', 'heading', 'description', 'status']);
+        $data = $request->only(['name', 'slug', 'category_id', 'heading', 'description', 'status','meta_title','meta_keyword','meta_description']);
+    
         if ($request->hasFile('image')) {
             $data['image'] = uploadImage($request->file('image'), 'brands');
         }

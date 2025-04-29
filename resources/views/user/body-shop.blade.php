@@ -115,23 +115,9 @@
     </div>
 </section>
 <!-- gateway-section Start Here  -->
-<!-- @include('user.layouts.partials.gateway') -->
-<!-- gateway-section Ends Here  -->
-
-
-
-<!-- Logo Slider Start -->
-@include('user.layouts.partials.logo-slider')
-
-<!-- Logo Slider Start -->
-<!-- sticky-icons Section Start -->
-@include('user.layouts.partials.sticky-icons')
-
-
-<!-- sticky-icons Section Start -->
-
-@include('user.layouts.partials.sticky-icons-mobile')
-
+@include('user.layouts.partials.gateway-images') 
+@include('user.layouts.partials.google-review') 
+ 
 
 
 <!-- sticky-icons Section End -->

@@ -71,7 +71,8 @@
             row-gap: 2rem !important;
             /* Reduce gap between rows on mobile */
         }
-        .logo-slider-height-responsive{
+
+        .logo-slider-height-responsive {
             height: auto !important;
         }
     }
@@ -85,38 +86,39 @@
                 <span class="main-color">Specialized In</span>
             </h2>
             <p class="fw-light fs-6  text-start">At Gargash Auto, we specialize in offering expert services for a wide range of luxury European car brands. Whether it’s a BMW, Mercedes-Benz, Audi, Porsche, or Jaguar, our Premium European Car Experts Dubai provide tailored solutions to keep your vehicle running at its best. With years of experience and genuine parts, we ensure optimal performance for every brand we service.
-</p>
+            </p>
         </div>
 
         <!-- Right Column (Image Grid) -->
         <div class="col-12 col-md-6 d-flex h-100 justify-content-center align-items-center">
             <div class="bg-white-overlay h-75 position-relative w-100 shadow rounded-2">
                 <div class="d-flex image-container justify-content-evenly mt-5 mt-md-0 p-md-3 px-md-5 row row-cols-3 row-cols-md-5 w-100  logo-slider-responsive-height" style="row-gap: 4rem;">
-                    <img src="{{ asset('assets/user/img/shop-logo-1.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
-                    <img src="{{ asset('assets/user/img/shop-logo-2.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
-                    <img src="{{ asset('assets/user/img/shop-logo-3.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
-                    <img src="{{ asset('assets/user/img/shop-logo-4.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
-                    <img src="{{ asset('assets/user/img/shop-logo-5.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
-                    <img src="{{ asset('assets/user/img/shop-logo-6.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
-                    <img src="{{ asset('assets/user/img/shop-logo-7.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
-                    <img src="{{ asset('assets/user/img/shop-logo-8.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
-                    <img src="{{ asset('assets/user/img/shop-logo-9.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
-                    <img src="{{ asset('assets/user/img/shop-logo-10.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
-                    <img src="{{ asset('assets/user/img/shop-logo-11.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
-                    <img src="{{ asset('assets/user/img/shop-logo-12.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
-                    <img src="{{ asset('assets/user/img/shop-logo-13.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
-                    <img src="{{ asset('assets/user/img/shop-logo-14.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
-                    <img src="{{ asset('assets/user/img/shop-logo-15.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
-                    <img src="{{ asset('assets/user/img/shop-logo-16.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
-                    <img src="{{ asset('assets/user/img/shop-logo-17.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
-                    <img src="{{ asset('assets/user/img/shop-logo-18.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
-                    <img src="{{ asset('assets/user/img/shop-logo-19.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
-                    <img src="{{ asset('assets/user/img/shop-logo-20.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
-                    <img src="{{ asset('assets/user/img/shop-logo-21.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
-                    <img src="{{ asset('assets/user/img/shop-logo-22.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
-                    <img src="{{ asset('assets/user/img/shop-logo-23.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
-                    <img src="{{ asset('assets/user/img/shop-logo-24.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
-                    <img src="{{ asset('assets/user/img/shop-logo-25.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                   <img src="{{ asset('assets/user/img/shop-logo-8.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                <img src="{{ asset('assets/user/img/shop-logo-14.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                <img src="{{ asset('assets/user/img/shop-logo-9.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                <img src="{{ asset('assets/user/img/shop-logo-4.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                <img src="{{ asset('assets/user/img/Carlogo2.png') }}" alt="" class="" style="z-index: 10;height: 50px;width: 140px;margin: auto;">
+                <img src="{{ asset('assets/user/img/shop-logo-6.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                <img src="{{ asset('assets/user/img/shop-logo-7.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                <img src="{{ asset('assets/user/img/shop-logo-13.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                <img src="{{ asset('assets/user/img/shop-logo-3.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                <img src="{{ asset('assets/user/img/shop-logo-5.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                <img src="{{ asset('assets/user/img/shop-logo-1.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                <img src="{{ asset('assets/user/img/shop-logo-2.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                <img src="{{ asset('assets/user/img/shop-logo-10.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                <img src="{{ asset('assets/user/img/shop-logo-11.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                <img src="{{ asset('assets/user/img/shop-logo-12.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                <img src="{{ asset('assets/user/img/shop-logo-15.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                <img src="{{ asset('assets/user/img/shop-logo-16.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                <img src="{{ asset('assets/user/img/shop-logo-17.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                <img src="{{ asset('assets/user/img/shop-logo-18.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                <img src="{{ asset('assets/user/img/shop-logo-19.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                <img src="{{ asset('assets/user/img/shop-logo-20.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                <img src="{{ asset('assets/user/img/shop-logo-21.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                <img src="{{ asset('assets/user/img/shop-logo-22.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                <img src="{{ asset('assets/user/img/shop-logo-23.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                <img src="{{ asset('assets/user/img/shop-logo-24.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
+                <img src="{{ asset('assets/user/img/shop-logo-25.png') }}" alt="" class="h-25 w-auto" style="z-index: 10;">
                 </div>
             </div>
         </div>

@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Site Title -->
-    <title>Trusted Garage for Car Service in Dubai - Gargash Auto</title>
+    @yield('meta')
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="{{ asset('assets/user/img/favicon.png') }}" />
     <!-- Flag Icons -->
@@ -54,6 +54,9 @@
         img {
             max-width: 100%;
         }
+        .service-icon-navbar img.img-fluid {
+    height: 50px;
+}
     </style>
     <!--Start of Tawk.to Script-->
 <script type="text/javascript">

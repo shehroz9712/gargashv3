@@ -1,5 +1,9 @@
 @extends('user.layouts.app') @section('css') @endsection @section('content')
-
+@section('meta')
+    <title>Auto SPA | Premium Quality Vehicle Services Dubai UAE </title>
+    <meta name="description" content=" Auto SPA & Premium Quality Vehicle Services Dubai UAE. Premium Vehicle Services Dubai offer everything your luxury vehicle needs for maximum protection, showroom-quality finish.">
+    <meta name="keywords" content="Premium Vehicle Services Dubai,Premium Quality Auto Repairs Dubai,Premium Auto Spa UAE,Premium Auto Spa Dubai">    
+@endsection
 <!-- Hero  Section Start -->
 <section class="container-fluid all-pages-hero-height-responsive vh-100 auto-spa-bg section overflow-hidden">
     <div class="container d-flex align-items-center h-100">
@@ -7,7 +11,7 @@
             <div class="col-md-5">
                 <div class="experiecne-top-content">
                     <h2 class="display-3 fw-bold">
-                        <span class="secondary-color">Expert Car Detailing & </span> <br> Premium Auto Spa UAE 
+                        <span class="secondary-color">Expert Car Detailing & </span> <br> Premium Auto Spa UAE
                     </h2>
                     <p class="fs-6 fw-semibold lh-sm text-secondary">Experience the ultimate in car pampering with our Premium Auto Spa UAE—where luxury vehicles receive meticulous care and attention from trained experts.
 
@@ -51,11 +55,11 @@
             </div>
             <div class="col-md-6">
                 <h1 class="auto-spa-form-heading-font-size-responsive fw-bold lh-1 mt-4 mt-md-0 px-5 text-center">
-                    Indulge Your 
+                    Indulge Your
                     <span class="main-color">Car with Elite </span>Spa Care
                 </h1>
                 <p class="fs-6 fw-semibold m-0 text-black text-center">Give your vehicle the care it deserves with our Premium Auto Spa Dubai services. Book your appointment today for a flawless finish and unmatched attention to detail. </p>
-                <br/>
+                <br />
             </div>
 
         </div>
@@ -64,13 +68,13 @@
 </section>
 
 
-@include('user.layouts.partials.gateway-images') 
+@include('user.layouts.partials.gateway-images')
 <div class="align-items-center auto-spa-full-container-bg container-fluid d-flex flex-column justify-content-center gap-5 auto-spa-full-container-section-height-responsive">
     <span class="d-flex flex-column gap-2 text-center">
         <h2 class="auto-spa-full-container-section-heading-font-size-responsive text-center text-white auto-spa-full-container-section-padding m-0">From <span class="text-warning">Expert Car Detailing Dubai</span> to advanced protective solutions,
-    we ensure your luxury vehicle shines like royalty.
-    </h2>
-    <p class="fs-5 fw-normal m-0 text-white">Give your car the VIP experience it deserves with our Premium Auto Spa Dubai services!</p>
+            we ensure your luxury vehicle shines like royalty.
+        </h2>
+        <p class="fs-5 fw-normal m-0 text-white">Give your car the VIP experience it deserves with our Premium Auto Spa Dubai services!</p>
     </span>
     <a href="tel:+971 56 545 8853" class="d-flex justify-content-center w-100">
         <button type="button" class="btn btn-primary fs-6 w-md-25">

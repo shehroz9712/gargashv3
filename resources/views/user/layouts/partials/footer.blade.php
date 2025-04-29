@@ -305,8 +305,7 @@
                                     </span>
                                 </div>
                                 <div class="contact-text">
-                                    <h6 class="level-7 primary-regular-font dark-color">Monday - Saturday: 8 am - 6
-                                        pmSunday: Closed </h6>
+                                    <h6 class="level-7 primary-regular-font dark-color">Monday - Saturday: 8 am - 6 pm Sunday: Closed </h6>
                                 </div>
                             </a>
                         </li>
@@ -343,7 +342,7 @@
                                             </div>
                                             <div class="contact-text">
                                                 <h6 class="level-7 primary-regular-font dark-color">Monday - Wednesday:
-                                                    10 am - 10 pmThursday - Sunday: 10 am - 11 pm </h6>
+                                                    10 am - 10 pm  <br> Thursday - Sunday: 10 am - 11 pm </h6>
                                             </div>
                                         </a>
                                     </li>
@@ -463,7 +462,7 @@
                                 </div>
                                 <div class="contact-text">
                                     <h6 class="level-7 primary-regular-font dark-color">Monday - Wednesday: 10 am - 10
-                                        pmThursday - Sunday: 10 am - 11 pm </h6>
+                                        pm <br> Thursday - Sunday: 10 am - 11 pm </h6>
                                 </div>
                             </a>
                         </li>

@@ -147,7 +147,7 @@
         <!-- Add more cards as needed -->
     </div>
 </div>
-<script>
+<script defer>
     const slider = document.querySelector(".card-slider");
     const cards = document.querySelectorAll(".card");
     let isReversed = false;

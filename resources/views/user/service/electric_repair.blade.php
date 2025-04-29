@@ -1,11 +1,12 @@
 @extends('user.layouts.app')
-
 @section('css')
+@endsection@section('content')
+
+@section('meta')
+    <title>Electric Car Repair & Maintenance Services Dubai UAE </title>
+    <meta name="description" content=" Electric Car Repair & Maintenance Services Dubai UAE. Every service we offer reflects our commitment to excellence, customer satisfaction, and long-term performance. ">
+    <meta name="keywords" content="Electric Car Repair Dubai,Electric Car Repair Services,Electric Car Repair UAE,Electric Car Maintenance Dubai,Electric Car Maintenance UAE">    
 @endsection
-
-
-@section('content')
-
 <style>
     .service-card {
         border-radius: 12px;
@@ -86,7 +87,7 @@
                     </p>
                     <span class="d-flex flex-column flex-md-row gap-4">
                         <a href="tel:+971 56 545 8853" target="_blank"><button class="btn fw-semibold rounded-3 text-black fs-6">Call Now</button></a>
-                        
+
                     </span>
                 </div>
             </div>
@@ -98,24 +99,23 @@
 </section>
 <!-- Electric Hero Section End -->
 
-
 <!-- Electric About Section start -->
 <section class="section container-fluid  form-bg-ew">
     <div class="container d-flex flex-column h-100 justify-content-center text-center w-100">
-        <div class="">
-            <h1 class="fw-bolder display-4 electric-repair-About-heading-font-size-responsive">Dealership Quality Services At <span
-                    class="text-warning">Competitive Prices! Contract!</span>
+        <div class="row">
+        <div class="col-md-6">
+            <h1 class="fw-bolder display-4 electric-repair-About-heading-font-size-responsive">Dealership Quality Services At 
+            <span class="text-warning">Competitive Prices!</span>
             </h1>
             <h4 class="fs-4 fw-bold">Book Gargash Car Workshop</h4>
         </div>
+        <div class="col-md-6">
         <div class="contact-form-section">
             <div class="row align-items-center justify-content-center dark">
-                <div class="col-lg-5">
-                     @include('user.layouts.partials.form')
-
-                </div>
-
+                    @include('user.layouts.partials.form')
             </div>
+        </div>
+        </div>
         </div>
     </div>
 
@@ -184,7 +184,7 @@
 
             <div class="col-md-4">
                 <div class="card service-card">
-                    <img src="{{ asset('assets/user/img/image-784.png') }}" alt="Ignition System Check">
+                    <img src="{{ asset('assets/user/img/image-784.jpg') }}" alt="Ignition System Check">
                     <div class="card-body text-center">
                         <h5 class="fw-bold">Battery System Check</h5>
                         <p class="text-muted">Our certified technicians inspect and repair all the components related to
@@ -196,54 +196,6 @@
 </section>
 
 <!-- Luxury Section End -->
-
-
-
-<section class="pt-0">
-    <div class="container py-0 py-md-5">
-        <h2 class="text-center fw-bold">Car Care <span class="tip-highlight">Tips</span></h2>
-        <div class="row g-4 mt-4">
-
-            <div class="col-md-3">
-                <div class="tip-card border p-3">
-                    <img src="{{ asset('assets/user/img/image 719.png') }}" alt="Air Conditioner">
-                    <h5 class="tip-title">Air Conditioner</h5>
-                    <p class="text-muted">Regularly test your car's air conditioning system to ensure that control and keeps you cool
-                        and
-                        fresh.</p>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <div class="tip-card border p-3">
-                    <img src="{{ asset('assets/user/img/image 784.png') }}" style="height: 180px;" alt="Car Polishing">
-                    <h5 class="tip-title">Car Polishing</h5>
-                    <p class="text-muted">Get your car polished after washing to restore its original shine and luster.
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <div class="tip-card border p-3">
-                    <img src="{{ asset('assets/user/img/image-784.jpg') }}" alt="Battery Check">
-                    <h5 class="tip-title">Battery Check</h5>
-                    <p class="text-muted">Ensure a timely check of your car's battery life and avoid to the unexpected failures.</p>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <div class="tip-card border p-3">
-                    <img src="{{ asset('assets/user/img/image 786.png') }}" style="height: 180px;" alt="Fuel Efficiency">
-                    <h5 class="tip-title">Fuel Efficiency</h5>
-                    <p class="text-muted">Maintain proper tire pressure to improve safety and enhance fuel efficiency.
-                    </p>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-<!-- Tips Section Start -->
 @include('user.layouts.partials.gateway-images') @include('user.layouts.partials.google-review') @include('user.layouts.partials.sticky-icons') @include('user.layouts.partials.sticky-icons-mobile')
 
 @endsection

@@ -57,7 +57,7 @@
             <div class="col-lg-6">
               <div class="review-right-wrapper">
                 <!-- Review 1 -->
-                <a class="cursor-pointer review-link"  href="javascript:void(0)" data-comment="Gargash Auto transformed my car care experience. The convenience of their service contract makes it so easy for me to get my car serviced without disrupting my schedule. Plus, their team is always honest and efficient. Truly top-notch service!" data-name="– Mark R." data-rating="5" data-reviewurl="https://www.google.com/maps/contrib/113581672704880399952/reviews/@23.1118938,80.4932083,4z/data=!3m1!4b1!4m3!8m2!3m1!1e1?hl=en-GB&entry=ttu&g_ep=EgoyMDI1MDMwMi4wIKXMDSoASAFQAw%3D%3D">
+                <a class="cursor-pointer review-link" href="javascript:void(0)" data-comment="Gargash Auto transformed my car care experience. The convenience of their service contract makes it so easy for me to get my car serviced without disrupting my schedule. Plus, their team is always honest and efficient. Truly top-notch service!" data-name="– Mark R." data-rating="5" data-reviewurl="https://www.google.com/maps/contrib/113581672704880399952/reviews/@23.1118938,80.4932083,4z/data=!3m1!4b1!4m3!8m2!3m1!1e1?hl=en-GB&entry=ttu&g_ep=EgoyMDI1MDMwMi4wIKXMDSoASAFQAw%3D%3D">
                   <div class="review-box d-flex align-items-center justify-content-between mb-3">
                     <div class="review-sub-name">
                       <h6 class="level-7 primary-semibold-font extra-color-2">– Mark R.</h6>
@@ -65,7 +65,7 @@
                     </div>
                     <div class="review-start-wrap">
                       <ul class="reviews-wrap list-unstyled m-0 p-0 d-flex align-items-center justify-content-end gap-2">
-                       
+
                         <li class="level-9 primary-semibold-font secondary-color">(4.7 / 5)</li>
                       </ul>
                     </div>
@@ -73,7 +73,7 @@
                 </a>
 
                 <!-- Review 2 -->
-                <a class="cursor-pointer review-link"  href="javascript:void(0)" data-comment="I recently had my luxury car serviced at Gargash Auto, and the results were outstanding. Their team treated my car like it was their own, and I could tell they used only the best tools and parts. I'll definitely continue to trust them with all my vehicle needs." data-name="– Jasmine P." data-rating="5" data-reviewurl="https://www.google.com/maps/contrib/113581672704880399952/reviews/@23.1118938,80.4932083,4z/data=!3m1!4b1!4m3!8m2!3m1!1e1?hl=en-GB&entry=ttu&g_ep=EgoyMDI1MDMwMi4wIKXMDSoASAFQAw%3D%3D">
+                <a class="cursor-pointer review-link" href="javascript:void(0)" data-comment="I recently had my luxury car serviced at Gargash Auto, and the results were outstanding. Their team treated my car like it was their own, and I could tell they used only the best tools and parts. I'll definitely continue to trust them with all my vehicle needs." data-name="– Jasmine P." data-rating="5" data-reviewurl="https://www.google.com/maps/contrib/113581672704880399952/reviews/@23.1118938,80.4932083,4z/data=!3m1!4b1!4m3!8m2!3m1!1e1?hl=en-GB&entry=ttu&g_ep=EgoyMDI1MDMwMi4wIKXMDSoASAFQAw%3D%3D">
                   <div class="review-box d-flex align-items-center justify-content-between mb-3">
                     <div class="review-sub-name">
                       <h6 class="level-7 primary-semibold-font extra-color-2">– Jasmine P.</h6>
@@ -81,7 +81,7 @@
                     </div>
                     <div class="review-start-wrap">
                       <ul class="reviews-wrap list-unstyled m-0 p-0 d-flex align-items-center justify-content-end gap-2">
-                        
+
                         <li class="level-9 primary-semibold-font secondary-color">(4.7 / 5)</li>
                       </ul>
                     </div>
@@ -89,7 +89,7 @@
                 </a>
 
                 <!-- Review 3 -->
-                <a class="cursor-pointer review-link"  href="javascript:void(0)" data-comment="Gargash Auto's customer service is second to none. From booking the service to receiving my car back in perfect condition, the entire process was seamless. They even took the time to explain the repairs and answer all my questions. I wouldn't trust my car with anyone else." data-name="– David M." data-rating="5" data-reviewurl="https://www.google.com/maps/contrib/117252774557379550002/reviews/@25.1708598,55.3177495,11z/data=!3m1!4b1!4m3!8m2!3m1!1e1?hl=en-GB&entry=ttu&g_ep=EgoyMDI1MDMwMi4wIKXMDSoASAFQAw%3D%3D">
+                <a class="cursor-pointer review-link" href="javascript:void(0)" data-comment="Gargash Auto's customer service is second to none. From booking the service to receiving my car back in perfect condition, the entire process was seamless. They even took the time to explain the repairs and answer all my questions. I wouldn't trust my car with anyone else." data-name="– David M." data-rating="5" data-reviewurl="https://www.google.com/maps/contrib/117252774557379550002/reviews/@25.1708598,55.3177495,11z/data=!3m1!4b1!4m3!8m2!3m1!1e1?hl=en-GB&entry=ttu&g_ep=EgoyMDI1MDMwMi4wIKXMDSoASAFQAw%3D%3D">
                   <div class="review-box d-flex align-items-center justify-content-between mb-3">
                     <div class="review-sub-name">
                       <h6 class="level-7 primary-semibold-font extra-color-2">– David M.</h6>
@@ -97,7 +97,7 @@
                     </div>
                     <div class="review-start-wrap">
                       <ul class="reviews-wrap list-unstyled m-0 p-0 d-flex align-items-center justify-content-end gap-2">
-                       
+
                         <li class="level-9 primary-semibold-font secondary-color">(4.7 / 5)</li>
                       </ul>
                     </div>
@@ -105,7 +105,7 @@
                 </a>
 
                 <!-- Review 4 -->
-                <a  class="cursor-pointer review-link"  href="javascript:void(0)" data-comment="The team at Gargash Auto went above and beyond for me. They not only fixed my car efficiently but also provided a detailed inspection and offered helpful tips to keep my vehicle in top condition. It's clear they truly care about their customers." data-name="– Ali K." data-rating="5" data-reviewurl="https://www.google.com/maps/contrib/101997236533537285372/reviews/@40.5203133,26.0415536,4z/data=!3m1!4b1!4m3!8m2!3m1!1e1?hl=en-GB&entry=ttu&g_ep=EgoyMDI1MDMwMi4wIKXMDSoASAFQAw%3D%3D">
+                <a class="cursor-pointer review-link" href="javascript:void(0)" data-comment="The team at Gargash Auto went above and beyond for me. They not only fixed my car efficiently but also provided a detailed inspection and offered helpful tips to keep my vehicle in top condition. It's clear they truly care about their customers." data-name="– Ali K." data-rating="5" data-reviewurl="https://www.google.com/maps/contrib/101997236533537285372/reviews/@40.5203133,26.0415536,4z/data=!3m1!4b1!4m3!8m2!3m1!1e1?hl=en-GB&entry=ttu&g_ep=EgoyMDI1MDMwMi4wIKXMDSoASAFQAw%3D%3D">
                   <div class="review-box d-flex align-items-center justify-content-between">
                     <div class="review-sub-name">
                       <h6 class="level-7 primary-semibold-font extra-color-2">– Ali K.</h6>
@@ -113,7 +113,7 @@
                     </div>
                     <div class="review-start-wrap">
                       <ul class="reviews-wrap list-unstyled m-0 p-0 d-flex align-items-center justify-content-end gap-2">
-                       
+
                         <li class="level-9 primary-semibold-font secondary-color">(4.7 / 5)</li>
                       </ul>
                     </div>

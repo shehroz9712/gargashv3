@@ -21,9 +21,9 @@
                     <span class="d-flex gap-4">
                         <a href="tel:+971 56 545 8853" target="_blank"><button class="border-0 btn btn-primary fs-6 fw-semibold text-dark">Call Now</button></a>
                         <a href="https://wa.me/971547935400" target="_blank">
-                        <button class="bg-transparent border-2 border-dark btn btn-primary fs-6 fw-semibold text-dark">Schedule Services</button>
+                            <button class="bg-transparent border-2 border-dark btn btn-primary fs-6 fw-semibold text-dark">Schedule Services</button>
                         </a>
-                        
+
                     </span>
                 </div>
             </div>
@@ -76,7 +76,7 @@
                 <p class="fs-6 fw-semibold pt-3 text-black text-center">Book Gargash Car Workshop</p>
             </div>
             <div class="col-md-6 black">
-                 @include('user.layouts.partials.form')
+                @include('user.layouts.partials.form')
             </div>
 
         </div>
@@ -141,19 +141,19 @@
 <!-- Packages Section End -->
 
 <!-- review-section Starts Here  -->
-    @include('user.layouts.partials.google-review')
+@include('user.layouts.partials.google-review')
 
 
 <!-- review-section Ends Here  -->
 
 <!-- sticky-icons Section Start -->
-    @include('user.layouts.partials.sticky-icons')
+@include('user.layouts.partials.sticky-icons')
 
 
 <!-- sticky-icons Section End -->
 <!-- sticky-icons Section Start -->
 
-    @include('user.layouts.partials.sticky-icons-mobile')
+@include('user.layouts.partials.sticky-icons-mobile')
 
 
 

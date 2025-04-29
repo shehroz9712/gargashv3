@@ -135,3 +135,38 @@
            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
        }
    </script>
+   <!-- Mobile Mega  Menu End here -->
+   <script>
+       // Brands Mega Menu Open
+       $(document).ready(function() {
+           let hideTimeout; // Timeout variable for delayed menu hiding
+           function resetMenus() {
+               $(".category-menu, .all-menu").removeClass("active");
+               $(".categoryBtn, .allcategoryBtn").removeClass("active");
+           }
+
+           $(".categoryBtn").on("mouseenter", function() {
+               clearTimeout(hideTimeout); // Prevent menu from hiding
+               resetMenus();
+               $(".category-menu").addClass("active");
+               $(this).addClass("active");
+           });
+
+           $(".allcategoryBtn").on("mouseenter", function() {
+               clearTimeout(hideTimeout);
+               resetMenus();
+               $(".all-menu").addClass("active");
+               $(this).addClass("active");
+           });
+
+           $(".category-menu, .all-menu, .card").on("mouseenter", function() {
+               clearTimeout(hideTimeout); // If inside menu or `.card`, stop hiding
+           });
+
+           $(".category-menu, .all-menu, .categoryBtn, .allcategoryBtn, .card").on("mouseleave", function() {
+               hideTimeout = setTimeout(() => {
+                   resetMenus();
+               }, 800); // Delay of 1s before hiding
+           });
+       });
+   </script>

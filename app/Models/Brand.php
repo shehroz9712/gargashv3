@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Relations\MorphMany;
 class Brand extends Model
 {
     use HasFactory;
-    protected $fillable = ['name', 'slug', 'category_id', 'user_id', 'image', 'heading', 'description', 'status'];
+    protected $fillable = ['name', 'slug', 'category_id', 'user_id', 'image', 'heading', 'description', 'status','meta_title','meta_keyword','meta_description'];
 
 
 

@@ -10,6 +10,7 @@
         <h1 class="fw-bolder lh-1 promotion-hero-heading-font-size">Providing Luxury Car Care <br>
           <span class="text-warning">with Exceptional Offers</span>
             </h1>
+            <br/>
             <p class="fs-6 fw-normal text-black-50 pormotions-hero-para-responsive-font-padding">Enjoy premium car care services Dubai tailored for German and European vehicles—now with unbeatable promotions to match.</p>
             </span>
             <span class="w-100 w-md-75">
@@ -33,8 +34,6 @@
             <div class="col-lg-4">
                 <div class="d-flex flex-column flex-lg-column flex-md-row gap-3 gateway-btn-wrapper w-100">
                     <a href="https://wa.me/971547935400" target="_blank" class="align-self-baseline align-self-lg-end btn fs-6 w-100 w-fit w-md-75">Avail Your Discount</a>
-
-                    <a href="tel:+971 56 545 8853" target="_blank" class="align-self-baseline align-self-lg-end btn fs-6 transparent-btn w-100 w-fit w-md-75">Call Now </a>
                 </div>
             </div>
         </div>
@@ -91,9 +90,9 @@
 <section class="container">
     <div class="d-flex flex-column" style="gap: 6rem;">
         <div class="row row-cols-lg-3 g-5">
-      
+
             <div class="promotions-box-hover-effect">
-               <div class="shadow px-0 rounded-5">
+                <div class="shadow px-0 rounded-5">
                     <div class="align-items-end blog-img-1 d-flex justify-content-end pb-3 px-4 rounded-5 text-white  blog-box-height">
                         <span>
               <small class="text-white fw-normal kdam-thmor-pro-font fs-6">*T&C Apply</small>
@@ -226,7 +225,6 @@
               </a>
             </div>
           </span>
-
                 </div>
             </div>
 
@@ -418,7 +416,8 @@
                     </div>
                     <div class="faq-content">
                         <p class="text-md-start">The duration of a service depends on the type of maintenance or repair needed. We strive to provide efficient Luxury Car Care services Dubai UAE, ensuring your German or European vehicle is serviced promptly without compromising
-                            quality.</p>
+                            quality.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -450,22 +449,10 @@
         });
     </script>
 </section>
-<!-- F&Q Section End -->
-<!-- Faq Section End -->
-<!-- Body Content End Here -->
-
-<!-- sticky-icons Section Start -->
 @include('user.layouts.partials.sticky-icons')
-
-
-<!-- sticky-icons Section End -->
-<!-- sticky-icons Section Start -->
 
 @include('user.layouts.partials.sticky-icons-mobile')
 
-
-
-<!-- sticky-icons Section End -->
-
-<!-- Body Content End Here -->
+<!-- gateway-section Start Here  -->
+@include('user.layouts.partials.gateway-images') @include('user.layouts.partials.google-review')
 @endsection @section('js') @endsection

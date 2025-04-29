@@ -130,6 +130,38 @@
                                         @enderror
                                     </div>
                                 </div>
+                           
+                                <div class="col-md-6">
+    <div class="mb-3">
+        <label class="form-label">Meta Title</label>
+        <input type="text" name="meta_title" class="form-control"
+            value="{{ old('meta_title') }}" placeholder="Enter meta title">
+        @error('meta_title')
+            <small class="text-danger">{{ $message }}</small>
+        @enderror
+    </div>
+</div>
+<div class="col-md-12">
+    <div class="mb-3">
+        <label class="form-label">Meta Keywords</label>
+        <textarea name="meta_keyword" class="form-control" rows="4"
+            placeholder="Enter meta keyword">{{ old('meta_keyword') }}</textarea>
+        @error('meta_keyword')
+            <small class="text-danger">{{ $message }}</small>
+        @enderror
+    </div>
+</div>
+<div class="col-md-12">
+    <div class="mb-3">
+        <label class="form-label">Meta Description</label>
+        <textarea name="meta_description" class="form-control" rows="4"
+            placeholder="Enter meta description">{{ old('meta_description') }}</textarea>
+        @error('meta_description')
+            <small class="text-danger">{{ $message }}</small>
+        @enderror
+    </div>
+</div>
+
                             </div>
 
                             <!-- Sections -->

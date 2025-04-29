@@ -2,13 +2,12 @@
     .scroll-transition {
         transition: margin-top 0.3s ease;
     }
-
     .top-reading {
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
-        z-index: 999;
+        z-index: 10;
         transition: transform 0.3s ease, opacity 0.3s ease;
     }
 
@@ -23,9 +22,7 @@
 <header class="site-header">
     <div class="top-reading secondary-bg py-1 overflow-hidden">
         <div class="container">
-
-            <ul
-                class="top-updates d-flex align-items-center justify-content-center  justify-content-between list-unstyled m-0 p-0">
+            <ul class="top-updates d-flex align-items-center justify-content-center  justify-content-between list-unstyled m-0 p-0">
                 <li
                     class="single-item primary-semibold-font level-10 dark-color text-capitalize d-flex align-items-center gap-1 my-hero-text-size   pe-3">
                     <span>
@@ -80,7 +77,7 @@
                         <li class="review-li">
                             <i class="fa-solid fa-star" style="color: #fff"></i>
                         </li>
-                    </ul> 4.9 Google Reviews
+                    </ul> 4.7 Google Reviews
                 </li>
                 <li class="single-item dropdown-wrap px-3">
                     <div class="dropdown">
@@ -170,6 +167,10 @@
                             <li class="list-item">
                                 <a href="https://gargashauto.ae/"
                                     class="header-link text-decoration-none level-8 primary-semibold-font dark-color link-here">Home</a>
+                            </li>
+                            <li class="single-item">
+                                <a class="header-link categoryBtn text-decoration-none level-8 primary-semibold-font dark-color link-here cursor-pointer"> Brands <i class="fa-solid fa-angle-down"></i>
+                                </a>
                             </li>
                             <li class="list-item">
                                 <a href="{{ route('user.contract') }}"
@@ -279,10 +280,545 @@
         }
     </style>
 
+
     <!-- Brands Mega Menu  -->
+    <div class="mega-menu category-menu self-mobile-respnsive mega-menu-mobile-respnsive-scrolling self-margin-top-responsive">
+        <!-- Close Button (Only for Mobile) -->
+        <button class="close-menu icon-badge me-3 mt-3 p-4 position-absolute right-0 top-0  d-md-none close-self-mobile-respnsive-div">
+            <i class="fa fa-close text-white"></i>
+        </button>
+
+        <!--Desktop  Mega  Menu Start here-->
+        <div class="card container d-md-block d-none mt-5 mt-md-0">
+            <div class="card-header bg-transparent">
+                <div class="tabbable-responsive">
+                    <!-- Desktop Tabs -->
+                    <ul class="nav nav-tabs d-none d-md-flex overflow-hidden" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="Dubai-tab" data-bs-toggle="tab" href="#Dubai" role="tab" aria-controls="Dubai" aria-selected="true">Dubai
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="sharjah-tab" data-bs-toggle="tab" href="#sharjah" role="tab" aria-controls="sharjah" aria-selected="true">Sharjah
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Desktop Content -->
+
+            <div class="card-body brand-card-body-display-responsive">
+                <div class="tab-content d-none d-md-block">
+                    <div class="tab-pane fade show active" id="Dubai" role="tabpanel" aria-labelledby="Dubai-tab">
+            <div class="container">
+                            <div class="row row-cols-3">
+                                <div class="col">
+                                    <div class="menu-text">
+                                        <h6 class="fs-5 fw-bold text-black">European Cars</h6>
+                                        <ul class="d-flex flex-column fs-5 fw-semibold gap-0 list-unstyled mt-2">
+                                            <li>
+                                                <a href="{{ route('user.brandDetail', 'bentley-repair-dubai') }}" class="self-navbar-text-color fs-6 fw-normal">
+                                                    Bentley
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="{{ route('user.brandDetail', 'jaguar-repair-dubai') }}" class="self-navbar-text-color fs-6 fw-normal">
+                                                    Jaguar
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="{{ route('user.brandDetail', 'range-rover-repair-dubai') }}" class="self-navbar-text-color fs-6 fw-normal">
+                                                    Range Rover
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="{{ route('user.brandDetail', 'mini-cooper-repair-dubai') }}" class="self-navbar-text-color fs-6 fw-normal">
+                                                    Mini Cooper
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="{{ route('user.brandDetail', 'rolls-royce-repair-dubai') }}" class="self-navbar-text-color fs-6 fw-normal">
+                                                    Rolls Royce
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="menu-text">
+                                        <h6 class="fs-5 fw-bold text-black">German Cars</h6>
+                                        <ul class="d-flex flex-column gap-0 list-unstyled mt-2">
+                                            <li>
+                                                <a href="{{ route('user.brandDetail', 'audi-repair-dubai') }}" class="self-navbar-text-color fs-6 fw-normal">
+                                                    Audi
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="{{ route('user.brandDetail', 'bmw-repair-dubai') }}" class="self-navbar-text-color fs-6 fw-normal">
+                                                    BMW
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="{{ route('user.brandDetail', 'mercedes-repair-dubai') }}" class="self-navbar-text-color fs-6 fw-normal">
+                                                    Mercedes
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="{{ route('user.brandDetail', 'porschse-repair-dubai') }}" class="self-navbar-text-color fs-6 fw-normal">
+                                                    Porsche
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="{{ route('user.brandDetail', 'volvo-repair-dubai') }}" class="self-navbar-text-color fs-6 fw-normal">
+                                                    Volvo
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="menu-text">
+                                        <h6 class="fs-5 fw-bold text-black">Italian Cars</h6>
+                                        <ul class="d-flex flex-column fs-5 fw-semibold gap-0 list-unstyled mt-2">
+                                            <li>
+                                                <a href="{{ route('user.brandDetail', 'ferrari-repair-dubai') }}" class="self-navbar-text-color fs-6 fw-normal">
+                                                    Ferrari
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="{{ route('user.brandDetail', 'lamborghini-repair-dubai') }}"  class="self-navbar-text-color fs-6 fw-normal">
+                                                    Lamborghini
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="{{ route('user.brandDetail', 'maserati-repair-dubai') }}"  class="self-navbar-text-color fs-6 fw-normal">
+                                                    Maserati
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body brand-card-body-display-responsive d-none">
+                <div class="tab-content d-none d-md-block ">
+                    <div class="tab-pane fade show " id="sharjah" role="tabpanel" aria-labelledby="sharjah-tab">
+                        <div class="container">
+                            <div class="row align-items-center mobile-responsive-scrolling">
+                                <div class="col-md-12">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="menu-text">
+                                                <h6 class="fs-5 fw-bold text-black">European Cars </h6>
+                                                <ul class="d-flex flex-column fs-5 fw-semibold gap-0 list-unstyled mt-2">
+                                                    <li>
+                                                        <a href="{{ route('user.brandDetail', 'bentley-repair-sharjah') }}"  class="self-navbar-text-color fs-6 fw-normal">
+                                                            Bentley
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="{{ route('user.brandDetail', 'jaguar-repair-sharjah') }}" class="self-navbar-text-color fs-6 fw-normal">
+                                                            Jaguar
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="{{ route('user.brandDetail', 'range-rover-repair-sharjah') }}" class="self-navbar-text-color fs-6 fw-normal">
+                                                            Range Rover
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="{{ route('user.brandDetail', 'mini-cooper-repair-sharjah') }}" class="self-navbar-text-color fs-6 fw-normal">
+                                                            Mini Cooper
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="{{ route('user.brandDetail', 'rolls-royce-repair-sharjah') }}" class="self-navbar-text-color fs-6 fw-normal">
+                                                            Rolls Royce
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="menu-text">
+                                                <h6 class="fs-5 fw-bold text-black">German Cars</h6>
+                                                <ul class="d-flex flex-column gap-0 list-unstyled mt-2">
+                                                    <li>
+                                                        <a href="{{ route('user.brandDetail', 'audi-repair-sharjah') }}" class="self-navbar-text-color fs-6 fw-normal">
+                                                            Audi
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="{{ route('user.brandDetail', 'bmw-repair-sharjah') }}" class="self-navbar-text-color fs-6 fw-normal">
+                                                            BMW
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="{{ route('user.brandDetail', 'mercedes-repair-sharjah') }}" class="self-navbar-text-color fs-6 fw-normal">
+                                                            Mercedes
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="{{ route('user.brandDetail', 'porsche-repair-sharjah') }}" class="self-navbar-text-color fs-6 fw-normal">
+                                                            Porsche
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="{{ route('user.brandDetail', 'volvo-repair-sharjah') }}" class="self-navbar-text-color fs-6 fw-normal">
+                                                            Volvo
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="menu-text">
+                                                <h6 class="fs-5 fw-bold text-black">Italian Cars</h6>
+                                                <ul class="d-flex flex-column fs-5 fw-semibold gap-0 list-unstyled mt-2">
+                                                    <li>
+                                                        <a href="{{ route('user.brandDetail', 'ferrari-repair-sharjah') }}" class="self-navbar-text-color fs-6 fw-normal">
+                                                            Ferrari
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="{{ route('user.brandDetail', 'lamborghini-repair-sharjah') }}" class="self-navbar-text-color fs-6 fw-normal">
+                                                            Lamborghini
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="{{ route('user.brandDetail', 'maserati-repair-sharjah') }}" class="self-navbar-text-color fs-6 fw-normal">
+                                                            Maserati
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Tab top extra tabs remove wit JS-->
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                // Function to handle tab visibility
+                function handleTabVisibility() {
+                    // Get all tab panes
+                    const tabPanes = document.querySelectorAll('.tab-pane');
+
+                    tabPanes.forEach(pane => {
+                        // Get the parent's parent of each tab-pane (card-body)
+                        const cardBody = pane.closest('.card-body');
+
+                        if (pane.classList.contains('active')) {
+                            // If tab is active, show its parent's parent
+                            cardBody.classList.remove('d-none');
+                            cardBody.classList.add('d-block');
+                        } else {
+                            // If tab is not active, hide its parent's parent
+                            cardBody.classList.remove('d-block');
+                            cardBody.classList.add('d-none');
+                        }
+                    });
+                }
+
+                // Initial check when page loads
+                handleTabVisibility();
+
+                // Listen for Bootstrap tab change events
+                const tabEls = document.querySelectorAll('[data-bs-toggle="tab"]');
+                tabEls.forEach(tab => {
+                    tab.addEventListener('shown.bs.tab', function() {
+                        handleTabVisibility();
+                    });
+                });
+            });
+        </script>
+        <!--Desktop  Mega  Menu End here-->
+
+        <!-- Mobile Mega  Menu  Start here-->
+        <div class="d-md-none my-5">
+            <div class="accordion" id="mobileTabAccordion">
+                <!-- Dubai -->
+                <div class="accordion-item ">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mobileDubai" aria-expanded="false" aria-controls="mobileDubai">
+                            Dubai
+                        </button>
+                    </h2>
+                    <div id="mobileDubai" class="accordion-collapse collapse self-mobile-navbar-height-responsive" data-bs-parent="#mobileTabAccordion">
+                        <div class="accordion-body " style="height: 100%; overflow-y: auto; padding-bottom: 5rem;">
+
+                            <div class="container">
+                                <div class="mt-4 row">
+                                    <div class="col-12">
+                                        <div class="menu-text">
+                                            <h6 class="fs-5 fw-bold text-black">European Cars
+                                            </h6>
+                                            <ul class="mt-2">
+                                                <li>
+                                                    <a  href="{{ route('user.brandDetail', 'bentley-repair-dubai') }}"  class="self-navbar-text-color fs-6 fw-normal">
+                                                        Bentley
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a  href="{{ route('user.brandDetail', 'jaguar-repair-dubai') }}"  class="self-navbar-text-color fs-6 fw-normal">
+                                                        Jaguar
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="{{ route('user.brandDetail', 'range-rover-repair-dubai') }}" class="self-navbar-text-color fs-6 fw-normal">
+                                                        Range Rover
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="{{ route('user.brandDetail', 'mini-cooper-repair-dubai') }}" class="self-navbar-text-color fs-6 fw-normal">
+                                                        Mini Cooper
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="{{ route('user.brandDetail', 'rolls-royce-repair-dubai') }}" class="self-navbar-text-color fs-6 fw-normal">
+                                                        Rolls Royce
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="menu-text">
+                                            <h6 class="fs-5 fw-bold text-black">German Cars</h6>
+                                            <ul class="mt-2">
+                                                <li>
+                                                    <a href="{{ route('user.brandDetail', 'audi-repair-dubai') }}" class="self-navbar-text-color fs-6 fw-normal">
+                                                        Audi
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="{{ route('user.brandDetail', 'bmw-repair-dubai') }}" class="self-navbar-text-color fs-6 fw-normal">
+                                                        BMW
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="{{ route('user.brandDetail', 'mercedes-repair-dubai') }}" class="self-navbar-text-color fs-6 fw-normal">
+                                                        Mercedes
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="{{ route('user.brandDetail', 'porchse-repair-dubai') }}" class="self-navbar-text-color fs-6 fw-normal">
+                                                        Porsche
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="{{ route('user.brandDetail', 'volvo-repair-dubai') }}" class="self-navbar-text-color fs-6 fw-normal">
+                                                        Volvo
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="menu-text">
+                                            <h6 class="fs-5 fw-bold text-black">Italian Cars</h6>
+                                            <ul class="mt-2">
+                                                <li>
+                                                    <a href="{{ route('user.brandDetail', 'ferrari-repair-dubai') }}" class="self-navbar-text-color fs-6 fw-normal">
+                                                        Ferrari
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="{{ route('user.brandDetail', 'lamborghini-repair-dubai') }}" class="self-navbar-text-color fs-6 fw-normal">
+                                                        Lamborghini
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="{{ route('user.brandDetail', 'maserati-repair-dubai') }}" class="self-navbar-text-color fs-6 fw-normal">
+                                                        Maserati
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- sharjah -->
+                <div class="accordion-item ">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mobilesharjah" aria-expanded="false" aria-controls="mobilesharjah">
+                            Sharjah
+                        </button>
+                    </h2>
+                    <div id="mobilesharjah" class="accordion-collapse collapse self-mobile-navbar-height-responsive" data-bs-parent="#mobileTabAccordion">
+                        <div class="accordion-body" style="height: 100%; overflow-y: auto; padding-bottom: 7rem;">
+
+                            <div class="container">
+                                <div class="mt-4 row">
+                                    <div class="col-12">
+                                        <div class="menu-text">
+                                            <h6 class="fs-5 fw-bold text-black">European Cars </h6>
+                                            <ul class=" mt-2 ">
+                                                <li>
+                                                    <a href="{{ route('user.brandDetail', 'bentley-repair-sharjah') }}" class="self-navbar-text-color fs-6 fw-normal">
+                                                        Bentley
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a  href="{{ route('user.brandDetail', 'jaguar-repair-sharjah') }}" class="self-navbar-text-color fs-6 fw-normal">
+                                                        Jaguar
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a  href="{{ route('user.brandDetail', 'range-rover-repair-sharjah') }}" class="self-navbar-text-color fs-6 fw-normal">
+                                                        Range Rover
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a  href="{{ route('user.brandDetail', 'mini-cooper-repair-sharjah') }}" class="self-navbar-text-color fs-6 fw-normal">
+                                                        Mini Cooper
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="{{ route('user.brandDetail', 'rolls-royce-repair-sharjah') }}" class="self-navbar-text-color fs-6 fw-normal">
+                                                        Rolls Royce
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="menu-text">
+                                            <h6 class="fs-5 fw-bold text-black">German Cars</h6>
+                                            <ul class=" mt-2 ">
+                                                <li>
+                                                    <a href="{{ route('user.brandDetail', 'audi-repair-sharjah') }}" class="self-navbar-text-color fs-6 fw-normal">
+                                                        Audi
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="{{ route('user.brandDetail', 'bmw-repair-sharjah') }}" class="self-navbar-text-color fs-6 fw-normal">
+                                                        BMW
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="{{ route('user.brandDetail', 'mercedes-repair-sharjah') }}" class="self-navbar-text-color fs-6 fw-normal">
+                                                        Mercedes
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="{{ route('user.brandDetail', 'porsche-repair-sharjah') }}" class="self-navbar-text-color fs-6 fw-normal">
+                                                        Porsche
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="{{ route('user.brandDetail', 'volvo-repair-sharjah') }}" class="self-navbar-text-color fs-6 fw-normal">
+                                                        Volvo
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="menu-text">
+                                            <h6 class="fs-5 fw-bold text-black">Italian Cars</h6>
+                                            <ul class=" mt-2 ">
+                                                <li>
+                                                    <a href="{{ route('user.brandDetail', 'ferrari-repair-sharjah') }}" class="self-navbar-text-color fs-6 fw-normal">
+                                                        Ferrari
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="{{ route('user.brandDetail', 'lamborghini-repair-sharjah') }}" class="self-navbar-text-color fs-6 fw-normal">
+                                                        Lamborghini
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="{{ route('user.brandDetail', 'maserati-repair-sharjah') }}" class="self-navbar-text-color fs-6 fw-normal">
+                                                        Maserati
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add remaining emirates in the same pattern -->
+            </div>
+        </div>
+    </div>
+    <!-- Mobile mega menu tab Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileAccordionButtons = document.querySelectorAll('#mobileTabAccordion .accordion-button');
+            let activeCollapse = null; // track currently open collapse
+
+            mobileAccordionButtons.forEach(button => {
+                button.addEventListener('click', function(event) {
+                    const targetSelector = this.getAttribute('data-bs-target');
+                    const targetCollapse = document.querySelector(targetSelector);
+
+                    // If this button is already open (not collapsed)
+                    if (!this.classList.contains('collapsed')) {
+                        // Close the currently open collapse
+                        const bsCollapse = bootstrap.Collapse.getOrCreateInstance(targetCollapse);
+                        bsCollapse.hide();
+                        activeCollapse = null;
+                    } else {
+                        // Close previously active if exists
+                        if (activeCollapse && activeCollapse !== targetCollapse) {
+                            const prevCollapse = bootstrap.Collapse.getOrCreateInstance(activeCollapse);
+                            prevCollapse.hide();
+                        }
+
+                        // Open the selected collapse
+                        const newCollapse = bootstrap.Collapse.getOrCreateInstance(targetCollapse);
+                        newCollapse.show();
+                        activeCollapse = targetCollapse;
+                    }
+
+                    event.preventDefault();
+                });
+            });
+
+            // Default open: First accordion item
+            const firstCollapse = document.querySelector('#mobileTabAccordion .accordion-collapse');
+            if (firstCollapse) {
+                const defaultInstance = bootstrap.Collapse.getOrCreateInstance(firstCollapse);
+                defaultInstance.show();
+                activeCollapse = firstCollapse;
+            }
+
+            // Close button functionality
+            const closeButton = document.querySelector('.close-self-mobile-respnsive-div');
+            const mobileDiv = document.querySelector('.self-mobile-respnsive');
+            if (closeButton && mobileDiv) {
+                closeButton.addEventListener('click', function() {
+                    mobileDiv.classList.remove('active');
+                });
+            }
+        });
+    </script>
+
+
+    <!-- Mobile Mega  Menu End here -->
+    <!-- Brand Mega Menu End -->
+
 
     <!-- Services Mega Menu  -->
-    <div class="mega-menu category-services-menu self-mobile-respnsive mega-menu-mobile-respnsive-scrolling">
+    <div class="mega-menu category-services-menu self-mobile-respnsive mega-menu-mobile-respnsive-scrolling self-margin-top-services">
         <!-- Close Button (Only for Mobile) -->
         <button
             class="close-menu icon-badge me-3 mt-3 p-4 position-absolute right-0 top-0  d-md-none close-self-mobile-respnsive-div">
@@ -297,22 +833,21 @@
                         </div>
                         <div class="col-md-3 borderCol">
                             <ul class="list-unstyled p-0 d-flex flex-column gap-4 mb-0">
-                                <li><a href="{{ route('user.servicesDetail', ['slug' => 'auto-spa']) }}"
-                                        class="d-flex">
-                                        <span class="menu-icon">
+                                
+                                    <li><a href="{{ route('user.servicesDetail', ['slug' => 'auto-spa']) }}"
+                                        class="d-flex gap-2">
+                                        <span class="menu-icon service-icon-navbar">
                                             <img src="{{ asset('assets/user/img/menu-icon12.png') }}" alt=""
                                                 class="img-fluid">
                                         </span>
                                         <div class="menu-text">
-                                            <h6 class="primary-semibold-font primary-color">Auto Spa</h6>
+                                            <h6 class="level-7 primary-semibold-font primary-color">Auto Spa</h6>
                                             <span class="level-9 primary-medium-font extra-color-3">Luxurious detailing
                                                 to keep your car looking brand new.</span>
-
                                         </div>
-                                    </a></li>
                                 <li><a href="{{ route('user.servicesDetail', ['slug' => 'car-inspection']) }}"
                                         class="d-flex gap-2">
-                                        <span class="menu-icon">
+                                        <span class="menu-icon service-icon-navbar">
                                             <img src="{{ asset('assets/user/img/menu-icon6.png') }}" alt=""
                                                 class="img-fluid">
                                         </span>
@@ -324,7 +859,7 @@
                                     </a></li>
                                 <li><a href="{{ route('user.servicesDetail', ['slug' => 'car-wrapping']) }}"
                                         class="d-flex gap-2">
-                                        <span class="menu-icon">
+                                        <span class="menu-icon service-icon-navbar">
                                             <img src="{{ asset('assets/user/img/menu-icon8.png') }}" alt=""
                                                 class="img-fluid">
                                         </span>
@@ -336,7 +871,7 @@
                                     </a></li>
                                 <li><a href="{{ route('user.servicesDetail', ['slug' => 'ceramic']) }}"
                                         class="d-flex gap-2">
-                                        <span class="menu-icon">
+                                        <span class="menu-icon service-icon-navbar">
                                             <img src="{{ asset('assets/user/img/menu-icon11.png') }}" alt=""
                                                 class="img-fluid">
                                         </span>
@@ -352,7 +887,7 @@
                             <ul class="list-unstyled p-0 d-flex flex-column gap-4 mb-0">
                                 <li><a href="{{ route('user.servicesDetail', ['slug' => 'european-cars']) }}"
                                         class="d-flex gap-2">
-                                        <span class="menu-icon">
+                                        <span class="menu-icon service-icon-navbar">
                                             <img src="{{ asset('assets/user/img/menu-icon3.png') }}" alt=""
                                                 class="img-fluid">
                                         </span>
@@ -364,7 +899,7 @@
                                     </a></li>
                                 <li><a href="{{ route('user.servicesDetail', ['slug' => 'german-cars']) }}"
                                         class="d-flex gap-2">
-                                        <span class="menu-icon">
+                                        <span class="menu-icon service-icon-navbar">
                                             <img src="{{ asset('assets/user/img/menu-icon10.png') }}" alt=""
                                                 class="img-fluid">
                                         </span>
@@ -376,7 +911,7 @@
                                     </a></li>
                                 <li><a href="{{ route('user.servicesDetail', ['slug' => 'electric-repair']) }}"
                                         class="d-flex gap-2">
-                                        <span class="menu-icon">
+                                        <span class="menu-icon service-icon-navbar">
                                             <img src="{{ asset('assets/user/img/menu-icon5.png') }}" alt=""
                                                 class="img-fluid">
                                         </span>
@@ -389,7 +924,7 @@
                                     </a></li>
                                 <li><a href="{{ route('user.servicesDetail', ['slug' => 'extended-warranty']) }}"
                                         class="d-flex gap-2">
-                                        <span class="menu-icon">
+                                        <span class="menu-icon service-icon-navbar">
                                             <img src="{{ asset('assets/user/img/menu-icon2.png') }}" alt=""
                                                 class="img-fluid">
                                         </span>
@@ -406,7 +941,7 @@
                             <ul class="list-unstyled p-0 d-flex flex-column gap-4 mb-0">
                                 <li><a href="{{ route('user.servicesDetail', ['slug' => 'general-repair']) }}"
                                         class="d-flex gap-2">
-                                        <span class="menu-icon">
+                                        <span class="menu-icon service-icon-navbar">
                                             <img src="{{ asset('assets/user/img/menu-icon1.png') }}" alt=""
                                                 class="img-fluid">
                                         </span>
@@ -418,7 +953,7 @@
                                     </a></li>
                                 <li><a href="{{ route('user.servicesDetail', ['slug' => 'major-minor-service']) }}"
                                         class="d-flex gap-2">
-                                        <span class="menu-icon">
+                                        <span class="menu-icon service-icon-navbar">
                                             <img src="{{ asset('assets/user/img/menu-icon9.png') }}" alt=""
                                                 class="img-fluid">
                                         </span>
@@ -431,7 +966,7 @@
                                     </a></li>
                                 <li><a href="{{ route('user.servicesDetail', ['slug' => 'car-recovery']) }}"
                                         class="d-flex gap-2">
-                                        <span class="menu-icon">
+                                        <span class="menu-icon service-icon-navbar">
                                             <img src="{{ asset('assets/user/img/menu-icon7.png') }}" alt=""
                                                 class="img-fluid">
                                         </span>
@@ -444,7 +979,7 @@
                                     </a></li>
                                 <li><a href="{{ route('user.servicesDetail', ['slug' => 'tinting']) }}"
                                         class="d-flex gap-2">
-                                        <span class="menu-icon">
+                                        <span class="menu-icon service-icon-navbar">
                                             <img src="{{ asset('assets/user/img/menu-icon4.png') }}" alt=""
                                                 class="img-fluid">
                                         </span>
@@ -472,39 +1007,7 @@
     </div>
 
 
-    <!-- Mobile mega menu tab Script -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // For mobile: Close accordion when clicking on open tab
-            const mobileAccordionButtons = document.querySelectorAll('#mobileTabAccordion .accordion-button');
 
-            mobileAccordionButtons.forEach(button => {
-                button.addEventListener('click', function() {
-                    const target = this.getAttribute('data-bs-target');
-                    const targetCollapse = document.querySelector(target);
-
-                    // If the clicked section is already shown, collapse it
-                    if (this.classList.contains('collapsed') === false) {
-                        const bsCollapse = new bootstrap.Collapse(targetCollapse, {
-                            toggle: true
-                        });
-                        // This will prevent the default behavior
-                        event.stopPropagation();
-                        return false;
-                    }
-                });
-            });
-
-            // Keep your existing close button functionality
-            var closeButton = document.querySelector('.close-self-mobile-respnsive-div');
-            if (closeButton) {
-                var mobileDiv = document.querySelector('.self-mobile-respnsive');
-                closeButton.addEventListener('click', function() {
-                    mobileDiv.classList.remove('active');
-                });
-            }
-        });
-    </script>
 
     <!-- Mobile maga Menu button closing Script -->
     <script>
@@ -534,6 +1037,11 @@
         <li class="list-item align-self-baseline"><a href="https://gargashauto.ae/"
                 class="header-link text-decoration-none level-8 primary-semibold-font dark-color link-here">Home</a>
         </li>
+
+        <li class="single-item">
+            <a class="header-link categoryBtn text-decoration-none level-8 primary-semibold-font dark-color link-here cursor-pointer"> Brands <i class="fa-solid fa-angle-down"></i>
+            </a>
+        </li>
         <li class="list-item align-self-baseline"><a href="{{ route('user.contract') }}"
                 class="header-link text-decoration-none level-8 primary-semibold-font dark-color link-here">Annual
                 Contract</a>
@@ -542,6 +1050,7 @@
                 class="header-link text-decoration-none level-8 primary-semibold-font dark-color link-here">Ongoing
                 Promotions</a>
         </li>
+
         <li class="single-item align-self-baseline"><a href="#"
                 class="header-link categoryBtn-service text-decoration-none level-8 primary-semibold-font dark-color link-here">
                 Services <i class="fa-solid fa-angle-down"></i></a>
