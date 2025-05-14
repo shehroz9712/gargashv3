@@ -194,7 +194,7 @@
                 <i class="fas fa-map-marker-alt"></i> 16 29th St-Al Quoz Industrial Area 4 - Dubai
               </a>
               <p>
-                <a href="tel:+971 56 545 8853" target="_blank" class="fs-5 fw-semibold"><i class="fas fa-phone m-0"></i> +971 56 545 8853</a>
+                <a href="tel:+97143466496" target="_blank" class="fs-5 fw-semibold"><i class="fas fa-phone m-0"></i> 04-3466496</a>
               </p>
             </div>
             <button class="arrow-btn m-3">
@@ -212,7 +212,7 @@
                 Gargash Auto Multi-Brand Car Service Centre - Al Quoz 4 , Dubai.
               </a>
               <p>
-                <a href="tel:+971 56 545 8853" target="_blank" class="fs-5 fw-semibold"><i class="fas fa-phone m-0"></i> +971 56 545 8853</a>
+                <a href="tel:+97142584460" target="_blank" class="fs-5 fw-semibold"><i class="fas fa-phone m-0"></i> 04-2584460</a>
               </p>
             </div>
             <button class="arrow-btn m-3">
@@ -229,7 +229,7 @@
                 <i class="fas fa-map-marker-alt"></i> 208 Amman St - Al Qusais Industrial Area 4 - Dubai
               </a>
               <p>
-                <a href="tel:+971 56 545 8853" target="_blank" class="fs-5 fw-semibold"><i class="fas fa-phone m-0"></i> +971 56 545 8853</a>
+                <a href="tel:+97142679971" target="_blank" class="fs-5 fw-semibold"><i class="fas fa-phone m-0"></i> 04-2679971</a>
               </p>
             </div>
             <button class="arrow-btn m-3">
@@ -247,7 +247,7 @@
                 Rahmaniya Suburb - Kshishah 6 - Sharjah, Entrance C. Basement Level
               </a>
               <p>
-                <a href="tel:+971 56 545 8853" target="_blank" class="fs-5 fw-semibold"><i class="fas fa-phone m-0"></i> +971 56 545 8853</a>
+                <a href="tel:+97168851406" target="_blank" class="fs-5 fw-semibold"><i class="fas fa-phone m-0"></i> 06-8851406</a>
               </p>
             </div>
             <button class="arrow-btn m-3">

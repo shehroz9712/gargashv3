@@ -1,12 +1,17 @@
 @extends('user.layouts.app')
+
 @section('css')
-@endsection@section('content')
+@endsection
 
 @section('meta')
     <title>Electric Car Repair & Maintenance Services Dubai UAE </title>
     <meta name="description" content=" Electric Car Repair & Maintenance Services Dubai UAE. Every service we offer reflects our commitment to excellence, customer satisfaction, and long-term performance. ">
     <meta name="keywords" content="Electric Car Repair Dubai,Electric Car Repair Services,Electric Car Repair UAE,Electric Car Maintenance Dubai,Electric Car Maintenance UAE">    
 @endsection
+
+@section('content')
+
+
 <style>
     .service-card {
         border-radius: 12px;
@@ -197,8 +202,4 @@
 
 <!-- Luxury Section End -->
 @include('user.layouts.partials.gateway-images') @include('user.layouts.partials.google-review') @include('user.layouts.partials.sticky-icons') @include('user.layouts.partials.sticky-icons-mobile')
-
-@endsection
-
-@section('js')
 @endsection

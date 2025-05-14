@@ -14,10 +14,6 @@
   /* //////////////////////////////////////////// */
   @media (max-width:786px) {
     .logo-item {
-      /* opacity: 0.5;
-                                                                        transition: opacity 0.3s ease-in-out;
-                                                                        height: 3rem;
-                                                                        width: 60%; */
       opacity: 0.5;
       transition: opacity 0.3s ease-in-out;
       height: auto;

@@ -11,57 +11,54 @@
 
 @section('content')
 
-
-<!-- Hero  Section Start -->
+<!-- Hero Section Start -->
 <section class="container-fluid all-pages-hero-height-responsive auto-spa-bg section overflow-hidden">
-    <div class="container d-flex align-items-center">
-        <div class="row align-items-center white">
-            <div class="col-md-5">
-                <div class="experiecne-top-content">
-                    <h2 class="display-3 fw-bold">
-                        <span >{{ $brand->name }}  </span>
-                    </h2>
-                    <p class="fs-6 fw-semibold lh-sm">{{ $brand->heading }}
-                    </p>
-                    <span class="d-flex flex-column flex-md-row gap-4">
-                        <a href="https://wa.me/971547935400" target="_blank"><button
-                                class="btn  rounded-3 text-black fs-6">Book Your Service Today</button></a>
-                      
-                    </span>
+    <div class="container h-100">
+        <div class="row align-items-center white h-100">
+            
+            <div class="col-lg-7 col-md-6 order-md-2 ">
+                <div class="d-flex justify-content-center justify-content-md-end">
+                    <img src="{{ asset('assets/uploads/brands/' . $brand->image) }}" 
+                         alt="{{ $brand->name }}" 
+                         class="img-fluid hero-image" 
+                         style="max-width: min(100%, 650px)" />
                 </div>
             </div>
-            <div class="col-md-7 d-flex justify-content-end">
-                <img src="{{ asset('assets/uploads/brands/' . $brand->image) }}" alt="" style="scale:1.2;" />
+            
+            <div class="col-lg-5 col-md-6 order-md-1 ">
+                <div class="experiecne-top-content py-4 py-md-0">
+                    <h2 class="display-4 display-md-3 fw-bold mb-3">
+                        <span>{{ $brand->name }}</span>
+                    </h2>
+                    <p class="fs-6 fw-semibold lh-sm mb-4">{{ $brand->heading }}</p>
+                    <div class="d-flex flex-column flex-md-row gap-3">
+                        <a href="https://wa.me/971547935400" target="_blank" class="text-decoration-none">
+                            <button class="btn btn-light rounded-3 text-black fs-6 px-4 py-2">
+                                Book Your Service Today
+                            </button>
+                        </a>
+                    </div>
+                </div>
             </div>
+            
+           
         </div>
     </div>
 </section>
-<!-- Hero  Section End -->
+
 <section class="container">
     <div class="row d-flex  flex-md-row align-items-center">
         <div class="col-md-12 text-start">
             {!! $brand->description !!}
-
         </div>
-        <!--<div class="col-md-4 d-flex flex-column gap-3 justify-content-center mt-4 mt-md-0 align-items-end">-->
-
-        <!--    <a href="https://wa.me/971547935400" target="_blank" class="btn fw-semibold rounded-3 text-black fs-6 w-75">-->
-        <!--        Click here-->
-        <!--        for more Offers </a>-->
-
-        <!--    <a href="https://wa.me/971547935400" target="_blank"-->
-        <!--        class="bg-transparent border-2 border-dark btn fs-6 fw-semibold rounded-3 text-black w-75">Avail Your-->
-        <!--        Discount</a>-->
-
-        <!--</div>-->
     </div>
 </section>
 <!-- Our Vision  Start  -->
 @foreach ($brand->sections as $index => $section)
-<section class="container">
-    <div class="row d-flex align-items-center {{ $index % 2 == 1 ? 'flex-md-row-reverse' : '' }}">
+<section class="container pt-lg-5 pt-0 ">
+    <div class="row g-4 d-flex align-items-center {{ $index % 2 == 1 ? 'flex-md-row-reverse' : '' }}">
         <div class="col-md-6">
-            <img class="img-fluid rounded-3" src="{{ asset('assets/uploads/brands/' . $section->image) }}"
+            <img class="img-fluid rounded-3" style="box-shadow: 4px 4px 4px #ccc;" src="{{ asset('assets/uploads/brands/' . $section->image) }}"
                 alt="hero" />
         </div>
         <div class="col-md-6 text-start">
@@ -332,7 +329,8 @@
 <!-- Slider Start -->
 
 <!-- discover-section Starts Here  -->
-
+@include('user.layouts.partials.sticky-icons')
+@include('user.layouts.partials.sticky-icons-mobile')
 
 
 <!-- discover-section Ends Here  -->

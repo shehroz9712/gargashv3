@@ -3,7 +3,11 @@
 @section('css')
 @endsection
 
-
+@section('meta')
+ <title>Luxury Trusted Car Care Services Garage Service in Dubai UAE</title>
+    <meta name="description" content="Gargash Auto Best Luxury Trusted Car Care Services Garage Service in Dubai UAE. We are offering Luxury Car Care services Dubai UAE that go beyond expectations.">
+    <meta name="keywords" content="Luxury Car Care services Dubai UAE, car care services Dubai">
+@endsection
 @section('content')
 <!-- Body Content Start Here -->
 <style>

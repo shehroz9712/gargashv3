@@ -53,7 +53,7 @@
                                 <!-- Brand Fields -->
                                 <div class="col-md-6">
                                     <div class="mb-3">
-                                        <label class="form-label">Brand Title</label>
+                                        <label class="form-label">Hero Heading</label>
                                         <input type="text" name="name" class="form-control"
                                             value="{{ old('name', $brand->name) }}" placeholder="Enter brand title">
                                         @error('name')
@@ -102,7 +102,7 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="mb-3">
-                                        <label class="form-label">Brand Heading</label>
+                                        <label class="form-label">Hero Description</label>
                                         <input type="text" name="heading" class="form-control"
                                             value="{{ old('heading', $brand->heading) }}"
                                             placeholder="Enter brand heading">
@@ -113,7 +113,7 @@
                                 </div>
                                 <div class="col-md-12">
                                     <div class="mb-3">
-                                        <label class="form-label">Brand Description</label>
+                                        <label class="form-label">HEading n para</label>
                                         <textarea name="description" class="form-control" rows="5">{{ old('description', $brand->description) }}</textarea>
                                         @error('description')
                                             <small class="text-danger">{{ $message }}</small>
@@ -253,7 +253,7 @@
                         </div>
 
                         <div class="card-footer text-end">
-                            <button type="submit" class="btn btn-primary">Update Brand</button>
+                            <button type="submit" class="btn btn-primary">Shahab is great Update Brand</button>
                             <a href="{{ route('admin.brands.index') }}" class="btn btn-light">Cancel</a>
                         </div>
                     </form>

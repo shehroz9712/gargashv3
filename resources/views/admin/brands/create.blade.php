@@ -52,7 +52,7 @@
                                 <!-- Brand Fields -->
                                 <div class="col-md-6">
                                     <div class="mb-3">
-                                        <label class="form-label">Brand Title</label>
+                                        <label class="form-label">Hero Heading</label>
                                         <input type="text" name="name" class="form-control"
                                             value="{{ old('name') }}" placeholder="Enter brand title">
                                         @error('name')
@@ -97,7 +97,7 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="mb-3">
-                                        <label class="form-label">Brand Heading</label>
+                                        <label class="form-label">Hero Description</label>
                                         <input type="text" name="heading" class="form-control"
                                             value="{{ old('heading') }}" placeholder="Enter brand heading">
                                         @error('heading')
@@ -107,7 +107,7 @@
                                 </div>
                                 <div class="col-md-12">
                                     <div class="mb-3">
-                                        <label class="form-label">Brand Description</label>
+                                        <label class="form-label">Heading n para</label>
                                         <textarea name="description" class="form-control" rows="5" placeholder="Enter brand description">{{ old('description') }}</textarea>
                                         @error('description')
                                             <small class="text-danger">{{ $message }}</small>

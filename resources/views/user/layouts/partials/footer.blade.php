@@ -7,7 +7,6 @@
         outline: none;
     }
 
-
     .footer {
         background: transparent;
         color: #e6b110;
@@ -15,8 +14,6 @@
         padding-bottom: 40px;
         position: relative;
     }
-
-
 
     /*END FOOTER SOCIAL DESIGN*/
 
@@ -374,9 +371,7 @@
                         <li class="p-0"><a
                                 href="{{ route('user.servicesDetail', ['slug' => 'german-cars']) }}">German Cars</a>
                         </li>
-                        <li class="p-0"><a
-                                href="{{ route('user.servicesDetail', ['slug' => 'electric-repair']) }}">Electric
-                                Repair</a></li>
+                        
                         <li class="p-0"><a
                                 href="{{ route('user.servicesDetail', ['slug' => 'extended-warranty']) }}">Extended
                                 Warranty</a></li>
