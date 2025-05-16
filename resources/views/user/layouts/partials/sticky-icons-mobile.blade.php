@@ -1,13 +1,12 @@
 <style>
     .navigation {
-
         position: fixed;
         bottom: 5%;
         left: 0%;
         width: 220px;
         display: flex;
         flex-direction: column;
-        z-index: 2;
+        z-index: 200;
     }
 
     .menu-sticky-iconsToggle {
@@ -26,13 +25,13 @@
     .menu-sticky-iconsToggle::before {
         content: '+';
         position: absolute;
-        top: 50%;
-        left: 50%;
+        /* top: 50%;
+        left: 50%; */
         font-size: 2.8em;
         font-weight: 550;
         color: #087fe0;
         transition: 1.5s;
-        transform: translate(-50%, -58%);
+        /* transform: translate(-50%, -58%); */
     }
 
     .menu-sticky-iconsToggle.active::before {
@@ -114,8 +113,7 @@
 </style>
 
 
-
-<div class="navigation  d-md-none ps-3">
+<div class="navigation d-md-none ps-3">
     <div class="menu-sticky-iconsToggle"></div>
     <div class="menu-sticky-icons">
         <ul class="p-0">
@@ -128,16 +126,14 @@
             <li style="--i:0.3s"><a href="#" target="_blank">
                     <i title="Live Chat" class="fa-solid fa-headset" style="color: #FF7A00;"></i>
                 </a></li>
-
         </ul>
     </div>
 </div>
 
 
-
-<script async>
+<script>
     let menu_sticky_iconsToggle = document.querySelector('.menu-sticky-iconsToggle');
-    menu_sticky_iconsToggle.onclick = function() {
-        menu_sticky_iconsToggle.classList.toggle('active');
-    }
+menu_sticky_iconsToggle.onclick = function() {
+    this.classList.toggle('active');
+}
 </script>

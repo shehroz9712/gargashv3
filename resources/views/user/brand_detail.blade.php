@@ -27,9 +27,9 @@
             
             <div class="col-lg-5 col-md-6 order-md-1 ">
                 <div class="experiecne-top-content py-4 py-md-0">
-                    <h2 class="display-4 display-md-3 fw-bold mb-3">
+                    <h1 class="display-4 display-md-3 fw-bold mb-3">
                         <span>{{ $brand->name }}</span>
-                    </h2>
+                    </h1>
                     <p class="fs-6 fw-semibold lh-sm mb-4">{{ $brand->heading }}</p>
                     <div class="d-flex flex-column flex-md-row gap-3">
                         <a href="https://wa.me/971547935400" target="_blank" class="text-decoration-none">
