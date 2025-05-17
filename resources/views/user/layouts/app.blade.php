@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html dir="rtl" lang="ar">
 @include('user.layouts.partials.head')
 
-<body>
+<body class="rtl">
     <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MK337R95"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MK337R95" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <style>
         /* Header Css  */
-        .submenu {
+
+
+       .submenu {
             top: 60px;
             left: -20px;
             transition: 0.4s ease;

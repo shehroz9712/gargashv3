@@ -1,15 +1,6 @@
 @extends('user.layouts.app')
 
 @section('css')
-@endsection
-
-@section('meta')
- <title>Luxury Trusted Car Care Services Garage Service in Dubai UAE</title>
-    <meta name="description" content="Gargash Auto Best Luxury Trusted Car Care Services Garage Service in Dubai UAE. We are offering Luxury Car Care services Dubai UAE that go beyond expectations.">
-    <meta name="keywords" content="Luxury Car Care services Dubai UAE, car care services Dubai">
-@endsection
-@section('content')
-<!-- Body Content Start Here -->
 <style>
     .shop-bg {
         background: url('assets/user/img/car-insp-hero-bg.png') no-repeat center center/cover;
@@ -19,6 +10,16 @@
         background: url('assets/user/img/body-shop-form-section-bg.png') no-repeat center center/cover;
     }
 </style>
+@endsection
+
+@section('meta')
+ <title>Luxury Trusted Car Care Services Garage Service in Dubai UAE</title>
+    <meta name="description" content="Gargash Auto Best Luxury Trusted Car Care Services Garage Service in Dubai UAE. We are offering Luxury Car Care services Dubai UAE that go beyond expectations.">
+    <meta name="keywords" content="Luxury Car Care services Dubai UAE, car care services Dubai">
+@endsection
+@section('content')
+<!-- Body Content Start Here -->
+
 <!-- Hero  Section Start -->
 <section class="shop-bg section">
     <div class="container">
