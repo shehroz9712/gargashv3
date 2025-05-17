@@ -38,6 +38,8 @@
     <link rel="stylesheet" href="{{ asset('assets/user/css/style.css') }}" />
 
     <link rel="stylesheet" href="{{ asset('assets/user/css/responsive.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/user/css/responsive-rtl.css') }}" />
+
     <!-- Css Stylesheet -->
     <!-- HeaderLinks Include Here -->
     <link rel="stylesheet" href="{{ asset('assets/user/css/header.css') }}" />

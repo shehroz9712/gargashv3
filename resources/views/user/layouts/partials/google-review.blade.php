@@ -393,6 +393,42 @@
             right: 10px;
           }
         }
+
+        /* RTL-specific fixes */
+        [dir="rtl"] .carousel-control-prev {
+          left: auto;
+          right: -20px;
+        }
+
+        [dir="rtl"] .carousel-control-next {
+          right: auto;
+          left: -20px;
+        }
+
+        [dir="rtl"] .carousel-control-prev-icon {
+          transform: scaleX(-1);
+        }
+
+        [dir="rtl"] .carousel-control-next-icon {
+          transform: scaleX(-1);
+        }
+
+        [dir="rtl"] .carousel-inner {
+          direction: ltr;
+          /* This ensures videos display correctly in RTL */
+        }
+
+        @media (max-width: 767px) {
+          [dir="rtl"] .carousel-control-prev {
+            left: auto;
+            right: 10px;
+          }
+
+          [dir="rtl"] .carousel-control-next {
+            right: auto;
+            left: 10px;
+          }
+        }
       </style>
 
 

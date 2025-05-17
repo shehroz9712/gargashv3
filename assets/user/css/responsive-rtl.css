@@ -1,0 +1,10 @@
+/* Index Page Styling Start*/
+/* Hero Section */
+[dir="rtl"] .banner-car-wrap figure img {
+    transform: scaleX(-1) ;
+}
+
+[dir="rtl"] .offers-section::after {
+    right: 55%;
+    transform: scaleX(-1) ;
+}

@@ -23,14 +23,14 @@ class ViewServiceProvider extends ServiceProvider
     /**
      * Bootstrap services.
      */
-    public function boot(): void
-    {
+    // public function boot(): void
+    // {
 
-        $settings = Setting::first();
-        $brands = Brand::Active()->get();
-        View::share(['setting' => $settings, 'brands' => $brands]);
-        $this->composeAdminPages();
-    }
+    //     $settings = Setting::first();
+    //     $brands = Brand::Active()->get();
+    //     View::share(['setting' => $settings, 'brands' => $brands]);
+    //     $this->composeAdminPages();
+    // }
 
     private function composeAdminPages()
     {
