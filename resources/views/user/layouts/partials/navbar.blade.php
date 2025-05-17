@@ -400,11 +400,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                     GMC
                                                 </a>
                                             </li>
-                                            <li>
+                                           <!-- <li>
                                                 <a href="{{ route('user.brandDetail', 'tesla-repair-dubai') }}" class="self-navbar-text-color fs-6 fw-normal">
                                                     Tesla
                                                 </a>
-                                            </li>
+                                            </li>-->
                                         </ul>
                                     </div>
                                 </div>
@@ -542,11 +542,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                     GMC
                                                 </a>
                                                     </li>
-                                                    <li>
+                                                    <!--<li>
                                                         <a href="{{ route('user.brandDetail', 'tesla-repair-sharjah') }}" class="self-navbar-text-color fs-6 fw-normal">
                                                     Tesla
                                                 </a>
-                                                    </li>
+                                                    </li>-->
                                                 </ul>
                                             </div>
                                         </div>
@@ -729,11 +729,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                     GMC
                                                 </a>
                                             </li>
-                                            <li>
+                                           <!-- <li>
                                                 <a href="{{ route('user.brandDetail', 'tesla-repair-dubai') }}" class="self-navbar-text-color fs-6 fw-normal">
                                                     Tesla
                                                 </a>
-                                            </li>
+                                            </li>-->
                                             </ul>
                                         </div>
                                     </div>
@@ -875,11 +875,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                     GMC
                                                 </a>
                                                     </li>
-                                                    <li>
+                                                    <!--<li>
                                                         <a href="{{ route('user.brandDetail', 'tesla-repair-sharjah') }}" class="self-navbar-text-color fs-6 fw-normal">
                                                     Tesla
                                                 </a>
-                                                    </li>
+                                                    </li>-->
                                             </ul>
                                         </div>
                                     </div>
@@ -1069,7 +1069,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="" class="d-flex gap-2">
+                                    <a href="{{ route('user.servicesDetail', ['slug' => 'electric-repair']) }}" class="d-flex gap-2">
                                         <span class="menu-icon service-icon-navbar">
                                             <img src="{{ asset('assets/user/img/menu-icon5.png') }}" alt=""
                                                 class="img-fluid">
