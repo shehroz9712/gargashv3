@@ -64,15 +64,16 @@
                                     </div>
                                 </div>
 
-                                <div class="col-md-12">
-                                    <div class="mb-3">
-                                        <label class="form-label">Content</label>
-                                        <textarea name="content" class="form-control" rows="5" placeholder="Enter content">{{ old('content') }}</textarea>
-                                        @error('content')
-                                            <small class="text-danger">{{ $message }}</small>
-                                        @enderror
-                                    </div>
-                                </div>
+                            <div class="col-md-12">
+    <div class="mb-3">
+        <label class="form-label">Content</label>
+        <textarea name="content" class="form-control" rows="5" placeholder="Enter content">{{ old('content') }}</textarea>
+        @error('content')
+            <small class="text-danger">{{ $message }}</small>
+        @enderror
+    </div>
+</div>
+
 
                                 <div class="col-md-6">
                                     <div class="mb-3">
@@ -123,4 +124,22 @@
 @endsection
 
 @section('js')
+<!-- TinyMCE Script -->
+<script src="https://cdn.tiny.cloud/1/angawkv2xx2vxc4g4fmmz2kga206yrhmrnuu1i2avvbr1n6d/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+<script>
+    tinymce.init({
+        selector: 'textarea[name="content"]',
+        height: 300,
+        menubar: false,
+        plugins: [
+            'advlist autolink lists link image charmap preview anchor',
+            'searchreplace visualblocks code fullscreen',
+            'insertdatetime media table code help wordcount'
+        ],
+        toolbar: 'undo redo | formatselect | ' +
+                 'bold italic underline backcolor | alignleft aligncenter ' +
+                 'alignright alignjustify | bullist numlist outdent indent | ' +
+                 'removeformat | help',
+    });
+</script>
 @endsection

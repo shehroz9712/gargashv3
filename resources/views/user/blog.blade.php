@@ -2,10 +2,14 @@
 
 @section('css')
 @endsection
-
+@section('meta')
+ <title>{{ $blog->title }}</title>
+    <meta name="description" content="Gargash Auto Best Luxury Trusted Car Care Services Garage Service in Dubai UAE. We are offering Luxury Car Care services Dubai UAE that go beyond expectations.">
+    <meta name="keywords" content="Luxury Car Care services Dubai UAE, car care services Dubai">
+@endsection
 
 @section('content')
-<section class=" blog-section-hero-bg container-fluid vh-100 blogs-hero-height-responsive blog-bg overflow-hidden">
+<section class=" blog-section-hero-bg container-fluid blogs-hero-height-responsive blog-bg overflow-hidden">
     <form action="{{ route('user.blog.search') }}" method="GET">
         <div class="align-items-center container d-flex flex-column h-100 justify-content-center w-100">
             <div class="text-center">
@@ -22,25 +26,13 @@
                     class="align-items-center bg-white d-flex justify-content-between px-3 py-2 rounded-3 w-100 w-md-75">
                     <span class="align-items-center d-flex gap-3">
                         <i class="fa-solid fa-magnifying-glass fs-6 d-none d-md-block"></i>
-                        <input type="text" placeholder="Search article" name="query" class="border-0 fs-6 w-100 "
+                        <input type="text" placeholder="Search from our blogs" name="query" class="border-0 fs-6 w-100 "
                             autofocus style="outline: none; border: none;">
                     </span>
                     <button type="submit"
                         class="blogs-hero-search-font-size-responsive btn btn-primary px-0 w-50 w-md-25">
                         Search
                     </button>
-                </div>
-                <div class="align-items-md-center d-flex flex-column flex-md-row gap-2 w-75">
-                    <h2 class="fs-5 fw-bold">Popular Tags :</h2>
-                    <div class="align-items-center border border-dark d-flex justify-content-center rounded-3">
-                        <p class="fs-6 fw-normal m-0 px-3 py-1">Merc</p>
-                    </div>
-                    <div class="align-items-center border border-dark d-flex justify-content-center rounded-3">
-                        <p class="fs-6 fw-normal m-0 px-3 py-1">User Experience</p>
-                    </div>
-                    <div class="align-items-center border border-dark d-flex justify-content-center rounded-3">
-                        <p class="fs-6 fw-normal m-0 px-3 py-1">User Interfaces</p>
-                    </div>
                 </div>
             </div>
         </div>
@@ -56,7 +48,7 @@
         }
     }
 </style>
-<section class="Featured-section bg-white container rounded-4 py-0">
+<section class="Featured-section bg-white container rounded-4 py-0 mt-5">
     <div class="row">
         <div class="col-md-6 p-0">
             <img src="{{ asset('assets/uploads/blogs/' . $blog->image) }}" alt=""
