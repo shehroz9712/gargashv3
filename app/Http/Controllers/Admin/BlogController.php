@@ -72,13 +72,19 @@ class BlogController extends Controller
             'content' => 'required',
             'author' => 'nullable|string|max:255',
             'author_image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             'status' => 'required|in:draft,published,archived',
         ]);
 
         if ($request->hasFile('author_image')) {
-            $imagePath = $request->file('author_image')->store('author_images', 'public');
+            $imagePath = uploadImage($request->file('author_image'), "blogs");
             $blog->author_image = $imagePath;
         }
+        if ($request->hasFile('image')) {
+            $imagePath = uploadImage($request->file('image'), "blogs");
+            $blog->image = $imagePath;
+        }
+
 
         $blog->update([
             'title' => $request->title,
