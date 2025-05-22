@@ -46,7 +46,7 @@ class HomeController extends Controller
             'views' => $blog->views + 1,
         ]);
         $featuredBlogs = Blog::where('status', 'published')
-            ->inRandomOrder()
+            ->latest()
             ->get();
 
         // Split into chunks of 4 for carousel items

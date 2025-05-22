@@ -28,6 +28,19 @@
 <!-- Hero Sectin End -->
 
 <!-- main blog section Start -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+  const elements = document.querySelectorAll('.truncate-me');
+  const maxLength = 48;
+  
+  elements.forEach(element => {
+    const text = element.textContent;
+    if (text.length > maxLength) {
+      element.textContent = text.substring(0, maxLength) + '...';
+    }
+  });
+});
+</script>
 
 
 <section class="container pt-2 mt-5">
@@ -35,13 +48,12 @@
         @foreach ($blogs as $blog)
         <div class="index-services-box-height blog-post {{ $loop->index >= 6 ? 'd-none' : '' }}">
             <a href="{{ route('user.blog.detail', $blog->slug) }}" class="text-black w-100 h-100">
-                <div
-                    class="col d-flex flex-column gap-5 justify-content-center rounded-5 shadow bg-white py-4 h-100">
+                <div class="bg-white col d-flex flex-column justify-content-between py-5 rounded-5 shadow h-100">
                     <div class="img">
                         <img src="{{ asset('assets/uploads/blogs/' . $blog->image) }}" style="max-height:350px; margin: 0px auto;" alt="">
                     </div>
                     <div class="d-flex flex-column gap-3 px-3 px-md-5 text-start">
-                        <h5 class="m-0 fs-4 fw-bold text-capitalize">{{ $blog->title }}</h5>
+                        <h5 class="m-0 fs-4 fw-bold text-capitalize  truncate-me">{{ $blog->title }}</h5>
                         <p class="fs-6 fw-lighter d-none d-md-block">{{ Str::limit($blog->description, 100) }}</p>
                         <button class="btn fs-6 fw-semibold w-100">Discover More</button>
                     </div>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 @include('user.layouts.partials.head')
 
 <body class="rtl">

@@ -96,16 +96,12 @@
         <div class="col-md-6 text-start">
             <div class="d-flex flex-column gap-2">
                 <h2 class="fs-2 m-0 fw-bolder">
-                    <span style="color: #E6B110;">Relevant </span> Articles
+                    <span style="color: #E6B110;">Other </span> Blogs
                 </h2>
                 <p class="fs-6 fw-light lh-base m-0">Here’s what we've been up to recently.</p>
             </div>
         </div>
-        <div class="col-md-6 d-flex justify-content-end">
-            <button type="button" class="btn btn-primary bg-transparent "
-                style="border: 4px solid #202D75; color:#202D75;"> View all <i class="fa-solid fa-arrow-right"></i>
-            </button>
-        </div>
+
     </div>
 </section>
 
@@ -126,60 +122,28 @@
                                     <div class="row h-100">
                                         @foreach ($blogsChunk as $blog)
                                         <div class="col-md-3 h-100">
-                                            <a href="{{ route('user.blog.detail', $blog->slug) }}">
-                                                <div class="blog-img-5 d-flex flex-column h-100 justify-content-between px-4 py-3 rounded-4"
-                                                    style="background-image: url('{{ asset('assets/uploads/blogs/' . $blog->image) }}'); background-size: cover;">
-                                                    @if ($blog->is_featured)
-                                                    <span
-                                                        class="Featured badge bg-light px-3 py-2 rounded rounded-pill text-dark w-fit">Featured</span>
-                                                    @endif
-                                                    <div class="d-flex flex-column gap-3 pb-4">
-                                                        <div>
-                                                            <h2 class="fs-6 fw-semibold lh-sm text-light">
-                                                                {{ $blog->title }}
-                                                            </h2>
-                                                            <p class="fw-light lh-sm m-0 text-light"
-                                                                style="font-size: 0.8rem;">
-                                                                {{ $blog->short_content }}
-                                                            </p>
-                                                        </div>
-                                                        <div class="d-flex justify-content-between">
-                                                            <span class="align-items-center d-flex gap-2">
-                                                                @if ($blog->author_image)
-                                                                <img src="{{ asset('storage/' . $blog->author_image) }}"
-                                                                    alt="{{ $blog->author }}"
-                                                                    class="img-fluid rounded-circle"
-                                                                    style="width: 40px; height: 40px;">
-                                                                @else
-                                                                <img src="{{ asset('assets/img/bolg-icon-logo.png') }}"
-                                                                    alt="" class="img-fluid">
-                                                                @endif
-                                                                <span>
-                                                                    <p class="fw-semibold lh-base m-0 text-light"
-                                                                        style="font-size: small;">By
-                                                                        {{ $blog->author ?? 'Gargash' }}
-                                                                    </p>
-                                                                    <span>
-                                                                        <span
-                                                                            class="align-items-center d-flex gap-1"
-                                                                            style="font-size: small;">
-                                                                            <i class="fa-solid fa-circle-check"
-                                                                                style="color: #36B37E; background: #36b37e29;"></i>
-                                                                            <p class="fw-lighter m-0 text-light"
-                                                                                style="font-size: x-small;">
-                                                                                Verified</p>
-                                                                        </span>
-                                                                    </span>
-                                                                </span>
-                                                            </span>
-                                                            <p class="m-0 my-auto text-secondary"
-                                                                style="font-size: small;">
-                                                                {{ $blog->created_at->format('F d, Y') }}
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
+                                            <div class="index-services-box-height blog-post {{ $loop->index >= 6 ? 'd-none' : '' }}">
+            <a href="{{ route('user.blog.detail', $blog->slug) }}" class="text-black w-100 h-100">
+                <div class="bg-white col d-flex flex-column justify-content-between py-5 rounded-5 shadow h-100">
+                    <div class="img" style="
+    height: 200px;
+">
+                        <img src="{{ asset('assets/uploads/blogs/' . $blog->image) }}" style="max-height:350px; margin: 0px auto;" alt="">
+                    </div>
+                    <div class="d-flex flex-column gap-3 px-3  text-start">
+                        <h5 class="m-0 fs-4 fw-bold text-capitalize  truncate-me"style="
+    display: -webkit-box;
+    -webkit-line-clamp: 3;     /* 👈 Show only 3 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+">{{ $blog->title }}</h5>
+                        <p class="fs-6 fw-lighter d-none d-md-block">{{ Str::limit($blog->description, 100) }}</p>
+                        <button class="btn fs-6 fw-semibold w-100">Read More</button>
+                    </div>
+                </div>
+            </a>
+        </div>
                                         </div>
                                         @endforeach
                                     </div>

@@ -6,6 +6,7 @@ use App\Http\Controllers\Admin\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Support\Facades\Hash;
 
 class LoginController extends Controller
 {
@@ -50,6 +51,8 @@ class LoginController extends Controller
             'email' => 'required|email',
             'password' => 'required|string',
         ]);
+        
+        //echo Hash::make('admin@123');die;
 
         if (Auth::guard('admin')->attempt($credentials, $request->filled('remember'))) {
             return redirect()->intended($this->redirectTo);
