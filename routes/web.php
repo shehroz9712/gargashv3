@@ -19,6 +19,9 @@ use Illuminate\Support\Facades\Route;
 //     dd('Hello World');
 // });
 
+Route::get('/check-mail-host', function () {
+    return config('mail.mailers.smtp.host'); // Should return 'mail.gargashauto.ae'
+});
 
 // Route for home page
 Route::get('/', [HomeController::class, 'index'])->name('home');
