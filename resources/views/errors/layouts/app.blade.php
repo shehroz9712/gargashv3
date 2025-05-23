@@ -5,14 +5,8 @@
 <body>
   
 
-    <!-- Header End Here -->
-
     @yield('content')
 
-
-    <!--  -->
-
-    <!--  -->
 
     @include('user.layouts.partials.scripts')
   

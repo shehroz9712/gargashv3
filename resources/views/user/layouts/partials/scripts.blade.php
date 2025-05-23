@@ -14,50 +14,59 @@
    <script src="{{ asset('assets/user/js/main.js') }}"></script>
 
    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+   <!-- SweetAlert2 JS CDN include karna na bhoolen -->
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
    <script>
-       toastr.options = {
-           "closeButton": true,
-           "progressBar": false,
-           "positionClass": "toast-top-right",
-           "preventDuplicates": true,
-           "showDuration": "30000",
-           "hideDuration": "10000",
-           "timeOut": "50000",
-           "extendedTimeOut": "10000",
-           "showEasing": "swing",
-           "hideEasing": "linear",
-           "showMethod": "fadeIn",
-           "hideMethod": "fadeOut",
-           "closeButton": true,
-           "progressBar": true
-       }
+       // Laravel Session Messages
+       @if (Session::has('success'))
+           Swal.fire({
+               icon: 'success',
+               title: 'Success',
+               text: "{{ session('success') }}",
+               confirmButtonColor: '#3085d6',
+           });
+       @endif
 
-       //    @if (Session::has('success'))
+       @if (!empty($errors->all()))
+           @foreach ($errors->all() as $error)
+               Swal.fire({
+                   icon: 'error',
+                   title: 'Error',
+                   text: "{{ $error }}",
+                   confirmButtonColor: '#d33',
+               });
+           @endforeach
+       @endif
 
-       //        toastr.success("{{ session('success') }}");
-       //    @endif
+       @if (Session::has('error'))
+           Swal.fire({
+               icon: 'error',
+               title: 'Error',
+               text: "{{ session('error') }}",
+               confirmButtonColor: '#d33',
+           });
+       @endif
 
-       //    @if (!empty($errors->all()))
-       //        @foreach ($errors->all() as $error)
-       //            toastr.error("{{ $error }}")
-       //        @endforeach
-       //    @endif
+       @if (Session::has('info'))
+           Swal.fire({
+               icon: 'info',
+               title: 'Info',
+               text: "{{ session('info') }}",
+               confirmButtonColor: '#3085d6',
+           });
+       @endif
 
-       //    @if (Session::has('error'))
-
-       //        toastr.error("{{ session('error') }}");
-       //    @endif
-
-       //    @if (Session::has('info'))
-
-       //        toastr.info("{{ session('info') }}");
-       //    @endif
-
-       //    @if (Session::has('warning'))
-
-       //        toastr.warning("{{ session('warning') }}");
-       //    @endif
+       @if (Session::has('warning'))
+           Swal.fire({
+               icon: 'warning',
+               title: 'Warning',
+               text: "{{ session('warning') }}",
+               confirmButtonColor: '#f0ad4e',
+           });
+       @endif
    </script>
+
    <script>
        // Detect Device
        document.getElementById('device_type').value = navigator.userAgent;
