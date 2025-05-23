@@ -17,55 +17,45 @@
    <!-- SweetAlert2 JS CDN include karna na bhoolen -->
    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-   <script>
-       // Laravel Session Messages
-       @if (Session::has('success'))
-           Swal.fire({
-               icon: 'success',
-               title: 'Success',
-               text: "{{ session('success') }}",
-               confirmButtonColor: '#3085d6',
-           });
-       @endif
+ <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        function showAlert(type, title, message) {
+            Swal.fire({
+                icon: type,
+                title: title,
+                html: message, // using HTML allows line breaks if needed
+                confirmButtonColor: {
+                    success: '#28a745',
+                    error: '#d33',
+                    info: '#17a2b8',
+                    warning: '#f0ad4e'
+                }[type] || '#3085d6',
+            });
+        }
 
-       @if (!empty($errors->all()))
-           @foreach ($errors->all() as $error)
-               Swal.fire({
-                   icon: 'error',
-                   title: 'Error',
-                   text: "{{ $error }}",
-                   confirmButtonColor: '#d33',
-               });
-           @endforeach
-       @endif
+        @if (Session::has('success'))
+            showAlert('success', 'Success', `{!! addslashes(session('success')) !!}`);
+        @endif
 
-       @if (Session::has('error'))
-           Swal.fire({
-               icon: 'error',
-               title: 'Error',
-               text: "{{ session('error') }}",
-               confirmButtonColor: '#d33',
-           });
-       @endif
+        @if (Session::has('error'))
+            showAlert('error', 'Error', `{!! addslashes(session('error')) !!}`);
+        @endif
 
-       @if (Session::has('info'))
-           Swal.fire({
-               icon: 'info',
-               title: 'Info',
-               text: "{{ session('info') }}",
-               confirmButtonColor: '#3085d6',
-           });
-       @endif
+        @if (Session::has('info'))
+            showAlert('info', 'Info', `{!! addslashes(session('info')) !!}`);
+        @endif
 
-       @if (Session::has('warning'))
-           Swal.fire({
-               icon: 'warning',
-               title: 'Warning',
-               text: "{{ session('warning') }}",
-               confirmButtonColor: '#f0ad4e',
-           });
-       @endif
-   </script>
+        @if (Session::has('warning'))
+            showAlert('warning', 'Warning', `{!! addslashes(session('warning')) !!}`);
+        @endif
+
+        @if ($errors->any())
+            const errorMessages = `{!! implode('<br>', $errors->all()) !!}`;
+            showAlert('error', 'Validation Error', errorMessages);
+        @endif
+    });
+</script>
+
 
    <script>
        // Detect Device
