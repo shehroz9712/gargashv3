@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\User;
 
+use App\Jobs\SendServiceEnquiryJob;
 use App\Models\Blog;
 use App\Models\Brand;
 use App\Models\ServiceRequest;
@@ -177,6 +178,7 @@ class HomeController extends Controller
             'ip_address' => $request->ip_address ?? $request->ip(),
         ]);
 
+        SendServiceEnquiryJob::dispatch($request->all());
         return back()->with('success', 'Your enquiry has been submitted successfully!');
     }
 }

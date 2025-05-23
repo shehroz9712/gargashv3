@@ -15,9 +15,10 @@
 
         <div class="mb-3 form-group">
             <i class="fa-solid fa-phone icon"></i>
-            <input type="tel" class="form-control" name="user_phone_number" required
-                placeholder="(000) 000-0000" maxlength="14">
+            <input type="tel" class="form-control" id="phone" name="user_phone_number" required placeholder="(000) 000-0000"
+                maxlength="14">
         </div>
+
 
         <div class="mb-3 form-group">
             <i class="fa-solid fa-envelope icon"></i>

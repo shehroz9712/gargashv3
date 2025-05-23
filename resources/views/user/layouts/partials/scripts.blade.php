@@ -16,45 +16,51 @@
    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
    <!-- SweetAlert2 JS CDN include karna na bhoolen -->
    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   <script src="https://cdn.jsdelivr.net/npm/inputmask@5.0.8/dist/inputmask.min.js"></script>
 
- <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        function showAlert(type, title, message) {
-            Swal.fire({
-                icon: type,
-                title: title,
-                html: message, // using HTML allows line breaks if needed
-                confirmButtonColor: {
-                    success: '#e6b110',
-                    error: '#d33',
-                    info: '#17a2b8',
-                    warning: '#f0ad4e'
-                }[type] || '#3085d6',
-            });
-        }
+   <script>
+       Inputmask({
+           "mask": "(999) 999-9999"
+       }).mask(document.querySelector('#phone'));
+   </script>
+   <script>
+       document.addEventListener('DOMContentLoaded', function() {
+           function showAlert(type, title, message) {
+               Swal.fire({
+                   icon: type,
+                   title: title,
+                   html: message, // using HTML allows line breaks if needed
+                   confirmButtonColor: {
+                       success: '#e6b110',
+                       error: '#d33',
+                       info: '#17a2b8',
+                       warning: '#f0ad4e'
+                   } [type] || '#3085d6',
+               });
+           }
 
-        @if (Session::has('success'))
-            showAlert('success', 'Thank You!', `{!! addslashes(session('success')) !!}`);
-        @endif
+           @if (Session::has('success'))
+               showAlert('success', 'Thank You!', `{!! addslashes(session('success')) !!}`);
+           @endif
 
-        @if (Session::has('error'))
-            showAlert('error', 'Error', `{!! addslashes(session('error')) !!}`);
-        @endif
+           @if (Session::has('error'))
+               showAlert('error', 'Error', `{!! addslashes(session('error')) !!}`);
+           @endif
 
-        @if (Session::has('info'))
-            showAlert('info', 'Info', `{!! addslashes(session('info')) !!}`);
-        @endif
+           @if (Session::has('info'))
+               showAlert('info', 'Info', `{!! addslashes(session('info')) !!}`);
+           @endif
 
-        @if (Session::has('warning'))
-            showAlert('warning', 'Warning', `{!! addslashes(session('warning')) !!}`);
-        @endif
+           @if (Session::has('warning'))
+               showAlert('warning', 'Warning', `{!! addslashes(session('warning')) !!}`);
+           @endif
 
-        @if ($errors->any())
-            const errorMessages = `{!! implode('<br>', $errors->all()) !!}`;
-            showAlert('error', 'Validation Error', errorMessages);
-        @endif
-    });
-</script>
+           @if ($errors->any())
+               const errorMessages = `{!! implode('<br>', $errors->all()) !!}`;
+               showAlert('error', 'Validation Error', errorMessages);
+           @endif
+       });
+   </script>
 
 
    <script>

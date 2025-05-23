@@ -43,6 +43,7 @@
     <link rel="stylesheet" href="{{ asset('assets/user/css/header.css') }}" />
     <meta name="google-site-verification" content="qGs1sXNVQHSkF7U3S7aNQCP_YlxrWyVab_2ZqgoJFfE" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+{{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/5.0.8/inputmask.min.js"></script> --}}
 
     @yield('css')
 
