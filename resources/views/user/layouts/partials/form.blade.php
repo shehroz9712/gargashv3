@@ -16,7 +16,7 @@
         <div class="mb-3 form-group">
             <i class="fa-solid fa-phone icon"></i>
             <input type="tel" class="form-control" name="user_phone_number" required
-                placeholder="(XXX) XXX-XXXX" maxlength="14">
+                placeholder="(000) 000-0000" maxlength="14">
         </div>
 
         <div class="mb-3 form-group">

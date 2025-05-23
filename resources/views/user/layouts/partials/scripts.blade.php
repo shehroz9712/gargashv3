@@ -34,7 +34,7 @@
         }
 
         @if (Session::has('success'))
-            showAlert('success', 'Success', `{!! addslashes(session('success')) !!}`);
+            showAlert('success', 'Thank You!', `{!! addslashes(session('success')) !!}`);
         @endif
 
         @if (Session::has('error'))
