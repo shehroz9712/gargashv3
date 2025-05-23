@@ -22,6 +22,14 @@ use Illuminate\Support\Facades\Route;
 Route::get('/check-mail-host', function () {
     return config('mail.mailers.smtp.host'); // Should return 'mail.gargashauto.ae'
 });
+Route::get('/quick-mail', function () {
+    Mail::raw('This is a quick test email', function ($message) {
+        $message->to('your_email@example.com')
+                ->subject('Quick Test Email');
+    });
+
+    return 'Quick mail sent!';
+});
 
 // Route for home page
 Route::get('/', [HomeController::class, 'index'])->name('home');
