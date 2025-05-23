@@ -27,6 +27,7 @@ class SendServiceEnquiryJob implements ShouldQueue
     public function handle(): void
     {
         $setting = Setting::first();
-        Mail::to($setting->query_email)->send(new ServiceEnquiryMail($this->data));
+
+        Mail::to('testing@gargashauto.ae')->send(new ServiceEnquiryMail($this->data));
     }
 }
