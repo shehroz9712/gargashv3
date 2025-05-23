@@ -154,7 +154,7 @@ class HomeController extends Controller
     {
         $request->validate([
             'user_name' => 'required|string|min:3|max:50',
-            'user_phone_number' => 'required|digits_between:10,15',
+            'user_phone_number' => 'required',
             'email' => 'nullable|email',
             'make' => 'nullable|string',
             'model' => 'nullable|string',
