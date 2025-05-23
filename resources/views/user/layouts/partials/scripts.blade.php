@@ -25,7 +25,7 @@
                 title: title,
                 html: message, // using HTML allows line breaks if needed
                 confirmButtonColor: {
-                    success: '#28a745',
+                    success: '#e6b110',
                     error: '#d33',
                     info: '#17a2b8',
                     warning: '#f0ad4e'
