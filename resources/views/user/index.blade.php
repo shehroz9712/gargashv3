@@ -111,7 +111,7 @@
                 <span class="level-8 primary-regular-font dark-color">Expert Care for All German & European
                     Brands</span>
             </div>
-            <div class="row pt-4">
+            <div class="row pt-4 flex-row-reverse">
                 <div class="col-lg-5 my-auto dark">
                     {{-- <div class="banner-content-here pt-2 wow animate__animated animate__fadeInDown">
                           <figure class="position-relative">
